@@ -15,6 +15,7 @@
 .footer__nav {
   width: 100%;
   display: block;
+  margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   .footer__nav {
@@ -25,7 +26,6 @@
 }
 .footer__column {
   width: 100%;
-  margin-bottom: 24px;
   padding-left: 0px;
   padding-right: 0px;
 }

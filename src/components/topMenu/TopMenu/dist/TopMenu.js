@@ -8,6 +8,7 @@ var TripleIcon_1 = require("../../general/TripleIcon/TripleIcon");
 var MenuLink_1 = require("../../ui/links/MenuLink/MenuLink");
 var LoginForm_1 = require("../LoginForm/LoginForm");
 var TopMenu_module_scss_1 = require("./TopMenu.module.scss");
+var aboutFundTop_jpg_1 = require("../../../assets/images/aboutFundTop.jpg");
 var TopMenu = function () {
     var _a = react_1.useContext(context_1.AuthContext), isBackgroundWhite = _a.isBackgroundWhite, setBackgroundWhite = _a.setBackgroundWhite, isLoginFormVisible = _a.isLoginFormVisible, setLoginFormVisible = _a.setLoginFormVisible;
     var _b = react_1.useState(false), isPrivateOfficeHovered = _b[0], setPrivateOfficeHovered = _b[1];
@@ -24,7 +25,16 @@ var TopMenu = function () {
         { to: "/react", children: "React" },
     ];
     react_1.useEffect(function () {
-        if (pathname === "*") {
+        if (pathname === "/" ||
+            pathname === "/axios" ||
+            pathname === "/css" ||
+            pathname === "/dom" ||
+            pathname === "/github" ||
+            pathname === "/html" ||
+            pathname === "/http" ||
+            pathname === "/javascript" ||
+            pathname === "/react" ||
+            pathname === "*") {
             setBackgroundWhite(false);
         }
         else {
@@ -49,7 +59,7 @@ var TopMenu = function () {
             document.body.style.overflow = "hidden";
         }
     };
-    return (react_1["default"].createElement("header", { className: isBackgroundWhite ? TopMenu_module_scss_1["default"]["top-menu__with-border"] : TopMenu_module_scss_1["default"]["top-menu"] },
+    return (react_1["default"].createElement("header", { className: isBackgroundWhite ? TopMenu_module_scss_1["default"]["top-menu__with-border"] : TopMenu_module_scss_1["default"]["top-menu"], style: { backgroundImage: "url(" + aboutFundTop_jpg_1["default"] + ")" } },
         react_1["default"].createElement("div", { className: TopMenu_module_scss_1["default"]["top-menu__container"] },
             react_1["default"].createElement("div", { className: TopMenu_module_scss_1["default"]["top-menu__nav"] }, TopMenuLinks.map(function (link) { return (react_1["default"].createElement(MenuLink_1["default"], { key: link.to, to: link.to, isBackgroundWhite: isBackgroundWhite }, link.children)); })),
             react_1["default"].createElement("div", { className: TopMenu_module_scss_1["default"]["top-menu__right-block"] },

@@ -1,16 +1,16 @@
 .layuot {
   width: 100%;
   max-width: 1920px;
-  padding: 24px;
+  // padding: 24px;
   margin: 72px auto 48px;
   // box-shadow: 0 8px 8px rgb(26 65 101 / 25%);
   position: relative;
 
-  @media screen and (min-width: 576px) {
-    padding: 48px 28px;
-  }
+  // @media screen and (min-width: 576px) {
+  //   padding: 48px 28px;
+  // }
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 72px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   margin-bottom: 72px;
+  // }
 }

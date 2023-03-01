@@ -6,12 +6,11 @@ import { ITopMenuLinks } from "../../../models/types";
 import TripleIcon from "../../general/TripleIcon/TripleIcon";
 import MenuLink from "../../ui/links/MenuLink/MenuLink";
 import LoginForm from "../LoginForm/LoginForm";
-
 import styles from "./TopMenu.module.scss";
+import topImage from "../../../assets/images/aboutFundTop.jpg";
 
 const TopMenu: FC = () => {
   const { isBackgroundWhite, setBackgroundWhite, isLoginFormVisible, setLoginFormVisible } = useContext(AuthContext);
-
   const [isPrivateOfficeHovered, setPrivateOfficeHovered] = useState(false);
   const pathname = useLocation().pathname;
 
@@ -28,7 +27,18 @@ const TopMenu: FC = () => {
   ];
 
   useEffect(() => {
-    if (pathname === "*") {
+    if (
+      pathname === "/" ||
+      pathname === "/axios" ||
+      pathname === "/css" ||
+      pathname === "/dom" ||
+      pathname === "/github" ||
+      pathname === "/html" ||
+      pathname === "/http" ||
+      pathname === "/javascript" ||
+      pathname === "/react" ||
+      pathname === "*"
+    ) {
       setBackgroundWhite(false);
     } else {
       setBackgroundWhite(true);
@@ -54,7 +64,10 @@ const TopMenu: FC = () => {
   };
 
   return (
-    <header className={isBackgroundWhite ? styles["top-menu__with-border"] : styles["top-menu"]}>
+    <header
+      className={isBackgroundWhite ? styles["top-menu__with-border"] : styles["top-menu"]}
+      style={{ backgroundImage: `url(${topImage})` }}
+    >
       <div className={styles["top-menu__container"]}>
         <div className={styles["top-menu__nav"]}>
           {TopMenuLinks.map((link) => (

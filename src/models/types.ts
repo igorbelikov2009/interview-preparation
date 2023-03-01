@@ -14,3 +14,8 @@ export interface ITripleIcon {
   light: boolean;
   hovered: boolean;
 }
+
+export interface ISidebarLink {
+  itemName: string;
+  id: string;
+}

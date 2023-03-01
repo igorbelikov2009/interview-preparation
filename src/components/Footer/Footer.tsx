@@ -17,20 +17,24 @@ const Footer = () => {
   ];
 
   const SecondBlock: IFooterLinks[] = [
-    { to: "/arraymethods", children: "Методы массивов" },
-    { to: "/arraytasks", children: "Задачи методов массивов" },
-    { to: "/browserlinks", children: "Браузерные ссылки" },
     { to: "/destructuring", children: "Деструктуризация" },
     { to: "/error", children: "Обработка ошибок" },
     { to: "/json", children: "Методы JSON" },
     { to: "/linksjavascript", children: "Ссылки JavaScript" },
-    { to: "/linksvue", children: "Ссылки Vue" },
+    { to: "/browserlinks", children: "Браузерные ссылки" },
     { to: "/objectmethods", children: "Методы объектов" },
+    { to: "/promise", children: "Промисы" },
   ];
 
-  const ThirdBlock: IFooterLinks[] = [{ to: "/promise", children: "Промисы" }];
+  const ThirdBlock: IFooterLinks[] = [
+    { to: "/linksvue", children: "Ссылки Vue" },
+    { to: "/vue", children: "Vue" },
+  ];
 
-  const FourthBlock: IFooterLinks[] = [{ to: "/vue", children: "Vue" }];
+  const FourthBlock: IFooterLinks[] = [
+    { to: "/arraymethods", children: "Методы массивов" },
+    { to: "/arraytasks", children: "Задачи методов массивов" },
+  ];
 
   return (
     <footer className={styles["footer"]}>
