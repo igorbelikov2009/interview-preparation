@@ -8,3 +8,9 @@ export interface IFooterLinks {
   children: string;
   to: string;
 }
+
+export interface ITripleIcon {
+  icon: string;
+  light: boolean;
+  hovered: boolean;
+}
