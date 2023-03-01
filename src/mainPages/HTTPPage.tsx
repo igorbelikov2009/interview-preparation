@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/dist/CommonStyles.css";
+import "../styles/CommonStyles.scss";
 
 const HTTPPage = () => {
   return <div>HTTPPage</div>;

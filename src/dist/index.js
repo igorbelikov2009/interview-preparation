@@ -3,7 +3,7 @@ exports.__esModule = true;
 var react_1 = require("react");
 var client_1 = require("react-dom/client");
 require("./styles/reset.css");
-require("./index.css");
+require("./styles/index.css");
 var App_1 = require("./App");
 var react_router_dom_1 = require("react-router-dom");
 var root = client_1["default"].createRoot(document.getElementById("root"));
