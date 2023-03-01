@@ -204,7 +204,7 @@ const BarPage = () => {
         </div>
 
         <div className={styles["bar-page__bar-container"]} ref={refBbarContainer}>
-          <aside className={barNavAbsolute ? styles["bar-page__bar-nav_absolute"] : styles["bar-page__bar-nav_fixed"]}>
+          <aside className={barNavAbsolute ? styles["bar-page__nav_absolute"] : styles["bar-page__nav_fixed"]}>
             <div className={styles["bar-page__bar-icon"]} style={{ top: `${iconTop * 48}px` }}>
               <DarkIcon icon="Arrow Down" />
             </div>
