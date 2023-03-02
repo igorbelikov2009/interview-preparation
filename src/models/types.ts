@@ -34,3 +34,9 @@ export interface IObjectHeadingAnswers {
   isParagraph?: boolean;
   isParagraphBefore?: boolean;
 }
+
+export interface ILinkInfo {
+  href: string;
+  title: string;
+  subtitle?: string;
+}

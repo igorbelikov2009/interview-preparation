@@ -16,9 +16,9 @@ const TopMenu: FC = () => {
 
   const TopMenuLinks: ITopMenuLinks[] = [
     { to: "/", children: "Общие вопросы" },
+    { to: "/websiteLayout", children: "Вёрстка web-сайтов" },
     { to: "/css", children: "CSS" },
     { to: "/html", children: "HTML" },
-    { to: "/http", children: "HTTP" },
     { to: "/javascript", children: "JavaScript" },
     { to: "/javascriptFishki", children: "JavaScript фишки" },
     { to: "/react", children: "React" },
@@ -30,14 +30,15 @@ const TopMenu: FC = () => {
   useEffect(() => {
     if (
       pathname === "/" ||
-      pathname === "/axios" ||
+      pathname === "/websiteLayout" ||
       pathname === "/css" ||
-      pathname === "/dom" ||
-      pathname === "/github" ||
       pathname === "/html" ||
-      pathname === "/http" ||
       pathname === "/javascript" ||
+      pathname === "/javascriptFishki" ||
       pathname === "/react" ||
+      pathname === "/reactFishki" ||
+      pathname === "/typescript" ||
+      pathname === "/typescriptFishki" ||
       pathname === "*"
     ) {
       setBackgroundWhite(false);

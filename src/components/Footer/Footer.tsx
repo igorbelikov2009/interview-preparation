@@ -6,9 +6,7 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   const FirstBlock: IFooterLinks[] = [
     { to: "/", children: "Общие вопросы" },
-    { to: "/css", children: "CSS" },
-    { to: "/html", children: "HTML" },
-    { to: "/http", children: "HTTP" },
+    { to: "/websiteLayout", children: "Вёрстка web-сайтов" },
     { to: "/javascript", children: "JavaScript" },
     { to: "/javascriptFishki", children: "JavaScript фишки" },
     { to: "/linksjavascript", children: "Ссылки JavaScript" },
@@ -28,6 +26,7 @@ const Footer = () => {
   ];
 
   const ThirdBlock: IFooterLinks[] = [
+    { to: "/http", children: "HTTP" },
     { to: "/axios", children: "Axios" },
     { to: "/linksvue", children: "Ссылки Vue" },
     { to: "/vue", children: "Vue" },
@@ -38,6 +37,8 @@ const Footer = () => {
   const FourthBlock: IFooterLinks[] = [
     { to: "/arraymethods", children: "Методы массивов" },
     { to: "/arraytasks", children: "Задачи методов массивов" },
+    { to: "/css", children: "CSS" },
+    { to: "/html", children: "HTML" },
   ];
 
   return (

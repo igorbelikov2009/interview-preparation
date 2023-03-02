@@ -4,9 +4,9 @@ var react_1 = require("react");
 var SidebarLink_1 = require("../../ui/links/SidebarLink/SidebarLink");
 var DarkIcon_1 = require("../DarkIcon/DarkIcon");
 var ExpandingAnswer_1 = require("../expanding/ExpandingAnswer/ExpandingAnswer");
-var BarPage_module_scss_1 = require("./BarPage.module.scss");
-var BarPage = function (_a) {
-    var ArrayHeadingAnswers = _a.ArrayHeadingAnswers;
+var PageBar_module_scss_1 = require("./PageBar.module.scss");
+var PageBar = function (_a) {
+    var title = _a.title, ArrayHeadingAnswers = _a.ArrayHeadingAnswers;
     var block1 = react_1.useRef(null);
     var block2 = react_1.useRef(null);
     var block3 = react_1.useRef(null);
@@ -122,9 +122,9 @@ var BarPage = function (_a) {
         }
     };
     /* Если не нравится эта логика, то можно использовать:
-       Якорное меню с плавной прокруткой в ​​ReactJS , подробное руководство.
-       https://medium.com/the-coders-guide-to-javascript/smooth-scrolling-anchor-menu-in-reactjs-175030d0bce2
-    */
+         Якорное меню с плавной прокруткой в ​​ReactJS , подробное руководство.
+         https://medium.com/the-coders-guide-to-javascript/smooth-scrolling-anchor-menu-in-reactjs-175030d0bce2
+      */
     var getIconTop = function () {
         if (scrollY >= h00 && scrollY < h00 + h01) {
             setIconTop(0);
@@ -159,23 +159,25 @@ var BarPage = function (_a) {
     var getValueId = function (id) {
         setIdSidebarLink(id);
     };
-    // =======================
-    return (react_1["default"].createElement("section", { className: BarPage_module_scss_1["default"]["bar-page"] },
-        react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__container"] },
-            react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__content"] },
-                react_1["default"].createElement("h1", { className: BarPage_module_scss_1["default"]["bar-page__heading"] }, "\u0412\u043E\u043F\u0440\u043E\u0441\u044B \u0438 \u043E\u0442\u0432\u0435\u0442\u044B"),
+    return (react_1["default"].createElement("section", { className: PageBar_module_scss_1["default"]["bar-page"] },
+        react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__container"] },
+            react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__content"] },
+                react_1["default"].createElement("h1", { className: PageBar_module_scss_1["default"]["bar-page__heading"] },
+                    " ",
+                    title,
+                    " "),
                 ArrayHeadingAnswers.map(function (item, index) { return (react_1["default"].createElement(ExpandingAnswer_1["default"], { key: index, heading: item.heading, answer: item.answer, isParagraph: true })); }),
-                react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u041F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435", ref: block1 }, "\u041F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435"),
-                react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u0421\u043E\u0432\u0435\u0442 \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u043E\u0432", ref: block2 }, "\u0421\u043E\u0432\u0435\u0442 \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u043E\u0432"),
-                react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u041A\u043E\u043C\u0430\u043D\u0434\u0430", ref: block3 }, "\u041A\u043E\u043C\u0430\u043D\u0434\u0430"),
-                react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u0420\u0435\u0432\u0438\u0437\u0438\u043E\u043D\u043D\u0430\u044F \u043A\u043E\u043C\u0438\u0441\u0441\u0438\u044F", ref: block4 }, "\u0420\u0435\u0432\u0438\u0437\u0438\u043E\u043D\u043D\u0430\u044F \u043A\u043E\u043C\u0438\u0441\u0441\u0438\u044F"),
-                react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u0431\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440", ref: block5 }, "\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u0431\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440"),
-                react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u041A\u043E\u043D\u0442\u0440\u043E\u043B\u0435\u0440", ref: block6 }, "\u041A\u043E\u043D\u0442\u0440\u043E\u043B\u0435\u0440"),
-                react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u0421\u043E\u0431\u0440\u0430\u043D\u0438\u0435 \u0430\u043A\u0446\u0438\u043E\u043D\u0435\u0440\u043E\u0432", ref: block7 }, "\u0421\u043E\u0431\u0440\u0430\u043D\u0438\u0435 \u0430\u043A\u0446\u0438\u043E\u043D\u0435\u0440\u043E\u0432")),
-            react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__bar-container"], ref: refBbarContainer },
-                react_1["default"].createElement("aside", { className: barNavAbsolute ? BarPage_module_scss_1["default"]["bar-page__nav_absolute"] : BarPage_module_scss_1["default"]["bar-page__nav_fixed"] },
-                    react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__bar-icon"], style: { top: iconTop * 48 + "px" } },
+                react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__department"], id: "\u041F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435", ref: block1 }, "\u041F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435"),
+                react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__department"], id: "\u0421\u043E\u0432\u0435\u0442 \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u043E\u0432", ref: block2 }, "\u0421\u043E\u0432\u0435\u0442 \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u043E\u0432"),
+                react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__department"], id: "\u041A\u043E\u043C\u0430\u043D\u0434\u0430", ref: block3 }, "\u041A\u043E\u043C\u0430\u043D\u0434\u0430"),
+                react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__department"], id: "\u0420\u0435\u0432\u0438\u0437\u0438\u043E\u043D\u043D\u0430\u044F \u043A\u043E\u043C\u0438\u0441\u0441\u0438\u044F", ref: block4 }, "\u0420\u0435\u0432\u0438\u0437\u0438\u043E\u043D\u043D\u0430\u044F \u043A\u043E\u043C\u0438\u0441\u0441\u0438\u044F"),
+                react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__department"], id: "\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u0431\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440", ref: block5 }, "\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u0431\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440"),
+                react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__department"], id: "\u041A\u043E\u043D\u0442\u0440\u043E\u043B\u0435\u0440", ref: block6 }, "\u041A\u043E\u043D\u0442\u0440\u043E\u043B\u0435\u0440"),
+                react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__department"], id: "\u0421\u043E\u0431\u0440\u0430\u043D\u0438\u0435 \u0430\u043A\u0446\u0438\u043E\u043D\u0435\u0440\u043E\u0432", ref: block7 }, "\u0421\u043E\u0431\u0440\u0430\u043D\u0438\u0435 \u0430\u043A\u0446\u0438\u043E\u043D\u0435\u0440\u043E\u0432")),
+            react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__bar-container"], ref: refBbarContainer },
+                react_1["default"].createElement("aside", { className: barNavAbsolute ? PageBar_module_scss_1["default"]["bar-page__nav_absolute"] : PageBar_module_scss_1["default"]["bar-page__nav_fixed"] },
+                    react_1["default"].createElement("div", { className: PageBar_module_scss_1["default"]["bar-page__bar-icon"], style: { top: iconTop * 48 + "px" } },
                         react_1["default"].createElement(DarkIcon_1["default"], { icon: "Arrow Down" })),
                     sidebarLinks.map(function (link, index) { return (react_1["default"].createElement(SidebarLink_1["default"], { key: index, itemName: link.itemName, id: link.id, isActive: index === Number(idSidebarLink), emitValueId: getValueId })); }))))));
 };
-exports["default"] = BarPage;
+exports["default"] = PageBar;

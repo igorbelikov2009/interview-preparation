@@ -26,6 +26,7 @@ import JavascriptFishkiPage from "../mainPages/JavascriptFishkiPage";
 import ReactFishkiPage from "../mainPages/ReactFishkiPage";
 import TypescriptPage from "../mainPages/TypescriptPage";
 import TypescriptFishkiPage from "../mainPages/TypescriptFishkiPage";
+import WebsiteLayout from "../mainPages/WebsiteLayout";
 
 const AppRouter: FC = () => {
   return (
@@ -55,6 +56,7 @@ const AppRouter: FC = () => {
         <Route path="vue" element={<VuePage />} />
         <Route path="typescript" element={<TypescriptPage />} />
         <Route path="typescriptFishki" element={<TypescriptFishkiPage />} />
+        <Route path="websiteLayout" element={<WebsiteLayout />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} /> */}

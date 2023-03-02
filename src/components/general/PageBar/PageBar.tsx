@@ -3,13 +3,14 @@ import { IObjectHeadingAnswers, ISidebarLink } from "../../../models/types";
 import SidebarLink from "../../ui/links/SidebarLink/SidebarLink";
 import DarkIcon from "../DarkIcon/DarkIcon";
 import ExpandingAnswer from "../expanding/ExpandingAnswer/ExpandingAnswer";
-import styles from "./BarPage.module.scss";
+import styles from "./PageBar.module.scss";
 
-interface BarPageProps {
+interface PageBarProps {
+  title: string;
   ArrayHeadingAnswers: IObjectHeadingAnswers[];
 }
 
-const BarPage: FC<BarPageProps> = ({ ArrayHeadingAnswers }) => {
+const PageBar: FC<PageBarProps> = ({ title, ArrayHeadingAnswers }) => {
   const block1 = useRef<HTMLDivElement>(null);
   const block2 = useRef<HTMLDivElement>(null);
   const block3 = useRef<HTMLDivElement>(null);
@@ -140,9 +141,9 @@ const BarPage: FC<BarPageProps> = ({ ArrayHeadingAnswers }) => {
   };
 
   /* Если не нравится эта логика, то можно использовать:
-     Якорное меню с плавной прокруткой в ​​ReactJS , подробное руководство.
-     https://medium.com/the-coders-guide-to-javascript/smooth-scrolling-anchor-menu-in-reactjs-175030d0bce2
-  */
+       Якорное меню с плавной прокруткой в ​​ReactJS , подробное руководство.
+       https://medium.com/the-coders-guide-to-javascript/smooth-scrolling-anchor-menu-in-reactjs-175030d0bce2
+    */
   const getIconTop = () => {
     if (scrollY >= h00 && scrollY < h00 + h01) {
       setIconTop(0);
@@ -174,13 +175,12 @@ const BarPage: FC<BarPageProps> = ({ ArrayHeadingAnswers }) => {
   const getValueId = (id: string) => {
     setIdSidebarLink(id);
   };
-  // =======================
 
   return (
     <section className={styles["bar-page"]}>
       <div className={styles["bar-page__container"]}>
         <div className={styles["bar-page__content"]}>
-          <h1 className={styles["bar-page__heading"]}>Вопросы и ответы</h1>
+          <h1 className={styles["bar-page__heading"]}> {title} </h1>
 
           {ArrayHeadingAnswers.map((item, index) => (
             <ExpandingAnswer key={index} heading={item.heading} answer={item.answer} isParagraph={true} />
@@ -237,4 +237,4 @@ const BarPage: FC<BarPageProps> = ({ ArrayHeadingAnswers }) => {
   );
 };
 
-export default BarPage;
+export default PageBar;
