@@ -1,10 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
-import { ISidebarLink } from "../../../models/types";
+import React, { FC, useEffect, useRef, useState } from "react";
+import { IObjectHeadingAnswers, ISidebarLink } from "../../../models/types";
 import SidebarLink from "../../ui/links/SidebarLink/SidebarLink";
 import DarkIcon from "../DarkIcon/DarkIcon";
+import ExpandingAnswer from "../expanding/ExpandingAnswer/ExpandingAnswer";
 import styles from "./BarPage.module.scss";
 
-const BarPage = () => {
+interface BarPageProps {
+  ArrayHeadingAnswers: IObjectHeadingAnswers[];
+}
+
+const BarPage: FC<BarPageProps> = ({ ArrayHeadingAnswers }) => {
   const block1 = useRef<HTMLDivElement>(null);
   const block2 = useRef<HTMLDivElement>(null);
   const block3 = useRef<HTMLDivElement>(null);
@@ -71,7 +76,6 @@ const BarPage = () => {
     getTopBarContainer();
     changeStyleBarNav();
     getIconTop();
-
     document.addEventListener("scroll", scrollHandler);
 
     // "Этот код срабатывает при размонтировании!
@@ -99,7 +103,8 @@ const BarPage = () => {
     if (barContainerTop > 0) {
       setBarNavAbsolute(true);
     } else {
-      setBarNavAbsolute(false);
+      // баг здесь ==============
+      // setBarNavAbsolute(false);
     }
   };
   // console.log(barNavAbsolute);
@@ -169,11 +174,18 @@ const BarPage = () => {
   const getValueId = (id: string) => {
     setIdSidebarLink(id);
   };
+  // =======================
 
   return (
     <section className={styles["bar-page"]}>
       <div className={styles["bar-page__container"]}>
         <div className={styles["bar-page__content"]}>
+          <h1 className={styles["bar-page__heading"]}>Вопросы и ответы</h1>
+
+          {ArrayHeadingAnswers.map((item, index) => (
+            <ExpandingAnswer key={index} heading={item.heading} answer={item.answer} isParagraph={true} />
+          ))}
+
           <div className={styles["bar-page__department"]} id="Правление" ref={block1}>
             Правление
           </div>

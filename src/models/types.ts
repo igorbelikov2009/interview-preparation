@@ -19,3 +19,18 @@ export interface ISidebarLink {
   itemName: string;
   id: string;
 }
+
+export interface IParagraph {
+  paragraphs?: string[];
+}
+
+export interface IParagraphBefore {
+  paragraphs: string[];
+}
+
+export interface IObjectHeadingAnswers {
+  heading: string;
+  answer: string[];
+  isParagraph?: boolean;
+  isParagraphBefore?: boolean;
+}

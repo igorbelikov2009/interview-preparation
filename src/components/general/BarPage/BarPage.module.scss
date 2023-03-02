@@ -7,6 +7,15 @@
     padding: 0 28px;
   }
 
+  &__heading {
+    font-size: 34px;
+    line-height: 48px;
+    color: #363636;
+    text-align: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #e6f0fa;
+  }
+
   &__container {
     max-width: 1160px;
     margin: 0 auto;
@@ -17,32 +26,28 @@
   &__content {
     width: 100%;
     max-width: 760px;
+    margin-top: 72px;
+
+    @media screen and (min-width: 944px) {
+      margin-top: 0;
+    }
   }
 
   &__department {
-    padding: 72px 24px 48px;
+    padding: 24px;
     border-bottom: 1px solid #e6f0fa;
     box-sizing: content-box;
     margin: 0 auto;
 
     @media screen and (min-width: 576px) {
-      padding: 72px 0 24px;
-    }
-
-    @media screen and (min-width: 944px) {
-      padding-top: 48px;
+      padding: 24px 0;
     }
   }
 
   &__bar-container {
-    width: 100%;
-    overflow-x: hidden;
-    // overflow-y: scroll;
-
     @media screen and (min-width: 944px) {
       width: 352px;
       margin-left: 48px;
-      // overflow: hidden;
     }
   }
 

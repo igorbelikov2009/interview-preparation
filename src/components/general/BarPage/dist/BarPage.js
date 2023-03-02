@@ -3,8 +3,10 @@ exports.__esModule = true;
 var react_1 = require("react");
 var SidebarLink_1 = require("../../ui/links/SidebarLink/SidebarLink");
 var DarkIcon_1 = require("../DarkIcon/DarkIcon");
+var ExpandingAnswer_1 = require("../expanding/ExpandingAnswer/ExpandingAnswer");
 var BarPage_module_scss_1 = require("./BarPage.module.scss");
-var BarPage = function () {
+var BarPage = function (_a) {
+    var ArrayHeadingAnswers = _a.ArrayHeadingAnswers;
     var block1 = react_1.useRef(null);
     var block2 = react_1.useRef(null);
     var block3 = react_1.useRef(null);
@@ -13,19 +15,19 @@ var BarPage = function () {
     var block6 = react_1.useRef(null);
     var block7 = react_1.useRef(null);
     var refBbarContainer = react_1.useRef(null);
-    var _a = react_1.useState(0), barContainerTop = _a[0], setBarContainerTop = _a[1];
-    var _b = react_1.useState(true), barNavAbsolute = _b[0], setBarNavAbsolute = _b[1];
-    var _c = react_1.useState("0"), idSidebarLink = _c[0], setIdSidebarLink = _c[1];
-    var _d = react_1.useState(0), iconTop = _d[0], setIconTop = _d[1];
+    var _b = react_1.useState(0), barContainerTop = _b[0], setBarContainerTop = _b[1];
+    var _c = react_1.useState(true), barNavAbsolute = _c[0], setBarNavAbsolute = _c[1];
+    var _d = react_1.useState("0"), idSidebarLink = _d[0], setIdSidebarLink = _d[1];
+    var _e = react_1.useState(0), iconTop = _e[0], setIconTop = _e[1];
     var h00 = react_1.useState(452)[0]; // высота (topBlock - 100px)
-    var _e = react_1.useState(0), h01 = _e[0], setH01 = _e[1];
-    var _f = react_1.useState(0), h02 = _f[0], setH02 = _f[1];
-    var _g = react_1.useState(0), h03 = _g[0], setH03 = _g[1];
-    var _h = react_1.useState(0), h04 = _h[0], setH04 = _h[1];
-    var _j = react_1.useState(0), h05 = _j[0], setH05 = _j[1];
-    var _k = react_1.useState(0), h06 = _k[0], setH06 = _k[1];
-    var _l = react_1.useState(0), h07 = _l[0], setH07 = _l[1];
-    var _m = react_1.useState(0), scrollY = _m[0], setScrollY = _m[1];
+    var _f = react_1.useState(0), h01 = _f[0], setH01 = _f[1];
+    var _g = react_1.useState(0), h02 = _g[0], setH02 = _g[1];
+    var _h = react_1.useState(0), h03 = _h[0], setH03 = _h[1];
+    var _j = react_1.useState(0), h04 = _j[0], setH04 = _j[1];
+    var _k = react_1.useState(0), h05 = _k[0], setH05 = _k[1];
+    var _l = react_1.useState(0), h06 = _l[0], setH06 = _l[1];
+    var _m = react_1.useState(0), h07 = _m[0], setH07 = _m[1];
+    var _o = react_1.useState(0), scrollY = _o[0], setScrollY = _o[1];
     var sidebarLinks = [
         { itemName: "Правление", id: "0" },
         { itemName: "Совет директоров", id: "1" },
@@ -91,7 +93,8 @@ var BarPage = function () {
             setBarNavAbsolute(true);
         }
         else {
-            setBarNavAbsolute(false);
+            // баг здесь ==============
+            // setBarNavAbsolute(false);
         }
     };
     // console.log(barNavAbsolute);
@@ -156,9 +159,12 @@ var BarPage = function () {
     var getValueId = function (id) {
         setIdSidebarLink(id);
     };
+    // =======================
     return (react_1["default"].createElement("section", { className: BarPage_module_scss_1["default"]["bar-page"] },
         react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__container"] },
             react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__content"] },
+                react_1["default"].createElement("h1", { className: BarPage_module_scss_1["default"]["bar-page__heading"] }, "\u0412\u043E\u043F\u0440\u043E\u0441\u044B \u0438 \u043E\u0442\u0432\u0435\u0442\u044B"),
+                ArrayHeadingAnswers.map(function (item, index) { return (react_1["default"].createElement(ExpandingAnswer_1["default"], { key: index, heading: item.heading, answer: item.answer, isParagraph: true })); }),
                 react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u041F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435", ref: block1 }, "\u041F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435"),
                 react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u0421\u043E\u0432\u0435\u0442 \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u043E\u0432", ref: block2 }, "\u0421\u043E\u0432\u0435\u0442 \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u043E\u0432"),
                 react_1["default"].createElement("div", { className: BarPage_module_scss_1["default"]["bar-page__department"], id: "\u041A\u043E\u043C\u0430\u043D\u0434\u0430", ref: block3 }, "\u041A\u043E\u043C\u0430\u043D\u0434\u0430"),
