@@ -1,7 +1,6 @@
 import React from "react";
 import Page from "../components/general/Page/Page";
 import { IObjectHeadingAnswers } from "../models/types";
-import "../styles/dist/CommonStyles.css";
 
 const GeneralIssues = () => {
   const ArrayHeadingAnswers: IObjectHeadingAnswers[] = [

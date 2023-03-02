@@ -16,14 +16,15 @@ const TopMenu: FC = () => {
 
   const TopMenuLinks: ITopMenuLinks[] = [
     { to: "/", children: "Общие вопросы" },
-    { to: "/axios", children: "Axios" },
     { to: "/css", children: "CSS" },
-    { to: "/dom", children: "DOM" },
-    { to: "/github", children: "GitHub" },
     { to: "/html", children: "HTML" },
     { to: "/http", children: "HTTP" },
     { to: "/javascript", children: "JavaScript" },
+    { to: "/javascriptFishki", children: "JavaScript фишки" },
     { to: "/react", children: "React" },
+    { to: "/reactFishki", children: "React фишки" },
+    { to: "/typescript", children: "Typescript" },
+    { to: "/typescriptFishki", children: "Typescript фишки" },
   ];
 
   useEffect(() => {

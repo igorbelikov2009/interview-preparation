@@ -15,14 +15,15 @@ var TopMenu = function () {
     var pathname = react_router_dom_1.useLocation().pathname;
     var TopMenuLinks = [
         { to: "/", children: "Общие вопросы" },
-        { to: "/axios", children: "Axios" },
         { to: "/css", children: "CSS" },
-        { to: "/dom", children: "DOM" },
-        { to: "/github", children: "GitHub" },
         { to: "/html", children: "HTML" },
         { to: "/http", children: "HTTP" },
         { to: "/javascript", children: "JavaScript" },
+        { to: "/javascriptFishki", children: "JavaScript фишки" },
         { to: "/react", children: "React" },
+        { to: "/reactFishki", children: "React фишки" },
+        { to: "/typescript", children: "Typescript" },
+        { to: "/typescriptFishki", children: "Typescript фишки" },
     ];
     react_1.useEffect(function () {
         if (pathname === "/" ||
