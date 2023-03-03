@@ -39,6 +39,8 @@ const Footer = () => {
     { to: "/arraytasks", children: "Задачи методов массивов" },
     { to: "/css", children: "CSS" },
     { to: "/html", children: "HTML" },
+    { to: "/barMenu", children: "Бар меню" },
+    { to: "/localStorage", children: "LocalStorage" },
   ];
 
   return (

@@ -27,6 +27,8 @@ import ReactFishkiPage from "../mainPages/ReactFishkiPage";
 import TypescriptPage from "../mainPages/TypescriptPage";
 import TypescriptFishkiPage from "../mainPages/TypescriptFishkiPage";
 import WebsiteLayout from "../mainPages/WebsiteLayout";
+import BarMenuPage from "../minorPages/BarMenuPage";
+import LocalStoragePage from "../minorPages/LocalStoragePage";
 
 const AppRouter: FC = () => {
   return (
@@ -57,6 +59,8 @@ const AppRouter: FC = () => {
         <Route path="typescript" element={<TypescriptPage />} />
         <Route path="typescriptFishki" element={<TypescriptFishkiPage />} />
         <Route path="websiteLayout" element={<WebsiteLayout />} />
+        <Route path="barMenu" element={<BarMenuPage />} />
+        <Route path="localStorage" element={<LocalStoragePage />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} /> */}

@@ -29,6 +29,8 @@ var ReactFishkiPage_1 = require("../mainPages/ReactFishkiPage");
 var TypescriptPage_1 = require("../mainPages/TypescriptPage");
 var TypescriptFishkiPage_1 = require("../mainPages/TypescriptFishkiPage");
 var WebsiteLayout_1 = require("../mainPages/WebsiteLayout");
+var BarMenuPage_1 = require("../minorPages/BarMenuPage");
+var LocalStoragePage_1 = require("../minorPages/LocalStoragePage");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -57,6 +59,8 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "typescript", element: react_1["default"].createElement(TypescriptPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "typescriptFishki", element: react_1["default"].createElement(TypescriptFishkiPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "websiteLayout", element: react_1["default"].createElement(WebsiteLayout_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "barMenu", element: react_1["default"].createElement(BarMenuPage_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "localStorage", element: react_1["default"].createElement(LocalStoragePage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;

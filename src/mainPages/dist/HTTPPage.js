@@ -26,18 +26,6 @@ var HTTPPage = function () {
             href: "https://developer.mozilla.org/en-US/docs/Glossary/cacheable",
             title: "Кэшируемый ответ HTTP"
         },
-        {
-            href: " ",
-            title: " "
-        },
-        {
-            href: " ",
-            title: " "
-        },
-        {
-            href: " ",
-            title: " "
-        },
     ];
     var ArrayHeadingAnswers = [
         {
@@ -186,94 +174,28 @@ var HTTPPage = function () {
             heading: "Кэшируемый ответ HTTP",
             answer: [
                 "Кэшируемый ответ — это HTTP-ответ, который можно кэшировать, который сохраняется для извлечения и использования позже, сохраняя новый запрос на сервер. Не все HTTP-ответы могут быть кэшированы.",
-                "Кэшируемые методы: GET, HEAD.",
-                "Некэшируемые методы: PUT, DELETE, часто POST",
+                " - Кэшируемые методы: GET, HEAD.",
+                " - Некэшируемые методы: PUT, DELETE, часто POST",
             ],
             isParagraph: true
         },
         {
-            heading: " ",
-            answer: [" ", " "],
+            heading: "URI URL URN",
+            answer: [
+                "URI - Uniform Resource Identifier. Унифицированный идентификатор ресурса. Включает в себя: URL и URN.",
+                "URI: https://github.com/pulls/mentioned ",
+                "URL - Uniform Resource Locator. Унифицированный определитель местонахождения ресурса.",
+                "URL: https://github.com/",
+                "URN - Uniform Resource Name. Унифицированное имя ресурса.",
+                "URN: /pulls/mentioned",
+            ],
             isParagraph: true
         },
         {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
-            isParagraph: true
-        },
-        {
-            heading: " ",
-            answer: [" ", " "],
+            heading: "Тело HTTP - сообщения.",
+            answer: [
+                "Тело HTTP - сообщения используется для передачи тела объекта запроса или тела объекта ответа. Тело сообщения может отсутствовать, но стартовая строка и заголовок являются обязательными элементами. Самым популярным типом тела сообщения является либо HTML, либо JSON.",
+            ],
             isParagraph: true
         },
     ];

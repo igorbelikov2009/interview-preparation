@@ -36,6 +36,8 @@ var Footer = function () {
         { to: "/arraytasks", children: "Задачи методов массивов" },
         { to: "/css", children: "CSS" },
         { to: "/html", children: "HTML" },
+        { to: "/barMenu", children: "Бар меню" },
+        { to: "/localStorage", children: "LocalStorage" },
     ];
     return (react_1["default"].createElement("footer", { className: Footer_module_scss_1["default"]["footer"] },
         react_1["default"].createElement("div", { className: Footer_module_scss_1["default"]["footer__nav"] },
