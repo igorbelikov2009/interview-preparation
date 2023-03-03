@@ -15,7 +15,6 @@ import BrowserLinksPage from "../minorPages/BrowserLinksPage";
 import DestructuringPage from "../minorPages/DestructuringPage";
 import ErrorProcessingPage from "../minorPages/ErrorProcessingPage";
 import JSONPage from "../minorPages/JSONPage";
-import LinksJavascriptPage from "../minorPages/LinksJavascriptPage";
 import LinksVuePage from "../minorPages/LinksVuePage";
 import NotfoundPage from "../minorPages/NotfoundPage";
 import ObjectMethodsPage from "../minorPages/ObjectMethodsPage";
@@ -51,7 +50,6 @@ const AppRouter: FC = () => {
         <Route path="destructuring" element={<DestructuringPage />} />
         <Route path="error" element={<ErrorProcessingPage />} />
         <Route path="json" element={<JSONPage />} />
-        <Route path="linksjavascript" element={<LinksJavascriptPage />} />
         <Route path="linksvue" element={<LinksVuePage />} />
         <Route path="objectMethods" element={<ObjectMethodsPage />} />
         <Route path="promise" element={<PromisePage />} />

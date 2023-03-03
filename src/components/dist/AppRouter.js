@@ -17,7 +17,6 @@ var BrowserLinksPage_1 = require("../minorPages/BrowserLinksPage");
 var DestructuringPage_1 = require("../minorPages/DestructuringPage");
 var ErrorProcessingPage_1 = require("../minorPages/ErrorProcessingPage");
 var JSONPage_1 = require("../minorPages/JSONPage");
-var LinksJavascriptPage_1 = require("../minorPages/LinksJavascriptPage");
 var LinksVuePage_1 = require("../minorPages/LinksVuePage");
 var NotfoundPage_1 = require("../minorPages/NotfoundPage");
 var ObjectMethodsPage_1 = require("../minorPages/ObjectMethodsPage");
@@ -51,7 +50,6 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "destructuring", element: react_1["default"].createElement(DestructuringPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "error", element: react_1["default"].createElement(ErrorProcessingPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "json", element: react_1["default"].createElement(JSONPage_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "linksjavascript", element: react_1["default"].createElement(LinksJavascriptPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "linksvue", element: react_1["default"].createElement(LinksVuePage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "objectMethods", element: react_1["default"].createElement(ObjectMethodsPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "promise", element: react_1["default"].createElement(PromisePage_1["default"], null) }),
