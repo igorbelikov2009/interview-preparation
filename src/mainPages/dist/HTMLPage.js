@@ -3,7 +3,6 @@ exports.__esModule = true;
 var react_1 = require("react");
 var Page_1 = require("../components/general/Page/Page");
 var PageLink_1 = require("../components/general/PageLink/PageLink");
-require("../styles/dist/CommonStyles.css");
 var HTMLPage = function () {
     var links = [
         {
