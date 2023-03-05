@@ -43,8 +43,120 @@ exports.linksGeneralIssues = [
         title: "Адаптивная верстка сайтов: обзор подходов и CSS фреймворков"
     },
     {
+        href: "https://active-vision.ru/blog/youtube-video-na-sayt/",
+        title: "Добавляем YouTube видео на сайт"
+    },
+    {
+        href: "https://fixer.io/",
+        title: "Иностранная валюта курсы и валюта конверсионный JSON-API"
+    },
+    {
+        href: "https://apilayer.com/account",
+        title: "Curated API Marketplace. Кураторская торговая площадка API"
+    },
+    {
+        href: "https://apilayer.com/marketplace/currency_data-api",
+        title: "Currency Data API. API данных валюты"
+    },
+    {
+        href: "https://apilayer.com/marketplace/exchangerates_data-api",
+        title: "Exchange Rates Data API. API данных обменных курсов"
+    },
+    {
+        href: "https://date-fns.org/v2.28.0/docs/Locale",
+        title: "Формат даты Locale (есть ещё лучше)"
+    },
+    {
+        href: "https://date-fns.org/v2.28.0/docs/format",
+        title: "Форматирование даты (есть ещё лучше)"
+    },
+    {
+        href: "http://www.lingoes.net/en/translator/langcode.htm",
+        title: "Формат даты Locale"
+    },
+    {
+        href: "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat",
+        title: "Intl.DateTimeFormat. Международный формат даты и времени"
+    },
+    {
+        href: "https://atuin.ru/blog/loadery-i-spinnery-na-css/",
+        title: "Сборник иконок лоадеров и спиннеров на CSS"
+    },
+    {
+        href: "https://atuin.ru/",
+        title: "СОЗДАНИЕ И ДОРАБОТКА САЙТОВ БЛОГ И ИНСТРУМЕНТЫ ДЛЯ ВЕБМАСТЕРОВ"
+    },
+    {
+        href: "https://html5book.ru/specsimvoly-html/",
+        title: "Спецсимволы HTML"
+    },
+    {
+        href: "https://symbl.cc/ru/html-entities/",
+        title: "Спецсимволы HTML-мнемоники"
+    },
+    {
+        href: "https://getemoji.com/",
+        title: "Copy and Paste Emoji. Скопируйте и вставьте эмодзи"
+    },
+    {
+        href: "https://developers.google.com/fonts/docs/material_icons#icon_font_for_the_web",
+        title: "Иконочный шрифт для Интернета. Установка, использование через Google Font"
+    },
+    {
+        href: "https://fonts.google.com/icons?selected=Material+Icons",
+        title: "Материальные иконки доступны в пяти стилях и различных загружаемых размерах и плотности. Иконки основаны на основных принципах и показателях Material Design."
+    },
+    {
+        href: "https://developers.google.com/fonts/docs/material_icons",
+        title: "Material Icons Guide. Обзор иконок материалов — где их взять и как интегрировать в свои проекты"
+    },
+    {
+        href: "https://jsonplaceholder.typicode.com/",
+        title: "{JSON} Placeholder"
+    },
+    {
+        href: "https://firebase.google.com/",
+        title: "Firebase."
+    },
+    {
+        href: "https://dwstroy.ru/stail/plaginy-rasshireniya/emmet-shpargalka/ ",
+        title: "EMMET ШПАРГАЛКА HTML, CSS. EMMET ШПАРГАЛКА ДЛЯ МОЛНИЕНОСНОСТНОЙ ВЕРСТКИ"
+    },
+    {
         href: " ",
         title: " "
+    },
+    {
+        href: " ",
+        title: " "
+    },
+    {
+        href: " ",
+        title: " "
+    },
+    {
+        href: "https://developer.mozilla.org/ru/",
+        title: "Веб-технологии для разработчиков"
+    },
+    {
+        href: "https://metanit.com/web/vuejs/2.2.php",
+        title: "Мощный сайт о программировании. MongoDB, Vue.js"
+    },
+    {
+        href: "https://www.geeksforgeeks.org/find-the-number-occurring-odd-number-of-times/",
+        title: "Задачи по javascript. geeksforgeeks"
+    },
+    {
+        href: "https://dev.to/thepracticaldev/series/1326",
+        title: "Задачи по javascript. Daily Challenge Series' Articles"
+    },
+    {
+        href: "https://www.codewars.com/kata/53f40dff5f9d31b813000774/train/javascript",
+        title: "Задачи по javascript. Kata Training"
+    },
+    {
+        href: "https://github.com/igorbelikov2009?tab=repositories",
+        title: "Мой репозиторий на гитхабе"
     },
 ];
 exports.arrayGeneralIssues = [

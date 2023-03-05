@@ -6,8 +6,8 @@ import { ILinkInfo, IObjectHeadingAnswers } from "../models/types";
 const AxiosPage = () => {
   const links: ILinkInfo[] = [
     {
-      href: " ",
-      title: " ",
+      href: "https://axios-http.com/ru/",
+      title: "Axios - простой HTTP-клиент для браузера и node.js на основе Promise.",
     },
     {
       href: " ",

@@ -6,8 +6,8 @@ var PageLink_1 = require("../components/general/PageLink/PageLink");
 var AxiosPage = function () {
     var links = [
         {
-            href: " ",
-            title: " "
+            href: "https://axios-http.com/ru/",
+            title: "Axios - простой HTTP-клиент для браузера и node.js на основе Promise."
         },
         {
             href: " ",
