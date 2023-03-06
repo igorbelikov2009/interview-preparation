@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import Page from "../components/general/Page/Page";
 import PageLink from "../components/general/PageLink/PageLink";
 import { arrayCSS, linksCSS } from "../data/cssData";
 
-const CSS = () => {
+const CSS: FC = () => {
   return (
     <div>
       <PageLink links={linksCSS} title="CSS ссылки" />

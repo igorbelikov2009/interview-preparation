@@ -18,11 +18,13 @@
   color: #363636;
   text-align: center;
   padding: 24px 0;
-  border-bottom: 1px solid #e6f0fa;
 }
 @media screen and (min-width: 576px) {
   .page__heading {
     font-size: 34px;
     line-height: 48px;
   }
+}
+.page__container-search-query {
+  margin-bottom: 36px;
 }

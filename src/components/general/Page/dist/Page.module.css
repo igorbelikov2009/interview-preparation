@@ -26,3 +26,6 @@
     line-height: 48px;
   }
 }
+.page__container-search-query {
+  margin-bottom: 12px;
+}

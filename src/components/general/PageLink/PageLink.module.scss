@@ -18,11 +18,14 @@
     color: #363636;
     text-align: center;
     padding: 24px 0;
-    border-bottom: 1px solid #e6f0fa;
 
     @media screen and (min-width: 576px) {
       font-size: 34px;
       line-height: 48px;
     }
+  }
+
+  &__container-search-query {
+    margin-bottom: 36px;
   }
 }
