@@ -24,7 +24,7 @@ const Page: FC<PageProps> = ({ title, ArrayHeadingAnswers }) => {
 
           <div className={styles["page__container-search-query"]}>
             <InputSearch
-              placeholder="Поиск по названию ссылок"
+              placeholder="Поиск по названию вопросов."
               searchQuery={searchQuery}
               setSearchQuery={setSearchQuery}
             />

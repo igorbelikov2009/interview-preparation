@@ -38,5 +38,4 @@ export interface IObjectHeadingAnswers {
 export interface ILinkInfo {
   href: string;
   title: string;
-  subtitle?: string;
 }

@@ -3,7 +3,7 @@ import { ILinkInfo } from "../../../models/types";
 import TripleIcon from "../TripleIcon/TripleIcon";
 import styles from "./LinkInfo.module.scss";
 
-const LinkInfo: FC<ILinkInfo> = ({ href, title, subtitle }) => {
+const LinkInfo: FC<ILinkInfo> = ({ href, title }) => {
   const [isHovered, setHovered] = useState(false);
 
   return (
@@ -21,8 +21,6 @@ const LinkInfo: FC<ILinkInfo> = ({ href, title, subtitle }) => {
 
       <div className={styles["link-info__row"]}>
         <p className={styles["link-info__title"]}>{title}</p>
-
-        <p className={styles["link-info__subtitle"]}>{subtitle}</p>
       </div>
     </a>
   );
