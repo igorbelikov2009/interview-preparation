@@ -14,10 +14,6 @@ exports.linksErrorProcessing = [
         href: "https://itchief.ru/javascript/try-catch",
         title: "Обработка ошибок, try...catch в JavaScript"
     },
-    {
-        href: " ",
-        title: " "
-    },
 ];
 exports.arrayErrorProcessing = [
     {
@@ -190,41 +186,6 @@ exports.arrayErrorProcessing = [
             " })",
             "При таком подходе ошибки в асинхронном коде обрабатываются так же, как в синхронном. В результате теперь, при необходимости, в одном блоке catch можно обрабатывать более широкий диапазон ошибок. ",
         ],
-        isParagraph: true
-    },
-    {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
-        isParagraph: true
-    },
-    {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
-        isParagraph: true
-    },
-    {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
-        isParagraph: true
-    },
-    {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
-        isParagraph: true
-    },
-    {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
-        isParagraph: true
-    },
-    {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
-        isParagraph: true
-    },
-    {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
         isParagraph: true
     },
     {
