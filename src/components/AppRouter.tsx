@@ -28,6 +28,8 @@ import TypescriptFishkiPage from "../mainPages/TypescriptFishki";
 import WebsiteLayout from "../mainPages/WebsiteLayout";
 import BarMenuPage from "../minorPages/BarMenu";
 import LocalStoragePage from "../minorPages/LocalStoragePage";
+import NumberMethods from "../minorPages/NumberMethods";
+import StringMethods from "../minorPages/StringMethods";
 
 const AppRouter: FC = () => {
   return (
@@ -59,6 +61,8 @@ const AppRouter: FC = () => {
         <Route path="websiteLayout" element={<WebsiteLayout />} />
         <Route path="barMenu" element={<BarMenuPage />} />
         <Route path="localStorage" element={<LocalStoragePage />} />
+        <Route path="numberMethods" element={<NumberMethods />} />
+        <Route path="stringMethods" element={<StringMethods />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} /> */}

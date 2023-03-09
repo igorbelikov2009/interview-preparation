@@ -30,6 +30,8 @@ var TypescriptFishki_1 = require("../mainPages/TypescriptFishki");
 var WebsiteLayout_1 = require("../mainPages/WebsiteLayout");
 var BarMenu_1 = require("../minorPages/BarMenu");
 var LocalStoragePage_1 = require("../minorPages/LocalStoragePage");
+var NumberMethods_1 = require("../minorPages/NumberMethods");
+var StringMethods_1 = require("../minorPages/StringMethods");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -59,6 +61,8 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "websiteLayout", element: react_1["default"].createElement(WebsiteLayout_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "barMenu", element: react_1["default"].createElement(BarMenu_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "localStorage", element: react_1["default"].createElement(LocalStoragePage_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "numberMethods", element: react_1["default"].createElement(NumberMethods_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "stringMethods", element: react_1["default"].createElement(StringMethods_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;

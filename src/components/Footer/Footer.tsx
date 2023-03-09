@@ -37,6 +37,8 @@ const Footer = () => {
   const FourthBlock: IFooterLinks[] = [
     { to: "/arraymethods", children: "Методы массивов" },
     { to: "/arraytasks", children: "Задачи методов массивов" },
+    { to: "/numberMethods", children: "Работа с числами" },
+    { to: "/stringMethods", children: "Методы строк" },
     { to: "/css", children: "CSS" },
     { to: "/html", children: "HTML" },
     { to: "/barMenu", children: "Бар меню" },
