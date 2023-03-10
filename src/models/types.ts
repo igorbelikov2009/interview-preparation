@@ -39,3 +39,8 @@ export interface ILinkInfo {
   href: string;
   title: string;
 }
+
+export interface IExpandingCode {
+  title: string;
+  descriptions: string[];
+}
