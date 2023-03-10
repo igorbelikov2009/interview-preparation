@@ -6,26 +6,6 @@ exports.linksNumberMethods = [
         href: "https://itchief.ru/javascript/numbers",
         title: "Работа с числами в JavaScript"
     },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
 ];
 exports.arrayNumberMethods = [
     {
@@ -326,38 +306,118 @@ exports.arrayNumberMethods = [
         isParagraph: true
     },
     {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
+        heading: "Форматирование чисел toLocaleString().",
+        answer: [
+            "Вывести число, в JavaScript,  в соответствии с региональными стандартами (языковыми настройками операционной системы), позволяет метод toLocaleString(). ",
+            "--- ",
+            "В соответствии с настройками установленными в системе: ",
+            " - const num = 345.46;",
+            " - const value = num.toLocaleString(); // '345,46'",
+            "--- ",
+            "Явно указав регион: ",
+            " - const value = (108.1).toLocaleString('ru-RU'); // '108,1'",
+            "--- ",
+            "Для отображения денежных величин: ",
+            "let value = (2540.125).toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }); // '2 540,13 ₽'",
+            " - value = (89.3).toLocaleString('ru-RU', { style: 'currency', currency: 'USD' }); // '89,30 $'",
+            " - value = (2301.99).toLocaleString('ru-RU', { style: 'currency', currency: 'EUR' }); // '2 301,99 €'",
+            "--- ",
+            "В процентном формате: ",
+            " - const value = (0.45).toLocaleString('ru-RU', { style: 'percent' }); // '45 %' ",
+            "--- ",
+            "С разделением групп разрядов (свойство useGrouping): ",
+            "const value = (125452.32).toLocaleString('ru-RU', { useGrouping: true }); // '125 452,32' ",
+            "--- ",
+            "С указанием числа десятичных знаков: ",
+            "const value = (1240.4564).toLocaleString('ru-RU', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); // '1 240,46' ",
+            "--- ",
+        ],
         isParagraph: true
     },
     {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
+        heading: "1. Пример, в котором напишем две функции для проверки числа соответственно на четность и не четность.",
+        answer: [
+            "// функция для проверки числа на чётность ",
+            "const isEven = (value) => { ",
+            " - return value % 2 === 0;",
+            "} ",
+            "--- ",
+            "// функция для проверки числа на нечётность ",
+            "const isOdd = (value) => { ",
+            " -  return Math.abs(value % 2) === 1;",
+            "} ",
+            "--- ",
+            "// А затем используем их в коде: ",
+            "const value = 20; ",
+            "if (Number.isInteger(value) && isEven(value)) { ",
+            " - console.log(`Число ${value} чётное!`);",
+            "} else if (Number.isInteger(value) && isOdd(value)) { ",
+            " - console.log(`Число ${value} не чётное!`);",
+            "} else { ",
+            " - console.log(`Значение ${value} не является целым числом!`);",
+            "} ",
+            "--- ",
+        ],
         isParagraph: true
     },
     {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
+        heading: "2. Пример на JavaScript в котором получим простые числа от 2 до 100: ",
+        answer: [
+            "// функция, определяющая является ли число простым ",
+            "const isPrime = (value) => { ",
+            " -  if (isNaN(value) || !isFinite(value) || value % 1 || value < 2) {",
+            " - - return false;",
+            " - }",
+            " - const max = Math.floor(Math.sqrt(value)); ",
+            " - for (let i = 2; i <= max; i++) { ",
+            " - - if (value % i === 0) {",
+            " - - return false;",
+            " - - }",
+            " - }",
+            " - return true;",
+            "} ",
+            "--- ",
+            "// массив, который будет содержать простые числа от 2 до 100 ",
+            "const primNums = []; ",
+            "for (let i = 2; i <= 100; i++) { ",
+            " - if (isPrime(i)) {",
+            " - primNums.push(i);",
+            " - }",
+            "} ",
+            "--- ",
+            "// выведем в консоль значение переменной primNums ",
+            "console.log(primNums); ",
+        ],
         isParagraph: true
     },
     {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
+        heading: "3. Пример, в котором вычислим целую и дробную часть числа: ",
+        answer: [
+            "const num = 7.21; ",
+            "// целая часть числа ",
+            "let intNum = Math.floor(num); // 7 ",
+            "// дробная часть числа ",
+            "let fractNum = num % 1; // 0.20999999999999996 ",
+            "// с точностью до 2 знаков ",
+            "fractNum = parseFloat((num % 1).toFixed(2)); // 0.21 ",
+            "// 2 способ ",
+            "fractNum = num - Math.floor(num); // 0.20999999999999996 ",
+            "--- ",
+            "В этом примере, получение целой части числа выполняется посредством Math.floor(), а дробной части с помощью получения остатка от деления на 1 или вычитания числа от его целой части. ",
+        ],
         isParagraph: true
     },
     {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
-        isParagraph: true
-    },
-    {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
-        isParagraph: true
-    },
-    {
-        heading: " ",
-        answer: [" ", " ", " ", " ", " ", " "],
+        heading: "4. Пример, в котором определим, делится ли число нацело, используя оператор %:",
+        answer: [
+            "const num = 9; ",
+            "// если остаток от деления на 3 значения переменной num равен 0, то, да, число целое; иначе нет ",
+            "if (num % 3 === 0) { ",
+            " console.log(`Число ${num} делится на 3`);",
+            " } else {",
+            " console.log(`Число ${num} не делится на 3 без остатка`);",
+            "} ",
+        ],
         isParagraph: true
     },
 ];
