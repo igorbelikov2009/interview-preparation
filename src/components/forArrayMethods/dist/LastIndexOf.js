@@ -7,9 +7,9 @@ require("../../styles/dist/expanding.css");
 var LinkInfo_1 = require("../general/LinkInfo/LinkInfo");
 var LastIndexOf = function () {
     var _a = react_1.useState(false), isVisible = _a[0], setVisible = _a[1];
-    var title = react_1.useState("Array.lastIndexOf() - метод возвращает последний индекс, по которому данный элемент может быть найден в массиве, или -1, если он отсутствует.")[0];
+    var title = react_1.useState("Array.lastIndexOf(item, from) - метод возвращает последний индекс, по которому данный элемент может быть найден в массиве, или -1, если он отсутствует.")[0];
     var descriptions = [
-        "Метод lastIndexOf() выполняет то же самое что indexOf(), только осуществляет это с конца.",
+        "Метод lastIndexOf() выполняет то же самое что indexOf(), только осуществляет это с конца, ищет справа налево.",
         "Метод lastIndexOf() возвращает последний индекс, по которому данный элемент может быть найден в массиве, или -1, если он отсутствует. Массив просматривается в обратном направлении, начиная с fromIndex.",
         "Синтаксис: ",
         "lastIndexOf(searchElement)",
@@ -39,9 +39,6 @@ var LastIndexOf = function () {
                         descriptions.map(function (item, index) { return (react_1["default"].createElement("p", { key: index, className: "expanding__paragraph" }, item)); }),
                     descriptionsBefore &&
                         descriptionsBefore.map(function (item, index) { return (react_1["default"].createElement("p", { key: index, className: "expanding__paragraph-before" }, item)); })),
-                react_1["default"].createElement("div", { className: "expanding__content" },
-                    react_1["default"].createElement("pre", { className: "expanding__pre" },
-                        react_1["default"].createElement("code", { className: "expanding__code" }, "xxx"))),
                 react_1["default"].createElement("div", { className: "expanding__content" },
                     react_1["default"].createElement("div", { className: "expanding__pre" },
                         react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "const nums = ['One', 'Two', 'Three', 'One'];"),

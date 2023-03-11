@@ -8,10 +8,10 @@ const LastIndexOf = () => {
   const [isVisible, setVisible] = useState(false);
 
   const [title] = useState(
-    "Array.lastIndexOf() - метод возвращает последний индекс, по которому данный элемент может быть найден в массиве, или -1, если он отсутствует."
+    "Array.lastIndexOf(item, from) - метод возвращает последний индекс, по которому данный элемент может быть найден в массиве, или -1, если он отсутствует."
   );
   const descriptions: string[] = [
-    "Метод lastIndexOf() выполняет то же самое что indexOf(), только осуществляет это с конца.",
+    "Метод lastIndexOf() выполняет то же самое что indexOf(), только осуществляет это с конца, ищет справа налево.",
     "Метод lastIndexOf() возвращает последний индекс, по которому данный элемент может быть найден в массиве, или -1, если он отсутствует. Массив просматривается в обратном направлении, начиная с fromIndex.",
     "Синтаксис: ",
     "lastIndexOf(searchElement)",
@@ -64,12 +64,6 @@ const LastIndexOf = () => {
                       {item}
                     </p>
                   ))}
-              </div>
-
-              <div className="expanding__content">
-                <pre className="expanding__pre">
-                  <code className="expanding__code">xxx</code>
-                </pre>
               </div>
 
               <div className="expanding__content">

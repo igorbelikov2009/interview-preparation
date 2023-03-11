@@ -1,8 +1,12 @@
 import React from "react";
 import Concat from "../components/forArrayMethods/Concat";
+import Filter from "../components/forArrayMethods/Filter";
+import Find from "../components/forArrayMethods/Find";
 import ForEach from "../components/forArrayMethods/ForEach";
+import Includes from "../components/forArrayMethods/Includes";
 import IndexOf from "../components/forArrayMethods/IndexOf";
 import LastIndexOf from "../components/forArrayMethods/LastIndexOf";
+import Map from "../components/forArrayMethods/Map";
 import Pop from "../components/forArrayMethods/Pop";
 import Push from "../components/forArrayMethods/Push";
 import Shift from "../components/forArrayMethods/Shift";
@@ -58,9 +62,21 @@ const ArrayMethodsPage = () => {
         <Splice />
         <Concat />
         <ForEach />
-        <h2 className="array-methods__subheading">Поиск в массиве (методы поиска в массиве)</h2>
+        <h2 className="array-methods__subheading">Поиск элемента в массиве.</h2>
         <IndexOf />
         <LastIndexOf />
+        <Includes />
+        <h2 className="array-methods__subheading">
+          Поиск одного (первого, который заставит функцию вернуть true) элемента (объекта) в массиве по заданному
+          условию.
+        </h2>
+        <Find />
+        <h2 className="array-methods__subheading">
+          Поиск всех элементов (объектов) в массиве, удовлетворящих заданному условию.
+        </h2>
+        <Filter />
+        <h2 className="array-methods__subheading">Преобразование массива.</h2>
+        <Map />
       </div>
     </section>
   );

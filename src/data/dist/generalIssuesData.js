@@ -146,6 +146,18 @@ exports.linksGeneralIssues = [
         href: "https://github.com/igorbelikov2009?tab=repositories",
         title: "Мой репозиторий на гитхабе"
     },
+    {
+        href: "https://www.youtube.com/@itgid",
+        title: "WebDev с нуля. Канал Алекса Лущенко"
+    },
+    {
+        href: "https://www.youtube.com/@northernlights1368",
+        title: "Northern Lights"
+    },
+    {
+        href: " ",
+        title: " "
+    },
 ];
 exports.arrayGeneralIssues = [
     {

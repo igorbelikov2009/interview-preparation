@@ -2,9 +2,13 @@
 exports.__esModule = true;
 var react_1 = require("react");
 var Concat_1 = require("../components/forArrayMethods/Concat");
+var Filter_1 = require("../components/forArrayMethods/Filter");
+var Find_1 = require("../components/forArrayMethods/Find");
 var ForEach_1 = require("../components/forArrayMethods/ForEach");
+var Includes_1 = require("../components/forArrayMethods/Includes");
 var IndexOf_1 = require("../components/forArrayMethods/IndexOf");
 var LastIndexOf_1 = require("../components/forArrayMethods/LastIndexOf");
+var Map_1 = require("../components/forArrayMethods/Map");
 var Pop_1 = require("../components/forArrayMethods/Pop");
 var Push_1 = require("../components/forArrayMethods/Push");
 var Shift_1 = require("../components/forArrayMethods/Shift");
@@ -54,8 +58,15 @@ var ArrayMethodsPage = function () {
             react_1["default"].createElement(Splice_1["default"], null),
             react_1["default"].createElement(Concat_1["default"], null),
             react_1["default"].createElement(ForEach_1["default"], null),
-            react_1["default"].createElement("h2", { className: "array-methods__subheading" }, "\u041F\u043E\u0438\u0441\u043A \u0432 \u043C\u0430\u0441\u0441\u0438\u0432\u0435 (\u043C\u0435\u0442\u043E\u0434\u044B \u043F\u043E\u0438\u0441\u043A\u0430 \u0432 \u043C\u0430\u0441\u0441\u0438\u0432\u0435)"),
+            react_1["default"].createElement("h2", { className: "array-methods__subheading" }, "\u041F\u043E\u0438\u0441\u043A \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430 \u0432 \u043C\u0430\u0441\u0441\u0438\u0432\u0435."),
             react_1["default"].createElement(IndexOf_1["default"], null),
-            react_1["default"].createElement(LastIndexOf_1["default"], null))));
+            react_1["default"].createElement(LastIndexOf_1["default"], null),
+            react_1["default"].createElement(Includes_1["default"], null),
+            react_1["default"].createElement("h2", { className: "array-methods__subheading" }, "\u041F\u043E\u0438\u0441\u043A \u043E\u0434\u043D\u043E\u0433\u043E (\u043F\u0435\u0440\u0432\u043E\u0433\u043E, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0437\u0430\u0441\u0442\u0430\u0432\u0438\u0442 \u0444\u0443\u043D\u043A\u0446\u0438\u044E \u0432\u0435\u0440\u043D\u0443\u0442\u044C true) \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430 (\u043E\u0431\u044A\u0435\u043A\u0442\u0430) \u0432 \u043C\u0430\u0441\u0441\u0438\u0432\u0435 \u043F\u043E \u0437\u0430\u0434\u0430\u043D\u043D\u043E\u043C\u0443 \u0443\u0441\u043B\u043E\u0432\u0438\u044E."),
+            react_1["default"].createElement(Find_1["default"], null),
+            react_1["default"].createElement("h2", { className: "array-methods__subheading" }, "\u041F\u043E\u0438\u0441\u043A \u0432\u0441\u0435\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 (\u043E\u0431\u044A\u0435\u043A\u0442\u043E\u0432) \u0432 \u043C\u0430\u0441\u0441\u0438\u0432\u0435, \u0443\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u044F\u0449\u0438\u0445 \u0437\u0430\u0434\u0430\u043D\u043D\u043E\u043C\u0443 \u0443\u0441\u043B\u043E\u0432\u0438\u044E."),
+            react_1["default"].createElement(Filter_1["default"], null),
+            react_1["default"].createElement("h2", { className: "array-methods__subheading" }, "\u041F\u0440\u0435\u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u0438\u0435 \u043C\u0430\u0441\u0441\u0438\u0432\u0430."),
+            react_1["default"].createElement(Map_1["default"], null))));
 };
 exports["default"] = ArrayMethodsPage;
