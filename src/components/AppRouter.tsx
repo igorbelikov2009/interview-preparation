@@ -30,6 +30,19 @@ import BarMenuPage from "../minorPages/BarMenu";
 import LocalStoragePage from "../minorPages/LocalStoragePage";
 import NumberMethods from "../minorPages/NumberMethods";
 import StringMethods from "../minorPages/StringMethods";
+import BrowserLinksGitHub from "../minorPages/BrowserLinksGitHub";
+import BrowserLinksFireBase from "../minorPages/BrowserLinksFireBase";
+import BrowserLinksDirectory from "../minorPages/BrowserLinksDirectory";
+import BrowserLinksCssFrameworks from "../minorPages/BrowserLinksCssFrameworks";
+import BrowserLinksTypescript from "../minorPages/BrowserLinksTypescript";
+import BrowserLinksReact from "../minorPages/BrowserLinksReact";
+import BrowserLinksNPM from "../minorPages/BrowserLinksNPM";
+import BrowserLinksIconsLoaders from "../minorPages/BrowserLinksIconsLoaders";
+import YouTubeTypescript from "../minorPages/YouTubeTypescript";
+import YouTubeReact from "../minorPages/YouTubeReact";
+import YouTubeInterview from "../minorPages/YouTubeInterview";
+import YouTubeAuthor from "../minorPages/YouTubeAuthor";
+import YouTube from "../minorPages/YouTube";
 
 const AppRouter: FC = () => {
   return (
@@ -64,8 +77,24 @@ const AppRouter: FC = () => {
         <Route path="numberMethods" element={<NumberMethods />} />
         <Route path="stringMethods" element={<StringMethods />} />
 
+        <Route path="browserLinksGitHub" element={<BrowserLinksGitHub />} />
+        <Route path="browserLinksFireBase" element={<BrowserLinksFireBase />} />
+        <Route path="browserLinksDirectory" element={<BrowserLinksDirectory />} />
+        <Route path="browserLinksCssFrameworks" element={<BrowserLinksCssFrameworks />} />
+        <Route path="browserLinksTypescript" element={<BrowserLinksTypescript />} />
+        <Route path="browserLinksReact" element={<BrowserLinksReact />} />
+        <Route path="browserLinksNPM" element={<BrowserLinksNPM />} />
+        <Route path="browserLinksIconsLoaders" element={<BrowserLinksIconsLoaders />} />
+        <Route path="youTubeTypescript" element={<YouTubeTypescript />} />
+        <Route path="youTubeReact" element={<YouTubeReact />} />
+        <Route path="youTubeInterview" element={<YouTubeInterview />} />
+        <Route path="youTubeAuthor" element={<YouTubeAuthor />} />
+        <Route path="youTube" element={<YouTube />} />
+
         {/* <Route path="" element={<NotfoundPage />} />
+        <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} /> */}
+
         <Route path="*" element={<NotfoundPage />} />
       </Route>
     </Routes>

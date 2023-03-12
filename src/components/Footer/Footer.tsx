@@ -12,6 +12,9 @@ const Footer = () => {
     { to: "/linksjavascript", children: "Ссылки JavaScript" },
     { to: "/react", children: "React" },
     { to: "/reactFishki", children: "React фишки" },
+    { to: "/http", children: "HTTP" },
+    { to: "/axios", children: "Axios" },
+    { to: "/linksvue", children: "Ссылки Vue" },
   ];
 
   const SecondBlock: IFooterLinks[] = [
@@ -26,15 +29,9 @@ const Footer = () => {
   ];
 
   const ThirdBlock: IFooterLinks[] = [
-    { to: "/http", children: "HTTP" },
-    { to: "/axios", children: "Axios" },
-    { to: "/linksvue", children: "Ссылки Vue" },
     { to: "/vue", children: "Vue" },
     { to: "/dom", children: "DOM" },
     { to: "/github", children: "GitHub" },
-  ];
-
-  const FourthBlock: IFooterLinks[] = [
     { to: "/arraymethods", children: "Методы массивов" },
     { to: "/arraytasks", children: "Задачи методов массивов" },
     { to: "/numberMethods", children: "Работа с числами" },
@@ -43,6 +40,22 @@ const Footer = () => {
     { to: "/html", children: "HTML" },
     { to: "/barMenu", children: "Бар меню" },
     { to: "/localStorage", children: "LocalStorage" },
+  ];
+
+  const FourthBlock: IFooterLinks[] = [
+    { to: "/browserLinksGitHub", children: "Ссылки на GitHub" },
+    { to: "/browserLinksFireBase", children: "Ссылки на FireBase" },
+    { to: "/browserLinksDirectory", children: "Ссылки на справочники" },
+    { to: "/browserLinksCssFrameworks", children: "Ссылки на фреймворки CSS" },
+    { to: "/browserLinksTypescript", children: "Ссылки на Typescript" },
+    { to: "/browserLinksReact", children: "Ссылки на React" },
+    { to: "/browserLinksNPM", children: "Ссылки на npm" },
+    { to: "/browserLinksIconsLoaders", children: "Ссылки на иконки, спинеры" },
+    { to: "/youTubeTypescript", children: "На YouTube Typescript" },
+    { to: "/youTubeReact", children: "На YouTube React" },
+    { to: "/youTubeInterview", children: "На YouTube собеседования" },
+    { to: "/youTubeAuthor", children: "На YouTube авторы" },
+    { to: "/youTube", children: "На YouTube " },
   ];
 
   return (

@@ -12,6 +12,9 @@ var Footer = function () {
         { to: "/linksjavascript", children: "Ссылки JavaScript" },
         { to: "/react", children: "React" },
         { to: "/reactFishki", children: "React фишки" },
+        { to: "/http", children: "HTTP" },
+        { to: "/axios", children: "Axios" },
+        { to: "/linksvue", children: "Ссылки Vue" },
     ];
     var SecondBlock = [
         { to: "/typescript", children: "Typescript" },
@@ -24,14 +27,9 @@ var Footer = function () {
         { to: "/promise", children: "Промисы" },
     ];
     var ThirdBlock = [
-        { to: "/http", children: "HTTP" },
-        { to: "/axios", children: "Axios" },
-        { to: "/linksvue", children: "Ссылки Vue" },
         { to: "/vue", children: "Vue" },
         { to: "/dom", children: "DOM" },
         { to: "/github", children: "GitHub" },
-    ];
-    var FourthBlock = [
         { to: "/arraymethods", children: "Методы массивов" },
         { to: "/arraytasks", children: "Задачи методов массивов" },
         { to: "/numberMethods", children: "Работа с числами" },
@@ -40,6 +38,21 @@ var Footer = function () {
         { to: "/html", children: "HTML" },
         { to: "/barMenu", children: "Бар меню" },
         { to: "/localStorage", children: "LocalStorage" },
+    ];
+    var FourthBlock = [
+        { to: "/browserLinksGitHub", children: "Ссылки на GitHub" },
+        { to: "/browserLinksFireBase", children: "Ссылки на FireBase" },
+        { to: "/browserLinksDirectory", children: "Ссылки на справочники" },
+        { to: "/browserLinksCssFrameworks", children: "Ссылки на фреймворки CSS" },
+        { to: "/browserLinksTypescript", children: "Ссылки на Typescript" },
+        { to: "/browserLinksReact", children: "Ссылки на React" },
+        { to: "/browserLinksNPM", children: "Ссылки на npm" },
+        { to: "/browserLinksIconsLoaders", children: "Ссылки на иконки, спинеры" },
+        { to: "/youTubeTypescript", children: "На YouTube Typescript" },
+        { to: "/youTubeReact", children: "На YouTube React" },
+        { to: "/youTubeInterview", children: "На YouTube собеседования" },
+        { to: "/youTubeAuthor", children: "На YouTube авторы" },
+        { to: "/youTube", children: "На YouTube " },
     ];
     return (react_1["default"].createElement("footer", { className: Footer_module_scss_1["default"]["footer"] },
         react_1["default"].createElement("div", { className: Footer_module_scss_1["default"]["footer__nav"] },

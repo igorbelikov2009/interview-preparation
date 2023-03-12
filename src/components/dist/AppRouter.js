@@ -32,6 +32,19 @@ var BarMenu_1 = require("../minorPages/BarMenu");
 var LocalStoragePage_1 = require("../minorPages/LocalStoragePage");
 var NumberMethods_1 = require("../minorPages/NumberMethods");
 var StringMethods_1 = require("../minorPages/StringMethods");
+var BrowserLinksGitHub_1 = require("../minorPages/BrowserLinksGitHub");
+var BrowserLinksFireBase_1 = require("../minorPages/BrowserLinksFireBase");
+var BrowserLinksDirectory_1 = require("../minorPages/BrowserLinksDirectory");
+var BrowserLinksCssFrameworks_1 = require("../minorPages/BrowserLinksCssFrameworks");
+var BrowserLinksTypescript_1 = require("../minorPages/BrowserLinksTypescript");
+var BrowserLinksReact_1 = require("../minorPages/BrowserLinksReact");
+var BrowserLinksNPM_1 = require("../minorPages/BrowserLinksNPM");
+var BrowserLinksIconsLoaders_1 = require("../minorPages/BrowserLinksIconsLoaders");
+var YouTubeTypescript_1 = require("../minorPages/YouTubeTypescript");
+var YouTubeReact_1 = require("../minorPages/YouTubeReact");
+var YouTubeInterview_1 = require("../minorPages/YouTubeInterview");
+var YouTubeAuthor_1 = require("../minorPages/YouTubeAuthor");
+var YouTube_1 = require("../minorPages/YouTube");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -63,6 +76,19 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "localStorage", element: react_1["default"].createElement(LocalStoragePage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "numberMethods", element: react_1["default"].createElement(NumberMethods_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "stringMethods", element: react_1["default"].createElement(StringMethods_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksGitHub", element: react_1["default"].createElement(BrowserLinksGitHub_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksFireBase", element: react_1["default"].createElement(BrowserLinksFireBase_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksDirectory", element: react_1["default"].createElement(BrowserLinksDirectory_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksCssFrameworks", element: react_1["default"].createElement(BrowserLinksCssFrameworks_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksTypescript", element: react_1["default"].createElement(BrowserLinksTypescript_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksReact", element: react_1["default"].createElement(BrowserLinksReact_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksNPM", element: react_1["default"].createElement(BrowserLinksNPM_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksIconsLoaders", element: react_1["default"].createElement(BrowserLinksIconsLoaders_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeTypescript", element: react_1["default"].createElement(YouTubeTypescript_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeReact", element: react_1["default"].createElement(YouTubeReact_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeInterview", element: react_1["default"].createElement(YouTubeInterview_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeAuthor", element: react_1["default"].createElement(YouTubeAuthor_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "youTube", element: react_1["default"].createElement(YouTube_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;

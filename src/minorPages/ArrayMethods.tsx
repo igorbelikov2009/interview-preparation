@@ -1,4 +1,5 @@
 import React from "react";
+import ArrayIsArray from "../components/forArrayMethods/ArrayIsArray";
 import Concat from "../components/forArrayMethods/Concat";
 import Filter from "../components/forArrayMethods/Filter";
 import Find from "../components/forArrayMethods/Find";
@@ -10,6 +11,7 @@ import IndexOf from "../components/forArrayMethods/IndexOf";
 import Join from "../components/forArrayMethods/Join";
 import LastIndexOf from "../components/forArrayMethods/LastIndexOf";
 import Map from "../components/forArrayMethods/Map";
+import MethodList from "../components/forArrayMethods/MethodList";
 import Pop from "../components/forArrayMethods/Pop";
 import Push from "../components/forArrayMethods/Push";
 import Reduce from "../components/forArrayMethods/Reduce";
@@ -91,6 +93,9 @@ const ArrayMethodsPage = () => {
         <Split />
         <h2 className="array-methods__subheading">Вычисление единого значения на основе всего массива.</h2>
         <Reduce />
+        <h2 className="array-methods__subheading">Проверка массива.</h2>
+        <ArrayIsArray />
+        <MethodList />
       </div>
     </section>
   );
