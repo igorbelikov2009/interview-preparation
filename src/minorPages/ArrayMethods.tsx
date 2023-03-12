@@ -2,16 +2,22 @@ import React from "react";
 import Concat from "../components/forArrayMethods/Concat";
 import Filter from "../components/forArrayMethods/Filter";
 import Find from "../components/forArrayMethods/Find";
+import For from "../components/forArrayMethods/For";
 import ForEach from "../components/forArrayMethods/ForEach";
+import ForOf from "../components/forArrayMethods/ForOf";
 import Includes from "../components/forArrayMethods/Includes";
 import IndexOf from "../components/forArrayMethods/IndexOf";
+import Join from "../components/forArrayMethods/Join";
 import LastIndexOf from "../components/forArrayMethods/LastIndexOf";
 import Map from "../components/forArrayMethods/Map";
 import Pop from "../components/forArrayMethods/Pop";
 import Push from "../components/forArrayMethods/Push";
+import Reduce from "../components/forArrayMethods/Reduce";
 import Shift from "../components/forArrayMethods/Shift";
 import Slice from "../components/forArrayMethods/Slice";
+import Sort from "../components/forArrayMethods/Sort";
 import Splice from "../components/forArrayMethods/Splice";
+import Split from "../components/forArrayMethods/Split";
 import Unshift from "../components/forArrayMethods/Unshift";
 import PageLink from "../components/general/PageLink/PageLink";
 import { ILinkInfo } from "../models/types";
@@ -40,8 +46,12 @@ const ArrayMethodsPage = () => {
       title: "Массивы в JavaScript",
     },
     {
-      href: "https://only-to-top.ru/blog/coding/2020-12-30-js-array-cheatsheet.html ",
+      href: "https://only-to-top.ru/blog/coding/2020-12-30-js-array-cheatsheet.html",
       title: "Методы массивов",
+    },
+    {
+      href: "https://habr.com/ru/post/247857/",
+      title: "Все способы перебора массива в JavaScript",
     },
   ];
 
@@ -49,10 +59,8 @@ const ArrayMethodsPage = () => {
     <section className="array-methods">
       <div className="array-methods__container">
         <PageLink links={linksArrayMethods} title="Методы массивов, ссылки" />
-
         <h1 className="array-methods__heading"> Методы массивов </h1>
         <h2 className="array-methods__subheading"> Добавление/удаление элементов</h2>
-
         <Push />
         <Unshift />
         <Pop />
@@ -61,22 +69,28 @@ const ArrayMethodsPage = () => {
         <Slice />
         <Splice />
         <Concat />
+        <h2 className="array-methods__subheading">Перебор массива.</h2>
+        <For />
+        <ForOf />
         <ForEach />
         <h2 className="array-methods__subheading">Поиск элемента в массиве.</h2>
         <IndexOf />
         <LastIndexOf />
         <Includes />
-        <h2 className="array-methods__subheading">
-          Поиск одного (первого, который заставит функцию вернуть true) элемента (объекта) в массиве по заданному
-          условию.
-        </h2>
+        <h2 className="array-methods__subheading">Поиск первого элемента в массиве по заданному условию.</h2>
         <Find />
-        <h2 className="array-methods__subheading">
-          Поиск всех элементов (объектов) в массиве, удовлетворящих заданному условию.
-        </h2>
+        <h2 className="array-methods__subheading">Поиск всех элементов в массиве, удовлетворящих заданному условию.</h2>
         <Filter />
         <h2 className="array-methods__subheading">Преобразование массива.</h2>
         <Map />
+        <Sort />
+        <h2 className="array-methods__subheading">
+          Преобразование массива в строку и обратно: методы join() и split().
+        </h2>
+        <Join />
+        <Split />
+        <h2 className="array-methods__subheading">Вычисление единого значения на основе всего массива.</h2>
+        <Reduce />
       </div>
     </section>
   );
