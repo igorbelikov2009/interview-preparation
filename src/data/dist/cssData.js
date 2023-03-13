@@ -3,6 +3,14 @@ exports.__esModule = true;
 exports.arrayCSS = exports.linksCSS = void 0;
 exports.linksCSS = [
     {
+        href: "https://www.npmjs.com/package/node-sass",
+        title: "npm i node-sass"
+    },
+    {
+        href: " ",
+        title: " "
+    },
+    {
         href: "https://active-vision.ru/icon/box-shadow/",
         title: "CSS BOX-SHADOW ГЕНЕРАТОР"
     },

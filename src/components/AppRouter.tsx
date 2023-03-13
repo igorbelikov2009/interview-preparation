@@ -43,6 +43,11 @@ import YouTubeReact from "../minorPages/YouTubeReact";
 import YouTubeInterview from "../minorPages/YouTubeInterview";
 import YouTubeAuthor from "../minorPages/YouTubeAuthor";
 import YouTube from "../minorPages/YouTube";
+import YouTubeCSS from "../minorPages/YouTubeCSS";
+import YouTubeJavascript from "../minorPages/YouTubeJavascript";
+import YouTubeJavascriptFishki from "../minorPages/YouTubeJavascriptFishki";
+import BrowserLinksCSSFishki from "../minorPages/BrowserLinksCSSFishki";
+import Mobx from "../minorPages/Mobx";
 
 const AppRouter: FC = () => {
   return (
@@ -76,7 +81,6 @@ const AppRouter: FC = () => {
         <Route path="localStorage" element={<LocalStoragePage />} />
         <Route path="numberMethods" element={<NumberMethods />} />
         <Route path="stringMethods" element={<StringMethods />} />
-
         <Route path="browserLinksGitHub" element={<BrowserLinksGitHub />} />
         <Route path="browserLinksFireBase" element={<BrowserLinksFireBase />} />
         <Route path="browserLinksDirectory" element={<BrowserLinksDirectory />} />
@@ -90,6 +94,11 @@ const AppRouter: FC = () => {
         <Route path="youTubeInterview" element={<YouTubeInterview />} />
         <Route path="youTubeAuthor" element={<YouTubeAuthor />} />
         <Route path="youTube" element={<YouTube />} />
+        <Route path="youTubeCSS" element={<YouTubeCSS />} />
+        <Route path="youTubeJavascript" element={<YouTubeJavascript />} />
+        <Route path="youTubeJavascriptFishki" element={<YouTubeJavascriptFishki />} />
+        <Route path="browserLinksCSSFishki" element={<BrowserLinksCSSFishki />} />
+        <Route path="mobx" element={<Mobx />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} />

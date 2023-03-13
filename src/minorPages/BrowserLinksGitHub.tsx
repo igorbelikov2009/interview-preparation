@@ -5,16 +5,16 @@ import { ILinkInfo } from "../models/types";
 const BrowserLinksGitHub = () => {
   const links: ILinkInfo[] = [
     {
-      href: "",
-      title: "",
+      href: "https://github.com/Shkulipa/online-store",
+      title: "Shkulipa/online-storePublic. Онлайн-магазин, который я делал",
     },
     {
-      href: "",
-      title: "",
+      href: "https://github.com/utimur/online-store-full-course",
+      title: "utimur/online-store-full-coursePublic. Онлайн-магазин, который я делал",
     },
     {
-      href: "",
-      title: "",
+      href: "https://github.com/igorbelikov2009?tab=repositories",
+      title: "Мой репозиторий на гитхабе.",
     },
     {
       href: "",

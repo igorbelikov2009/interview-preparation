@@ -45,6 +45,11 @@ var YouTubeReact_1 = require("../minorPages/YouTubeReact");
 var YouTubeInterview_1 = require("../minorPages/YouTubeInterview");
 var YouTubeAuthor_1 = require("../minorPages/YouTubeAuthor");
 var YouTube_1 = require("../minorPages/YouTube");
+var YouTubeCSS_1 = require("../minorPages/YouTubeCSS");
+var YouTubeJavascript_1 = require("../minorPages/YouTubeJavascript");
+var YouTubeJavascriptFishki_1 = require("../minorPages/YouTubeJavascriptFishki");
+var BrowserLinksCSSFishki_1 = require("../minorPages/BrowserLinksCSSFishki");
+var Mobx_1 = require("../minorPages/Mobx");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -89,6 +94,11 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeInterview", element: react_1["default"].createElement(YouTubeInterview_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeAuthor", element: react_1["default"].createElement(YouTubeAuthor_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTube", element: react_1["default"].createElement(YouTube_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeCSS", element: react_1["default"].createElement(YouTubeCSS_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeJavascript", element: react_1["default"].createElement(YouTubeJavascript_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeJavascriptFishki", element: react_1["default"].createElement(YouTubeJavascriptFishki_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksCSSFishki", element: react_1["default"].createElement(BrowserLinksCSSFishki_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "mobx", element: react_1["default"].createElement(Mobx_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;

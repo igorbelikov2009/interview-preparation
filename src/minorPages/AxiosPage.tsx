@@ -10,6 +10,22 @@ const AxiosPage = () => {
       title: "Axios - простой HTTP-клиент для браузера и node.js на основе Promise.",
     },
     {
+      href: "https://dev.to/mperon/axios-error-handling-like-a-boss-333d",
+      title: "Axios и обработка ошибок как",
+    },
+    {
+      href: "https://www.digitalocean.com/community/tutorials/react-axios-react-ru",
+      title: "Использование Axios с React",
+    },
+    {
+      href: " ",
+      title: " ",
+    },
+    {
+      href: " ",
+      title: " ",
+    },
+    {
       href: " ",
       title: " ",
     },

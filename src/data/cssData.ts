@@ -2,6 +2,14 @@ import { ILinkInfo, IObjectHeadingAnswers } from "../models/types";
 
 export const linksCSS: ILinkInfo[] = [
   {
+    href: "https://www.npmjs.com/package/node-sass",
+    title: "npm i node-sass",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
     href: "https://active-vision.ru/icon/box-shadow/",
     title: "CSS BOX-SHADOW ГЕНЕРАТОР",
   },

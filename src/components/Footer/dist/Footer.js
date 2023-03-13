@@ -14,6 +14,7 @@ var Footer = function () {
         { to: "/reactFishki", children: "React фишки" },
         { to: "/http", children: "HTTP" },
         { to: "/axios", children: "Axios" },
+        { to: "/mobx", children: "Mobx" },
         { to: "/linksvue", children: "Ссылки Vue" },
     ];
     var SecondBlock = [
@@ -40,6 +41,7 @@ var Footer = function () {
         { to: "/localStorage", children: "LocalStorage" },
     ];
     var FourthBlock = [
+        { to: "/browserLinksCSSFishki", children: "Ссылки на фишки CSS" },
         { to: "/browserLinksGitHub", children: "Ссылки на GitHub" },
         { to: "/browserLinksFireBase", children: "Ссылки на FireBase" },
         { to: "/browserLinksDirectory", children: "Ссылки на справочники" },
@@ -48,11 +50,14 @@ var Footer = function () {
         { to: "/browserLinksReact", children: "Ссылки на React" },
         { to: "/browserLinksNPM", children: "Ссылки на npm" },
         { to: "/browserLinksIconsLoaders", children: "Ссылки на иконки, спинеры" },
-        { to: "/youTubeTypescript", children: "На YouTube Typescript" },
-        { to: "/youTubeReact", children: "На YouTube React" },
-        { to: "/youTubeInterview", children: "На YouTube собеседования" },
+        { to: "/youTube", children: "На YouTube" },
         { to: "/youTubeAuthor", children: "На YouTube авторы" },
-        { to: "/youTube", children: "На YouTube " },
+        { to: "/youTubeCSS", children: "На YouTube CSS-фишки" },
+        { to: "/youTubeJavascript", children: "На YouTube Javascript" },
+        { to: "/youTubeJavascriptFishki", children: "На YouTube Javascript-фишки" },
+        { to: "/youTubeReact", children: "На YouTube React" },
+        { to: "/youTubeTypescript", children: "На YouTube Typescript" },
+        { to: "/youTubeInterview", children: "На YouTube собеседования" },
     ];
     return (react_1["default"].createElement("footer", { className: Footer_module_scss_1["default"]["footer"] },
         react_1["default"].createElement("div", { className: Footer_module_scss_1["default"]["footer__nav"] },
