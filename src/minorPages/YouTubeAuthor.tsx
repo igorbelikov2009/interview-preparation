@@ -38,7 +38,7 @@ const YouTubeAuthor = () => {
     },
     {
       href: "https://www.youtube.com/@public_code_/videos",
-      title: "Public Code. 139 видео про React",
+      title: "Public Code. 139 видео про React. Много typescript: работы и элементы. ",
     },
     {
       href: "https://www.youtube.com/@romanchebotaev/videos",
@@ -55,6 +55,46 @@ const YouTubeAuthor = () => {
     {
       href: "https://www.youtube.com/@ITKAMASUTRA/videos",
       title: "IT-KAMASUTRA. 486 видео ",
+    },
+    {
+      href: "https://www.youtube.com/@webstack-frontend1697",
+      title: "WebStack - Frontend. Артем Карпухов. 22 видео. ",
+    },
+    {
+      href: "",
+      title: "",
+    },
+    {
+      href: "",
+      title: "",
+    },
+    {
+      href: "",
+      title: "",
+    },
+    {
+      href: "",
+      title: "",
+    },
+    {
+      href: "",
+      title: "",
+    },
+    {
+      href: "",
+      title: "",
+    },
+    {
+      href: "",
+      title: "",
+    },
+    {
+      href: "",
+      title: "",
+    },
+    {
+      href: "",
+      title: "",
     },
     {
       href: "",

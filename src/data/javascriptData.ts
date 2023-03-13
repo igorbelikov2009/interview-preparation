@@ -2,6 +2,10 @@ import { ILinkInfo, IObjectHeadingAnswers } from "../models/types";
 
 export const linksJavascript: ILinkInfo[] = [
   {
+    href: "https://wm-school.ru/js/index.php",
+    title: "Шикарный учебник JavaScript на русском языке",
+  },
+  {
     href: "https://habr.com/ru/post/486820/",
     title: "70 вопросов по JavaScript для подготовки к собеседованию",
   },

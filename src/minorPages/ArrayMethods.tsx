@@ -1,6 +1,8 @@
 import React from "react";
 import ArrayIsArray from "../components/forArrayMethods/ArrayIsArray";
 import Concat from "../components/forArrayMethods/Concat";
+import CopyWithin from "../components/forArrayMethods/CopyWithin";
+import Entries from "../components/forArrayMethods/Entries";
 import Filter from "../components/forArrayMethods/Filter";
 import Find from "../components/forArrayMethods/Find";
 import For from "../components/forArrayMethods/For";
@@ -17,6 +19,7 @@ import Push from "../components/forArrayMethods/Push";
 import Reduce from "../components/forArrayMethods/Reduce";
 import Shift from "../components/forArrayMethods/Shift";
 import Slice from "../components/forArrayMethods/Slice";
+import Some from "../components/forArrayMethods/Some";
 import Sort from "../components/forArrayMethods/Sort";
 import Splice from "../components/forArrayMethods/Splice";
 import Split from "../components/forArrayMethods/Split";
@@ -27,6 +30,10 @@ import "../styles/arrayMethods.scss";
 
 const ArrayMethodsPage = () => {
   const linksArrayMethods: ILinkInfo[] = [
+    {
+      href: "https://habr.com/ru/company/ruvds/blog/430380/",
+      title: "Руководство по JavaScript, часть 5: массивы и циклы",
+    },
     {
       href: "https://learn.javascript.ru/array",
       title: "Массивы",
@@ -54,6 +61,14 @@ const ArrayMethodsPage = () => {
     {
       href: "https://habr.com/ru/post/247857/",
       title: "Все способы перебора массива в JavaScript",
+    },
+    {
+      href: "https://wm-school.ru/js/index.php",
+      title: "Шикарный учебник по JavaScript на русском языке",
+    },
+    {
+      href: "https://www.techonthenet.com/js/array_entries.php",
+      title: "Шикарный учебник по JavaScript на русском языке",
     },
   ];
 
@@ -96,6 +111,9 @@ const ArrayMethodsPage = () => {
         <h2 className="array-methods__subheading">Проверка массива.</h2>
         <ArrayIsArray />
         <MethodList />
+        <Some />
+        <CopyWithin />
+        <Entries />
       </div>
     </section>
   );

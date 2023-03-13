@@ -17,6 +17,10 @@ var YouTubeTypescript = function () {
             title: "Особенности типизации children в React компонентах. Михаил Непомнящий."
         },
         {
+            href: "https://www.youtube.com/watch?v=ltn9QoBCJkU&t=9s",
+            title: "Axios + TS. Axios от А до Я. Полный курс в React приложении. "
+        },
+        {
             href: "",
             title: ""
         },

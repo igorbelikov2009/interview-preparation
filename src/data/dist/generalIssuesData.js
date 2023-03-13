@@ -155,6 +155,10 @@ exports.linksGeneralIssues = [
         title: "Northern Lights"
     },
     {
+        href: "https://www.techonthenet.com/js/array_entries.php",
+        title: "Шикарный учебник по DATABASES, MS OFFICE, WEB DEVELOPMENT (PostgreSQL, javascript....) "
+    },
+    {
         href: " ",
         title: " "
     },

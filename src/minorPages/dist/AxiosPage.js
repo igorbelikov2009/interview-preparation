@@ -18,8 +18,8 @@ var AxiosPage = function () {
             title: "Использование Axios с React"
         },
         {
-            href: " ",
-            title: " "
+            href: "https://www.youtube.com/watch?v=ltn9QoBCJkU&t=9s",
+            title: "Axios + TS. Axios от А до Я. Полный курс в React приложении. "
         },
         {
             href: " ",
