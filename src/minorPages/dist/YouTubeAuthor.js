@@ -9,6 +9,10 @@ var YouTubeAuthor = function () {
             title: "Михаил Непомнящий"
         },
         {
+            href: "https://www.youtube.com/@UlbiTV",
+            title: "Ulbi TV. Ульби Тимур fullstack разработчик."
+        },
+        {
             href: "https://www.youtube.com/@annblok_webdev/videos",
             title: "Анна Блок"
         },
@@ -25,44 +29,32 @@ var YouTubeAuthor = function () {
             title: "RED Group"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@YauhenKavalchuk",
+            title: "webDev. Евгений Ковальчук."
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@VladilenMinin",
+            title: "Владилен Минин"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@public_code_/videos",
+            title: "Public Code. 139 видео про React"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@romanchebotaev/videos",
+            title: "Чеботаев Роман. Frontend Blog. 27 видео"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/c/DevMagazineChannel",
+            title: "Веб-разработка - DevMagazine. 130 видео"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@maximroslow/videos",
+            title: "Max Roslow. 28 видео. Магазин самолётов."
         },
         {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@ITKAMASUTRA/videos",
+            title: "IT-KAMASUTRA. 486 видео "
         },
         {
             href: "",

@@ -31,6 +31,10 @@ const BrowserLinksCssFrameworks = () => {
       title: "Tailwind CSS - Утилитарный CSS-фреймворк для создания любого дизайна в вашей разметке.",
     },
     {
+      href: "https://www.youtube.com/watch?v=_KWNWBhR6Vc",
+      title: "Tailwind CSS + React - Проект с нуля. Max Roslow.",
+    },
+    {
       href: "https://react-bootstrap.netlify.app/components/alerts/",
       title: "bootstrap components (компоненты)",
     },
@@ -77,6 +81,10 @@ const BrowserLinksCssFrameworks = () => {
     {
       href: "https://mui.com/material-ui/react-rating/#main-content",
       title: "material-ui components (компоненты)",
+    },
+    {
+      href: "https://www.youtube.com/watch?v=OZ_FUaV_xbg&t=6s",
+      title: "Библиотека компонентов Material UI. Быстрый старт. Михаил Непомнящий.",
     },
     {
       href: "",

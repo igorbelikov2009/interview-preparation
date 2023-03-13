@@ -17,8 +17,8 @@ const BrowserLinksGitHub = () => {
       title: "Мой репозиторий на гитхабе.",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=9e5OSBCCvvU",
+      title: "Основы командной разработки git в Visual Studio Code",
     },
     {
       href: "",

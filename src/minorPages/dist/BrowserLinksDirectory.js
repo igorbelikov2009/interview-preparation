@@ -65,8 +65,8 @@ var BrowserLinksDirectory = function () {
             title: " fakestoreapi - фэйковый интернет магазин"
         },
         {
-            href: "",
-            title: ""
+            href: "https://redux-toolkit.js.org/introduction/getting-started",
+            title: "Redux Toolkit"
         },
         {
             href: "",

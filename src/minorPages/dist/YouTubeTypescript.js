@@ -2,19 +2,19 @@
 exports.__esModule = true;
 var react_1 = require("react");
 var PageLink_1 = require("../components/general/PageLink/PageLink");
-var YouTubeJavascript = function () {
+var YouTubeTypescript = function () {
     var links = [
         {
-            href: "https://www.youtube.com/watch?v=GsYiq4Ic384&list=PLM7wFzahDYnGF4WqYaSuwnItYDEBakTDS",
-            title: "30 вопросов JavaScript собеседования - бесплатный курс"
+            href: "https://www.youtube.com/playlist?list=PLo0i68fkgCJ261LA9eiDIPACsEri2x8Mm",
+            title: "React TypeScript Library UI. Public Code 33 видео"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/playlist?list=PLNkWIWHIRwMFQBDhZ6HfwO9NL09X3N3Gq",
+            title: "TypeScript + React. webDev 13 видео"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/watch?v=hpPkwsRaWcA",
+            title: "Особенности типизации children в React компонентах. Михаил Непомнящий."
         },
         {
             href: "",
@@ -86,6 +86,6 @@ var YouTubeJavascript = function () {
         },
     ];
     return (react_1["default"].createElement("div", null,
-        react_1["default"].createElement(PageLink_1["default"], { links: links, title: "Javascript \u043D\u0430 YouTube." })));
+        react_1["default"].createElement(PageLink_1["default"], { links: links, title: "\u0421\u0441\u044B\u043B\u043A\u0438 \u043D\u0430 YouTube typescript" })));
 };
-exports["default"] = YouTubeJavascript;
+exports["default"] = YouTubeTypescript;

@@ -63,6 +63,14 @@ exports.linksReactPage = [
         title: "React Hook Form. Валидация форм."
     },
     {
+        href: "https://www.youtube.com/watch?v=Jxfun6Jnt5Q",
+        title: "Валидация форм с react-hook-form в React-приложениях. Михаил Непомнящий. "
+    },
+    {
+        href: "https://www.youtube.com/watch?v=Nicadhseqos&t=82s",
+        title: "Zod для валидации API и форм. Михаил Непомнящий."
+    },
+    {
         href: "https://mobx.js.org/react-integration.html",
         title: "MobX and React"
     },
@@ -87,6 +95,10 @@ exports.linksReactPage = [
         title: "React Transition Group"
     },
     {
+        href: "https://www.npmjs.com/package/react-transition-group?activeTab=versions",
+        title: "npm i react-transition-group"
+    },
+    {
         href: "https://www.npmjs.com/package/react-router-dom",
         title: "npm i react-router-dom (6.9.0)"
     },
@@ -107,8 +119,8 @@ exports.linksReactPage = [
         title: "npm i @types/react-router-dom  npm install --save @types/react-router-dom (types)"
     },
     {
-        href: " ",
-        title: " "
+        href: "https://betterprogramming.pub/12-react-hooks-every-react-developer-should-know-9c6352b81329",
+        title: "12 хуков React, которые должен знать каждый разработчик React"
     },
     {
         href: " ",

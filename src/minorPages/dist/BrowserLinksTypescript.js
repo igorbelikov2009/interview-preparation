@@ -69,8 +69,8 @@ var BrowserLinksTypescript = function () {
             title: "12 советов по внедрению TypeScript в React-приложениях"
         },
         {
-            href: "",
-            title: ""
+            href: "https://habr.com/ru/post/341132/",
+            title: "TypeScript и React"
         },
         {
             href: "",
