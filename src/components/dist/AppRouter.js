@@ -13,11 +13,10 @@ var Javascript_1 = require("../mainPages/Javascript");
 var ReactPage_1 = require("../mainPages/ReactPage");
 var ArrayMethods_1 = require("../minorPages/ArrayMethods");
 var ArrayTasks_1 = require("../minorPages/ArrayTasks");
-var BrowserLinks_1 = require("../minorPages/BrowserLinks");
+var Links_1 = require("../minorPages/Links");
 var Destructuring_1 = require("../minorPages/Destructuring");
 var ErrorProcessing_1 = require("../minorPages/ErrorProcessing");
 var JSONPage_1 = require("../minorPages/JSONPage");
-var LinksVue_1 = require("../minorPages/LinksVue");
 var NotfoundPage_1 = require("../minorPages/NotfoundPage");
 var ObjectMethods_1 = require("../minorPages/ObjectMethods");
 var PromisePage_1 = require("../minorPages/PromisePage");
@@ -32,14 +31,11 @@ var BarMenu_1 = require("../minorPages/BarMenu");
 var LocalStoragePage_1 = require("../minorPages/LocalStoragePage");
 var NumberMethods_1 = require("../minorPages/NumberMethods");
 var StringMethods_1 = require("../minorPages/StringMethods");
-var BrowserLinksGitHub_1 = require("../minorPages/BrowserLinksGitHub");
-var BrowserLinksFireBase_1 = require("../minorPages/BrowserLinksFireBase");
-var BrowserLinksDirectory_1 = require("../minorPages/BrowserLinksDirectory");
-var BrowserLinksCssFrameworks_1 = require("../minorPages/BrowserLinksCssFrameworks");
-var BrowserLinksTypescript_1 = require("../minorPages/BrowserLinksTypescript");
-var BrowserLinksReact_1 = require("../minorPages/BrowserLinksReact");
-var BrowserLinksNPM_1 = require("../minorPages/BrowserLinksNPM");
-var BrowserLinksIconsLoaders_1 = require("../minorPages/BrowserLinksIconsLoaders");
+var FireBase_1 = require("../minorPages/FireBase");
+var ReferenceBooks_1 = require("../minorPages/ReferenceBooks");
+var FrameworksCSS_1 = require("../minorPages/FrameworksCSS");
+var LinksNPM_1 = require("../minorPages/LinksNPM");
+var LinksToIconsLoaders_1 = require("../minorPages/LinksToIconsLoaders");
 var YouTubeTypescript_1 = require("../minorPages/YouTubeTypescript");
 var YouTubeReact_1 = require("../minorPages/YouTubeReact");
 var YouTubeInterview_1 = require("../minorPages/YouTubeInterview");
@@ -47,8 +43,7 @@ var YouTubeAuthor_1 = require("../minorPages/YouTubeAuthor");
 var YouTube_1 = require("../minorPages/YouTube");
 var YouTubeCSS_1 = require("../minorPages/YouTubeCSS");
 var YouTubeJavascript_1 = require("../minorPages/YouTubeJavascript");
-var YouTubeJavascriptFishki_1 = require("../minorPages/YouTubeJavascriptFishki");
-var BrowserLinksCSSFishki_1 = require("../minorPages/BrowserLinksCSSFishki");
+var CSSFishki_1 = require("../minorPages/CSSFishki");
 var Mobx_1 = require("../minorPages/Mobx");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
@@ -66,11 +61,10 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "axios", element: react_1["default"].createElement(AxiosPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "arrayMethods", element: react_1["default"].createElement(ArrayMethods_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "arraytasks", element: react_1["default"].createElement(ArrayTasks_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserlinks", element: react_1["default"].createElement(BrowserLinks_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "links", element: react_1["default"].createElement(Links_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "destructuring", element: react_1["default"].createElement(Destructuring_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "error", element: react_1["default"].createElement(ErrorProcessing_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "json", element: react_1["default"].createElement(JSONPage_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "linksvue", element: react_1["default"].createElement(LinksVue_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "objectMethods", element: react_1["default"].createElement(ObjectMethods_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "promise", element: react_1["default"].createElement(PromisePage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "vue", element: react_1["default"].createElement(VuePage_1["default"], null) }),
@@ -81,14 +75,12 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "localStorage", element: react_1["default"].createElement(LocalStoragePage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "numberMethods", element: react_1["default"].createElement(NumberMethods_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "stringMethods", element: react_1["default"].createElement(StringMethods_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksGitHub", element: react_1["default"].createElement(BrowserLinksGitHub_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksFireBase", element: react_1["default"].createElement(BrowserLinksFireBase_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksDirectory", element: react_1["default"].createElement(BrowserLinksDirectory_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksCssFrameworks", element: react_1["default"].createElement(BrowserLinksCssFrameworks_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksTypescript", element: react_1["default"].createElement(BrowserLinksTypescript_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksReact", element: react_1["default"].createElement(BrowserLinksReact_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksNPM", element: react_1["default"].createElement(BrowserLinksNPM_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksIconsLoaders", element: react_1["default"].createElement(BrowserLinksIconsLoaders_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "fireBase", element: react_1["default"].createElement(FireBase_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "referenceBooks", element: react_1["default"].createElement(ReferenceBooks_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "frameworksCSS", element: react_1["default"].createElement(FrameworksCSS_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "linksNPM", element: react_1["default"].createElement(LinksNPM_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "linksIconsLoaders", element: react_1["default"].createElement(LinksToIconsLoaders_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "cssFishki", element: react_1["default"].createElement(CSSFishki_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeTypescript", element: react_1["default"].createElement(YouTubeTypescript_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeReact", element: react_1["default"].createElement(YouTubeReact_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeInterview", element: react_1["default"].createElement(YouTubeInterview_1["default"], null) }),
@@ -96,8 +88,6 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTube", element: react_1["default"].createElement(YouTube_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeCSS", element: react_1["default"].createElement(YouTubeCSS_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeJavascript", element: react_1["default"].createElement(YouTubeJavascript_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeJavascriptFishki", element: react_1["default"].createElement(YouTubeJavascriptFishki_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "browserLinksCSSFishki", element: react_1["default"].createElement(BrowserLinksCSSFishki_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "mobx", element: react_1["default"].createElement(Mobx_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };

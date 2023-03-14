@@ -36,6 +36,7 @@ var Entries = function () {
                     react_1["default"].createElement(LinkInfo_1["default"], { title: "Array.prototype.entries()", href: "https://www.techonthenet.com/js/array_entries.php" }),
                     descriptions &&
                         descriptions.map(function (item, index) { return (react_1["default"].createElement("p", { key: index, className: "expanding__paragraph" }, item)); }),
+                    react_1["default"].createElement(LinkInfo_1["default"], { title: "Generator.prototype.next()", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/next" }),
                     descriptionsBefore &&
                         descriptionsBefore.map(function (item, index) { return (react_1["default"].createElement("p", { key: index, className: "expanding__paragraph-before" }, item)); })),
                 react_1["default"].createElement("div", { className: "expanding__content" },
@@ -62,23 +63,6 @@ var Entries = function () {
                         react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "} "),
                         react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "// [ 0, \"one\" ]"),
                         react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "// [ 1, \"two\" ]"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "// [ 2, \"three\" ]"))),
-                react_1["default"].createElement("div", { className: "expanding__content" },
-                    react_1["default"].createElement("div", { className: "expanding__pre" },
-                        react_1["default"].createElement("h2", { className: "expanding__heading" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "-"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "-"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "-"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x"),
-                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "x")))))))));
+                        react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "// [ 2, \"three\" ]")))))))));
 };
 exports["default"] = Entries;

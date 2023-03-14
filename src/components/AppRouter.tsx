@@ -11,11 +11,10 @@ import JavascriptPage from "../mainPages/Javascript";
 import ReactPage from "../mainPages/ReactPage";
 import ArrayMethodsPage from "../minorPages/ArrayMethods";
 import ArrayTasksPage from "../minorPages/ArrayTasks";
-import BrowserLinksPage from "../minorPages/BrowserLinks";
+import LinksPage from "../minorPages/Links";
 import DestructuringPage from "../minorPages/Destructuring";
 import ErrorProcessingPage from "../minorPages/ErrorProcessing";
 import JSONPage from "../minorPages/JSONPage";
-import LinksVuePage from "../minorPages/LinksVue";
 import NotfoundPage from "../minorPages/NotfoundPage";
 import ObjectMethodsPage from "../minorPages/ObjectMethods";
 import PromisePage from "../minorPages/PromisePage";
@@ -30,14 +29,11 @@ import BarMenuPage from "../minorPages/BarMenu";
 import LocalStoragePage from "../minorPages/LocalStoragePage";
 import NumberMethods from "../minorPages/NumberMethods";
 import StringMethods from "../minorPages/StringMethods";
-import BrowserLinksGitHub from "../minorPages/BrowserLinksGitHub";
-import BrowserLinksFireBase from "../minorPages/BrowserLinksFireBase";
-import BrowserLinksDirectory from "../minorPages/BrowserLinksDirectory";
-import BrowserLinksCssFrameworks from "../minorPages/BrowserLinksCssFrameworks";
-import BrowserLinksTypescript from "../minorPages/BrowserLinksTypescript";
-import BrowserLinksReact from "../minorPages/BrowserLinksReact";
-import BrowserLinksNPM from "../minorPages/BrowserLinksNPM";
-import BrowserLinksIconsLoaders from "../minorPages/BrowserLinksIconsLoaders";
+import FireBase from "../minorPages/FireBase";
+import ReferenceBooks from "../minorPages/ReferenceBooks";
+import FrameworksCSS from "../minorPages/FrameworksCSS";
+import LinksNPM from "../minorPages/LinksNPM";
+import LinksIconsLoaders from "../minorPages/LinksToIconsLoaders";
 import YouTubeTypescript from "../minorPages/YouTubeTypescript";
 import YouTubeReact from "../minorPages/YouTubeReact";
 import YouTubeInterview from "../minorPages/YouTubeInterview";
@@ -45,8 +41,7 @@ import YouTubeAuthor from "../minorPages/YouTubeAuthor";
 import YouTube from "../minorPages/YouTube";
 import YouTubeCSS from "../minorPages/YouTubeCSS";
 import YouTubeJavascript from "../minorPages/YouTubeJavascript";
-import YouTubeJavascriptFishki from "../minorPages/YouTubeJavascriptFishki";
-import BrowserLinksCSSFishki from "../minorPages/BrowserLinksCSSFishki";
+import CSSFishki from "../minorPages/CSSFishki";
 import Mobx from "../minorPages/Mobx";
 
 const AppRouter: FC = () => {
@@ -66,11 +61,10 @@ const AppRouter: FC = () => {
         <Route path="axios" element={<AxiosPage />} />
         <Route path="arrayMethods" element={<ArrayMethodsPage />} />
         <Route path="arraytasks" element={<ArrayTasksPage />} />
-        <Route path="browserlinks" element={<BrowserLinksPage />} />
+        <Route path="links" element={<LinksPage />} />
         <Route path="destructuring" element={<DestructuringPage />} />
         <Route path="error" element={<ErrorProcessingPage />} />
         <Route path="json" element={<JSONPage />} />
-        <Route path="linksvue" element={<LinksVuePage />} />
         <Route path="objectMethods" element={<ObjectMethodsPage />} />
         <Route path="promise" element={<PromisePage />} />
         <Route path="vue" element={<VuePage />} />
@@ -81,14 +75,12 @@ const AppRouter: FC = () => {
         <Route path="localStorage" element={<LocalStoragePage />} />
         <Route path="numberMethods" element={<NumberMethods />} />
         <Route path="stringMethods" element={<StringMethods />} />
-        <Route path="browserLinksGitHub" element={<BrowserLinksGitHub />} />
-        <Route path="browserLinksFireBase" element={<BrowserLinksFireBase />} />
-        <Route path="browserLinksDirectory" element={<BrowserLinksDirectory />} />
-        <Route path="browserLinksCssFrameworks" element={<BrowserLinksCssFrameworks />} />
-        <Route path="browserLinksTypescript" element={<BrowserLinksTypescript />} />
-        <Route path="browserLinksReact" element={<BrowserLinksReact />} />
-        <Route path="browserLinksNPM" element={<BrowserLinksNPM />} />
-        <Route path="browserLinksIconsLoaders" element={<BrowserLinksIconsLoaders />} />
+        <Route path="fireBase" element={<FireBase />} />
+        <Route path="referenceBooks" element={<ReferenceBooks />} />
+        <Route path="frameworksCSS" element={<FrameworksCSS />} />
+        <Route path="linksNPM" element={<LinksNPM />} />
+        <Route path="linksIconsLoaders" element={<LinksIconsLoaders />} />
+        <Route path="cssFishki" element={<CSSFishki />} />
         <Route path="youTubeTypescript" element={<YouTubeTypescript />} />
         <Route path="youTubeReact" element={<YouTubeReact />} />
         <Route path="youTubeInterview" element={<YouTubeInterview />} />
@@ -96,8 +88,6 @@ const AppRouter: FC = () => {
         <Route path="youTube" element={<YouTube />} />
         <Route path="youTubeCSS" element={<YouTubeCSS />} />
         <Route path="youTubeJavascript" element={<YouTubeJavascript />} />
-        <Route path="youTubeJavascriptFishki" element={<YouTubeJavascriptFishki />} />
-        <Route path="browserLinksCSSFishki" element={<BrowserLinksCSSFishki />} />
         <Route path="mobx" element={<Mobx />} />
 
         {/* <Route path="" element={<NotfoundPage />} />

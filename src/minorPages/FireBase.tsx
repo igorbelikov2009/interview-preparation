@@ -2,7 +2,7 @@ import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
 import { ILinkInfo } from "../models/types";
 
-const BrowserLinksFireBase = () => {
+const FireBase = () => {
   const links: ILinkInfo[] = [
     {
       href: "https://firebase.google.com/",
@@ -94,4 +94,4 @@ const BrowserLinksFireBase = () => {
   );
 };
 
-export default BrowserLinksFireBase;
+export default FireBase;

@@ -11,6 +11,14 @@ exports.linksCSS = [
         title: " "
     },
     {
+        href: "https://meyerweb.com/eric/tools/css/reset/",
+        title: "Сброс - reset CSS."
+    },
+    {
+        href: "https://bobbyhadz.com/",
+        title: "Блог боббихадз, статьи о веб-разработке и облачных вычислениях."
+    },
+    {
         href: "https://active-vision.ru/icon/box-shadow/",
         title: "CSS BOX-SHADOW ГЕНЕРАТОР"
     },

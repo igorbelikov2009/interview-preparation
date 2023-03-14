@@ -2,15 +2,35 @@ import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
 import { ILinkInfo } from "../models/types";
 
-const BrowserLinksDirectory = () => {
+const ReferenceBooks = () => {
   const links: ILinkInfo[] = [
     {
       href: "https://jsonplaceholder.typicode.com/",
       title: "JSONPlaceholder",
     },
     {
+      href: "https://dwstroy.ru/stail/plaginy-rasshireniya/emmet-shpargalka/ ",
+      title: "EMMET ШПАРГАЛКА HTML, CSS. EMMET ШПАРГАЛКА ДЛЯ МОЛНИЕНОСНОСТНОЙ ВЕРСТКИ",
+    },
+    {
+      href: "https://basicweb.ru/html/html_tags.php",
+      title: "HTML, CSS, JavaScript, jQuery справочник",
+    },
+    {
+      href: "http://htmlbook.ru/html/attr/hidden",
+      title: "htmlbook",
+    },
+    {
       href: "https://metanit.com/",
       title: "METANIT.COM Сайт о программировании",
+    },
+    {
+      href: "https://metanit.com/web/vuejs/2.2.php",
+      title: "Мощный сайт о программировании. MongoDB, Vue.js",
+    },
+    {
+      href: "https://www.techonthenet.com/js/array_entries.php",
+      title: "Шикарный учебник по DATABASES, MS OFFICE, WEB DEVELOPMENT (PostgreSQL, javascript....) ",
     },
     {
       href: "http://www.lingoes.net/en/translator/langcode.htm",
@@ -195,4 +215,4 @@ const BrowserLinksDirectory = () => {
   );
 };
 
-export default BrowserLinksDirectory;
+export default ReferenceBooks;

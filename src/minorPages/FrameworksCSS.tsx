@@ -2,7 +2,7 @@ import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
 import { ILinkInfo } from "../models/types";
 
-const BrowserLinksCssFrameworks = () => {
+const FrameworksCSS = () => {
   const links: ILinkInfo[] = [
     {
       href: "https://www.npmjs.com/package/node-sass",
@@ -123,4 +123,4 @@ const BrowserLinksCssFrameworks = () => {
   );
 };
 
-export default BrowserLinksCssFrameworks;
+export default FrameworksCSS;

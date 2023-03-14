@@ -61,6 +61,10 @@ const YouTubeAuthor = () => {
       title: "WebStack - Frontend. Артем Карпухов. 22 видео. ",
     },
     {
+      href: "https://www.youtube.com/@northernlights1368",
+      title: "Northern Lights. Генератор паролей, цветов, случайных чисел на JavaScript",
+    },
+    {
       href: "",
       title: "",
     },

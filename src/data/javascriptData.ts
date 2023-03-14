@@ -10,6 +10,18 @@ export const linksJavascript: ILinkInfo[] = [
     title: "70 вопросов по JavaScript для подготовки к собеседованию",
   },
   {
+    href: "https://www.geeksforgeeks.org/find-the-number-occurring-odd-number-of-times/",
+    title: "Задачи по javascript. geeksforgeeks",
+  },
+  {
+    href: "https://dev.to/thepracticaldev/series/1326",
+    title: "Задачи по javascript. Daily Challenge Series' Articles",
+  },
+  {
+    href: "https://www.codewars.com/kata/53f40dff5f9d31b813000774/train/javascript",
+    title: "Задачи по javascript. Kata Training",
+  },
+  {
     href: "https://medium.com/nuances-of-programming/var-let-const-%D0%B2-%D1%87%D0%B5%D0%BC-%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-dc6c3beb0b12#:~:text=var%20%2D%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BE%D0%B3%D1%83%D1%82%20%D0%B1%D1%8B%D1%82%D1%8C%20%D0%BA%D0%B0%D0%BA,%D0%BE%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%80%D1%85%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8%20%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8.",
     title: "Var, Let, Const — в чем разница? (Подробная статья )",
   },
@@ -68,6 +80,22 @@ export const linksJavascript: ILinkInfo[] = [
   {
     href: "https://itchief.ru/javascript/numbers ",
     title: "Работа с числами в JavaScript",
+  },
+  {
+    href: "https://date-fns.org/v2.28.0/docs/Locale",
+    title: "Формат даты Locale (есть ещё лучше)",
+  },
+  {
+    href: "https://date-fns.org/v2.28.0/docs/format",
+    title: "Форматирование даты (есть ещё лучше)",
+  },
+  {
+    href: "http://www.lingoes.net/en/translator/langcode.htm",
+    title: "Формат даты Locale",
+  },
+  {
+    href: "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat",
+    title: "Intl.DateTimeFormat. Международный формат даты и времени",
   },
 ];
 

@@ -50,12 +50,18 @@ const Entries = () => {
                   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries"
                 />
                 <LinkInfo title="Array.prototype.entries()" href="https://www.techonthenet.com/js/array_entries.php" />
+
                 {descriptions &&
                   descriptions.map((item, index) => (
                     <p key={index} className="expanding__paragraph">
                       {item}
                     </p>
                   ))}
+
+                <LinkInfo
+                  title="Generator.prototype.next()"
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/next"
+                />
 
                 {descriptionsBefore &&
                   descriptionsBefore.map((item, index) => (
@@ -93,26 +99,6 @@ const Entries = () => {
                   <p className="expanding__paragraph-code">// [ 0, "one" ]</p>
                   <p className="expanding__paragraph-code">// [ 1, "two" ]</p>
                   <p className="expanding__paragraph-code">// [ 2, "three" ]</p>
-                </div>
-              </div>
-
-              <div className="expanding__content">
-                <div className="expanding__pre">
-                  <h2 className="expanding__heading">x</h2>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">-</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">-</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">-</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">x</p>
                 </div>
               </div>
             </div>

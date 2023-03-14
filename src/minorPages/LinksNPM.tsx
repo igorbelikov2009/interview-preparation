@@ -2,8 +2,12 @@ import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
 import { ILinkInfo } from "../models/types";
 
-const BrowserLinksNPM = () => {
+const LinksNPM = () => {
   const links: ILinkInfo[] = [
+    {
+      href: "https://habr.com/ru/company/ruvds/blog/458504/",
+      title: "13 приёмов работы с npm, которые помогают экономить время",
+    },
     {
       href: "https://www.npmjs.com/package/dotenv/v/8.2.0?activeTab=versions",
       title: "npm i dotenv@8.2.0",
@@ -91,9 +95,9 @@ const BrowserLinksNPM = () => {
 
   return (
     <div>
-      <PageLink links={links} title="Ссылки на установки программ в npm" />
+      <PageLink links={links} title="Менеджер пакетов npm" />
     </div>
   );
 };
 
-export default BrowserLinksNPM;
+export default LinksNPM;
