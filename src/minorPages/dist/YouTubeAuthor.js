@@ -65,8 +65,8 @@ var YouTubeAuthor = function () {
             title: "Northern Lights. Генератор паролей, цветов, случайных чисел на JavaScript"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@bedeveloper",
+            title: "Быть Программистом. 296 видео"
         },
         {
             href: "",
