@@ -65,8 +65,8 @@ const YouTubeReact = () => {
       title: "How To Smooth Scroll in React - Smooth Scrolling Tutorial. Code Commerce",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=FgvJH91a5K0&t=48s",
+      title: "Drag and drop на REACT JS. Сортировка. Просто и быстро!  Ulbi TV.",
     },
     {
       href: "",

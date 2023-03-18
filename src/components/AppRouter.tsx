@@ -21,7 +21,7 @@ import PromisePage from "../minorPages/PromisePage";
 import VuePage from "../minorPages/VuePage";
 import Layout from "./Layout/Layout";
 import JavascriptFishkiPage from "../mainPages/JavascriptFishki";
-import ReactRouter from "../mainPages/ReactRouter";
+import ReactRouter from "../minorPages/ReactRouter";
 import TypescriptPage from "../mainPages/TypescriptPage";
 import TypescriptFishkiPage from "../mainPages/TypescriptFishki";
 import WebsiteLayout from "../mainPages/WebsiteLayout";

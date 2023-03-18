@@ -131,12 +131,36 @@ exports.linksReactPage = [
         title: "12 хуков React, которые должен знать каждый разработчик React"
     },
     {
-        href: " ",
-        title: " "
+        href: "https://tokmakov.msk.ru/blog/item/674",
+        title: "MobX — управление состоянием приложения"
     },
     {
-        href: " ",
-        title: " "
+        href: "https://tokmakov.msk.ru/blog/item/717",
+        title: "React и Redux вместе. Часть 1 из 7 "
+    },
+    {
+        href: "https://tokmakov.msk.ru/blog/item/718",
+        title: "React и Redux вместе. Часть 2 из 7 "
+    },
+    {
+        href: "https://tokmakov.msk.ru/blog/item/719",
+        title: "React и Redux вместе. Часть 3 из 7 "
+    },
+    {
+        href: "https://tokmakov.msk.ru/blog/item/720",
+        title: "React и Redux вместе. Часть 4 из 7 "
+    },
+    {
+        href: "https://tokmakov.msk.ru/blog/item/721",
+        title: "React и Redux вместе. Часть 5 из 7 "
+    },
+    {
+        href: "https://tokmakov.msk.ru/blog/item/722",
+        title: "React и Redux вместе. Часть 6 из 7 "
+    },
+    {
+        href: "https://tokmakov.msk.ru/blog/item/723",
+        title: "React и Redux вместе. Часть 7 из 7 "
     },
     {
         href: " ",
