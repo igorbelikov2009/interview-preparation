@@ -21,7 +21,7 @@ import PromisePage from "../minorPages/PromisePage";
 import VuePage from "../minorPages/VuePage";
 import Layout from "./Layout/Layout";
 import JavascriptFishkiPage from "../mainPages/JavascriptFishki";
-import ReactFishkiPage from "../mainPages/ReactFishki";
+import ReactRouter from "../mainPages/ReactRouter";
 import TypescriptPage from "../mainPages/TypescriptPage";
 import TypescriptFishkiPage from "../mainPages/TypescriptFishki";
 import WebsiteLayout from "../mainPages/WebsiteLayout";
@@ -57,7 +57,7 @@ const AppRouter: FC = () => {
         <Route path="javascript" element={<JavascriptPage />} />
         <Route path="javascriptFishki" element={<JavascriptFishkiPage />} />
         <Route path="react" element={<ReactPage />} />
-        <Route path="reactFishki" element={<ReactFishkiPage />} />
+        <Route path="reactRouter" element={<ReactRouter />} />
         <Route path="axios" element={<AxiosPage />} />
         <Route path="arrayMethods" element={<ArrayMethodsPage />} />
         <Route path="arraytasks" element={<ArrayTasksPage />} />

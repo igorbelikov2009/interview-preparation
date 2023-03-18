@@ -23,7 +23,7 @@ var PromisePage_1 = require("../minorPages/PromisePage");
 var VuePage_1 = require("../minorPages/VuePage");
 var Layout_1 = require("./Layout/Layout");
 var JavascriptFishki_1 = require("../mainPages/JavascriptFishki");
-var ReactFishki_1 = require("../mainPages/ReactFishki");
+var ReactRouter_1 = require("../mainPages/ReactRouter");
 var TypescriptPage_1 = require("../mainPages/TypescriptPage");
 var TypescriptFishki_1 = require("../mainPages/TypescriptFishki");
 var WebsiteLayout_1 = require("../mainPages/WebsiteLayout");
@@ -57,7 +57,7 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "javascript", element: react_1["default"].createElement(Javascript_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "javascriptFishki", element: react_1["default"].createElement(JavascriptFishki_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "react", element: react_1["default"].createElement(ReactPage_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "reactFishki", element: react_1["default"].createElement(ReactFishki_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "reactRouter", element: react_1["default"].createElement(ReactRouter_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "axios", element: react_1["default"].createElement(AxiosPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "arrayMethods", element: react_1["default"].createElement(ArrayMethods_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "arraytasks", element: react_1["default"].createElement(ArrayTasks_1["default"], null) }),

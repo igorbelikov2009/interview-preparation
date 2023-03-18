@@ -26,7 +26,7 @@ const Footer = () => {
     { to: "/javascript", children: "JavaScript" },
     { to: "/javascriptFishki", children: "JavaScript фишки" },
     { to: "/react", children: "React" },
-    { to: "/reactFishki", children: "React фишки" },
+    { to: "/reactRouter", children: "React Router" },
     { to: "/typescript", children: "Typescript" },
     { to: "/typescriptFishki", children: "Typescript фишки" },
     { to: "/vue", children: "Vue" },
