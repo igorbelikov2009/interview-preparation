@@ -13,7 +13,7 @@ const Footer = () => {
     { to: "/github", children: "GitHub" },
     { to: "/http", children: "HTTP" },
     { to: "/axios", children: "Axios" },
-    { to: "/mobx", children: "Mobx" },
+    { to: "/webpack", children: "Webpack" },
     { to: "/fireBase", children: "FireBase" },
     { to: "/dom", children: "DOM" },
   ];

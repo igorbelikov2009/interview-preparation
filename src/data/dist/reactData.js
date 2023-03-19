@@ -83,6 +83,14 @@ exports.linksReactPage = [
         title: "MobX and React"
     },
     {
+        href: "https://tokmakov.msk.ru/blog/item/674",
+        title: "MobX — управление состоянием приложения"
+    },
+    {
+        href: "https://www.npmjs.com/package/mobx-react-lite",
+        title: "npm i mobx-react-lite"
+    },
+    {
         href: "https://www.digitalocean.com/community/tutorials/react-axios-react-ru",
         title: "Использование Axios с React"
     },
@@ -131,10 +139,6 @@ exports.linksReactPage = [
         title: "12 хуков React, которые должен знать каждый разработчик React"
     },
     {
-        href: "https://tokmakov.msk.ru/blog/item/674",
-        title: "MobX — управление состоянием приложения"
-    },
-    {
         href: "https://tokmakov.msk.ru/blog/item/717",
         title: "React и Redux вместе. Часть 1 из 7 "
     },
@@ -163,7 +167,31 @@ exports.linksReactPage = [
         title: "React и Redux вместе. Часть 7 из 7 "
     },
     {
-        href: " ",
+        href: "https://tokmakov.msk.ru/blog/item/640",
+        title: "Использование хуков. Часть 1 из 3. useState(), useEffect(), useRef(), "
+    },
+    {
+        href: "https://tokmakov.msk.ru/blog/item/643",
+        title: "Использование хуков. Часть 2 из 3. useContext(), useLayoutEffect(), useCallback(),  useMemo(), useImperativeHandle(), useReducer()."
+    },
+    {
+        href: "https://tokmakov.msk.ru/blog/item/658",
+        title: "Хук useCallback() и массив зависимости."
+    },
+    {
+        href: "https://tokmakov.msk.ru/blog/item/644",
+        title: "Использование хуков. Часть 3 из 3. Правила хуков, пользовательские хуки: usePrevious(), useLocalStorage(), usePageBottom(), useCounter(), useMergedState(), useEventListener(), useWhatCausedRender(), useDebounce(), useThrottle(), useAsync(), useIsMountedRef(), useWindowSize(), useHistory(), useElementSize(), useHovered(), useInterval(), useTimeout(), useUpdateEffect(), "
+    },
+    {
+        href: "  ",
+        title: " "
+    },
+    {
+        href: "  ",
+        title: " "
+    },
+    {
+        href: "  ",
         title: " "
     },
 ];
@@ -1721,6 +1749,20 @@ exports.arrayReact = [
         heading: "Можно создавать анимации в React? ",
         answer: [
             "React может использоваться для создания крутых анимаций! В качестве примера посмотрите библиотеки React Transition Group и React Motion.",
+            " ",
+        ],
+        isParagraph: true
+    },
+    {
+        heading: "Правила использования хуков.",
+        answer: [
+            "Нельзя вызывать хуки внутри циклов, условных операторов или вложенных функций. ",
+            "Хуки нужно вызывать только внутри React-функций, до возврата какого-либо значения из них.",
+            "Исполнение этого правила гарантирует, что хуки вызываются в одинаковой последовательности при каждом рендере компонента. Это позволит React правильно сохранять состояние хуков между множественными вызовами useState и useEffect. ",
+            "Нельзя вызывать хуки из обычных js-функций, но можно: ",
+            " - - Вызывать хуки из функционального компонента.",
+            " - - Вызывать хуки из пользовательского хука.",
+            "Следуя этим правилам, можно гарантировать, что вся логика состояния компонента чётко видна из исходного кода.",
             " ",
         ],
         isParagraph: true

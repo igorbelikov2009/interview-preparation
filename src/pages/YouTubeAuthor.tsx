@@ -69,8 +69,8 @@ const YouTubeAuthor = () => {
       title: "Быть Программистом. 296 видео",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/@ivashov",
+      title: "Обучение HTML, CSS, JavaScript. Алгоритмы поиска, сортировка, логические задачи.",
     },
     {
       href: "",

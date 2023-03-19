@@ -2,49 +2,49 @@
 exports.__esModule = true;
 var react_1 = require("react");
 var react_router_dom_1 = require("react-router-dom");
-var AxiosPage_1 = require("../minorPages/AxiosPage");
-var CSS_1 = require("../mainPages/CSS");
-var DOM_1 = require("../minorPages/DOM");
-var GeneralIssues_1 = require("../mainPages/GeneralIssues");
-var GitHub_1 = require("../minorPages/GitHub");
-var HTML_1 = require("../mainPages/HTML");
-var HTTP_1 = require("../mainPages/HTTP");
-var Javascript_1 = require("../mainPages/Javascript");
-var ReactPage_1 = require("../mainPages/ReactPage");
-var ArrayMethods_1 = require("../minorPages/ArrayMethods");
-var ArrayTasks_1 = require("../minorPages/ArrayTasks");
-var Links_1 = require("../minorPages/Links");
-var Destructuring_1 = require("../minorPages/Destructuring");
-var ErrorProcessing_1 = require("../minorPages/ErrorProcessing");
-var JSONPage_1 = require("../minorPages/JSONPage");
-var NotfoundPage_1 = require("../minorPages/NotfoundPage");
-var ObjectMethods_1 = require("../minorPages/ObjectMethods");
-var PromisePage_1 = require("../minorPages/PromisePage");
-var VuePage_1 = require("../minorPages/VuePage");
+var AxiosPage_1 = require("../pages/AxiosPage");
+var CSS_1 = require("../pages/CSS");
+var DOM_1 = require("../pages/DOM");
+var GeneralIssues_1 = require("../pages/GeneralIssues");
+var GitHub_1 = require("../pages/GitHub");
+var HTML_1 = require("../pages/HTML");
+var HTTP_1 = require("../pages/HTTP");
+var Javascript_1 = require("../pages/Javascript");
+var ReactPage_1 = require("../pages/ReactPage");
+var ArrayMethods_1 = require("../pages/ArrayMethods");
+var ArrayTasks_1 = require("../pages/ArrayTasks");
+var Links_1 = require("../pages/Links");
+var Destructuring_1 = require("../pages/Destructuring");
+var ErrorProcessing_1 = require("../pages/ErrorProcessing");
+var JSONPage_1 = require("../pages/JSONPage");
+var NotfoundPage_1 = require("../pages/NotfoundPage");
+var ObjectMethods_1 = require("../pages/ObjectMethods");
+var PromisePage_1 = require("../pages/PromisePage");
+var VuePage_1 = require("../pages/VuePage");
 var Layout_1 = require("./Layout/Layout");
-var JavascriptFishki_1 = require("../mainPages/JavascriptFishki");
-var ReactRouter_1 = require("../minorPages/ReactRouter");
-var TypescriptPage_1 = require("../mainPages/TypescriptPage");
-var TypescriptFishki_1 = require("../mainPages/TypescriptFishki");
-var WebsiteLayout_1 = require("../mainPages/WebsiteLayout");
-var BarMenu_1 = require("../minorPages/BarMenu");
-var LocalStoragePage_1 = require("../minorPages/LocalStoragePage");
-var NumberMethods_1 = require("../minorPages/NumberMethods");
-var StringMethods_1 = require("../minorPages/StringMethods");
-var FireBase_1 = require("../minorPages/FireBase");
-var ReferenceBooks_1 = require("../minorPages/ReferenceBooks");
-var FrameworksCSS_1 = require("../minorPages/FrameworksCSS");
-var LinksNPM_1 = require("../minorPages/LinksNPM");
-var LinksToIconsLoaders_1 = require("../minorPages/LinksToIconsLoaders");
-var YouTubeTypescript_1 = require("../minorPages/YouTubeTypescript");
-var YouTubeReact_1 = require("../minorPages/YouTubeReact");
-var YouTubeInterview_1 = require("../minorPages/YouTubeInterview");
-var YouTubeAuthor_1 = require("../minorPages/YouTubeAuthor");
-var YouTube_1 = require("../minorPages/YouTube");
-var YouTubeCSS_1 = require("../minorPages/YouTubeCSS");
-var YouTubeJavascript_1 = require("../minorPages/YouTubeJavascript");
-var CSSFishki_1 = require("../minorPages/CSSFishki");
-var Mobx_1 = require("../minorPages/Mobx");
+var JavascriptFishki_1 = require("../pages/JavascriptFishki");
+var ReactRouter_1 = require("../pages/ReactRouter");
+var TypescriptPage_1 = require("../pages/TypescriptPage");
+var TypescriptFishki_1 = require("../pages/TypescriptFishki");
+var WebsiteLayout_1 = require("../pages/WebsiteLayout");
+var BarMenu_1 = require("../pages/BarMenu");
+var LocalStoragePage_1 = require("../pages/LocalStoragePage");
+var NumberMethods_1 = require("../pages/NumberMethods");
+var StringMethods_1 = require("../pages/StringMethods");
+var FireBase_1 = require("../pages/FireBase");
+var ReferenceBooks_1 = require("../pages/ReferenceBooks");
+var FrameworksCSS_1 = require("../pages/FrameworksCSS");
+var LinksNPM_1 = require("../pages/LinksNPM");
+var LinksToIconsLoaders_1 = require("../pages/LinksToIconsLoaders");
+var YouTubeTypescript_1 = require("../pages/YouTubeTypescript");
+var YouTubeReact_1 = require("../pages/YouTubeReact");
+var YouTubeInterview_1 = require("../pages/YouTubeInterview");
+var YouTubeAuthor_1 = require("../pages/YouTubeAuthor");
+var YouTube_1 = require("../pages/YouTube");
+var YouTubeCSS_1 = require("../pages/YouTubeCSS");
+var YouTubeJavascript_1 = require("../pages/YouTubeJavascript");
+var CSSFishki_1 = require("../pages/CSSFishki");
+var Webpack_1 = require("../pages/Webpack");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -88,7 +88,7 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTube", element: react_1["default"].createElement(YouTube_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeCSS", element: react_1["default"].createElement(YouTubeCSS_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeJavascript", element: react_1["default"].createElement(YouTubeJavascript_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "mobx", element: react_1["default"].createElement(Mobx_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "webpack", element: react_1["default"].createElement(Webpack_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;

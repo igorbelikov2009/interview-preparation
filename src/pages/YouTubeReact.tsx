@@ -69,8 +69,9 @@ const YouTubeReact = () => {
       title: "Drag and drop на REACT JS. Сортировка. Просто и быстро!  Ulbi TV.",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=C2ZCD_RFlPQ&t=274s",
+      title:
+        "Изменение порядка элементов списка в React-компонентах. Framer Motion отлично работает с drag&drop. Михаил Непомнящий.",
     },
     {
       href: "",

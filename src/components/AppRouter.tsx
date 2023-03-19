@@ -1,48 +1,48 @@
 import React, { FC } from "react";
 import { Routes, Route } from "react-router-dom";
-import AxiosPage from "../minorPages/AxiosPage";
-import CSSPage from "../mainPages/CSS";
-import DOMPage from "../minorPages/DOM";
-import GeneralIssues from "../mainPages/GeneralIssues";
-import GitHubPage from "../minorPages/GitHub";
-import HTMLPage from "../mainPages/HTML";
-import HTTPPage from "../mainPages/HTTP";
-import JavascriptPage from "../mainPages/Javascript";
-import ReactPage from "../mainPages/ReactPage";
-import ArrayMethodsPage from "../minorPages/ArrayMethods";
-import ArrayTasksPage from "../minorPages/ArrayTasks";
-import LinksPage from "../minorPages/Links";
-import DestructuringPage from "../minorPages/Destructuring";
-import ErrorProcessingPage from "../minorPages/ErrorProcessing";
-import JSONPage from "../minorPages/JSONPage";
-import NotfoundPage from "../minorPages/NotfoundPage";
-import ObjectMethodsPage from "../minorPages/ObjectMethods";
-import PromisePage from "../minorPages/PromisePage";
-import VuePage from "../minorPages/VuePage";
+import AxiosPage from "../pages/AxiosPage";
+import CSSPage from "../pages/CSS";
+import DOMPage from "../pages/DOM";
+import GeneralIssues from "../pages/GeneralIssues";
+import GitHubPage from "../pages/GitHub";
+import HTMLPage from "../pages/HTML";
+import HTTPPage from "../pages/HTTP";
+import JavascriptPage from "../pages/Javascript";
+import ReactPage from "../pages/ReactPage";
+import ArrayMethodsPage from "../pages/ArrayMethods";
+import ArrayTasksPage from "../pages/ArrayTasks";
+import LinksPage from "../pages/Links";
+import DestructuringPage from "../pages/Destructuring";
+import ErrorProcessingPage from "../pages/ErrorProcessing";
+import JSONPage from "../pages/JSONPage";
+import NotfoundPage from "../pages/NotfoundPage";
+import ObjectMethodsPage from "../pages/ObjectMethods";
+import PromisePage from "../pages/PromisePage";
+import VuePage from "../pages/VuePage";
 import Layout from "./Layout/Layout";
-import JavascriptFishkiPage from "../mainPages/JavascriptFishki";
-import ReactRouter from "../minorPages/ReactRouter";
-import TypescriptPage from "../mainPages/TypescriptPage";
-import TypescriptFishkiPage from "../mainPages/TypescriptFishki";
-import WebsiteLayout from "../mainPages/WebsiteLayout";
-import BarMenuPage from "../minorPages/BarMenu";
-import LocalStoragePage from "../minorPages/LocalStoragePage";
-import NumberMethods from "../minorPages/NumberMethods";
-import StringMethods from "../minorPages/StringMethods";
-import FireBase from "../minorPages/FireBase";
-import ReferenceBooks from "../minorPages/ReferenceBooks";
-import FrameworksCSS from "../minorPages/FrameworksCSS";
-import LinksNPM from "../minorPages/LinksNPM";
-import LinksIconsLoaders from "../minorPages/LinksToIconsLoaders";
-import YouTubeTypescript from "../minorPages/YouTubeTypescript";
-import YouTubeReact from "../minorPages/YouTubeReact";
-import YouTubeInterview from "../minorPages/YouTubeInterview";
-import YouTubeAuthor from "../minorPages/YouTubeAuthor";
-import YouTube from "../minorPages/YouTube";
-import YouTubeCSS from "../minorPages/YouTubeCSS";
-import YouTubeJavascript from "../minorPages/YouTubeJavascript";
-import CSSFishki from "../minorPages/CSSFishki";
-import Mobx from "../minorPages/Mobx";
+import JavascriptFishkiPage from "../pages/JavascriptFishki";
+import ReactRouter from "../pages/ReactRouter";
+import TypescriptPage from "../pages/TypescriptPage";
+import TypescriptFishkiPage from "../pages/TypescriptFishki";
+import WebsiteLayout from "../pages/WebsiteLayout";
+import BarMenuPage from "../pages/BarMenu";
+import LocalStoragePage from "../pages/LocalStoragePage";
+import NumberMethods from "../pages/NumberMethods";
+import StringMethods from "../pages/StringMethods";
+import FireBase from "../pages/FireBase";
+import ReferenceBooks from "../pages/ReferenceBooks";
+import FrameworksCSS from "../pages/FrameworksCSS";
+import LinksNPM from "../pages/LinksNPM";
+import LinksIconsLoaders from "../pages/LinksToIconsLoaders";
+import YouTubeTypescript from "../pages/YouTubeTypescript";
+import YouTubeReact from "../pages/YouTubeReact";
+import YouTubeInterview from "../pages/YouTubeInterview";
+import YouTubeAuthor from "../pages/YouTubeAuthor";
+import YouTube from "../pages/YouTube";
+import YouTubeCSS from "../pages/YouTubeCSS";
+import YouTubeJavascript from "../pages/YouTubeJavascript";
+import CSSFishki from "../pages/CSSFishki";
+import Webpack from "../pages/Webpack";
 
 const AppRouter: FC = () => {
   return (
@@ -88,7 +88,7 @@ const AppRouter: FC = () => {
         <Route path="youTube" element={<YouTube />} />
         <Route path="youTubeCSS" element={<YouTubeCSS />} />
         <Route path="youTubeJavascript" element={<YouTubeJavascript />} />
-        <Route path="mobx" element={<Mobx />} />
+        <Route path="webpack" element={<Webpack />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} />

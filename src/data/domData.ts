@@ -6,6 +6,30 @@ export const linksDOM: ILinkInfo[] = [
     title: "Методы вставки и удаления node",
   },
   {
+    href: "https://tokmakov.msk.ru/blog/item/620",
+    title: "DOM, часть 1 из 3. Навигация по элементам",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
     href: " ",
     title: " ",
   },

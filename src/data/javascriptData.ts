@@ -97,6 +97,30 @@ export const linksJavascript: ILinkInfo[] = [
     href: "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat",
     title: "Intl.DateTimeFormat. Международный формат даты и времени",
   },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/705",
+    title: "Event Loop — макрозадачи и микрозадачи",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/704",
+    title: "Promise API",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/703",
+    title: "Асинхронный код — callback, promise и async/await",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
 ];
 
 export const arrayJavascript: IObjectHeadingAnswers[] = [
