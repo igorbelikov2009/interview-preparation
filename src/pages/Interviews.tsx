@@ -3,24 +3,8 @@ import Page from "../components/general/Page/Page";
 import PageLink from "../components/general/PageLink/PageLink";
 import { ILinkInfo, IObjectHeadingAnswers } from "../models/types";
 
-const AxiosPage = () => {
+const Interviews = () => {
   const links: ILinkInfo[] = [
-    {
-      href: "https://axios-http.com/ru/",
-      title: "Axios - простой HTTP-клиент для браузера и node.js на основе Promise.",
-    },
-    {
-      href: "https://dev.to/mperon/axios-error-handling-like-a-boss-333d",
-      title: "Axios и обработка ошибок как",
-    },
-    {
-      href: "https://www.digitalocean.com/community/tutorials/react-axios-react-ru",
-      title: "Использование Axios с React",
-    },
-    {
-      href: "https://www.youtube.com/watch?v=ltn9QoBCJkU&t=9s",
-      title: "Axios + TS. Axios от А до Я. Полный курс в React приложении. ",
-    },
     {
       href: " ",
       title: " ",
@@ -462,10 +446,10 @@ const AxiosPage = () => {
 
   return (
     <div>
-      <PageLink links={links} title="Axios ссылки" />
-      <Page ArrayHeadingAnswers={ArrayHeadingAnswers} title="Вопросы по Axios" />
+      <PageLink links={links} title="Собеседования ссылки" />
+      <Page ArrayHeadingAnswers={ArrayHeadingAnswers} title="Вопросы по собеседованию." />
     </div>
   );
 };
 
-export default AxiosPage;
+export default Interviews;

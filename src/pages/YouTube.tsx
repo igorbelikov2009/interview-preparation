@@ -3,7 +3,7 @@ import PageLink from "../components/general/PageLink/PageLink";
 import { ILinkInfo } from "../models/types";
 
 const YouTube = () => {
-  const links: ILinkInfo[] = [
+  const linksYouTube: ILinkInfo[] = [
     {
       href: "https://www.youtube.com/watch?v=pGkQ5ApKIUY",
       title: "MongoDB. Основные понятия. webDev",
@@ -85,10 +85,9 @@ const YouTube = () => {
       title: "",
     },
   ];
-
   return (
     <div>
-      <PageLink links={links} title="Ссылки на YouTube" />
+      <PageLink links={linksYouTube} title="Ссылки на YouTube" />
     </div>
   );
 };

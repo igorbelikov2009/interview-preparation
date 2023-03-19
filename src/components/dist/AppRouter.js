@@ -2,12 +2,11 @@
 exports.__esModule = true;
 var react_1 = require("react");
 var react_router_dom_1 = require("react-router-dom");
-var AxiosPage_1 = require("../pages/AxiosPage");
+var Interviews_1 = require("../pages/Interviews");
 var CSS_1 = require("../pages/CSS");
 var DOM_1 = require("../pages/DOM");
 var GeneralIssues_1 = require("../pages/GeneralIssues");
 var GitHub_1 = require("../pages/GitHub");
-var HTML_1 = require("../pages/HTML");
 var HTTP_1 = require("../pages/HTTP");
 var Javascript_1 = require("../pages/Javascript");
 var ReactPage_1 = require("../pages/ReactPage");
@@ -19,14 +18,12 @@ var ErrorProcessing_1 = require("../pages/ErrorProcessing");
 var JSONPage_1 = require("../pages/JSONPage");
 var NotfoundPage_1 = require("../pages/NotfoundPage");
 var ObjectMethods_1 = require("../pages/ObjectMethods");
-var PromisePage_1 = require("../pages/PromisePage");
 var VuePage_1 = require("../pages/VuePage");
 var Layout_1 = require("./Layout/Layout");
 var JavascriptFishki_1 = require("../pages/JavascriptFishki");
 var ReactRouter_1 = require("../pages/ReactRouter");
 var TypescriptPage_1 = require("../pages/TypescriptPage");
-var TypescriptFishki_1 = require("../pages/TypescriptFishki");
-var WebsiteLayout_1 = require("../pages/WebsiteLayout");
+var WebDevelopment_1 = require("../pages/WebDevelopment");
 var BarMenu_1 = require("../pages/BarMenu");
 var LocalStoragePage_1 = require("../pages/LocalStoragePage");
 var NumberMethods_1 = require("../pages/NumberMethods");
@@ -44,7 +41,6 @@ var YouTube_1 = require("../pages/YouTube");
 var YouTubeCSS_1 = require("../pages/YouTubeCSS");
 var YouTubeJavascript_1 = require("../pages/YouTubeJavascript");
 var CSSFishki_1 = require("../pages/CSSFishki");
-var Webpack_1 = require("../pages/Webpack");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -52,13 +48,12 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "css", element: react_1["default"].createElement(CSS_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "dom", element: react_1["default"].createElement(DOM_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "github", element: react_1["default"].createElement(GitHub_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "html", element: react_1["default"].createElement(HTML_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "http", element: react_1["default"].createElement(HTTP_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "javascript", element: react_1["default"].createElement(Javascript_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "javascriptFishki", element: react_1["default"].createElement(JavascriptFishki_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "react", element: react_1["default"].createElement(ReactPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "reactRouter", element: react_1["default"].createElement(ReactRouter_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "axios", element: react_1["default"].createElement(AxiosPage_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "interviews", element: react_1["default"].createElement(Interviews_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "arrayMethods", element: react_1["default"].createElement(ArrayMethods_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "arraytasks", element: react_1["default"].createElement(ArrayTasks_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "links", element: react_1["default"].createElement(Links_1["default"], null) }),
@@ -66,11 +61,9 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "error", element: react_1["default"].createElement(ErrorProcessing_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "json", element: react_1["default"].createElement(JSONPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "objectMethods", element: react_1["default"].createElement(ObjectMethods_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "promise", element: react_1["default"].createElement(PromisePage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "vue", element: react_1["default"].createElement(VuePage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "typescript", element: react_1["default"].createElement(TypescriptPage_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "typescriptFishki", element: react_1["default"].createElement(TypescriptFishki_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "websiteLayout", element: react_1["default"].createElement(WebsiteLayout_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "webDevelopment", element: react_1["default"].createElement(WebDevelopment_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "barMenu", element: react_1["default"].createElement(BarMenu_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "localStorage", element: react_1["default"].createElement(LocalStoragePage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "numberMethods", element: react_1["default"].createElement(NumberMethods_1["default"], null) }),
@@ -88,7 +81,6 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTube", element: react_1["default"].createElement(YouTube_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeCSS", element: react_1["default"].createElement(YouTubeCSS_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeJavascript", element: react_1["default"].createElement(YouTubeJavascript_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "webpack", element: react_1["default"].createElement(Webpack_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;

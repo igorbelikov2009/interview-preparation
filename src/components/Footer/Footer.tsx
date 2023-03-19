@@ -8,18 +8,16 @@ const Footer = () => {
     { to: "/", children: "Общие вопросы" },
     { to: "/referenceBooks", children: "Справочная литература" },
     { to: "/linksIconsLoaders", children: "Ссылки на иконки, спинеры" },
-    { to: "/websiteLayout", children: "Вёрстка web-сайтов" },
+    { to: "/webDevelopment", children: "Веб-разработка" },
     { to: "/linksNPM", children: "npm менеджер пакетов" },
     { to: "/github", children: "GitHub" },
     { to: "/http", children: "HTTP" },
-    { to: "/axios", children: "Axios" },
-    { to: "/webpack", children: "Webpack" },
+    { to: "/interviews", children: "Собеседования" },
     { to: "/fireBase", children: "FireBase" },
     { to: "/dom", children: "DOM" },
   ];
 
   const SecondBlock: IFooterLinks[] = [
-    { to: "/html", children: "HTML" },
     { to: "/css", children: "CSS" },
     { to: "/cssFishki", children: "CSS фишки" },
     { to: "/frameworksCSS", children: "Фреймворки CSS" },
@@ -28,7 +26,6 @@ const Footer = () => {
     { to: "/react", children: "React" },
     { to: "/reactRouter", children: "React Router" },
     { to: "/typescript", children: "Typescript" },
-    { to: "/typescriptFishki", children: "Typescript фишки" },
     { to: "/vue", children: "Vue" },
   ];
 
@@ -39,7 +36,6 @@ const Footer = () => {
     { to: "/numberMethods", children: "Методы чисел" },
     { to: "/stringMethods", children: "Методы строк" },
     { to: "/destructuring", children: "Деструктуризация" },
-    { to: "/promise", children: "Промисы" },
     { to: "/error", children: "Обработка ошибок" },
     { to: "/json", children: "Методы JSON" },
     { to: "/localStorage", children: "LocalStorage" },

@@ -183,6 +183,10 @@ exports.linksReactPage = [
         title: "Использование хуков. Часть 3 из 3. Правила хуков, пользовательские хуки: usePrevious(), useLocalStorage(), usePageBottom(), useCounter(), useMergedState(), useEventListener(), useWhatCausedRender(), useDebounce(), useThrottle(), useAsync(), useIsMountedRef(), useWindowSize(), useHistory(), useElementSize(), useHovered(), useInterval(), useTimeout(), useUpdateEffect(), "
     },
     {
+        href: "https://www.digitalocean.com/community/tutorials/react-axios-react-ru",
+        title: "Использование Axios с React"
+    },
+    {
         href: "  ",
         title: " "
     },
