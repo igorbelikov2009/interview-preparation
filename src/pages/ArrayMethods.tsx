@@ -26,10 +26,15 @@ import Splice from "../components/forArrayMethods/Splice";
 import Split from "../components/forArrayMethods/Split";
 import Unshift from "../components/forArrayMethods/Unshift";
 import PageLink from "../components/general/PageLink/PageLink";
-import { linksArrayMethods } from "../data/arrayMethodsData";
+import ServerIsLoading from "../components/general/serverIsLoading/ServerIsLoading";
+import ServerError from "../components/general/serverError/ServerError";
+// import { linksArrayMethods } from "../data/arrayMethodsData";
+import { arrayMethodsAPI } from "../services/arrayMethodsAPI";
 import "../styles/arrayMethods.scss";
 
 const ArrayMethodsPage = () => {
+  const { data: linksArrayMethods, isLoading, isError } = arrayMethodsAPI.useGetLinksArrayMethodsQuery();
+
   return (
     <motion.div
       initial={{ width: 0, opacity: 0 }}
@@ -38,7 +43,11 @@ const ArrayMethodsPage = () => {
       className="array-methods"
     >
       <div className="array-methods__container">
-        <PageLink links={linksArrayMethods} title="Методы массивов, ссылки" />
+        {isLoading && <ServerIsLoading />}
+        {isError && <ServerError />}
+
+        {linksArrayMethods && <PageLink links={linksArrayMethods} title="Методы массивов, ссылки" />}
+
         <h1 className="array-methods__heading"> Методы массивов </h1>
         <h2 className="array-methods__subheading"> Добавление/удаление элементов</h2>
         <Push />

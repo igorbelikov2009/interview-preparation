@@ -1,13 +1,19 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { arrayCSSAPI } from "../services/arrayCSSAPI";
+import { arrayMethodsAPI } from "../services/arrayMethodsAPI";
 import { cssAPI } from "../services/cssAPI";
 import { cssFishkiAPI } from "../services/cssFishkiAPI";
+import { linksDestructuringAPI } from "../services/destructuringAPI";
+import { frameworksCSSAPI } from "../services/frameworksCSSAPI";
 
 // Создаём корневой редюсер, состоящий из комбинации всех редюсеров
 const rootReducer = combineReducers({
   [cssAPI.reducerPath]: cssAPI.reducer,
   [arrayCSSAPI.reducerPath]: arrayCSSAPI.reducer,
   [cssFishkiAPI.reducerPath]: cssFishkiAPI.reducer,
+  [frameworksCSSAPI.reducerPath]: frameworksCSSAPI.reducer,
+  [arrayMethodsAPI.reducerPath]: arrayMethodsAPI.reducer,
+  [linksDestructuringAPI.reducerPath]: linksDestructuringAPI.reducer,
 });
 
 // Создаём функцию setupStore, с помощью её мы будем конфигурировать
@@ -20,7 +26,13 @@ export const setupStore = () => {
     // Затем, методом concat(), добавляем мидлвеер из нашего todoAPI
     // Затем, методом concat(), добавляем мидлвеер из нашего commentAPI
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware().concat(cssAPI.middleware).concat(arrayCSSAPI.middleware).concat(cssFishkiAPI.middleware),
+      getDefaultMiddleware()
+        .concat(cssAPI.middleware)
+        .concat(arrayCSSAPI.middleware)
+        .concat(cssFishkiAPI.middleware)
+        .concat(frameworksCSSAPI.middleware)
+        .concat(arrayMethodsAPI.middleware)
+        .concat(linksDestructuringAPI.middleware),
   });
 };
 
