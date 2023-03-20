@@ -22,8 +22,8 @@ var YouTubeTypescript = function () {
             title: "Axios + TS. Axios от А до Я. Полный курс в React приложении. "
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/watch?v=VBpmbqTi86Y",
+            title: "Фишки TypeScript о которых ТЫ НЕ ЗНАЛ! Ulbi TV."
         },
         {
             href: "",

@@ -13,34 +13,6 @@ export const linksDOM: ILinkInfo[] = [
     href: " ",
     title: " ",
   },
-  {
-    href: " ",
-    title: " ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
 ];
 
 export const arrayDOM: IObjectHeadingAnswers[] = [

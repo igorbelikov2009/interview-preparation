@@ -143,8 +143,24 @@ export const linksJavascript: ILinkInfo[] = [
     title: "Axios React — как получать(GET), публиковать(post) и удалять(DELETE) запросы API",
   },
   {
-    href: " ",
-    title: " ",
+    href: "https://tokmakov.msk.ru/blog/item/690",
+    title: "Браузерные события, часть 1 из 5. Основные сведения",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/691",
+    title: "Браузерные события, часть 2 из 5. Погружение и всплытие",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/692",
+    title: "Браузерные события, часть 3 из 5. Делегирование",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/693",
+    title: "Браузерные события, часть 4 из 5. Действие браузера по умолчанию",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/695",
+    title: "Браузерные события, часть 5 из 5. Генерация пользовательских событий",
   },
   {
     href: " ",

@@ -1,10 +1,16 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import { linksError } from "../data/linksErrorAPI";
 import { arrayCSSAPI } from "../services/arrayCSSAPI";
+import { arrayDOMAPI } from "../services/arrayDOMAPI";
+import { arrayErrorAPI } from "../services/arrayErrorAPI";
 import { arrayMethodsAPI } from "../services/arrayMethodsAPI";
 import { cssAPI } from "../services/cssAPI";
 import { cssFishkiAPI } from "../services/cssFishkiAPI";
 import { linksDestructuringAPI } from "../services/destructuringAPI";
+import { destructuringArraysAPI } from "../services/destructuringArraysAPI";
+import { destructuringObjectsAPI } from "../services/destructuringObjectsAPI";
 import { frameworksCSSAPI } from "../services/frameworksCSSAPI";
+import { linksDOMAPI } from "../services/linksDOMAPI";
 
 // Создаём корневой редюсер, состоящий из комбинации всех редюсеров
 const rootReducer = combineReducers({
@@ -14,6 +20,12 @@ const rootReducer = combineReducers({
   [frameworksCSSAPI.reducerPath]: frameworksCSSAPI.reducer,
   [arrayMethodsAPI.reducerPath]: arrayMethodsAPI.reducer,
   [linksDestructuringAPI.reducerPath]: linksDestructuringAPI.reducer,
+  [destructuringArraysAPI.reducerPath]: destructuringArraysAPI.reducer,
+  [destructuringObjectsAPI.reducerPath]: destructuringObjectsAPI.reducer,
+  [linksDOMAPI.reducerPath]: linksDOMAPI.reducer,
+  [arrayDOMAPI.reducerPath]: arrayDOMAPI.reducer,
+  [linksError.reducerPath]: linksError.reducer,
+  [arrayErrorAPI.reducerPath]: arrayErrorAPI.reducer,
 });
 
 // Создаём функцию setupStore, с помощью её мы будем конфигурировать
@@ -32,7 +44,13 @@ export const setupStore = () => {
         .concat(cssFishkiAPI.middleware)
         .concat(frameworksCSSAPI.middleware)
         .concat(arrayMethodsAPI.middleware)
-        .concat(linksDestructuringAPI.middleware),
+        .concat(linksDestructuringAPI.middleware)
+        .concat(destructuringArraysAPI.middleware)
+        .concat(destructuringObjectsAPI.middleware)
+        .concat(linksDOMAPI.middleware)
+        .concat(arrayDOMAPI.middleware)
+        .concat(linksError.middleware)
+        .concat(arrayErrorAPI.middleware),
   });
 };
 

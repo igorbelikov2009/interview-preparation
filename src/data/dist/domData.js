@@ -14,34 +14,6 @@ exports.linksDOM = [
         href: " ",
         title: " "
     },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
-    {
-        href: " ",
-        title: " "
-    },
 ];
 exports.arrayDOM = [
     {
