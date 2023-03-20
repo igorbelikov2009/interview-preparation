@@ -13,8 +13,6 @@ const Footer = () => {
     { to: "/github", children: "GitHub" },
     { to: "/http", children: "HTTP" },
     { to: "/interviews", children: "Собеседования" },
-    { to: "/fireBase", children: "FireBase" },
-    { to: "/dom", children: "DOM" },
   ];
 
   const SecondBlock: IFooterLinks[] = [
@@ -27,6 +25,8 @@ const Footer = () => {
     { to: "/reactRouter", children: "React Router" },
     { to: "/typescript", children: "Typescript" },
     { to: "/vue", children: "Vue" },
+    { to: "/fireBase", children: "FireBase" },
+    { to: "/dom", children: "DOM" },
   ];
 
   const ThirdBlock: IFooterLinks[] = [

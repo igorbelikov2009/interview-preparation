@@ -45,8 +45,8 @@ var YouTubeReact = function () {
             title: "Полный курс по Next js - Изучи Nextjs за 2 часа! | React SSR +таймкоды. RED Group"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/watch?v=FdrEjwymzdY&t=47s",
+            title: "Анимация переходов между страницами в React, React Router V6 и Framer Motion"
         },
         {
             href: "",

@@ -13,8 +13,6 @@ var Footer = function () {
         { to: "/github", children: "GitHub" },
         { to: "/http", children: "HTTP" },
         { to: "/interviews", children: "Собеседования" },
-        { to: "/fireBase", children: "FireBase" },
-        { to: "/dom", children: "DOM" },
     ];
     var SecondBlock = [
         { to: "/css", children: "CSS" },
@@ -26,6 +24,8 @@ var Footer = function () {
         { to: "/reactRouter", children: "React Router" },
         { to: "/typescript", children: "Typescript" },
         { to: "/vue", children: "Vue" },
+        { to: "/fireBase", children: "FireBase" },
+        { to: "/dom", children: "DOM" },
     ];
     var ThirdBlock = [
         { to: "/arraymethods", children: "Методы массивов" },

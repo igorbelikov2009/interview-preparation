@@ -81,3 +81,35 @@ crossorigin="anonymous"
 
 10. в index.tsx подключаем файл `reset.css` (из стилей)
 11. `npm install react-hook-form` https://react-hook-form.com/get-started
+12. `Анимация переходов между страницами` https://www.youtube.com/watch?v=FdrEjwymzdY&t=47s
+13. `npm install @reduxjs/toolkit`
+    `npm install react-redux`
+    `npm install @types/react-redux`
+    устанавливаем react-redux, redux-toolkit и связываем всё с TypeScript
+14. Cоздаём store.ts, hooks/redux.ts. В index.ts создаём: const store = setupStore(); import { Provider } from "react-redux"; оборачиваем всё в <Provider store={store}>zdddsfsdds<Provider>
+15. `npm i axios` . Устанавливаем "axios": "^1.3.3", создаём store/reducers/ActionCreater.ts
+
+16. `npm install -g json-server` скачаем json-server, с помощью которого мы сможем, буквально в два действия, поднять сервер, на котором уже будет, своего рода, база данных. Скачиваем отсюда (https://github.com/typicode/json-server). Создадим файл db.json, файл с некоторыми данными из страницы по ссылке: {
+    "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+    }
+17. `json-server --watch db.json` - этой командой подымаем сервер, по умолчанию сервер открывается на порту http://localhost:3000/posts/1 , но он у нас занят, поэтому в команде, дополнительно, указываем другой порт- 5000. `json-server --watch db.json --port 5000`
+18. Если возникает проблема: "Невозможно загрузить файл, так как выполнение сценариев отключено в этой системе", то открываем терминал Windows - нажимаем `Win + X`. После этого выбираем Windows PowerShell (администратор), открывается Windows PowerShell. Далее, делаем по руководству
+    https://www.youtube.com/watch?v=vObwhyh5h5I&t=97s
+19. В окне "Windows PowerShell", в строке PS C:\Windows\system32> пишем команду
+
+PS C:\Windows\system32> `Set-ExecutionPolicy Unrestricted -Scope CurrentUser`
+
+20. Снова командуем `json-server --watch db.json --port 5000`
+21. Сервер запустился, в нашем терминале видим
+    http://localhost:5000/posts
+    http://localhost:5000/comments
+    http://localhost:5000/profile
+    Для перехода, выбираем нужную ссылку мышкой и (ctrl + щелчок)
+22. Для работы на 5000 порту открываем 2 вкладки в терминале. На одном открываем клиента, порт 3000 `npm start` , на другом подымаем сервер на 5000 порту командой `json-server --watch db.json --port 5000`
+23. `Выбираем спинер (loader) здесь: ` https://atuin.ru/blog/loadery-i-spinnery-na-css/
