@@ -41,8 +41,8 @@ const YouTubeReact = () => {
       title: "Алиасы импортов для React приложений (Vite). Михаил Непомнящий.",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=g1mPqu7u39o",
+      title: "Полный курс по Next js - Изучи Nextjs за 2 часа! | React SSR +таймкоды. RED Group",
     },
     {
       href: "",

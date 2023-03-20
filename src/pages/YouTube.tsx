@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"; // анимация
 import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
 import { ILinkInfo } from "../models/types";
@@ -85,10 +86,15 @@ const YouTube = () => {
       title: "",
     },
   ];
+
   return (
-    <div>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <PageLink links={linksYouTube} title="Ссылки на YouTube" />
-    </div>
+    </motion.div>
   );
 };
 

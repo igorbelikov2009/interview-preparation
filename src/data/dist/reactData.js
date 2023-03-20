@@ -187,12 +187,20 @@ exports.linksReactPage = [
         title: "Использование Axios с React"
     },
     {
-        href: "  ",
-        title: " "
+        href: "https://react-spring-io.vercel.app/hooks/use-transition",
+        title: "Анимация перехода между страницами в React SPA с react-spring Transitioning. В hooks use-transition выбираем: Transitioning between routes"
     },
     {
-        href: "  ",
-        title: " "
+        href: "https://react-spring.dev/docs/getting-started",
+        title: "React Spring — это библиотека "
+    },
+    {
+        href: "https://www.npmjs.com/package/react-spring",
+        title: "Установка анимации react-spring npm i react-spring "
+    },
+    {
+        href: "https://www.youtube.com/watch?v=BSmXK6z0h3s&t=942s",
+        title: "Анимация перехода между страницами в React SPA с react-spring"
     },
     {
         href: "  ",

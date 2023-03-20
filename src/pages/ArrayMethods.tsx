@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"; // анимация
 import React from "react";
 import ArrayIsArray from "../components/forArrayMethods/ArrayIsArray";
 import Concat from "../components/forArrayMethods/Concat";
@@ -30,7 +31,12 @@ import "../styles/arrayMethods.scss";
 
 const ArrayMethodsPage = () => {
   return (
-    <section className="array-methods">
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
+      className="array-methods"
+    >
       <div className="array-methods__container">
         <PageLink links={linksArrayMethods} title="Методы массивов, ссылки" />
         <h1 className="array-methods__heading"> Методы массивов </h1>
@@ -72,7 +78,7 @@ const ArrayMethodsPage = () => {
         <CopyWithin />
         <Entries />
       </div>
-    </section>
+    </motion.div>
   );
 };
 
