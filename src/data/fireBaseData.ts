@@ -58,28 +58,4 @@ export const linksFireBase: ILinkInfo[] = [
     href: "",
     title: "",
   },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
 ];

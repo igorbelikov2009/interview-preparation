@@ -7,14 +7,19 @@ var linksErrorAPI_1 = require("../data/linksErrorAPI");
 var arrayCSSAPI_1 = require("../services/arrayCSSAPI");
 var arrayDOMAPI_1 = require("../services/arrayDOMAPI");
 var arrayErrorAPI_1 = require("../services/arrayErrorAPI");
+var arrayHTTPAPI_1 = require("../services/arrayHTTPAPI");
 var arrayMethodsAPI_1 = require("../services/arrayMethodsAPI");
 var cssAPI_1 = require("../services/cssAPI");
 var cssFishkiAPI_1 = require("../services/cssFishkiAPI");
 var destructuringAPI_1 = require("../services/destructuringAPI");
 var destructuringArraysAPI_1 = require("../services/destructuringArraysAPI");
 var destructuringObjectsAPI_1 = require("../services/destructuringObjectsAPI");
+var fireBaseAPI_1 = require("../services/fireBaseAPI");
 var frameworksCSSAPI_1 = require("../services/frameworksCSSAPI");
+var iconsLoadersAPI_1 = require("../services/iconsLoadersAPI");
 var linksDOMAPI_1 = require("../services/linksDOMAPI");
+var linksGitHubAPI_1 = require("../services/linksGitHubAPI");
+var linksHTTPAPI_1 = require("../services/linksHTTPAPI");
 // Создаём корневой редюсер, состоящий из комбинации всех редюсеров
 var rootReducer = toolkit_1.combineReducers((_a = {},
     _a[cssAPI_1.cssAPI.reducerPath] = cssAPI_1.cssAPI.reducer,
@@ -29,6 +34,11 @@ var rootReducer = toolkit_1.combineReducers((_a = {},
     _a[arrayDOMAPI_1.arrayDOMAPI.reducerPath] = arrayDOMAPI_1.arrayDOMAPI.reducer,
     _a[linksErrorAPI_1.linksError.reducerPath] = linksErrorAPI_1.linksError.reducer,
     _a[arrayErrorAPI_1.arrayErrorAPI.reducerPath] = arrayErrorAPI_1.arrayErrorAPI.reducer,
+    _a[fireBaseAPI_1.fireBaseAPI.reducerPath] = fireBaseAPI_1.fireBaseAPI.reducer,
+    _a[linksGitHubAPI_1.linksGitHubAPI.reducerPath] = linksGitHubAPI_1.linksGitHubAPI.reducer,
+    _a[linksHTTPAPI_1.linksHTTPAPI.reducerPath] = linksHTTPAPI_1.linksHTTPAPI.reducer,
+    _a[arrayHTTPAPI_1.arrayHTTPAPI.reducerPath] = arrayHTTPAPI_1.arrayHTTPAPI.reducer,
+    _a[iconsLoadersAPI_1.iconsLoadersAPI.reducerPath] = iconsLoadersAPI_1.iconsLoadersAPI.reducer,
     _a));
 // Создаём функцию setupStore, с помощью её мы будем конфигурировать
 // наше редакс-хранилище. Без использования toolkit мы использовали
@@ -52,7 +62,12 @@ exports.setupStore = function () {
                 .concat(linksDOMAPI_1.linksDOMAPI.middleware)
                 .concat(arrayDOMAPI_1.arrayDOMAPI.middleware)
                 .concat(linksErrorAPI_1.linksError.middleware)
-                .concat(arrayErrorAPI_1.arrayErrorAPI.middleware);
+                .concat(arrayErrorAPI_1.arrayErrorAPI.middleware)
+                .concat(fireBaseAPI_1.fireBaseAPI.middleware)
+                .concat(linksGitHubAPI_1.linksGitHubAPI.middleware)
+                .concat(linksHTTPAPI_1.linksHTTPAPI.middleware)
+                .concat(arrayHTTPAPI_1.arrayHTTPAPI.middleware)
+                .concat(iconsLoadersAPI_1.iconsLoadersAPI.middleware);
         }
     });
 };

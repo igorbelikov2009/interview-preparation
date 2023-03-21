@@ -7,11 +7,12 @@ const Footer = () => {
   const FirstBlock: IFooterLinks[] = [
     { to: "/", children: "Общие вопросы" },
     { to: "/referenceBooks", children: "Справочная литература" },
-    { to: "/linksIconsLoaders", children: "Ссылки на иконки, спинеры" },
+    { to: "/iconsLoaders", children: "Ссылки на иконки, спинеры" },
     { to: "/webDevelopment", children: "Веб-разработка" },
     { to: "/linksNPM", children: "npm менеджер пакетов" },
     { to: "/github", children: "GitHub" },
     { to: "/http", children: "HTTP" },
+    { to: "/fireBase", children: "FireBase" },
     { to: "/interviews", children: "Собеседования" },
   ];
 
@@ -25,7 +26,6 @@ const Footer = () => {
     { to: "/reactRouter", children: "React Router" },
     { to: "/typescript", children: "Typescript" },
     { to: "/vue", children: "Vue" },
-    { to: "/fireBase", children: "FireBase" },
     { to: "/dom", children: "DOM" },
   ];
 

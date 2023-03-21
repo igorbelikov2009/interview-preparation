@@ -74,8 +74,8 @@ const YouTubeAuthor = () => {
       title: "Обучение HTML, CSS, JavaScript. Алгоритмы поиска, сортировка, логические задачи.",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/@it-sin9k",
+      title: "АйТи Синяк. 67 видео",
     },
     {
       href: "",

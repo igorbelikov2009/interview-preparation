@@ -32,7 +32,7 @@ var FireBase_1 = require("../pages/FireBase");
 var ReferenceBooks_1 = require("../pages/ReferenceBooks");
 var FrameworksCSS_1 = require("../pages/FrameworksCSS");
 var LinksNPM_1 = require("../pages/LinksNPM");
-var LinksToIconsLoaders_1 = require("../pages/LinksToIconsLoaders");
+var IconsLoaders_1 = require("../pages/IconsLoaders");
 var YouTubeTypescript_1 = require("../pages/YouTubeTypescript");
 var YouTubeReact_1 = require("../pages/YouTubeReact");
 var YouTubeInterview_1 = require("../pages/YouTubeInterview");
@@ -72,7 +72,7 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "referenceBooks", element: react_1["default"].createElement(ReferenceBooks_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "frameworksCSS", element: react_1["default"].createElement(FrameworksCSS_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "linksNPM", element: react_1["default"].createElement(LinksNPM_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "linksIconsLoaders", element: react_1["default"].createElement(LinksToIconsLoaders_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "iconsLoaders", element: react_1["default"].createElement(IconsLoaders_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "cssFishki", element: react_1["default"].createElement(CSSFishki_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeTypescript", element: react_1["default"].createElement(YouTubeTypescript_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeReact", element: react_1["default"].createElement(YouTubeReact_1["default"], null) }),

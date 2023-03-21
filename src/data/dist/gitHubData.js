@@ -15,16 +15,16 @@ exports.linksGitHub = [
         title: "Основы командной разработки git в Visual Studio Code"
     },
     {
-        href: " ",
-        title: " "
-    },
-    {
         href: "https://github.com/Shkulipa/online-store",
         title: "Shkulipa/online-storePublic. Онлайн-магазин, который я делал"
     },
     {
         href: "https://github.com/utimur/online-store-full-course",
         title: "utimur/online-store-full-coursePublic. Онлайн-магазин, который я делал"
+    },
+    {
+        href: " ",
+        title: " "
     },
 ];
 exports.arrayGitHub = [

@@ -3,11 +3,11 @@ import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
 import ServerIsLoading from "../components/general/serverIsLoading/ServerIsLoading";
 import ServerError from "../components/general/serverError/ServerError";
-// import { linksFireBase } from "../data/fireBaseData";
-import { fireBaseAPI } from "../services/fireBaseAPI";
+// import { linksIconsLoaders } from "../data/iconsLoadersData";
+import { iconsLoadersAPI } from "../services/iconsLoadersAPI";
 
-const FireBase = () => {
-  const { data: linksFireBase, isLoading, isError } = fireBaseAPI.useGetFireBaseQuery();
+const LinksToIconsLoaders = () => {
+  const { data: linksIconsLoaders, isLoading, isError } = iconsLoadersAPI.useGetIconsLoadersQuery();
 
   return (
     <motion.div
@@ -18,9 +18,9 @@ const FireBase = () => {
       {isLoading && <ServerIsLoading />}
       {isError && <ServerError />}
 
-      {linksFireBase && <PageLink links={linksFireBase} title="Ссылки на FireBase" />}
+      {linksIconsLoaders && <PageLink links={linksIconsLoaders} title="Ссылки на сайты с иконками, лоадерами" />}
     </motion.div>
   );
 };
 
-export default FireBase;
+export default LinksToIconsLoaders;

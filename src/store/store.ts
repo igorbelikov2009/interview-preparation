@@ -3,14 +3,19 @@ import { linksError } from "../data/linksErrorAPI";
 import { arrayCSSAPI } from "../services/arrayCSSAPI";
 import { arrayDOMAPI } from "../services/arrayDOMAPI";
 import { arrayErrorAPI } from "../services/arrayErrorAPI";
+import { arrayHTTPAPI } from "../services/arrayHTTPAPI";
 import { arrayMethodsAPI } from "../services/arrayMethodsAPI";
 import { cssAPI } from "../services/cssAPI";
 import { cssFishkiAPI } from "../services/cssFishkiAPI";
 import { linksDestructuringAPI } from "../services/destructuringAPI";
 import { destructuringArraysAPI } from "../services/destructuringArraysAPI";
 import { destructuringObjectsAPI } from "../services/destructuringObjectsAPI";
+import { fireBaseAPI } from "../services/fireBaseAPI";
 import { frameworksCSSAPI } from "../services/frameworksCSSAPI";
+import { iconsLoadersAPI } from "../services/iconsLoadersAPI";
 import { linksDOMAPI } from "../services/linksDOMAPI";
+import { linksGitHubAPI } from "../services/linksGitHubAPI";
+import { linksHTTPAPI } from "../services/linksHTTPAPI";
 
 // Создаём корневой редюсер, состоящий из комбинации всех редюсеров
 const rootReducer = combineReducers({
@@ -26,6 +31,11 @@ const rootReducer = combineReducers({
   [arrayDOMAPI.reducerPath]: arrayDOMAPI.reducer,
   [linksError.reducerPath]: linksError.reducer,
   [arrayErrorAPI.reducerPath]: arrayErrorAPI.reducer,
+  [fireBaseAPI.reducerPath]: fireBaseAPI.reducer,
+  [linksGitHubAPI.reducerPath]: linksGitHubAPI.reducer,
+  [linksHTTPAPI.reducerPath]: linksHTTPAPI.reducer,
+  [arrayHTTPAPI.reducerPath]: arrayHTTPAPI.reducer,
+  [iconsLoadersAPI.reducerPath]: iconsLoadersAPI.reducer,
 });
 
 // Создаём функцию setupStore, с помощью её мы будем конфигурировать
@@ -50,7 +60,12 @@ export const setupStore = () => {
         .concat(linksDOMAPI.middleware)
         .concat(arrayDOMAPI.middleware)
         .concat(linksError.middleware)
-        .concat(arrayErrorAPI.middleware),
+        .concat(arrayErrorAPI.middleware)
+        .concat(fireBaseAPI.middleware)
+        .concat(linksGitHubAPI.middleware)
+        .concat(linksHTTPAPI.middleware)
+        .concat(arrayHTTPAPI.middleware)
+        .concat(iconsLoadersAPI.middleware),
   });
 };
 

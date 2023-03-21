@@ -30,7 +30,7 @@ import FireBase from "../pages/FireBase";
 import ReferenceBooks from "../pages/ReferenceBooks";
 import FrameworksCSS from "../pages/FrameworksCSS";
 import LinksNPM from "../pages/LinksNPM";
-import LinksIconsLoaders from "../pages/LinksToIconsLoaders";
+import IconsLoaders from "../pages/IconsLoaders";
 import YouTubeTypescript from "../pages/YouTubeTypescript";
 import YouTubeReact from "../pages/YouTubeReact";
 import YouTubeInterview from "../pages/YouTubeInterview";
@@ -72,7 +72,7 @@ const AppRouter: FC = () => {
         <Route path="referenceBooks" element={<ReferenceBooks />} />
         <Route path="frameworksCSS" element={<FrameworksCSS />} />
         <Route path="linksNPM" element={<LinksNPM />} />
-        <Route path="linksIconsLoaders" element={<LinksIconsLoaders />} />
+        <Route path="iconsLoaders" element={<IconsLoaders />} />
         <Route path="cssFishki" element={<CSSFishki />} />
         <Route path="youTubeTypescript" element={<YouTubeTypescript />} />
         <Route path="youTubeReact" element={<YouTubeReact />} />

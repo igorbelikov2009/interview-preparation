@@ -7,6 +7,30 @@ var PageLink_1 = require("../components/general/PageLink/PageLink");
 var Interviews = function () {
     var links = [
         {
+            href: "https://www.youtube.com/watch?v=bqQI9rFm1ro",
+            title: "[Redux] Мой любимый вопрос на собеседовании"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=OtAlPwW8DNU",
+            title: "Все ли вы знаете о React key?"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=2Wp7QPTkpms&t=43s",
+            title: "Что вы знаете о useCallback?"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=n_OtFAsh6aU",
+            title: "какая разница между useLayoutEffect, componentDidMount и useEffect?"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=-lHQ8b0GpEQ",
+            title: "SENIOR пошел на JUNIOR Javascript Developer собеседование"
+        },
+        {
+            href: " ",
+            title: " "
+        },
+        {
             href: " ",
             title: " "
         },

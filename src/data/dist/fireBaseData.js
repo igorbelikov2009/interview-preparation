@@ -58,28 +58,4 @@ exports.linksFireBase = [
         href: "",
         title: ""
     },
-    {
-        href: "",
-        title: ""
-    },
-    {
-        href: "",
-        title: ""
-    },
-    {
-        href: "",
-        title: ""
-    },
-    {
-        href: "",
-        title: ""
-    },
-    {
-        href: "",
-        title: ""
-    },
-    {
-        href: "",
-        title: ""
-    },
 ];
