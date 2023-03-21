@@ -4,8 +4,8 @@ import Page from "../components/general/Page/Page";
 import PageLink from "../components/general/PageLink/PageLink";
 import ServerIsLoading from "../components/general/serverIsLoading/ServerIsLoading";
 import ServerError from "../components/general/serverError/ServerError";
-import { arrayGitHub } from "../data/gitHubData";
 import { linksGitHubAPI } from "../services/linksGitHubAPI";
+import { arrayGitHub } from "../dataArchive.ts/gitHubData";
 
 const GitHubPage = () => {
   const { data: linksGitHub, isLoading, isError } = linksGitHubAPI.useGetLinksGitHubQuery();

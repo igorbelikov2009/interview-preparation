@@ -15,6 +15,7 @@ var TopMenu = function () {
     var pathname = react_router_dom_1.useLocation().pathname;
     var TopMenuLinks = [
         { to: "/", children: "Общие вопросы" },
+        { to: "/generalLinks", children: "Общие ссылки" },
         { to: "/css", children: "CSS" },
         { to: "/javascript", children: "JavaScript" },
         { to: "/javascriptFishki", children: "JavaScript фишки" },
@@ -24,6 +25,7 @@ var TopMenu = function () {
     ];
     react_1.useEffect(function () {
         if (pathname === "/" ||
+            pathname === "/generalLinks" ||
             pathname === "/css" ||
             pathname === "/javascript" ||
             pathname === "/javascriptFishki" ||

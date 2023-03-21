@@ -7,7 +7,7 @@ var PageLink_1 = require("../components/general/PageLink/PageLink");
 var ServerIsLoading_1 = require("../components/general/serverIsLoading/ServerIsLoading");
 var ServerError_1 = require("../components/general/serverError/ServerError");
 // import { arrayErrorProcessing, linksErrorProcessing } from "../data/errorProcessingData";
-var linksErrorAPI_1 = require("../data/linksErrorAPI");
+var linksErrorAPI_1 = require("../services/linksErrorAPI");
 var arrayErrorAPI_1 = require("../services/arrayErrorAPI");
 var ErrorProcessingPage = function () {
     var _a = linksErrorAPI_1.linksError.useGetLinksErrorQuery(), linksErrorProcessing = _a.data, isLoading = _a.isLoading, isError = _a.isError;

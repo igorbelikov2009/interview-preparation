@@ -16,6 +16,7 @@ const TopMenu: FC = () => {
 
   const TopMenuLinks: ITopMenuLinks[] = [
     { to: "/", children: "Общие вопросы" },
+    { to: "/generalLinks", children: "Общие ссылки" },
     { to: "/css", children: "CSS" },
     { to: "/javascript", children: "JavaScript" },
     { to: "/javascriptFishki", children: "JavaScript фишки" },
@@ -27,6 +28,7 @@ const TopMenu: FC = () => {
   useEffect(() => {
     if (
       pathname === "/" ||
+      pathname === "/generalLinks" ||
       pathname === "/css" ||
       pathname === "/javascript" ||
       pathname === "/javascriptFishki" ||

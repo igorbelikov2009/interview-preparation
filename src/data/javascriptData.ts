@@ -166,10 +166,6 @@ export const linksJavascript: ILinkInfo[] = [
     href: " ",
     title: " ",
   },
-  {
-    href: " ",
-    title: " ",
-  },
 ];
 
 export const arrayJavascript: IObjectHeadingAnswers[] = [
@@ -1807,16 +1803,6 @@ export const arrayJavascript: IObjectHeadingAnswers[] = [
       " - setTodos(firstTen;",
       " };",
     ],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
     isParagraph: true,
   },
 ];

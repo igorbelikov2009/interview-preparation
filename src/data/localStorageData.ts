@@ -75,4 +75,9 @@ export const arrayLocalStorage: IObjectHeadingAnswers[] = [
     ],
     isParagraph: true,
   },
+  {
+    heading: " ",
+    answer: [" ", " ", " ", " ", " "],
+    isParagraphBefore: true,
+  },
 ];

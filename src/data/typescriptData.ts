@@ -51,22 +51,6 @@ export const linksTypescript: ILinkInfo[] = [
     title: "HTTP-клиент Axios с использованием TypeScript - 2",
   },
   {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "===============",
-  },
-  {
     href: "https://www.bezkoder.com/category/react/",
     title: "Пример загрузки нескольких файлов React (с Typescript)",
   },
@@ -82,134 +66,9 @@ export const linksTypescript: ILinkInfo[] = [
     href: "",
     title: "",
   },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
 ];
 
 export const arrayTypescript: IObjectHeadingAnswers[] = [
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", ""],
-    isParagraphBefore: true,
-  },
   {
     heading: "",
     answer: ["", "", "", ""],

@@ -6,6 +6,7 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   const FirstBlock: IFooterLinks[] = [
     { to: "/", children: "Общие вопросы" },
+    { to: "/generalLinks", children: "Общие ссылки" },
     { to: "/referenceBooks", children: "Справочная литература" },
     { to: "/iconsLoaders", children: "Ссылки на иконки, спинеры" },
     { to: "/webDevelopment", children: "Веб-разработка" },

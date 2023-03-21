@@ -6,8 +6,8 @@ var Page_1 = require("../components/general/Page/Page");
 var PageLink_1 = require("../components/general/PageLink/PageLink");
 var ServerIsLoading_1 = require("../components/general/serverIsLoading/ServerIsLoading");
 var ServerError_1 = require("../components/general/serverError/ServerError");
-var gitHubData_1 = require("../data/gitHubData");
 var linksGitHubAPI_1 = require("../services/linksGitHubAPI");
+var gitHubData_1 = require("../dataArchive.ts/gitHubData");
 var GitHubPage = function () {
     var _a = linksGitHubAPI_1.linksGitHubAPI.useGetLinksGitHubQuery(), linksGitHub = _a.data, isLoading = _a.isLoading, isError = _a.isError;
     return (react_1["default"].createElement(framer_motion_1.motion.div, { initial: { width: 0, opacity: 0 }, animate: { width: "100%", opacity: 1 }, exit: { x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 } },

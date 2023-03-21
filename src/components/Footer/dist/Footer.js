@@ -6,6 +6,7 @@ var Footer_module_scss_1 = require("./Footer.module.scss");
 var Footer = function () {
     var FirstBlock = [
         { to: "/", children: "Общие вопросы" },
+        { to: "/generalLinks", children: "Общие ссылки" },
         { to: "/referenceBooks", children: "Справочная литература" },
         { to: "/iconsLoaders", children: "Ссылки на иконки, спинеры" },
         { to: "/webDevelopment", children: "Веб-разработка" },

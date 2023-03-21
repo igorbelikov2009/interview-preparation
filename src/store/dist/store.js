@@ -3,7 +3,7 @@ var _a;
 exports.__esModule = true;
 exports.setupStore = void 0;
 var toolkit_1 = require("@reduxjs/toolkit");
-var linksErrorAPI_1 = require("../data/linksErrorAPI");
+var linksErrorAPI_1 = require("../services/linksErrorAPI");
 var arrayCSSAPI_1 = require("../services/arrayCSSAPI");
 var arrayDOMAPI_1 = require("../services/arrayDOMAPI");
 var arrayErrorAPI_1 = require("../services/arrayErrorAPI");

@@ -422,4 +422,9 @@ export const arrayNumberMethods: IObjectHeadingAnswers[] = [
     ],
     isParagraph: true,
   },
+  {
+    heading: " ",
+    answer: [" ", " ", " ", " ", " "],
+    isParagraphBefore: true,
+  },
 ];

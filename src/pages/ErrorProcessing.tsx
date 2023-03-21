@@ -5,7 +5,7 @@ import PageLink from "../components/general/PageLink/PageLink";
 import ServerIsLoading from "../components/general/serverIsLoading/ServerIsLoading";
 import ServerError from "../components/general/serverError/ServerError";
 // import { arrayErrorProcessing, linksErrorProcessing } from "../data/errorProcessingData";
-import { linksError } from "../data/linksErrorAPI";
+import { linksError } from "../services/linksErrorAPI";
 import { arrayErrorAPI } from "../services/arrayErrorAPI";
 
 const ErrorProcessingPage = () => {

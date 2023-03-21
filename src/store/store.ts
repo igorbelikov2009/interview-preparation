@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { linksError } from "../data/linksErrorAPI";
+import { linksError } from "../services/linksErrorAPI";
 import { arrayCSSAPI } from "../services/arrayCSSAPI";
 import { arrayDOMAPI } from "../services/arrayDOMAPI";
 import { arrayErrorAPI } from "../services/arrayErrorAPI";

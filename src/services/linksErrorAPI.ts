@@ -1,4 +1,4 @@
-import { ILinkInfo } from "./../models/types";
+import { ILinkInfo } from "../models/types";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const linksError = createApi({

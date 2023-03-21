@@ -41,10 +41,12 @@ var YouTube_1 = require("../pages/YouTube");
 var YouTubeCSS_1 = require("../pages/YouTubeCSS");
 var YouTubeJavascript_1 = require("../pages/YouTubeJavascript");
 var CSSFishki_1 = require("../pages/CSSFishki");
+var GeneralLinks_1 = require("../pages/GeneralLinks");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
             react_1["default"].createElement(react_router_dom_1.Route, { index: true, element: react_1["default"].createElement(GeneralIssues_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "generalLinks", element: react_1["default"].createElement(GeneralLinks_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "css", element: react_1["default"].createElement(CSS_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "dom", element: react_1["default"].createElement(DOM_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "github", element: react_1["default"].createElement(GitHub_1["default"], null) }),

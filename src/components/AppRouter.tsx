@@ -39,12 +39,14 @@ import YouTube from "../pages/YouTube";
 import YouTubeCSS from "../pages/YouTubeCSS";
 import YouTubeJavascript from "../pages/YouTubeJavascript";
 import CSSFishki from "../pages/CSSFishki";
+import GeneralLinks from "../pages/GeneralLinks";
 
 const AppRouter: FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<GeneralIssues />} />
+        <Route path="generalLinks" element={<GeneralLinks />} />
         <Route path="css" element={<CSSPage />} />
         <Route path="dom" element={<DOMPage />} />
         <Route path="github" element={<GitHubPage />} />
