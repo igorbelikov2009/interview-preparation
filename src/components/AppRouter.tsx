@@ -40,6 +40,7 @@ import YouTubeCSS from "../pages/YouTubeCSS";
 import YouTubeJavascript from "../pages/YouTubeJavascript";
 import CSSFishki from "../pages/CSSFishki";
 import GeneralLinks from "../pages/GeneralLinks";
+import YouTubeTasksJavascript from "../pages/YouTubeTasksJavascript";
 
 const AppRouter: FC = () => {
   return (
@@ -83,6 +84,7 @@ const AppRouter: FC = () => {
         <Route path="youTube" element={<YouTube />} />
         <Route path="youTubeCSS" element={<YouTubeCSS />} />
         <Route path="youTubeJavascript" element={<YouTubeJavascript />} />
+        <Route path="youTubeTasksJavascript" element={<YouTubeTasksJavascript />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} />

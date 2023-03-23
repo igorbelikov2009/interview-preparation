@@ -34,31 +34,11 @@ var Interviews = function () {
             href: " ",
             title: " "
         },
-        {
-            href: " ",
-            title: " "
-        },
-        {
-            href: " ",
-            title: " "
-        },
-        {
-            href: " ",
-            title: " "
-        },
-        {
-            href: " ",
-            title: " "
-        },
-        {
-            href: " ",
-            title: " "
-        },
     ];
     var ArrayHeadingAnswers = [
         {
             heading: " ",
-            answer: [" ", " "],
+            answer: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
             isParagraph: true
         },
         {

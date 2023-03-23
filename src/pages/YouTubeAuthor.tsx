@@ -78,12 +78,12 @@ const YouTubeAuthor = () => {
       title: "АйТи Синяк. 67 видео",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/@dmitrii_gerasimov",
+      title: "Дмитрий Герасимов. 232 видео",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/@jstop",
+      title: "JS top. Простые и элементарные задачи по JavaScript",
     },
     {
       href: "",

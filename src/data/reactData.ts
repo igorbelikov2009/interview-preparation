@@ -211,6 +211,18 @@ export const linksReactPage: ILinkInfo[] = [
     title: "Анимация перехода между страницами в React SPA с react-spring",
   },
   {
+    href: "https://stasonmars.ru/javascript/pogruzhaemsya-v-raboty-s-children-na-react/",
+    title: "Погружаемся в работу с children на React",
+  },
+  {
+    href: "https://habr.com/ru/post/319270/",
+    title: "JSX — подробности",
+  },
+  {
+    href: "https://www.youtube.com/watch?v=DLFzz2Wldxg",
+    title: "React. Props Children",
+  },
+  {
     href: "  ",
     title: " ",
   },

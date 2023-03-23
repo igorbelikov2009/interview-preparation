@@ -35,6 +35,14 @@ export interface IObjectHeadingAnswers {
   isParagraphBefore?: boolean;
 }
 
+export interface IInterviewTasks {
+  heading: string;
+  answer: string[];
+  isParagraph?: boolean;
+  isParagraphBefore?: boolean;
+  children: React.ReactNode;
+}
+
 export interface ILinkInfo {
   href: string;
   title: string;

@@ -63,6 +63,10 @@ export const linksTypescript: ILinkInfo[] = [
     title: "TypeScript и React",
   },
   {
+    href: "https://www.youtube.com/watch?v=hpPkwsRaWcA&t=2s",
+    title: "Особенности типизации children в React компонентах",
+  },
+  {
     href: "",
     title: "",
   },

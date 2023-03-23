@@ -44,6 +44,7 @@ var Footer = function () {
         { to: "/youTubeAuthor", children: "На YouTube авторы" },
         { to: "/youTubeReact", children: "На YouTube React" },
         { to: "/youTubeJavascript", children: "На YouTube Javascript " },
+        { to: "/youTubeTasksJavascript", children: "На YouTube задачи по Javascript " },
         { to: "/youTubeTypescript", children: "На YouTube Typescript" },
         { to: "/youTubeCSS", children: "На YouTube CSS" },
         { to: "/youTubeInterview", children: "На YouTube собеседования" },

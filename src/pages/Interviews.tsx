@@ -34,32 +34,12 @@ const Interviews = () => {
       href: " ",
       title: " ",
     },
-    {
-      href: " ",
-      title: " ",
-    },
-    {
-      href: " ",
-      title: " ",
-    },
-    {
-      href: " ",
-      title: " ",
-    },
-    {
-      href: " ",
-      title: " ",
-    },
-    {
-      href: " ",
-      title: " ",
-    },
   ];
 
   const ArrayHeadingAnswers: IObjectHeadingAnswers[] = [
     {
       heading: " ",
-      answer: [" ", " "],
+      answer: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
       isParagraph: true,
     },
     {

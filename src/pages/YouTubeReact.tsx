@@ -49,8 +49,12 @@ const YouTubeReact = () => {
       title: "Анимация переходов между страницами в React, React Router V6 и Framer Motion",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=qmfLQpzEwzw",
+      title: "FORMIK - React библиотека для создания формы с валидацией. Дмитрий Герасимов.",
+    },
+    {
+      href: "https://www.youtube.com/watch?v=mngyruQvlWU",
+      title: "Formik + Zod - Валидация форм в React. Дмитрий Герасимов.",
     },
     {
       href: "",
