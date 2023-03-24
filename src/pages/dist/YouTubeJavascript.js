@@ -14,8 +14,8 @@ var YouTubeJavascript = function () {
             title: "Простой способ обойти защиту копирования контента! Пишем script защиты контента. JS, keydown, copy."
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/watch?v=YaGfHbT9xLY&t=8s",
+            title: "Уроки Javascript #4. Что такое замыкания в JS (простыми словами + 3 примера)"
         },
         {
             href: "",
