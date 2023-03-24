@@ -86,12 +86,12 @@ var YouTubeAuthor = function () {
             title: "JS top. Простые и элементарные задачи по JavaScript"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/playlist?list=PLEhUqRdnYdykSMw9irD8yJ7q5GSVvQLL0",
+            title: "Viktor Bogutskii.  Задачи JavaScript. Codewars."
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@frontendscience",
+            title: "Front-end. Наука от Сергея Пузанкова. 142 видео"
         },
         {
             href: "",

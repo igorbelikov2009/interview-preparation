@@ -1,12 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion"; // анимация
 import React, { FC, useState } from "react";
-import { IObjectHeadingAnswers } from "../../../../models/types";
+import { IInterviewTasks } from "../../../../models/types";
 import Paragraph from "../../paragraphs/Paragraph/Paragraph";
 import ParagraphBefore from "../../paragraphs/ParagraphBefore/ParagraphBefore";
 import ExpandingHeading from "../ExpandingPanel/ExpandingHeading";
 import styles from "./ExpanderTask.module.scss";
 
-const ExpanderTask: FC<IObjectHeadingAnswers> = ({ heading, answer, isParagraph, isParagraphBefore }) => {
+const ExpanderTask: FC<IInterviewTasks> = ({ heading, answer, isParagraph, isParagraphBefore, children }) => {
   const [isVisible, setVisible] = useState(false);
 
   const expanderHandler = () => {
@@ -36,6 +36,8 @@ const ExpanderTask: FC<IObjectHeadingAnswers> = ({ heading, answer, isParagraph,
                   <ParagraphBefore paragraphs={answer} />
                 </div>
               )}
+
+              <div>{children}</div>
             </div>
           </motion.div>
         )}

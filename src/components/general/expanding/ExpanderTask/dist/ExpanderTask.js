@@ -7,7 +7,7 @@ var ParagraphBefore_1 = require("../../paragraphs/ParagraphBefore/ParagraphBefor
 var ExpandingHeading_1 = require("../ExpandingPanel/ExpandingHeading");
 var ExpanderTask_module_scss_1 = require("./ExpanderTask.module.scss");
 var ExpanderTask = function (_a) {
-    var heading = _a.heading, answer = _a.answer, isParagraph = _a.isParagraph, isParagraphBefore = _a.isParagraphBefore;
+    var heading = _a.heading, answer = _a.answer, isParagraph = _a.isParagraph, isParagraphBefore = _a.isParagraphBefore, children = _a.children;
     var _b = react_1.useState(false), isVisible = _b[0], setVisible = _b[1];
     var expanderHandler = function () {
         setVisible(function (prev) { return !prev; });
@@ -19,6 +19,7 @@ var ExpanderTask = function (_a) {
                 isParagraph && (react_1["default"].createElement("div", { className: ExpanderTask_module_scss_1["default"]["expanding__content"] },
                     react_1["default"].createElement(Paragraph_1["default"], { paragraphs: answer }))),
                 isParagraphBefore && (react_1["default"].createElement("div", { className: ExpanderTask_module_scss_1["default"]["expanding__content"] },
-                    react_1["default"].createElement(ParagraphBefore_1["default"], { paragraphs: answer })))))))));
+                    react_1["default"].createElement(ParagraphBefore_1["default"], { paragraphs: answer }))),
+                react_1["default"].createElement("div", null, children)))))));
 };
 exports["default"] = ExpanderTask;

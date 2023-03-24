@@ -40,7 +40,7 @@ export interface IInterviewTasks {
   answer: string[];
   isParagraph?: boolean;
   isParagraphBefore?: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export interface ILinkInfo {

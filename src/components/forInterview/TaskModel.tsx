@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { motion, AnimatePresence } from "framer-motion"; // анимация
 import React, { useState } from "react";
 import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeading";
 import LinkInfo from "../general/LinkInfo/LinkInfo";
-import "../../styles/dist/expanding.css";
+import "./taskModel.scss";
 
-const Method = () => {
+const TaskModel = () => {
   const [isVisible, setVisible] = useState(false);
 
   const [title] = useState("Method");
@@ -47,12 +48,6 @@ const Method = () => {
               </div>
 
               <div className="expanding__content">
-                <pre className="expanding__pre">
-                  <code className="expanding__code">xxx</code>
-                </pre>
-              </div>
-
-              <div className="expanding__content">
                 <div className="expanding__pre">
                   <h2 className="expanding__heading">x</h2>
                   <p className="expanding__paragraph-code">x</p>
@@ -63,6 +58,12 @@ const Method = () => {
                 </div>
               </div>
             </div>
+
+            <div>
+              // Определяем contextType, чтобы получить значение контекста. // React найдёт (выше по дереву) ближайший
+              Provider-компонент, // предоставляющий этот контекст, и использует его значение. // В этом примере
+              значение UI-темы будет "dark".
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -70,4 +71,4 @@ const Method = () => {
   );
 };
 
-export default Method;
+export default TaskModel;

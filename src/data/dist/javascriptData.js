@@ -171,6 +171,10 @@ exports.linksJavascript = [
         title: "Как устроены цикл событий (event loop) и стек вызовов в JavaScript "
     },
     {
+        href: "https://www.codewars.com/kata/convert-to-binary ",
+        title: "Сборник задач по JavaScript codewars kata"
+    },
+    {
         href: " ",
         title: " "
     },

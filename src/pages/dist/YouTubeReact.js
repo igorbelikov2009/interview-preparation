@@ -77,12 +77,12 @@ var YouTubeReact = function () {
             title: "Изменение порядка элементов списка в React-компонентах. Framer Motion отлично работает с drag&drop. Михаил Непомнящий."
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/playlist?list=PLCp7YGqt4kFpn5Pw5jukSbbXoAblSNKiT",
+            title: "React - с Нуля до Профессионала"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/playlist?list=PLCp7YGqt4kFqd3BzBmpl4QnnmieKAZ6Us",
+            title: "Асинхронный JavaScript"
         },
         {
             href: "",

@@ -26,8 +26,8 @@ const YouTubeTypescript = () => {
       title: "Фишки TypeScript о которых ТЫ НЕ ЗНАЛ! Ulbi TV.",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/playlist?list=PLCp7YGqt4kFrLLx2rrg5RXVELPIzCJAT0",
+      title: "Краткий Обзор TypeScript",
     },
     {
       href: "",
