@@ -57,6 +57,10 @@ var YouTubeReact = function () {
             title: "Formik + Zod - Валидация форм в React. Дмитрий Герасимов."
         },
         {
+            href: "https://www.youtube.com/watch?v=3PwWr6tkyBU",
+            title: "Хук useFormik в FORMIK - Валидация форм в React"
+        },
+        {
             href: "",
             title: "==============="
         },

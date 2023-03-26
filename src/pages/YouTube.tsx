@@ -46,8 +46,8 @@ const YouTube = () => {
       title: "Zod для валидации API и форм. Михаил Непомнящий.",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=-60WqA8wbIg",
+      title: "Как использовать ChatGPT в VScode?",
     },
     {
       href: "",
