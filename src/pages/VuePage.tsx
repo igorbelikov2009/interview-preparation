@@ -11,6 +11,14 @@ const VuePage = () => {
       title: "Сгенерировать новый проект во Vue. 1 минута 57 секунда",
     },
     {
+      href: "https://www.youtube.com/watch?v=S8AiEvuXcAg",
+      title: "Vue 3 + Firebase + TypeScript - строим приложение музыкальной коллекции",
+    },
+    {
+      href: "",
+      title: "",
+    },
+    {
       href: "",
       title: "",
     },

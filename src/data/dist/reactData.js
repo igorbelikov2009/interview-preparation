@@ -215,6 +215,10 @@ exports.linksReactPage = [
         title: "React. Props Children"
     },
     {
+        href: "https://www.8host.com/blog/kak-ispolzovat-axios-v-react/",
+        title: "КАК ИСПОЛЬЗОВАТЬ AXIOS В REACT"
+    },
+    {
         href: "  ",
         title: " "
     },

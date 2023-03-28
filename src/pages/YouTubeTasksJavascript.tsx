@@ -230,8 +230,8 @@ const YouTubeTasksJavascript = () => {
       title: "JS Задачи: Перевести число из двоичной в десятичную систему счисления",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=mIYymAuA7AI",
+      title: "Как удалить дубликаты из массива? 3 способа. (JavaScript)",
     },
     {
       href: "",

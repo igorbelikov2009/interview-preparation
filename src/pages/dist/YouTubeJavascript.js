@@ -18,8 +18,8 @@ var YouTubeJavascript = function () {
             title: "Уроки Javascript #4. Что такое замыкания в JS (простыми словами + 3 примера)"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/playlist?list=PLC27DxYnUFKLY-25V-tX8FtRtpAwPHGmB",
+            title: "JavaScript задачи. Квест по основам, 44 видео."
         },
         {
             href: "",
