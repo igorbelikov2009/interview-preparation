@@ -8,7 +8,7 @@ import { IObjectHeadingAnswers } from "../models/types";
 import { arrayJavascript } from "./javascriptData";
 import { arrayJavascriptFishki } from "./javascriptFishkiData";
 import { arrayJSON } from "./jsonData";
-import { arrayLocalStorage } from "./localStorageData";
+import { arrayWebStorage } from "./webStorageData";
 import { arrayNumberMethods } from "./numberMethodsData";
 import { arrayObjectMethods } from "./objectMethodsData";
 import { arrayReact } from "./reactData";
@@ -20,7 +20,7 @@ import { arrayWebDevelopment } from "./webDevelopmentData";
 const generalIssues: IObjectHeadingAnswers[] = arrayJavascript
   .concat(arrayJavascriptFishki)
   .concat(arrayJSON)
-  .concat(arrayLocalStorage)
+  .concat(arrayWebStorage)
   .concat(arrayNumberMethods)
   .concat(arrayStringMethods)
   .concat(arrayReact)

@@ -23,7 +23,7 @@ import ReactRouter from "../pages/ReactRouter";
 import TypescriptPage from "../pages/TypescriptPage";
 import WebDevelopment from "../pages/WebDevelopment";
 import BarMenuPage from "../pages/BarMenu";
-import LocalStoragePage from "../pages/LocalStoragePage";
+import WebStorage from "../pages/WebStorage";
 import NumberMethods from "../pages/NumberMethods";
 import StringMethods from "../pages/StringMethods";
 import FireBase from "../pages/FireBase";
@@ -68,7 +68,7 @@ const AppRouter: FC = () => {
         <Route path="typescript" element={<TypescriptPage />} />
         <Route path="webDevelopment" element={<WebDevelopment />} />
         <Route path="barMenu" element={<BarMenuPage />} />
-        <Route path="localStorage" element={<LocalStoragePage />} />
+        <Route path="webStorage" element={<WebStorage />} />
         <Route path="numberMethods" element={<NumberMethods />} />
         <Route path="stringMethods" element={<StringMethods />} />
         <Route path="fireBase" element={<FireBase />} />

@@ -39,7 +39,7 @@ const Footer = () => {
     { to: "/destructuring", children: "Деструктуризация" },
     { to: "/error", children: "Обработка ошибок" },
     { to: "/json", children: "Методы JSON" },
-    { to: "/localStorage", children: "LocalStorage" },
+    { to: "/webStorage", children: "WebStorage - веб-хранилище" },
   ];
 
   const FourthBlock: IFooterLinks[] = [

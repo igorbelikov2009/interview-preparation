@@ -11,7 +11,7 @@ import { ILinkInfo } from "../models/types";
 import { linksJavascript } from "./javascriptData";
 import { linksJavascriptFishki } from "./javascriptFishkiData";
 import { linksJSON } from "./jsonData";
-import { linksLocalStorage } from "./localStorageData";
+import { linksWebStorage } from "./webStorageData";
 import { linkNPM } from "./npmData";
 import { linksNumberMethods } from "./numberMethodsData";
 import { linksObjectMethods } from "./objectMethodsData";
@@ -25,7 +25,7 @@ import { linksWebDevelopment } from "./webDevelopmentData";
 const generalLinks: ILinkInfo[] = linksJavascript
   .concat(linksJavascriptFishki)
   .concat(linksJSON)
-  .concat(linksLocalStorage)
+  .concat(linksWebStorage)
   .concat(linkNPM)
   .concat(linksNumberMethods)
   .concat(linksStringMethods)

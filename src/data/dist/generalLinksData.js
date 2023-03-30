@@ -13,7 +13,7 @@ var iconsLoadersData_1 = require("../dataArchive.ts/iconsLoadersData");
 var javascriptData_1 = require("./javascriptData");
 var javascriptFishkiData_1 = require("./javascriptFishkiData");
 var jsonData_1 = require("./jsonData");
-var localStorageData_1 = require("./localStorageData");
+var webStorageData_1 = require("./webStorageData");
 var npmData_1 = require("./npmData");
 var numberMethodsData_1 = require("./numberMethodsData");
 var objectMethodsData_1 = require("./objectMethodsData");
@@ -26,7 +26,7 @@ var webDevelopmentData_1 = require("./webDevelopmentData");
 var generalLinks = javascriptData_1.linksJavascript
     .concat(javascriptFishkiData_1.linksJavascriptFishki)
     .concat(jsonData_1.linksJSON)
-    .concat(localStorageData_1.linksLocalStorage)
+    .concat(webStorageData_1.linksWebStorage)
     .concat(npmData_1.linkNPM)
     .concat(numberMethodsData_1.linksNumberMethods)
     .concat(stringMethodsData_1.linksStringMethods)

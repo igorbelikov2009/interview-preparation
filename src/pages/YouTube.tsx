@@ -50,8 +50,8 @@ const YouTube = () => {
       title: "Как использовать ChatGPT в VScode?",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=wNCJoZU01JM",
+      title: "Бесплатный VPN без лишних программ за минуту",
     },
     {
       href: "",

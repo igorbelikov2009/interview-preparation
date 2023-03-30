@@ -10,7 +10,7 @@ var httpData_1 = require("../dataArchive.ts/httpData");
 var javascriptData_1 = require("./javascriptData");
 var javascriptFishkiData_1 = require("./javascriptFishkiData");
 var jsonData_1 = require("./jsonData");
-var localStorageData_1 = require("./localStorageData");
+var webStorageData_1 = require("./webStorageData");
 var numberMethodsData_1 = require("./numberMethodsData");
 var objectMethodsData_1 = require("./objectMethodsData");
 var reactData_1 = require("./reactData");
@@ -21,7 +21,7 @@ var webDevelopmentData_1 = require("./webDevelopmentData");
 var generalIssues = javascriptData_1.arrayJavascript
     .concat(javascriptFishkiData_1.arrayJavascriptFishki)
     .concat(jsonData_1.arrayJSON)
-    .concat(localStorageData_1.arrayLocalStorage)
+    .concat(webStorageData_1.arrayWebStorage)
     .concat(numberMethodsData_1.arrayNumberMethods)
     .concat(stringMethodsData_1.arrayStringMethods)
     .concat(reactData_1.arrayReact)

@@ -25,7 +25,7 @@ var ReactRouter_1 = require("../pages/ReactRouter");
 var TypescriptPage_1 = require("../pages/TypescriptPage");
 var WebDevelopment_1 = require("../pages/WebDevelopment");
 var BarMenu_1 = require("../pages/BarMenu");
-var LocalStoragePage_1 = require("../pages/LocalStoragePage");
+var WebStorage_1 = require("../pages/WebStorage");
 var NumberMethods_1 = require("../pages/NumberMethods");
 var StringMethods_1 = require("../pages/StringMethods");
 var FireBase_1 = require("../pages/FireBase");
@@ -68,7 +68,7 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "typescript", element: react_1["default"].createElement(TypescriptPage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "webDevelopment", element: react_1["default"].createElement(WebDevelopment_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "barMenu", element: react_1["default"].createElement(BarMenu_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "localStorage", element: react_1["default"].createElement(LocalStoragePage_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "webStorage", element: react_1["default"].createElement(WebStorage_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "numberMethods", element: react_1["default"].createElement(NumberMethods_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "stringMethods", element: react_1["default"].createElement(StringMethods_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "fireBase", element: react_1["default"].createElement(FireBase_1["default"], null) }),
