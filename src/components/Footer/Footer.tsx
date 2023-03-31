@@ -12,9 +12,9 @@ const Footer = () => {
     { to: "/webDevelopment", children: "Веб-разработка" },
     { to: "/linksNPM", children: "npm менеджер пакетов" },
     { to: "/github", children: "GitHub" },
-    { to: "/http", children: "HTTP" },
+    { to: "/http", children: "Web-архитектура, HTTP" },
+    { to: "/webStorage", children: "Web Storage - веб хранилище" },
     { to: "/fireBase", children: "FireBase" },
-    { to: "/interviews", children: "Собеседования" },
   ];
 
   const SecondBlock: IFooterLinks[] = [
@@ -39,7 +39,7 @@ const Footer = () => {
     { to: "/destructuring", children: "Деструктуризация" },
     { to: "/error", children: "Обработка ошибок" },
     { to: "/json", children: "Методы JSON" },
-    { to: "/webStorage", children: "WebStorage - веб-хранилище" },
+    { to: "/interviews", children: "Собеседования" },
   ];
 
   const FourthBlock: IFooterLinks[] = [

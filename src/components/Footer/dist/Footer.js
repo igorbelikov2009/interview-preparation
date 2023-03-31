@@ -12,9 +12,9 @@ var Footer = function () {
         { to: "/webDevelopment", children: "Веб-разработка" },
         { to: "/linksNPM", children: "npm менеджер пакетов" },
         { to: "/github", children: "GitHub" },
-        { to: "/http", children: "HTTP" },
+        { to: "/http", children: "Web-архитектура, HTTP" },
+        { to: "/webStorage", children: "Web Storage - веб хранилище" },
         { to: "/fireBase", children: "FireBase" },
-        { to: "/interviews", children: "Собеседования" },
     ];
     var SecondBlock = [
         { to: "/css", children: "CSS" },
@@ -37,7 +37,7 @@ var Footer = function () {
         { to: "/destructuring", children: "Деструктуризация" },
         { to: "/error", children: "Обработка ошибок" },
         { to: "/json", children: "Методы JSON" },
-        { to: "/webStorage", children: "WebStorage - веб-хранилище" },
+        { to: "/interviews", children: "Собеседования" },
     ];
     var FourthBlock = [
         { to: "/youTube", children: "На YouTube" },
