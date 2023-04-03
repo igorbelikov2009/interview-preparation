@@ -94,8 +94,8 @@ var YouTubeAuthor = function () {
             title: "Front-end. Наука от Сергея Пузанкова. 142 видео"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@IvanPetrychenkoDev/videos",
+            title: "Ivan Petrychenko. 47 видео о JavaScript."
         },
         {
             href: "",

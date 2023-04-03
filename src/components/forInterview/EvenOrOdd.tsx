@@ -1,11 +1,11 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { motion, AnimatePresence } from "framer-motion"; // анимация
 import React, { useState } from "react";
 import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeading";
 import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
 
-const TaskModel = () => {
+const EvenOrOdd = () => {
   const [isVisible, setVisible] = useState(false);
 
   const expanderHandler = () => {
@@ -13,7 +13,17 @@ const TaskModel = () => {
   };
 
   // задача
-  const [title] = useState("TaskModel");
+  const [title] = useState("Чётное или нечётное?");
+
+  const number = 1263;
+  const number2 = 1264;
+
+  function even_or_odd(number: number) {
+    return number % 2 === 0 ? "чётное" : "нечётное";
+  }
+
+  // console.log(even_or_odd(number));
+  // console.log(even_or_odd(number2));
   // задача
 
   return (
@@ -35,13 +45,16 @@ const TaskModel = () => {
 
               <div className="expanding__content">
                 <div className="expanding__pre">
-                  <h2 className="expanding__heading">x</h2>
-                  <h2 className="expanding__subheading">x</h2>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">x</p>
+                  <h2 className="expanding__heading">{title} </h2>
+                  <p className="expanding__paragraph-code">const number = 1263;</p>
+                  <p className="expanding__paragraph-code">const number2 = 1264;</p>
                   <p className="expanding__paragraph-code">-</p>
-                  <p className="expanding__paragraph-code">x</p>
-                  <p className="expanding__paragraph-code">x</p>
+                  <p className="expanding__paragraph-code">function even_or_odd(number: number) &#123;</p>
+                  <p className="expanding__paragraph-code">return number % 2 === 0 ? "чётное" : "нечётное";</p>
+                  <p className="expanding__paragraph-code">&#125;</p>
+                  <p className="expanding__paragraph-code">-</p>
+                  <p className="expanding__paragraph-code">console.log(even_or_odd(number)); // нечётное</p>
+                  <p className="expanding__paragraph-code">console.log(even_or_odd(number2)); // чётное</p>
                 </div>
               </div>
             </div>
@@ -52,4 +65,4 @@ const TaskModel = () => {
   );
 };
 
-export default TaskModel;
+export default EvenOrOdd;

@@ -19,7 +19,7 @@ var YouTubeTasksJavascript = function () {
         },
         {
             href: "https://www.youtube.com/watch?v=jE4sn7hUkX4&list=PLPiq_hi6UrQoIZVVTsHsadUmdMCve5Qdx&index=4",
-            title: "JS Задачи: Фабрика ботов.Удаляем гласные в строке .replace(/[euioa]/gi, '')"
+            title: "JS Задачи: Фабрика ботов. Удаляем гласные в строке .replace(/[euioa]/gi, '')"
         },
         {
             href: "https://www.youtube.com/watch?v=cJIr_zUElMc&list=PLPiq_hi6UrQoIZVVTsHsadUmdMCve5Qdx&index=4",
@@ -178,6 +178,18 @@ var YouTubeTasksJavascript = function () {
             title: "Длина цепи палиндрома — JS Задачи"
         },
         {
+            href: "https://www.youtube.com/watch?v=XoKmzVPoQ_0&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=2",
+            title: "Кто лайкнул? — JS Задачи"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=WCIpXcwvXpw&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=3",
+            title: "Самая простая задача из ЕГЭ по информатике — JS Задачи"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=qSCy7RaJ6bg&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=3",
+            title: "Разность массивов — Задачи с собеседований"
+        },
+        {
             href: "https://www.youtube.com/watch?v=cNPsxKh4s5U",
             title: "Валидация строк со скобками — Задачи с собеседований"
         },
@@ -234,49 +246,54 @@ var YouTubeTasksJavascript = function () {
             title: "Как удалить дубликаты из массива? 3 способа. (JavaScript)"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/watch?v=ukx4y4HjhtI&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=13",
+            title: "Представление числа в расширенной нотации — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=F2eYgsFuuJ0&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=13",
+            title: "Получить из массива строк те, которые являются подстроками второго массива — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=rJw30E-9kC4&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=14",
+            title: "Представить прямоугольник в виде группы квадратов — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=_d3Q2xStf8E&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=16",
+            title: "Валидация IP-адреса — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=YLc1G12T_jY&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=16",
+            title: "Сколько ещё в очереди стоять? — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=Hnlf8W04vfk&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=17",
+            title: "Нарисовать таблицу умножения — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=c1GnHM2cHjo&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=18",
+            title: "Пропущенное число в прогрессии / Выводим формулу разности прогрессии? — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=dT7hc6lqyn0&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=19",
+            title: "Решётка заменила Backspace — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=0XwAo_P49V8&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=21",
+            title: "Свернуть массив N раз — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=sB4CA7tyRJI&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=20",
+            title: "Вывести большее из самых повторяющихся чисел в массиве — Задачи с собеседований"
+        },
+        {
+            href: "https://www.youtube.com/watch?v=e9MvJCkhBjk&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=21",
+            title: "Сложение матриц — Задачи с собеседований"
         },
         {
             href: "",
             title: ""
         },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
-        {
-            href: "",
-            title: ""
-        },
+        // JS top
         {
             href: "",
             title: ""
