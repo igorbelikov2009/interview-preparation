@@ -302,12 +302,6 @@ export const arrayReactRouter: IObjectHeadingAnswers[] = [
     answer: [" ", " ", " ", " ", " ", " "],
     isParagraph: true,
   },
-
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
   {
     heading: "Зачем нам нужен маршрутизатор в React? ",
     answer: [
@@ -673,13 +667,7 @@ export const arrayReactRouter: IObjectHeadingAnswers[] = [
       "Обычный способ 'разрешения' URL заключается в объединении строки match.url и 'относительного' пути.",
       "const path = `${match.url}/relative-path`; ",
       " ",
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
+
       "import { useRouteMatch } from 'react-router-dom'; ",
       "//.. ",
       "const match = useRouteMatch(); ",
@@ -706,10 +694,6 @@ export const arrayReactRouter: IObjectHeadingAnswers[] = [
     answer: [
       "Компонент позволяет перенаправить пользователя на новую страницу. То, что мы делали с помощью useNavigate можно сделать гораздо проще с помощью Navigate. По сути, это обертка для useNavigate и принимает пропсы to, replace и state. ",
       " ",
-      " ",
-      " ",
-      " ",
-      " ",
     ],
     isParagraph: true,
   },
@@ -721,131 +705,6 @@ export const arrayReactRouter: IObjectHeadingAnswers[] = [
       "Каждый дочерний компонент <Routes> должен быть <Route>, что может нарушить некоторые предыдущие методы организации и составления маршрутов. ",
       " ",
     ],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
     isParagraph: true,
   },
   {
