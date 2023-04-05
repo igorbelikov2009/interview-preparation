@@ -6,6 +6,26 @@ export const linksCSS: ILinkInfo[] = [
     title: "npm i node-sass",
   },
   {
+    href: "https://skillbox.ru/media/code/vyravnivanie-po-tsentru-v-css-priyemy-svoystva-podvodnye-kamni/",
+    title: "Выравнивание по центру в CSS: приёмы, свойства, подводные камни",
+  },
+  {
+    href: "https://skillbox.ru/media/code/shpargalka-po-flexbox-svoystva-primery-ispolzovaniya-i-besplatnye-trenazhyery/",
+    title: "Шпаргалка по Flexbox: свойства, примеры использования и бесплатные тренажёры",
+  },
+  {
+    href: "https://skillbox.ru/media/code/uchimsya-verstat-v-setke-bolshoy-gayd-po-css-grid/",
+    title: "Учимся верстать в сетке: большой гайд по CSS Grid",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
+    href: " ",
+    title: " ",
+  },
+  {
     href: " ",
     title: " ",
   },
