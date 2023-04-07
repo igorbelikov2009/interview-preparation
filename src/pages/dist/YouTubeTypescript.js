@@ -38,8 +38,8 @@ var YouTubeTypescript = function () {
             title: "TypeScript Дмитрий Герасимов"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/playlist?list=PLFe0raUk4QF5QqZ8PYuPcoInxAJ1gaHpj",
+            title: "Уроки TypeScript Веб Программирование"
         },
         {
             href: "",

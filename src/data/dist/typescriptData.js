@@ -147,16 +147,8 @@ exports.linksTypescript = [
         title: "Что нового в TypeScript 5.0?"
     },
     {
-        href: "https://www.youtube.com/watch?v=t5r6azHIvaw",
-        title: "Различия Type и Interface в TypeScript"
-    },
-    {
         href: "https://www.youtube.com/watch?v=hGdx0hpZsvs&list=PLdTPrJkdrLGGgSnXMsO-Rix3MTuySb_mF&index=2&t=10s",
         title: "Разница между Интерфейсом и Типом в Тайпскрипт 2021. TypeScript Interface vs Type."
-    },
-    {
-        href: "https://translated.turbopages.org/proxy_u/en-ru.ru.aa7a9a9e-642fc311-08e7da2d-74722d776562/https/www.geeksforgeeks.org/what-is-the-difference-between-interface-and-type-in-typescript/",
-        title: "В чем разница между интерфейсом и типом в TypeScript?"
     },
     {
         href: "https://translated.turbopages.org/proxy_u/en-ru.ru.aa7a9a9e-642fc311-08e7da2d-74722d776562/https/www.geeksforgeeks.org/explain-about-rest-parameters-and-arguments-in-typescript/?ref=rp",
@@ -175,6 +167,14 @@ exports.linksTypescript = [
         title: "Объясните концепцию null и ее использование в TypeScript"
     },
     {
+        href: "https://www.youtube.com/watch?v=cVSo2lxfw54&list=PLdTPrJkdrLGGgSnXMsO-Rix3MTuySb_mF&index=6",
+        title: "Что такое keyof typeof в TypeScript."
+    },
+    {
+        href: "https://www.youtube.com/watch?v=nPSPA7_OvFg",
+        title: "Литеральные типы"
+    },
+    {
         href: "",
         title: ""
     },
@@ -187,6 +187,8 @@ exports.arrayTypescript = [
             "TypeScript представляет собой как язык программирования, так и набор инструментов. Это типизированный, расширенный JavaScript, компилируемый в JavaScript.",
             "Делает код понятнее и надежнее, добавляет статическую типизацию (переменные привязаны к конкретным типам данных), а также может быть скомпилирован в JavaScript. TypeScript используют фронтенд - и бэкенд-разработчики.",
             "В отличие от JavaScript, TypeScript — это язык программирования со статической типизацией. Как средство проверки статического типа, TypeScript будет проверять поведение определенных переменных перед запуском вашей программы. Это имеет место даже в том случае, когда вы объявляете переменные без указания их типа. В таких ситуациях TypeScript может автоматически назначать типы объявленным переменным.",
+            "-*-",
+            "Главная задача тайпскрипта, это внести типы в нетипизированный язык javascript. Благодаря типам, мы сможем быстро рефакторить проекты, поддерживать огромные проекты, а так же писать более качественный код, который будет основан уже на поведении типов.",
             "",
         ],
         isParagraphBefore: true
@@ -195,6 +197,7 @@ exports.arrayTypescript = [
         heading: "Что такое JavaScript?",
         answer: [
             "JavaScript — это кросс-платформенный, объектно-ориентированный скриптовый язык (язык сценариев), являющийся небольшим и легковесным. Внутри среды исполнения JavaScript может быть связан с объектами данной среды и предоставлять программный контроль над ними.",
+            "",
         ],
         isParagraphBefore: true
     },
@@ -206,6 +209,7 @@ exports.arrayTypescript = [
             "3. Языки сценариев не нуждаются в этапе компиляции и в основном интерпретируются.",
             "4. TypeScript всегда обращает внимание на ошибки в период разработке, но JavaScript выделяет их во время выполнения.",
             "5. TypeScript поддерживает статическую типизацию, в то время как JavaScript имеет динамическую типизацию.",
+            "",
         ],
         isParagraphBefore: true
     },
@@ -563,8 +567,10 @@ exports.arrayTypescript = [
     {
         heading: "Тип кортеж Tuple",
         answer: [
+            "Кортеж, это массив определённого размера, длина которого не изменяется и выступает как константа в мире массивов.",
             "Есть два способа определения кортежей.",
             "1. let x: [ string, number ]",
+            "x = [ 'colos', 42 ]",
             "Внутри массива мы определяем будущие типы, а затем присваиваем в переменную соответствующий массив.",
             "2. let y = [ string, number ] = [ 'goodbuy', 42 ] ",
             "Делаем тоже самое, только в одну строку. Разница в том, что если массив будет содержать набор из 10-ти разных элементов, которые нужно описать, то удобнее использовать первый случай. Причём, если вдруг при инициализации, произошла ошибка, и порядок типов данных изменился, то мы узнаем об этом, получив ошибку. ",
@@ -1397,9 +1403,10 @@ exports.arrayTypescript = [
     {
         heading: "Разница между Type и Interface в TypeScript",
         answer: [
-            "1. Interface для объектов, а Type для различных типов.",
-            "Если мы рассмотрим вариант использования этих сущностей для объектов, то в ряде случаев они взаимно заменяемы. Рассмотрим пример:",
-            "-",
+            "Смотри на ютубе.",
+            "https://www.youtube.com/watch?v=hGdx0hpZsvs&list=PLdTPrJkdrLGGgSnXMsO-Rix3MTuySb_mF&index=2",
+            "1. Interface всегда для описания объектов и функций, а Type, как для объектов - функций, так и для других различных сущностей. Функции в JavaScript являются объектами, разница лишь в том, их можно вызвать.",
+            "Если мы рассмотрим вариант использования этих сущностей для объектов, то в ряде случаев они взаимно заменяемы:",
             "interface Interface1 {",
             "name: string;",
             "}",
@@ -1407,17 +1414,102 @@ exports.arrayTypescript = [
             "type Type1 = {",
             "name: string;",
             "}",
+            "В данном случае нет особой разницы, что использовать. Оба эти варианта подходят.",
+            "-",
+            "Однако, если мы будем говорить не об объектах, а о других сущностях, то тут не всё так однозначно. Для таких случаев мы должны использовать Type. Вот пара примеров:",
+            "type Type2 = (prop: string) => string; // функция",
+            "type Type3 = string; // примитив ",
+            "--",
+            "Рассмотрим описание функции, которая принимает и возвращает number через тип:",
+            "type SumB = (a: number, b: number) => number; // описание",
+            "const sum: SumB = ( a, b ) => a + b ; // функция",
+            "То же, но через интерфейс: ",
+            "interface SumA {",
+            " (a: number, b: number ) => number",
+            "}",
+            "const sum: SumA = ( a, b ) => a + b ;",
             "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "2. Расширение (extends) interface. Для interface существует такая функциональность, как расширение. interface может наследоваться как от interface, так и от типа.",
+            "Type не связан с ООП, ни о каком наследовании, расширении не идёт речь.",
+            "Представим простой interface Animal, который будет обозначать животного:",
+            "interface Animal {",
+            "name: string;",
+            "}",
+            "У объекта, который реализует этот interface будет одно свойство - name.",
+            "-",
+            "Теперь рассмотрим расширение данного interface.",
+            "interface Dog extends Animal {",
+            "bark: () => void;",
+            "}",
+            "В данном случае мы создаём Interface Dog, который создаёт более конкретный тип животных - собак. И в нём мы реализуем метод bark - лай. Поскольку не все животные лают, а только собаки, то этот метод - специфическое свойство.",
+            "-",
+            "И давайте используем этот interface для создания объекта:",
+            "const dog: Dog = {",
+            "name: 'Бобик',",
+            "bark: () => console.log('Гав')",
+            "}",
+            "Как вы увидели из данного примера, interface имеет возможность создания повых interface на основе предыдущих.",
+            "--",
+            "3. Реализация (implements) interface",
+            "Поскольку interface - это сущность из ООП, то мы можем использовать её по назначению. Вот пример реализации:",
+            "4. С помощью типа можно сделать псевдоним для примитива. Интерфейс не позволяет такого.",
+            "type UniqueId = string;",
+            "Этот псевдоним можно использовать и в типах и в интерфейсах:",
+            "interface Use {",
+            "id: UniqueId;",
+            "};",
+            "Ещё раз, псевдоним примитива можно сделать только при помощи типа, интерфейс тут не поможет.",
+            "Но.... Если этот алиас не для примитива, а для массива, то мы можем здесь использовать интерфейс.",
+            "type NamesA = string[];",
+            "interface NamesB {",
+            " [ key: number ]: string // плохая запись через интерфейс, непонятная...",
+            "}",
+            "5. Так же, через интерфейс невозможно сделать описание кортежа. ",
+            "Кортеж, это массив определённого размера, длина которого не изменяется и выступает как константа в мире массивов.",
+            "type State = [ number, (n: number)=> void ]",
+            "const s: State = [ 123, (n) => {} ]",
+            "6. Так же мы можем создать тип, который будет ",
+            "type A = {",
+            " age: number;",
+            "}",
+            "-",
+            "type B = {",
+            " name: string;",
+            "}",
+            "-",
+            "type C = A | B;",
+            "Это значит, что можно создать объект с полем age: 22 или name: 's', или с обоими полями вместе. И тайпскрипт не будет ругаться на это.",
+            "const obj: C = {",
+            "age: 22,",
+            "name: 's',",
+            "}",
+            "Итнерфейс для такого объекта написать невозможно, только псевдоним типа.",
+            "--",
+            "7. Невозможно написать дин и тот же тип несколько раз:",
+            "type A = {",
+            " age: number;",
+            "}",
+            "-",
+            "type A = {} // error",
+            "А интерфейсы позволяют",
+            "interface B {",
+            " name: string",
+            "}",
+            "-",
+            "interface B {",
+            "age: number",
+            "}",
+            "И далее при создании объекта, typescript скажет, что нужны поля и  name: string и age: number",
+            "---------------",
+            "8. Так когда же использовать интерфейсы, а когда типы?",
+            "Интерфейсы мы используем при описании доменной логики нашего приложения, а так же, например для объектов, которые приходят к нам по API. Функционального компонента в реакте.",
+            "А типы мы используем для взаимодействия с этими интерфейсами, например у нас может быть интерфейс Nullable, это дженерик, который принимает тип. Он может быть null или undefined. И далее мы можем создавать типы или переменные на основе этих объектов, интерфесов и типов.",
+            "interface User {",
+            " name: string;",
+            " age: number;",
+            "}",
+            "type Nullable<T> = T | null | undefined;",
+            "Таким образом, интерфейс у нас будет отвечать за логику приложения, а типы будут описывать поведенческие моменты.",
             "",
         ],
         isParagraphBefore: true
@@ -1461,138 +1553,13 @@ exports.arrayTypescript = [
         isParagraphBefore: true
     },
     {
-        heading: "",
+        heading: "Множественное наследование",
+        answer: ["Если мы хотим унаследоваться у двух классов, то у нас возникает множественное наследование. ", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "Когда использовать наследование, а когда generic в TypeScript",
         answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
         isParagraphBefore: true
     },
     {
@@ -1611,6 +1578,310 @@ exports.arrayTypescript = [
             "",
             "",
         ],
+        isParagraphBefore: true
+    },
+    {
+        heading: "Литеральные типы",
+        answer: [
+            "Сегодня в TypeScript доступны три набора литеральных типов: строки, числа и булевы. Используя литеральные типы, можно задать точное, конкретное значение, которое должна иметь строка, число или булева величина.",
+            "Литеральные типы в Typescript - это более конкретные типы строк, чисел и логических значений. ",
+            "1. Объявим переменную C, которая будет равна 'test':  ",
+            "- let C = 'test'; // test у нас имеет тип string. ",
+            "Но мы можем сказать, что переменная С может быть только test:",
+            "- let C: 'test' = 'test'; // переменная С может быть только test",
+            "Это и есть литеральный тип. Мы установили, что переменная С может иметь только одно значение: 'test'. Мы не можем написать teste, testa. Ничего другого, только test. ",
+            "-*-",
+            "2. Объявим тип экшен, который может принимать либо 'up' либо 'down'. С помощью экшена мы можем перемещаться либо вверх, либо вниз. Теперь видно, что экшен может быть всего 2-х типов.",
+            "- type actionType = 'up' | 'down' ",
+            "Создадим функцию, которая принимает в себя (action: actionType). И, когда мы будем делать switch по этому экшену, мы увидим, что case может быть только либо 'up', либо 'down'. То есть, мы ограничиваем наборы действий по этому экшену. Немного напоминает enum. ",
+            "function performAction(action: actionType) {",
+            "- switch (action) {",
+            "- - case 'up': ... ",
+            "- - case 'down': ... ",
+            "-}",
+            "}",
+            "То есть, фактически, мы ограничили строковый выход этого типа или строковый вход этого типа конкретными значениями. Это и есть литеральные значения.",
+            "-*-",
+            "3. То же самое мы можем сказать, что данная функция будет возвращать литеральный тип нумерический. Это означает, что она вернёт нам либо -1 либо 1. ",
+            "function performAction(action: actionType): -1 | 1 {",
+            " switch (action) {",
+            " - case 'up': ",
+            " - - - return -1 ",
+            " - case 'down': ",
+            " - - - return 1 ",
+            "}",
+            "}",
+            "Тем самым мы обозначили, что принимаем литеральный строковый тип action, а возвращаем литеральный нумерический тип: только -1 либо 1.",
+            "-*-",
+            "4. Литеральные типы могут быть скомбинированны с обычными интерфейсами.",
+            "function performAction(action: actionType | ComplexAction) {",
+            " switch (action) {",
+            " - case 'up': ",
+            " - - - return -1 ",
+            " - case 'down': ",
+            " - - - return 1 ",
+            "}",
+            "}",
+            "-",
+            "interface ComplexAction {",
+            "s: string;",
+            "};",
+            "Литеральные типы немного напоминают enum.",
+            "-*-",
+            "",
+        ],
+        isParagraphBefore: true
+    },
+    {
+        heading: "Что такое keyof typeof в TypeScript.",
+        answer: [
+            "1. Литеральные типы в Typescript - это более конкретные типы строк, чисел и логических значений.",
+            "type Role = 'Admin'; // здесь тип не строка, а Admin. Присвоить перменной с типом Role мы можем только значение Admin. Любое другое значение вызовет ошибку.",
+            "- const currentRole: Role = 'Admin'; ",
+            "console.log(currentRole); // Admin",
+            "- const currentRole: Role = 'Amur'; ",
+            "console.log(currentRole); // Error",
+            "-*-",
+            "2. Так же в Typescript существуют объединения литеральных типов. Например, в типе Roles могут быть админ, модератор или юзер: ",
+            "type Roles = 'Admin' | 'Moderator' | 'User' ; ",
+            "И тогда значением переменной currentRole с типом Roles может быть одно из этих значений, то есть 'Admin', 'Moderator' или 'User' .",
+            "-*-",
+            "3. Оператор keyof используется для получения ключей любого типа.",
+            "Допустим у нас есть интерфейс: ",
+            "interface User {",
+            "- name: string;",
+            "- age: number;",
+            "}",
+            "Далее мы создадим тип UserKeys, используя оператор keyof над типом User: ",
+            "type UserKeys = keyof User;",
+            "Далее, объявив переменную prop с типом UserKeys,",
+            " - - let prop: UserKeys; // name, age",
+            "мы увидим, что записать в переменную можно только name или age. Никакое другое значение туда не подходит. Так как мы явно запросили ключи интерфейса User и переменная prop ограничена ими. Оператор keyof возвращает нам новый тип, который является объединением литеральных типов. По сути это аналог типа:",
+            "type UserKeys = 'name' | 'age'. ",
+            "Только мы этот юнион прямо не прописываем, а генерим на лету с помощью тайпскрипт-оператора keyof. ",
+            "-*-",
+            "4. keyof typeof ",
+            "const message = {",
+            "- id: 1,",
+            "- text: 'JavaScript', ",
+            "}",
+            "const t = typeof message",
+            "console.log(t); // object",
+            "Однако, если использовать typeof с типом (typeof message), то тайпскрипт сделает запрос: какой тип объекта message и сохранит его в тип MessageType. Расспознает его, и укажет что id у нас будет типа number, а text будет типа string. Ну и сам тип MessageType будет у нас объект. ",
+            "type MessageType = typeof message; // тип MessageType возвращает нам тип объекта message.",
+            "Таким образом, с помощью typeof получаем тип MessageType",
+            "type MessageType = {",
+            "- id: number;",
+            "- text: string;",
+            "}",
+            "Далее, основываясь на этом типе, мы можем создавать нове сообщения, например: ",
+            "const userMessage: MessageType = {",
+            "- id: 123,",
+            "- text: 'Hi!',",
+            "}",
+            "-*-",
+            "5. Так же операторы keyof и typeof можно использовать вместе.",
+            "Имеем:",
+            "const message = {",
+            "- id: 1,",
+            "- text: 'JavaScript', ",
+            "}",
+            " // тип MessageType = { id: number, text: string } возвращает нам тип объекта message.",
+            "- type MessageType = typeof message;",
+            "Получим ключи типа MessageType:",
+            "- type MessageKeys = keyof MessageType;",
+            "И мы видим, что MessageKeys = 'id' | 'text' - это объединение литеральных типов.",
+            "Если мы добавим в объект новое поле:",
+            "const message = {",
+            "- id: 1,",
+            "- text: 'JavaScript', ",
+            "- postId: 12,",
+            "}",
+            "то оно добавится в набор типа MessageKeys = 'id' | 'text' | 'postId' ",
+            "Этот приём широко используется в enum. Например, у нас будет",
+            " 4 мин 51 сек",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+        ],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
+        isParagraphBefore: true
+    },
+    {
+        heading: "",
+        answer: ["", "", "", ""],
         isParagraphBefore: true
     },
     {

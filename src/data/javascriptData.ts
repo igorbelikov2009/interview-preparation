@@ -2587,12 +2587,14 @@ export const arrayJavascript: IObjectHeadingAnswers[] = [
     isParagraph: true,
   },
   {
-    heading: " ",
-    answer: [" ", " "],
+    heading: "Функции в JavaScript ",
+    answer: [
+      "Функции в JavaScript являются объектами, если точнее, то они являются объектами типа Function. Их ключевое отличие от обычных объектов, дающее им те исключительные возможности, которыми они обладают, заключается в том, что функции можно вызывать.",
+    ],
     isParagraph: true,
   },
   {
-    heading: " Асинхронная функция. ",
+    heading: "   ",
     answer: [" ", " "],
     isParagraph: true,
   },
