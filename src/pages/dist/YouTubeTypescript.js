@@ -30,12 +30,12 @@ var YouTubeTypescript = function () {
             title: "Краткий Обзор TypeScript"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/playlist?list=PLdTPrJkdrLGGgSnXMsO-Rix3MTuySb_mF",
+            title: "TypeScript. wise.js"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/playlist?list=PL3kMIP8C86shhC2qYjVUXyuk6Mk87bBDw",
+            title: "TypeScript Дмитрий Герасимов"
         },
         {
             href: "",

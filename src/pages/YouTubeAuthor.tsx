@@ -98,8 +98,8 @@ const YouTubeAuthor = () => {
       title: "Ivan Petrychenko. 47 видео о JavaScript.",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/@wisejs/playlists",
+      title: "wise.js. Mobx, Typescript.",
     },
     {
       href: "",
