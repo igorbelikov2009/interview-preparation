@@ -1633,10 +1633,10 @@ exports.arrayTypescript = [
         isParagraphBefore: true
     },
     {
-        heading: "Что такое keyof typeof в TypeScript.",
+        heading: "Литеральные типы, объединения литеральных типов в TypeScript.",
         answer: [
             "1. Литеральные типы в Typescript - это более конкретные типы строк, чисел и логических значений.",
-            "type Role = 'Admin'; // здесь тип не строка, а Admin. Присвоить перменной с типом Role мы можем только значение Admin. Любое другое значение вызовет ошибку.",
+            "type Role = 'Admin'; // здесь тип Role имеет фиксированное значение Admin. Присвоить перменной с типом Role мы можем только значение Admin. Любое другое значение вызовет ошибку.",
             "- const currentRole: Role = 'Admin'; ",
             "console.log(currentRole); // Admin",
             "- const currentRole: Role = 'Amur'; ",
@@ -1646,7 +1646,12 @@ exports.arrayTypescript = [
             "type Roles = 'Admin' | 'Moderator' | 'User' ; ",
             "И тогда значением переменной currentRole с типом Roles может быть одно из этих значений, то есть 'Admin', 'Moderator' или 'User' .",
             "-*-",
-            "3. Оператор keyof используется для получения ключей любого типа.",
+        ],
+        isParagraphBefore: true
+    },
+    {
+        heading: "Оператор keyof используется в TypeScript для получения ключей любого типа.",
+        answer: [
             "Допустим у нас есть интерфейс: ",
             "interface User {",
             "- name: string;",
@@ -1660,7 +1665,13 @@ exports.arrayTypescript = [
             "type UserKeys = 'name' | 'age'. ",
             "Только мы этот юнион прямо не прописываем, а генерим на лету с помощью тайпскрипт-оператора keyof. ",
             "-*-",
-            "4. keyof typeof ",
+            "",
+        ],
+        isParagraphBefore: true
+    },
+    {
+        heading: "Оператор typeof используется в TypeScript для получения типов.",
+        answer: [
             "const message = {",
             "- id: 1,",
             "- text: 'JavaScript', ",
@@ -1674,13 +1685,19 @@ exports.arrayTypescript = [
             "- id: number;",
             "- text: string;",
             "}",
-            "Далее, основываясь на этом типе, мы можем создавать нове сообщения, например: ",
+            "Далее, основываясь на этом типе, мы можем создавать новое сообщения, например: ",
             "const userMessage: MessageType = {",
             "- id: 123,",
             "- text: 'Hi!',",
             "}",
             "-*-",
-            "5. Так же операторы keyof и typeof можно использовать вместе.",
+            "",
+        ],
+        isParagraphBefore: true
+    },
+    {
+        heading: "Используем операторы keyof и typeof в TypeScript вместе.",
+        answer: [
             "Имеем:",
             "const message = {",
             "- id: 1,",
@@ -1699,23 +1716,75 @@ exports.arrayTypescript = [
             "}",
             "то оно добавится в набор типа MessageKeys = 'id' | 'text' | 'postId' ",
             "Этот приём широко используется в enum. Например, у нас будет",
-            " 4 мин 51 сек",
+            " -*-",
+        ],
+        isParagraphBefore: true
+    },
+    {
+        heading: "Используем keyof typeof в TypeScript с enum.",
+        answer: [
+            "Создаём enum (перечисление) цветов, которые будем использовать в нашем приложении:",
+            "enum Colors {",
+            "- white = '#fff',",
+            "- black = '#000',",
+            "}",
+            "Необходимо определить тип, который будет указывать на доступные цвета:",
+            "- type AvailableColors = keyof typeof Colors; // то есть white или black.",
+            "Так как енам у нас это не тип, а объект, если мы переведём его в js, то typeof используем для распознования типа, а keyof для получения ключей этого типа и далее его использовать в переменной.",
+            "let color: AvailableColors = 'black' // or 'white'. ",
+            "-*-",
+        ],
+        isParagraphBefore: true
+    },
+    {
+        heading: "Пример использования keyof typeof в TypeScript с объектом formData.",
+        answer: [
+            "Имеем объект:",
+            "const formData = {",
+            "- firstName: 'John',",
+            "- lastName: 'Doe', ",
+            "- age: 30",
+            "}",
+            "-",
+            "Нам необходимо создать функцию, которая, на основе переданного объекта, будет возвращать ValidationResult (результат проверки). Этот ValidationResult должен включать в себя все поля, которые есть в нашем объекте и булевое значение, то есть true, есло оно валидно и false, если оно не валидно.",
+            "interface ValidationResult {",
+            "- firstName: boolean; ",
+            "- lastName: boolean; ",
+            "- age: boolean;",
+            "}",
+            "То есть наша функция  validate() должна уметь принимать любой объект и возвращать нам ValidationResult",
+            "- declare function validate<T>(data: T): ValidationResult;",
+            "И если вызовем функцию validate() на нашем объекте formData, то она нам вернёт ValidationResult.",
+            "const r = validate(formData) ",
+            "-",
+            "Однако, если в объекте formData будет больше полей или они будут какие-то другие, а нам надо, чтобы они тоже попадали в наш интерфейс (или тип) ValidationResult. То есть, нам нужно знать, какие ключи есть в объекте formData, для того, чтобы их динамески добавить в наш ValidationResult. Мы можем  это сделать с помощью операторов typeof и keyof. Для этого мы создадим новый ValidationResult, ключи которого будут взяты из ключей типов объекта formData и все они будут булевого типа. ",
+            "type ValidationResult = {",
+            "- [key in keyof typeof formData]: boolean; //  и все они будут булевого типа",
+            "}",
+            "При динамическом добавлении новых полей в объект formData они у нас будут автоматически добавляться и в ValidationResult",
+            "-*-",
+        ],
+        isParagraphBefore: true
+    },
+    {
+        heading: "Пример использования keyof typeof с абсолютно любым объектом, используя Т.",
+        answer: [
+            "Чтобы не подвязываться под formData, мы можем наш тип ValidationResult вынести в функцию validate(). Здесь нет необходимости использовать formData, можно использовать просто Т",
+            "Имеем объект:",
+            "const formData = {",
+            "- firstName: 'John',",
+            "- lastName: 'Doe', ",
+            "- age: 30",
+            "}",
             "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "- declare function validate<T>(data: T): { [key in keyof Т ]: boolean };",
+            "Нам не нужен formData, используем просто Т. На не нужен typeof, так как в дженериках тайпскрипт сам распознает тип. Вызываем функцию validate() с текущим объектов в параметре: ",
+            "- const r = validate(formData)",
+            "и вот мы видим перечисление всех полей, основываясь на текущем объекте. ",
+            "Так же можно явно указать, что это <typeof formData> и у нас ничто не поменяется. ",
+            "- const r = validate<typeof formData>(formData)",
+            "Но теперь наша функция validate() будет работать с абсолютно любым объектом и указывать его результат.  ",
+            "- const r2 = validate(timeData)",
         ],
         isParagraphBefore: true
     },
@@ -1747,146 +1816,6 @@ exports.arrayTypescript = [
     {
         heading: "",
         answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
-        isParagraphBefore: true
-    },
-    {
-        heading: "",
-        answer: ["", "", "", ""],
         isParagraphBefore: true
     },
 ];
