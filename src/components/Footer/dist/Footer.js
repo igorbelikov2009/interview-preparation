@@ -37,6 +37,7 @@ var Footer = function () {
         { to: "/destructuring", children: "Деструктуризация" },
         { to: "/error", children: "Обработка ошибок" },
         { to: "/json", children: "Методы JSON" },
+        { to: "/regularExpression", children: "Регулярное выражение" },
         { to: "/interviews", children: "Собеседования" },
     ];
     var FourthBlock = [

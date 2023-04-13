@@ -41,6 +41,7 @@ import YouTubeJavascript from "../pages/YouTubeJavascript";
 import CSSFishki from "../pages/CSSFishki";
 import GeneralLinks from "../pages/GeneralLinks";
 import YouTubeTasksJavascript from "../pages/YouTubeTasksJavascript";
+import RegularExpression from "../pages/RegularExpression";
 
 const AppRouter: FC = () => {
   return (
@@ -85,6 +86,7 @@ const AppRouter: FC = () => {
         <Route path="youTubeCSS" element={<YouTubeCSS />} />
         <Route path="youTubeJavascript" element={<YouTubeJavascript />} />
         <Route path="youTubeTasksJavascript" element={<YouTubeTasksJavascript />} />
+        <Route path="regularExpression" element={<RegularExpression />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} />

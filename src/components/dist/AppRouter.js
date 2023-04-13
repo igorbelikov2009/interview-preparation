@@ -43,6 +43,7 @@ var YouTubeJavascript_1 = require("../pages/YouTubeJavascript");
 var CSSFishki_1 = require("../pages/CSSFishki");
 var GeneralLinks_1 = require("../pages/GeneralLinks");
 var YouTubeTasksJavascript_1 = require("../pages/YouTubeTasksJavascript");
+var RegularExpression_1 = require("../pages/RegularExpression");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -85,6 +86,7 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeCSS", element: react_1["default"].createElement(YouTubeCSS_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeJavascript", element: react_1["default"].createElement(YouTubeJavascript_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeTasksJavascript", element: react_1["default"].createElement(YouTubeTasksJavascript_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "regularExpression", element: react_1["default"].createElement(RegularExpression_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;
