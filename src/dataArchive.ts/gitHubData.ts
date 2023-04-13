@@ -6,6 +6,10 @@ export const linksGitHub: ILinkInfo[] = [
     title: "Мой репозиторий на гитхабе.",
   },
   {
+    href: "https://habr.com/ru/companies/ruvds/articles/599929/",
+    title: "30 команд Git, необходимых для освоения интерфейса командной строки Git",
+  },
+  {
     href: "https://htmlacademy.ru/blog/html_old",
     title: "Бесплатный учебник по Git и GitHub",
   },
