@@ -1,0 +1,31 @@
+.page {
+  width: 100%;
+  padding: 0 24px;
+}
+@media screen and (min-width: 576px) {
+  .page {
+    padding: 0 28px;
+  }
+}
+.page__container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.page__heading {
+  font-size: 24px;
+  line-height: 36px;
+  color: #363636;
+  text-align: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #e6f0fa;
+}
+@media screen and (min-width: 576px) {
+  .page__heading {
+    font-size: 34px;
+    line-height: 48px;
+  }
+}
+.page__container-search-query {
+  margin-bottom: 12px;
+}

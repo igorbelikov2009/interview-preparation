@@ -24,6 +24,10 @@ export interface IParagraph {
   paragraphs?: string[];
 }
 
+export interface IParagraphTask {
+  paragraphsTask: string[];
+}
+
 export interface IParagraphBefore {
   paragraphs: string[];
 }
@@ -41,6 +45,12 @@ export interface IInterviewTasks {
   isParagraph?: boolean;
   isParagraphBefore?: boolean;
   children?: React.ReactNode;
+}
+
+export interface IObjectTasks {
+  heading: string;
+  href: string;
+  taskCode: string[];
 }
 
 export interface ILinkInfo {

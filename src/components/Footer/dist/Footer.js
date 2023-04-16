@@ -39,6 +39,7 @@ var Footer = function () {
         { to: "/json", children: "Методы JSON" },
         { to: "/regularExpression", children: "Регулярное выражение" },
         { to: "/interviews", children: "Собеседования" },
+        { to: "/tasksFromInterviews", children: "Задачи из собеседований" },
     ];
     var FourthBlock = [
         { to: "/youTube", children: "На YouTube" },

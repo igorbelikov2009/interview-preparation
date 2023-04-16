@@ -21,8 +21,8 @@ var ClearString = function () {
     react_1.useEffect(function () {
         setElemClear(stringCleaner(elem));
     }, [elem]);
-    // console.log(elem);
-    // console.log(elemClear);
+    console.log(elem);
+    console.log(elemClear);
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
         react_1["default"].createElement(framer_motion_1.AnimatePresence, null, isVisible && (react_1["default"].createElement(framer_motion_1.motion.div, { initial: { height: 0, opacity: 0 }, animate: { height: "auto", opacity: 1 }, exit: { height: 0, opacity: 0 }, style: { overflow: "hidden" } },

@@ -1,7 +1,5 @@
 import { motion } from "framer-motion"; // анимация
 import ClearString from "../components/forInterview/ClearString";
-import EvenOrOdd from "../components/forInterview/EvenOrOdd";
-import RemoveSpacesFromString from "../components/forInterview/RemoveSpacesFromString";
 import TaskModel from "../components/forInterview/TaskModel";
 import "../styles/arrayMethods.scss";
 
@@ -15,9 +13,8 @@ const ArrayTasksPage = () => {
       <div className="array-methods__container">
         <h1 className="array-methods__heading"> Задачи по методам массивов </h1>
         {/* <h2 className="array-methods__subheading"> Регулярные выражения </h2> */}
-        <RemoveSpacesFromString />
+
         <ClearString />
-        <EvenOrOdd />
 
         <TaskModel />
       </div>

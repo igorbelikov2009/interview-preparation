@@ -41,6 +41,7 @@ const Footer = () => {
     { to: "/json", children: "Методы JSON" },
     { to: "/regularExpression", children: "Регулярное выражение" },
     { to: "/interviews", children: "Собеседования" },
+    { to: "/tasksFromInterviews", children: "Задачи из собеседований" },
   ];
 
   const FourthBlock: IFooterLinks[] = [

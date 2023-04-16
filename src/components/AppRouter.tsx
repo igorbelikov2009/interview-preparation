@@ -42,6 +42,7 @@ import CSSFishki from "../pages/CSSFishki";
 import GeneralLinks from "../pages/GeneralLinks";
 import YouTubeTasksJavascript from "../pages/YouTubeTasksJavascript";
 import RegularExpression from "../pages/RegularExpression";
+import TasksFromInterviews from "../pages/TasksFromInterviews";
 
 const AppRouter: FC = () => {
   return (
@@ -87,6 +88,7 @@ const AppRouter: FC = () => {
         <Route path="youTubeJavascript" element={<YouTubeJavascript />} />
         <Route path="youTubeTasksJavascript" element={<YouTubeTasksJavascript />} />
         <Route path="regularExpression" element={<RegularExpression />} />
+        <Route path="tasksFromInterviews" element={<TasksFromInterviews />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} />

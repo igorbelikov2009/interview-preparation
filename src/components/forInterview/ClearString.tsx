@@ -27,8 +27,8 @@ const ClearString = () => {
     setElemClear(stringCleaner(elem));
   }, [elem]);
 
-  // console.log(elem);
-  // console.log(elemClear);
+  console.log(elem);
+  console.log(elemClear);
 
   return (
     <div className="expanding">

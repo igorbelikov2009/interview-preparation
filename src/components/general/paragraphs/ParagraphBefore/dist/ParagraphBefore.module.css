@@ -8,6 +8,7 @@
   box-sizing: border-box;
   position: relative;
   margin-left: 32px;
+  white-space: pre-wrap;
 }
 .paragraph-before::before {
   position: absolute;

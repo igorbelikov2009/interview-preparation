@@ -1,20 +1,21 @@
 import React, { FC, useState, useMemo } from "react";
-import { IObjectHeadingAnswers } from "../../../models/types";
+import { IObjectTasks } from "../../../models/types";
 import InputSearch from "../../ui/inputs/InputSearch";
-import ExpandingAnswer from "../expanding/ExpandingAnswer/ExpandingAnswer";
-import styles from "./Page.module.scss";
+import ExpandingForTask from "../expanding/ExpandingForTask/ExpandingForTask";
 
-interface IPageProps {
+import styles from "./PageForTask.module.scss";
+
+interface IPageForTaskProps {
   title: string;
-  ArrayHeadingAnswers: IObjectHeadingAnswers[];
+  arrayTasks: IObjectTasks[];
 }
 
-const Page: FC<IPageProps> = ({ title, ArrayHeadingAnswers }) => {
+const PageForTask: FC<IPageForTaskProps> = ({ title, arrayTasks }) => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredArray = useMemo(() => {
-    return ArrayHeadingAnswers.filter((question) => question.heading.toLowerCase().includes(searchQuery));
-  }, [ArrayHeadingAnswers, searchQuery]);
+    return arrayTasks.filter((task) => task.heading.toLowerCase().includes(searchQuery));
+  }, [arrayTasks, searchQuery]);
 
   return (
     <section className={styles["page"]}>
@@ -24,14 +25,14 @@ const Page: FC<IPageProps> = ({ title, ArrayHeadingAnswers }) => {
 
           <div className={styles["page__container-search-query"]}>
             <InputSearch
-              placeholder="Поиск по названию вопросов."
+              placeholder="Поиск по условию задач."
               searchQuery={searchQuery}
               setSearchQuery={setSearchQuery}
             />
           </div>
 
           {filteredArray.map((item, index) => (
-            <ExpandingAnswer key={index} heading={item.heading} answer={item.answer} isParagraph={true} />
+            <ExpandingForTask key={index} heading={item.heading} href={item.href} taskCode={item.taskCode} />
           ))}
         </div>
       </div>
@@ -39,4 +40,4 @@ const Page: FC<IPageProps> = ({ title, ArrayHeadingAnswers }) => {
   );
 };
 
-export default Page;
+export default PageForTask;
