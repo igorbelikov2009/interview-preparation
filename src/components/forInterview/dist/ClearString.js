@@ -1,4 +1,11 @@
 "use strict";
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 exports.__esModule = true;
 /* eslint-disable @typescript-eslint/no-unused-vars */
 var framer_motion_1 = require("framer-motion"); // анимация
@@ -11,18 +18,16 @@ var ClearString = function () {
     var expanderHandler = function () {
         setVisible(function (prev) { return !prev; });
     };
+    var title = react_1.useState("title")[0];
     // task
-    var title = react_1.useState("Очистить строку от числовых символов. Метод string.replaceAll() с регулярным выражением внутри.")[0];
-    var elem = react_1.useState("This looks5 grea8te")[0];
-    var _b = react_1.useState(""), elemClear = _b[0], setElemClear = _b[1];
-    function stringCleaner(s) {
-        return s.replaceAll(/\d/g, "");
+    function uniqueInOrder(iterable) {
+        return __spreadArrays(iterable).filter(function (el, index) { return el !== iterable[index - 1]; });
     }
-    react_1.useEffect(function () {
-        setElemClear(stringCleaner(elem));
-    }, [elem]);
-    console.log(elem);
-    console.log(elemClear);
+    console.log(uniqueInOrder("AAAABBBCCDAABBB")); //  ['A', 'B', 'C', 'D', 'A', 'B']
+    console.log(uniqueInOrder("ABBCcAD")); //  ['A', 'B', 'C', 'c', 'A', 'D']
+    console.log(uniqueInOrder(["A", "A", "A", "B", "B", "C", "C", "D", "A", "A", "B", "B", "B"])); // ['A', 'B', 'C', 'D', 'A', 'B']
+    console.log(uniqueInOrder([1, 1, 2, 2, 2, 3, 3, 4, 4])); // [1, 2, 3, 4]
+    // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
         react_1["default"].createElement(framer_motion_1.AnimatePresence, null, isVisible && (react_1["default"].createElement(framer_motion_1.motion.div, { initial: { height: 0, opacity: 0 }, animate: { height: "auto", opacity: 1 }, exit: { height: 0, opacity: 0 }, style: { overflow: "hidden" } },

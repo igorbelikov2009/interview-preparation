@@ -10,25 +10,22 @@ const ClearString = () => {
   const expanderHandler = () => {
     setVisible((prev) => !prev);
   };
+  const [title] = useState("title");
 
   // task
-  const [title] = useState(
-    "Очистить строку от числовых символов. Метод string.replaceAll() с регулярным выражением внутри."
-  );
 
-  const [elem] = useState("This looks5 grea8te");
-  const [elemClear, setElemClear] = useState("");
-
-  function stringCleaner(s: string) {
-    return s.replaceAll(/\d/g, "");
+  function uniqueInOrder(iterable: string | string[] | number[]) {
+    return [...iterable].filter((el, index) => el !== iterable[index - 1]);
   }
 
-  useEffect(() => {
-    setElemClear(stringCleaner(elem));
-  }, [elem]);
+  console.log(uniqueInOrder("AAAABBBCCDAABBB")); //  ['A', 'B', 'C', 'D', 'A', 'B']
 
-  console.log(elem);
-  console.log(elemClear);
+  console.log(uniqueInOrder("ABBCcAD")); //  ['A', 'B', 'C', 'c', 'A', 'D']
+
+  console.log(uniqueInOrder(["A", "A", "A", "B", "B", "C", "C", "D", "A", "A", "B", "B", "B"])); // ['A', 'B', 'C', 'D', 'A', 'B']
+
+  console.log(uniqueInOrder([1, 1, 2, 2, 2, 3, 3, 4, 4])); // [1, 2, 3, 4]
+  // task
 
   return (
     <div className="expanding">
