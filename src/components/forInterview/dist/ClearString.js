@@ -1,11 +1,4 @@
 "use strict";
-var __spreadArrays = (this && this.__spreadArrays) || function () {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
 exports.__esModule = true;
 /* eslint-disable @typescript-eslint/no-unused-vars */
 var framer_motion_1 = require("framer-motion"); // анимация
@@ -20,13 +13,40 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // task
-    function uniqueInOrder(iterable) {
-        return __spreadArrays(iterable).filter(function (el, index) { return el !== iterable[index - 1]; });
-    }
-    console.log(uniqueInOrder("AAAABBBCCDAABBB")); //  ['A', 'B', 'C', 'D', 'A', 'B']
-    console.log(uniqueInOrder("ABBCcAD")); //  ['A', 'B', 'C', 'c', 'A', 'D']
-    console.log(uniqueInOrder(["A", "A", "A", "B", "B", "C", "C", "D", "A", "A", "B", "B", "B"])); // ['A', 'B', 'C', 'D', 'A', 'B']
-    console.log(uniqueInOrder([1, 1, 2, 2, 2, 3, 3, 4, 4])); // [1, 2, 3, 4]
+    // const numeric = {
+    //   1: 0,
+    //   17: 0,
+    // };
+    // //
+    var intersectNubmers = function (a, b) {
+        var set = new Set();
+        var pick = {};
+        a.forEach(function (n) {
+            if (!set.has(n)) {
+                set.add(n);
+            }
+            else {
+                pick[n] = 0;
+            }
+        });
+        // return pick; // {1: 0, 17: 0, 56: 0} // результат проверки первого массива
+        // Проверяем второй массив
+        b.forEach(function (n) {
+            if (n in pick) {
+                pick[n] = pick[n] + 1;
+            }
+        });
+        // return pick; // {1: 3, 17: 2, 56: 1} // результат проверки обоих массивов
+        // Преобразуем объект в массив, в котором будут лежать только ключи
+        return Object.entries(pick).reduce(function (result, _a) {
+            var n = _a[0], count = _a[1];
+            if (count > 1) {
+                result.push(+n);
+            }
+            return result;
+        });
+    };
+    console.log(intersectNubmers([7, 17, 1, 9, 1, 17, 56, 56, 23], [56, 17, 17, 1, 23, 34, 23, 1, 8, 1]));
     // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),

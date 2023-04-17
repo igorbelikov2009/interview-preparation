@@ -13,18 +13,43 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // task
+  // const numeric = {
+  //   1: 0,
+  //   17: 0,
+  // };
+  // //
 
-  function uniqueInOrder(iterable: string | string[] | number[]) {
-    return [...iterable].filter((el, index) => el !== iterable[index - 1]);
-  }
+  const intersectNubmers = (a: number[], b: number[]) => {
+    const set = new Set();
+    const pick: any = {};
 
-  console.log(uniqueInOrder("AAAABBBCCDAABBB")); //  ['A', 'B', 'C', 'D', 'A', 'B']
+    a.forEach((n: number) => {
+      if (!set.has(n)) {
+        set.add(n);
+      } else {
+        pick[n] = 0;
+      }
+    });
 
-  console.log(uniqueInOrder("ABBCcAD")); //  ['A', 'B', 'C', 'c', 'A', 'D']
+    // return pick; // {1: 0, 17: 0, 56: 0} // результат проверки первого массива
+    // Проверяем второй массив
+    b.forEach((n: number) => {
+      if (n in pick) {
+        pick[n] = pick[n] + 1;
+      }
+    });
 
-  console.log(uniqueInOrder(["A", "A", "A", "B", "B", "C", "C", "D", "A", "A", "B", "B", "B"])); // ['A', 'B', 'C', 'D', 'A', 'B']
+    // return pick; // {1: 3, 17: 2, 56: 1} // результат проверки обоих массивов
+    // Преобразуем объект в массив, в котором будут лежать только ключи
+    return Object.entries(pick).reduce((result, [n, count]) => {
+      if ((count as number) > 1) {
+        result.push(+n);
+      }
+      return result;
+    });
+  };
 
-  console.log(uniqueInOrder([1, 1, 2, 2, 2, 3, 3, 4, 4])); // [1, 2, 3, 4]
+  console.log(intersectNubmers([7, 17, 1, 9, 1, 17, 56, 56, 23], [56, 17, 17, 1, 23, 34, 23, 1, 8, 1]));
   // task
 
   return (
