@@ -13,43 +13,28 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // task
-  // const numeric = {
-  //   1: 0,
-  //   17: 0,
-  // };
-  // //
+  const isValid = (str: string) => {
+    // На входе строка '12.255.56.1'. Для начала выделяем группы чисел, разделяем
+    // строчку посимвольно методом split() с разделитетелем точка.
+    const numbers = str.split("."); // ['12', '255', '56', '1']
+    // Сраниваем получившиеся количество групп с заданным числом: numbers.length === 4
+    // В filter((n) => +n) приводим строку к числу (+n) и проверяем это число
+    // на соответствие интервалу от 0 до 255
+    // String(+n).length <= таким образом мы обрабатываем такой IP: '\n1.2.3.4'
 
-  const intersectNubmers = (a: number[], b: number[]) => {
-    const set = new Set();
-    const pick: any = {};
-
-    a.forEach((n: number) => {
-      if (!set.has(n)) {
-        set.add(n);
-      } else {
-        pick[n] = 0;
-      }
-    });
-
-    // return pick; // {1: 0, 17: 0, 56: 0} // результат проверки первого массива
-    // Проверяем второй массив
-    b.forEach((n: number) => {
-      if (n in pick) {
-        pick[n] = pick[n] + 1;
-      }
-    });
-
-    // return pick; // {1: 3, 17: 2, 56: 1} // результат проверки обоих массивов
-    // Преобразуем объект в массив, в котором будут лежать только ключи
-    return Object.entries(pick).reduce((result, [n, count]) => {
-      if ((count as number) > 1) {
-        result.push(+n);
-      }
-      return result;
-    });
+    return (
+      numbers.length === 4 && numbers.filter((n) => +n >= 0 && +n <= 255 && n.length === String(+n).length).length === 4
+    );
   };
 
-  console.log(intersectNubmers([7, 17, 1, 9, 1, 17, 56, 56, 23], [56, 17, 17, 1, 23, 34, 23, 1, 8, 1]));
+  console.log(isValid("0.0.0.0")); // ['0', '0', '0', '0']  // true
+  console.log(isValid("12.255.56.1")); // ['12', '255', '56', '1']  // true
+  console.log(isValid("137.255.1.100")); // ['137', '255', '1', '100']  // true
+  console.log(isValid("123.456.789.0")); // ['123', '0'] // false
+  console.log(isValid("abc.def.ghi.jkl")); // []  // false
+  console.log(isValid("\n1.2.3.4")); //  ['2', '3', '4'] // false
+  console.log(isValid("")); // false  // false
+
   // task
 
   return (

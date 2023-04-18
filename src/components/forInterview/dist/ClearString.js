@@ -13,40 +13,23 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // task
-    // const numeric = {
-    //   1: 0,
-    //   17: 0,
-    // };
-    // //
-    var intersectNubmers = function (a, b) {
-        var set = new Set();
-        var pick = {};
-        a.forEach(function (n) {
-            if (!set.has(n)) {
-                set.add(n);
-            }
-            else {
-                pick[n] = 0;
-            }
-        });
-        // return pick; // {1: 0, 17: 0, 56: 0} // результат проверки первого массива
-        // Проверяем второй массив
-        b.forEach(function (n) {
-            if (n in pick) {
-                pick[n] = pick[n] + 1;
-            }
-        });
-        // return pick; // {1: 3, 17: 2, 56: 1} // результат проверки обоих массивов
-        // Преобразуем объект в массив, в котором будут лежать только ключи
-        return Object.entries(pick).reduce(function (result, _a) {
-            var n = _a[0], count = _a[1];
-            if (count > 1) {
-                result.push(+n);
-            }
-            return result;
-        });
+    var isValid = function (str) {
+        // На входе строка '12.255.56.1'. Для начала выделяем группы чисел, разделяем
+        // строчку посимвольно методом split() с разделитетелем точка.
+        var numbers = str.split("."); // ['12', '255', '56', '1']
+        // Сраниваем получившиеся количество групп с заданным числом: numbers.length === 4
+        // В filter((n) => +n) приводим строку к числу (+n) и проверяем это число
+        // на соответствие интервалу от 0 до 255
+        // String(+n).length <= таким образом мы обрабатываем такой IP: '\n1.2.3.4'
+        return (numbers.length === 4 && numbers.filter(function (n) { return +n >= 0 && +n <= 255 && n.length === String(+n).length; }).length === 4);
     };
-    console.log(intersectNubmers([7, 17, 1, 9, 1, 17, 56, 56, 23], [56, 17, 17, 1, 23, 34, 23, 1, 8, 1]));
+    console.log(isValid("0.0.0.0")); // ['0', '0', '0', '0']  // true
+    console.log(isValid("12.255.56.1")); // ['12', '255', '56', '1']  // true
+    console.log(isValid("137.255.1.100")); // ['137', '255', '1', '100']  // true
+    console.log(isValid("123.456.789.0")); // ['123', '0'] // false
+    console.log(isValid("abc.def.ghi.jkl")); // []  // false
+    console.log(isValid("\n1.2.3.4")); //  ['2', '3', '4'] // false
+    console.log(isValid("")); // false  // false
     // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
