@@ -13,40 +13,19 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // task
-    var queueTime = function (customers, n) {
-        // Если количество покупателей равно количеству касс.
-        if (customers.length === 0)
-            return 0;
-        // Если количество покупателей меньше количества касс.
-        if (customers.length <= n)
-            return Math.max.apply(Math, customers);
-        // Если количество покупателей больше количества касс, например ([2, 3, 8], 2).
-        // Введём новую переменную queues (массив очередей - количество сумм времени
-        // в этих очередях), в нём будет n - элементов (количество касс), значение
-        // которых определим равными нулю fill(0). То есть, мы создали очереди к кассам:
-        // к первой кассе стоит первый клиент, ко второй - второй клиент. Если какая-то
-        // касса освобождается, то к ней подходит очередной клиент.
-        // 1-й элемент массива будет принимать время первого человека,
-        // второй - время второго человека. Изначальное время для всех задали равное нулю.
-        var queues = new Array(n).fill(0); //  Array [0, 0]
-        // Пройдём по массиву покупателей
-        for (var _i = 0, customers_1 = customers; _i < customers_1.length; _i++) {
-            var time = customers_1[_i];
-            // Будем находить индекс у массива очередей. Мы берём самое меньшее число в очередях,
-            // и находим его индекс. Так мы получаем самую свободную на данный момент кассу
-            // - индекс кассы.
-            var index = queues.indexOf(Math.min.apply(Math, queues));
-            // У нас есть список очередей, есть индекс, и мы прибавляем к тому что есть там
-            // определённое время - значение элемента массива покупателей customers.
-            // Фактически, мы заполняем наш массив очередей.
-            queues[index] += time; // Array [(2 + 8), 3] =  [10, 3]
-        }
-        // Нам в конце остаётся только возвратить самое большое число из массива очередей.
-        return Math.max.apply(Math, queues); // 10
+    var cleanString = function (s) {
+        // Разбиваем нашу строку посимвольно. После этого воспользуемся функцией высшего порядка
+        // reduce(result, symbol), где result - аккумулятор, а symbol - наш текущий символ строки.
+        // Начальное значение result - пустая строка '', мы её будем возвращать в итоге.
+        // Если наш символ равен symbol === "#", то мы от result будем срезать последний элемент:
+        // result.slice(0, -1). Иначе к result будем прибавлять очередной символ: result + symbol.
+        return s.split("").reduce(function (result, symbol) { return (symbol === "#" ? result.slice(0, -1) : result + symbol); }, "");
     };
-    console.log(queueTime([2, 3, 4], 1)); // 9
-    console.log(queueTime([2, 3, 8], 2)); // 10
-    console.log(queueTime([11, 2, 3, 3], 2)); // 11
+    console.log(cleanString("a#bc#d")); // bd
+    console.log(cleanString("abc#d##c")); // ac
+    console.log(cleanString("abc##d#####")); // ''
+    console.log(cleanString("#####")); // ''
+    console.log(cleanString("")); // ''
     // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
