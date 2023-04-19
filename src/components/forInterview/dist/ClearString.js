@@ -13,23 +13,40 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // task
-    var isValid = function (str) {
-        // На входе строка '12.255.56.1'. Для начала выделяем группы чисел, разделяем
-        // строчку посимвольно методом split() с разделитетелем точка.
-        var numbers = str.split("."); // ['12', '255', '56', '1']
-        // Сраниваем получившиеся количество групп с заданным числом: numbers.length === 4
-        // В filter((n) => +n) приводим строку к числу (+n) и проверяем это число
-        // на соответствие интервалу от 0 до 255
-        // String(+n).length <= таким образом мы обрабатываем такой IP: '\n1.2.3.4'
-        return (numbers.length === 4 && numbers.filter(function (n) { return +n >= 0 && +n <= 255 && n.length === String(+n).length; }).length === 4);
+    var queueTime = function (customers, n) {
+        // Если количество покупателей равно количеству касс.
+        if (customers.length === 0)
+            return 0;
+        // Если количество покупателей меньше количества касс.
+        if (customers.length <= n)
+            return Math.max.apply(Math, customers);
+        // Если количество покупателей больше количества касс, например ([2, 3, 8], 2).
+        // Введём новую переменную queues (массив очередей - количество сумм времени
+        // в этих очередях), в нём будет n - элементов (количество касс), значение
+        // которых определим равными нулю fill(0). То есть, мы создали очереди к кассам:
+        // к первой кассе стоит первый клиент, ко второй - второй клиент. Если какая-то
+        // касса освобождается, то к ней подходит очередной клиент.
+        // 1-й элемент массива будет принимать время первого человека,
+        // второй - время второго человека. Изначальное время для всех задали равное нулю.
+        var queues = new Array(n).fill(0); //  Array [0, 0]
+        // Пройдём по массиву покупателей
+        for (var _i = 0, customers_1 = customers; _i < customers_1.length; _i++) {
+            var time = customers_1[_i];
+            // Будем находить индекс у массива очередей. Мы берём самое меньшее число в очередях,
+            // и находим его индекс. Так мы получаем самую свободную на данный момент кассу
+            // - индекс кассы.
+            var index = queues.indexOf(Math.min.apply(Math, queues));
+            // У нас есть список очередей, есть индекс, и мы прибавляем к тому что есть там
+            // определённое время - значение элемента массива покупателей customers.
+            // Фактически, мы заполняем наш массив очередей.
+            queues[index] += time; // Array [(2 + 8), 3] =  [10, 3]
+        }
+        // Нам в конце остаётся только возвратить самое большое число из массива очередей.
+        return Math.max.apply(Math, queues); // 10
     };
-    console.log(isValid("0.0.0.0")); // ['0', '0', '0', '0']  // true
-    console.log(isValid("12.255.56.1")); // ['12', '255', '56', '1']  // true
-    console.log(isValid("137.255.1.100")); // ['137', '255', '1', '100']  // true
-    console.log(isValid("123.456.789.0")); // ['123', '0'] // false
-    console.log(isValid("abc.def.ghi.jkl")); // []  // false
-    console.log(isValid("\n1.2.3.4")); //  ['2', '3', '4'] // false
-    console.log(isValid("")); // false  // false
+    console.log(queueTime([2, 3, 4], 1)); // 9
+    console.log(queueTime([2, 3, 8], 2)); // 10
+    console.log(queueTime([11, 2, 3, 3], 2)); // 11
     // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
