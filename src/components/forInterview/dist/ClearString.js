@@ -13,35 +13,55 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // task
-    var hignestRank = function (arr) {
-        // Введём переменную для объекта, где будут лежать ключи - числа массива,
-        // а их значение - количество их повторений.
-        var map = {};
-        // Введём переменную в которой мы будем считать максимальное количество повторений
-        // любых чисел. Грубо говоря это будет счётчик максимального количества повторений
-        // в нашем массиве.
-        var maxRepeat = 0;
-        // Пройдёмся по массиву: какое число нужно присвоить map[n]? Либо 1, если map[n] не
-        // существует, либо map[n] + 1, как раз для подсчёта повторений.
-        arr.forEach(function (n) {
-            // Оператор ~~ используется для округления числа с плавающей запятой в меньшую сторону:
-            // но самое главное: оператор ~~ приводит undefined к нулю. Что нам в принципе и нужно:
-            // для map[n], которого ещё нет, мы скажем ноль плюс 1. Фактически, в для map[n] будут
-            // всегда лежать корректные данные.
-            map[n] = ~~map[n] + 1;
-            if (map[n] > maxRepeat) {
-                // если условие выполняется, то максимальное повторение map[n] заносим в maxRepeat
-                maxRepeat = map[n];
-            }
-        });
-        return Object.entries(map).reduce(function (maxValue, _a) {
-            var n = _a[0], repeat = _a[1];
-            return (repeat === maxRepeat && +n > maxValue ? +n : maxValue);
-        }, -Infinity);
+    var presses = function (str) {
+        // Создадим переменную, в которой будут лежать наши числа и буквы, они будут ключами,
+        // а значением выступит количество их повторений - сколько раз нужно нажать на кнопку.
+        // На старом телефоне, чтобы вывести букву С, нужно три раза нажать на кнопку (2abc).
+        var numbers = {
+            // По сути это клавиатура старого телефона
+            "1": 1,
+            a: 1,
+            b: 2,
+            c: 3,
+            "2": 4,
+            d: 1,
+            e: 2,
+            f: 3,
+            "3": 4,
+            g: 1,
+            h: 2,
+            i: 3,
+            "4": 4,
+            j: 1,
+            k: 2,
+            l: 3,
+            "5": 4,
+            m: 1,
+            n: 2,
+            o: 3,
+            "6": 4,
+            p: 1,
+            q: 2,
+            r: 3,
+            s: 4,
+            "7": 5,
+            t: 1,
+            u: 2,
+            v: 3,
+            "8": 4,
+            w: 1,
+            x: 2,
+            y: 3,
+            z: 4,
+            "9": 5,
+            " ": 1,
+            "0": 2
+        };
+        return str.split("").reduce(function (sum, char) { return sum + numbers[char.toLowerCase()]; }, 0);
     };
-    console.log(hignestRank([12, 10, 8, 12, 7, 6, 4, 10, 12])); // 12
-    console.log(hignestRank([12, 10, 8, 12, 7, 6, 4, 10, 12, 8, 10, 8])); // 12
-    console.log(hignestRank([12, 10, 8, 8, 3, 3, 2, 4, 10, 12, 3])); // 3
+    console.log(presses("LOL")); // 9
+    console.log(presses("WHERE DO U WANT 2 MEET L8R")); // 47
+    console.log(presses("")); // 0
     // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
