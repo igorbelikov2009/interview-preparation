@@ -13,19 +13,35 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // task
-    var cleanString = function (s) {
-        // Разбиваем нашу строку посимвольно. После этого воспользуемся функцией высшего порядка
-        // reduce(result, symbol), где result - аккумулятор, а symbol - наш текущий символ строки.
-        // Начальное значение result - пустая строка '', мы её будем возвращать в итоге.
-        // Если наш символ равен symbol === "#", то мы от result будем срезать последний элемент:
-        // result.slice(0, -1). Иначе к result будем прибавлять очередной символ: result + symbol.
-        return s.split("").reduce(function (result, symbol) { return (symbol === "#" ? result.slice(0, -1) : result + symbol); }, "");
+    var hignestRank = function (arr) {
+        // Введём переменную для объекта, где будут лежать ключи - числа массива,
+        // а их значение - количество их повторений.
+        var map = {};
+        // Введём переменную в которой мы будем считать максимальное количество повторений
+        // любых чисел. Грубо говоря это будет счётчик максимального количества повторений
+        // в нашем массиве.
+        var maxRepeat = 0;
+        // Пройдёмся по массиву: какое число нужно присвоить map[n]? Либо 1, если map[n] не
+        // существует, либо map[n] + 1, как раз для подсчёта повторений.
+        arr.forEach(function (n) {
+            // Оператор ~~ используется для округления числа с плавающей запятой в меньшую сторону:
+            // но самое главное: оператор ~~ приводит undefined к нулю. Что нам в принципе и нужно:
+            // для map[n], которого ещё нет, мы скажем ноль плюс 1. Фактически, в для map[n] будут
+            // всегда лежать корректные данные.
+            map[n] = ~~map[n] + 1;
+            if (map[n] > maxRepeat) {
+                // если условие выполняется, то максимальное повторение map[n] заносим в maxRepeat
+                maxRepeat = map[n];
+            }
+        });
+        return Object.entries(map).reduce(function (maxValue, _a) {
+            var n = _a[0], repeat = _a[1];
+            return (repeat === maxRepeat && +n > maxValue ? +n : maxValue);
+        }, -Infinity);
     };
-    console.log(cleanString("a#bc#d")); // bd
-    console.log(cleanString("abc#d##c")); // ac
-    console.log(cleanString("abc##d#####")); // ''
-    console.log(cleanString("#####")); // ''
-    console.log(cleanString("")); // ''
+    console.log(hignestRank([12, 10, 8, 12, 7, 6, 4, 10, 12])); // 12
+    console.log(hignestRank([12, 10, 8, 12, 7, 6, 4, 10, 12, 8, 10, 8])); // 12
+    console.log(hignestRank([12, 10, 8, 8, 3, 3, 2, 4, 10, 12, 3])); // 3
     // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
