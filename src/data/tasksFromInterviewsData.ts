@@ -799,7 +799,7 @@ export const arrayTasks: IObjectTasks[] = [
     ],
   },
   {
-    heading: "Количество нажатий для ввода текста на старом телефоне",
+    heading: "Количество нажатий для ввода текста на старом телефоне.",
     href: "https://www.youtube.com/watch?v=KxUiRrzVH6o&list=PLPiq_hi6UrQqH0oQGGP3jbrTrwXmkIqPS&index=22",
     taskCode: [
       "Сколько раз нужно нажать на кнопки на старых телефонах без Т9, чтобы набрать заданный текст? ",
