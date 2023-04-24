@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+/* eslint-disable no-lone-blocks */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 var framer_motion_1 = require("framer-motion"); // анимация
 var react_1 = require("react");

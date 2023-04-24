@@ -1,9 +1,19 @@
+/* eslint-disable no-lone-blocks */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { motion, AnimatePresence } from "framer-motion"; // анимация
 import React, { useState, useEffect } from "react";
 import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeading";
 import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
+
+interface This {
+  square?(): number[];
+  cube?(): number[];
+  average?(): number;
+  sum?(): number;
+  even?(): number[];
+  odd?(): number[];
+}
 
 const ClearString = () => {
   const [isVisible, setVisible] = useState(false);
