@@ -43,6 +43,7 @@ import GeneralLinks from "../pages/GeneralLinks";
 import YouTubeTasksJavascript from "../pages/YouTubeTasksJavascript";
 import RegularExpression from "../pages/RegularExpression";
 import TasksFromInterviews from "../pages/TasksFromInterviews";
+import TasksFromMinin from "../pages/TasksFromMinin";
 
 const AppRouter: FC = () => {
   return (
@@ -89,6 +90,7 @@ const AppRouter: FC = () => {
         <Route path="youTubeTasksJavascript" element={<YouTubeTasksJavascript />} />
         <Route path="regularExpression" element={<RegularExpression />} />
         <Route path="tasksFromInterviews" element={<TasksFromInterviews />} />
+        <Route path="tasksFromMinin" element={<TasksFromMinin />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} />

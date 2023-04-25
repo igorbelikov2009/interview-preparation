@@ -15,6 +15,7 @@ var Footer = function () {
         { to: "/http", children: "Web-архитектура, HTTP" },
         { to: "/webStorage", children: "Web Storage - веб хранилище" },
         { to: "/fireBase", children: "FireBase" },
+        { to: "/destructuring", children: "Деструктуризация" },
     ];
     var SecondBlock = [
         { to: "/css", children: "CSS" },
@@ -34,12 +35,12 @@ var Footer = function () {
         { to: "/objectmethods", children: "Методы объектов" },
         { to: "/numberMethods", children: "Методы чисел" },
         { to: "/stringMethods", children: "Методы строк" },
-        { to: "/destructuring", children: "Деструктуризация" },
         { to: "/error", children: "Обработка ошибок" },
         { to: "/json", children: "Методы JSON" },
         { to: "/regularExpression", children: "Регулярное выражение" },
         { to: "/interviews", children: "Собеседования" },
         { to: "/tasksFromInterviews", children: "Задачи из собеседований" },
+        { to: "/tasksFromMinin", children: "Задачи от Минина" },
     ];
     var FourthBlock = [
         { to: "/youTube", children: "На YouTube" },

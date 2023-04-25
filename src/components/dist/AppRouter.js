@@ -45,6 +45,7 @@ var GeneralLinks_1 = require("../pages/GeneralLinks");
 var YouTubeTasksJavascript_1 = require("../pages/YouTubeTasksJavascript");
 var RegularExpression_1 = require("../pages/RegularExpression");
 var TasksFromInterviews_1 = require("../pages/TasksFromInterviews");
+var TasksFromMinin_1 = require("../pages/TasksFromMinin");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -89,6 +90,7 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeTasksJavascript", element: react_1["default"].createElement(YouTubeTasksJavascript_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "regularExpression", element: react_1["default"].createElement(RegularExpression_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "tasksFromInterviews", element: react_1["default"].createElement(TasksFromInterviews_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "tasksFromMinin", element: react_1["default"].createElement(TasksFromMinin_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;

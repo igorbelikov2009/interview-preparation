@@ -15,6 +15,7 @@ const Footer = () => {
     { to: "/http", children: "Web-архитектура, HTTP" },
     { to: "/webStorage", children: "Web Storage - веб хранилище" },
     { to: "/fireBase", children: "FireBase" },
+    { to: "/destructuring", children: "Деструктуризация" },
   ];
 
   const SecondBlock: IFooterLinks[] = [
@@ -36,12 +37,12 @@ const Footer = () => {
     { to: "/objectmethods", children: "Методы объектов" },
     { to: "/numberMethods", children: "Методы чисел" },
     { to: "/stringMethods", children: "Методы строк" },
-    { to: "/destructuring", children: "Деструктуризация" },
     { to: "/error", children: "Обработка ошибок" },
     { to: "/json", children: "Методы JSON" },
     { to: "/regularExpression", children: "Регулярное выражение" },
     { to: "/interviews", children: "Собеседования" },
     { to: "/tasksFromInterviews", children: "Задачи из собеседований" },
+    { to: "/tasksFromMinin", children: "Задачи от Минина" },
   ];
 
   const FourthBlock: IFooterLinks[] = [

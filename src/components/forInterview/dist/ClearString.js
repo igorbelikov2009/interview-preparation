@@ -14,6 +14,16 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // task
+    var str = "asgg sgdsfgh hello dfgadf gfdd qwert";
+    function getCount(str) {
+        return str.split("").reduce(function (sum, char) {
+            if ("aeiou".includes(char)) {
+                sum += 1;
+            }
+            return sum;
+        }, 0); // Если здесь забудем написать нолик, то функция у нас работать не будет
+    }
+    console.log(getCount(str)); // 5
     // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),

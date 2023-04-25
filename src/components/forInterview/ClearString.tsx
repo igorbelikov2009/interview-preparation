@@ -6,15 +6,6 @@ import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeadi
 import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
 
-interface This {
-  square?(): number[];
-  cube?(): number[];
-  average?(): number;
-  sum?(): number;
-  even?(): number[];
-  odd?(): number[];
-}
-
 const ClearString = () => {
   const [isVisible, setVisible] = useState(false);
   const expanderHandler = () => {
@@ -23,7 +14,18 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // task
+  const str = "asgg sgdsfgh hello dfgadf gfdd qwert";
+  function getCount(str: string) {
+    return str.split("").reduce((sum: any, char: string) => {
+      if ("aeiou".includes(char)) {
+        sum += 1;
+      }
 
+      return sum;
+    }, 0); // Если здесь забудем написать нолик, то функция у нас работать не будет
+  }
+
+  console.log(getCount(str)); // 5
   // task
 
   return (
