@@ -13,18 +13,22 @@ var ClearString = function () {
         setVisible(function (prev) { return !prev; });
     };
     var title = react_1.useState("title")[0];
-    // task
-    var str = "asgg sgdsfgh hello dfgadf gfdd qwert";
-    function getCount(str) {
-        return str.split("").reduce(function (sum, char) {
-            if ("aeiou".includes(char)) {
-                sum += 1;
-            }
-            return sum;
-        }, 0); // Если здесь забудем написать нолик, то функция у нас работать не будет
-    }
-    console.log(getCount(str)); // 5
-    // task
+    // // task
+    //  Math.floor(arr[i]) - округляет в меньшую сторону.
+    var array = [6.1, 4.2, 6.3];
+    //
+    var groupBy = function (arr, callbackFunction) {
+        var result = {};
+        // Проитерируемся по массиву, каждый момент итерации - item. И каждый момент
+        // итерации нам надо прогнать через функцию, которая передаётся вторым параметром
+        arr.forEach(function (item) {
+            var resultAfterCallback = callbackFunction(item);
+            result[resultAfterCallback] ? result[resultAfterCallback].push(item) : (result[resultAfterCallback] = [item]);
+        });
+        console.log(result);
+    };
+    groupBy(array, Math.floor); // { [4.2], [6.1, 6.3] }
+    // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
         react_1["default"].createElement(framer_motion_1.AnimatePresence, null, isVisible && (react_1["default"].createElement(framer_motion_1.motion.div, { initial: { height: 0, opacity: 0 }, animate: { height: "auto", opacity: 1 }, exit: { height: 0, opacity: 0 }, style: { overflow: "hidden" } },

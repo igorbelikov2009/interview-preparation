@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"; // анимация
 import PageForTask from "../components/general/PageForTask/PageForTask";
-import { arrayTasksFromMinin } from "./tasksFromMininData";
+import { arrayTasksFromMinin } from "../data/tasksFromMininData";
 
 const TasksFromMinin = () => {
   return (

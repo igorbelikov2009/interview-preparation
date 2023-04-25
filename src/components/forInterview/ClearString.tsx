@@ -1,10 +1,15 @@
 /* eslint-disable no-lone-blocks */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { motion, AnimatePresence } from "framer-motion"; // анимация
+import { type } from "os";
 import React, { useState, useEffect } from "react";
 import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeading";
 import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
+
+type Obj1 = { foo: string; bar: string };
+
+type Obj2 = { bar: string; some: string };
 
 const ClearString = () => {
   const [isVisible, setVisible] = useState(false);
@@ -13,20 +18,28 @@ const ClearString = () => {
   };
   const [title] = useState("title");
 
-  // task
-  const str = "asgg sgdsfgh hello dfgadf gfdd qwert";
-  function getCount(str: string) {
-    return str.split("").reduce((sum: any, char: string) => {
-      if ("aeiou".includes(char)) {
-        sum += 1;
-      }
+  // // task
+  //  Math.floor(arr[i]) - округляет в меньшую сторону.
 
-      return sum;
-    }, 0); // Если здесь забудем написать нолик, то функция у нас работать не будет
-  }
+  const array = [6.1, 4.2, 6.3];
+  //
+  const groupBy = (arr: number[], callbackFunction: any) => {
+    const result: any = {};
 
-  console.log(getCount(str)); // 5
-  // task
+    // Проитерируемся по массиву, каждый момент итерации - item. И каждый момент
+    // итерации нам надо прогнать через функцию, которая передаётся вторым параметром
+    arr.forEach((item) => {
+      let resultAfterCallback: any = callbackFunction(item);
+
+      result[resultAfterCallback] ? result[resultAfterCallback].push(item) : (result[resultAfterCallback] = [item]);
+    });
+
+    console.log(result);
+  };
+
+  groupBy(array, Math.floor); // { [4.2], [6.1, 6.3] }
+
+  // // task
 
   return (
     <div className="expanding">
