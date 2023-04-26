@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+/* eslint-disable no-extend-native */
 /* eslint-disable no-lone-blocks */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 var framer_motion_1 = require("framer-motion"); // анимация
@@ -14,20 +15,32 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // // task
-    //  Math.floor(arr[i]) - округляет в меньшую сторону.
-    var array = [6.1, 4.2, 6.3];
-    //
-    var groupBy = function (arr, callbackFunction) {
-        var result = {};
-        // Проитерируемся по массиву, каждый момент итерации - item. И каждый момент
-        // итерации нам надо прогнать через функцию, которая передаётся вторым параметром
-        arr.forEach(function (item) {
-            var resultAfterCallback = callbackFunction(item);
-            result[resultAfterCallback] ? result[resultAfterCallback].push(item) : (result[resultAfterCallback] = [item]);
-        });
-        console.log(result);
-    };
-    groupBy(array, Math.floor); // { [4.2], [6.1, 6.3] }
+    {
+        var START_1 = Date.now();
+        function someFn() {
+            console.log("time", Date.now() - START_1);
+            console.log("args", arguments);
+        }
+        // Для того, чтобы функция delay() была доступна для каждой функции, объявим её в
+        // прототипе функции. В самом низу описано как расширен интерфейс Function.
+        Function.prototype.delay = function (ms) {
+            var _this = this;
+            setTimeout(function () {
+                // console.log(this);
+                // this();
+                _this.call(_this, arguments);
+            }, ms);
+        };
+        var f = someFn.delay(500);
+        // В стандартной библиотеке typescript есть интерфейс Function, в котором объявляются
+        // члены объектов Function. Вам нужно будет глобально, на верхнем уровне, объявить 'delay'
+        // как член этого интерфейса с вашим собственным дополнением, как показано ниже:
+        // declare global {
+        //   interface Function {
+        //     delay(ms: number): any;
+        //   }
+        // }
+    }
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),

@@ -1,3 +1,4 @@
+/* eslint-disable no-extend-native */
 /* eslint-disable no-lone-blocks */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { motion, AnimatePresence } from "framer-motion"; // анимация
@@ -7,9 +8,12 @@ import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeadi
 import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
 
-type Obj1 = { foo: string; bar: string };
-
-type Obj2 = { bar: string; some: string };
+// Без «объявления глобального» это не работает.
+declare global {
+  interface Function {
+    delay(ms: number): any;
+  }
+}
 
 const ClearString = () => {
   const [isVisible, setVisible] = useState(false);
@@ -19,25 +23,36 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // // task
-  //  Math.floor(arr[i]) - округляет в меньшую сторону.
+  {
+    const START = Date.now();
 
-  const array = [6.1, 4.2, 6.3];
-  //
-  const groupBy = (arr: number[], callbackFunction: any) => {
-    const result: any = {};
+    function someFn() {
+      console.log("time", Date.now() - START);
+      console.log("args", arguments);
+    }
 
-    // Проитерируемся по массиву, каждый момент итерации - item. И каждый момент
-    // итерации нам надо прогнать через функцию, которая передаётся вторым параметром
-    arr.forEach((item) => {
-      let resultAfterCallback: any = callbackFunction(item);
+    // Для того, чтобы функция delay() была доступна для каждой функции, объявим её в
+    // прототипе функции. В самом низу описано как расширен интерфейс Function.
+    Function.prototype.delay = function (ms) {
+      setTimeout(() => {
+        // console.log(this);
+        // this();
+        this.call(this, arguments);
+      }, ms);
+    };
 
-      result[resultAfterCallback] ? result[resultAfterCallback].push(item) : (result[resultAfterCallback] = [item]);
-    });
+    const f = someFn.delay(500);
 
-    console.log(result);
-  };
+    // В стандартной библиотеке typescript есть интерфейс Function, в котором объявляются
+    // члены объектов Function. Вам нужно будет глобально, на верхнем уровне, объявить 'delay'
+    // как член этого интерфейса с вашим собственным дополнением, как показано ниже:
 
-  groupBy(array, Math.floor); // { [4.2], [6.1, 6.3] }
+    // declare global {
+    //   interface Function {
+    //     delay(ms: number): any;
+    //   }
+    // }
+  }
 
   // // task
 
