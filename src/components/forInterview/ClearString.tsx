@@ -8,13 +8,6 @@ import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeadi
 import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
 
-// Без «объявления глобального» это не работает.
-declare global {
-  interface Function {
-    delay(ms: number): any;
-  }
-}
-
 const ClearString = () => {
   const [isVisible, setVisible] = useState(false);
   const expanderHandler = () => {
@@ -23,39 +16,56 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // // task
-  {
-    const START = Date.now();
+  const arrayTree = [
+    {
+      v: 5,
+      c: [
+        { v: 18, c: [{ v: 11 }] },
+        { v: 7, c: [{ v: 5, c: [{ v: 1 }] }] },
+        { v: 5, c: [{ v: 18 }, { v: 15 }] },
+      ],
+    },
+  ];
 
-    function someFn() {
-      console.log("time", Date.now() - START);
-      console.log("args", arguments);
+  // 2 с итерацией
+
+  const iteration = (tree: any) => {
+    // Если дерево пустое, тогда возвращаем ноль
+    if (!tree.length) {
+      return 0;
     }
 
-    // Для того, чтобы функция delay() была доступна для каждой функции, объявим её в
-    // прототипе функции. В самом низу описано как расширен интерфейс Function.
-    Function.prototype.delay = function (ms) {
-      setTimeout(() => {
-        // console.log(this);
-        // this();
-        this.call(this, arguments);
-      }, ms);
-    };
+    // Без рекурсии с использованием стэка.
+    const stack: any[] = [];
+    let sum = 0;
 
-    const f = someFn.delay(500);
+    tree.forEach((node: any) => {
+      // Каждый узел (node) добавляем в стэк:
+      stack.push(node);
+      // По окончании этой функции, в стэке будут только вершины дерева.
+    });
 
-    // В стандартной библиотеке typescript есть интерфейс Function, в котором объявляются
-    // члены объектов Function. Вам нужно будет глобально, на верхнем уровне, объявить 'delay'
-    // как член этого интерфейса с вашим собственным дополнением, как показано ниже:
+    // Делаем бесконечный цикл, которой будет крутиться, пока стэк не пустой:
+    while (stack.length) {
+      // На каждой итерации цикла достаём один из узлов и суммируем его значение:
+      const node = stack.pop();
+      sum += node.v;
+      // Если у узла, который мы вытащили на этой итерации, есть дети (проверим это)
+      if (node.c) {
+        // то пробегаемся уже по детям узла:
+        node.c.forEach((n: any) => {
+          // Каждого ребенка этого узла мы опять добавляем в стэк:
+          stack.push(n);
+        });
+      }
+    }
+    // По итогу возвращаем сумму:
+    return sum;
+  };
 
-    // declare global {
-    //   interface Function {
-    //     delay(ms: number): any;
-    //   }
-    // }
-  }
+  console.log(iteration(arrayTree)); // 85
 
   // // task
-
   return (
     <div className="expanding">
       <ExpandingHeading isContentVisible={isVisible} panelName={title} onClickExpanding={expanderHandler} />

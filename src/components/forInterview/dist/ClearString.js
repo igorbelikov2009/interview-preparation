@@ -15,32 +15,48 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // // task
-    {
-        var START_1 = Date.now();
-        function someFn() {
-            console.log("time", Date.now() - START_1);
-            console.log("args", arguments);
+    var arrayTree = [
+        {
+            v: 5,
+            c: [
+                { v: 18, c: [{ v: 11 }] },
+                { v: 7, c: [{ v: 5, c: [{ v: 1 }] }] },
+                { v: 5, c: [{ v: 18 }, { v: 15 }] },
+            ]
+        },
+    ];
+    // 2 с итерацией
+    var iteration = function (tree) {
+        // Если дерево пустое, тогда возвращаем ноль
+        if (!tree.length) {
+            return 0;
         }
-        // Для того, чтобы функция delay() была доступна для каждой функции, объявим её в
-        // прототипе функции. В самом низу описано как расширен интерфейс Function.
-        Function.prototype.delay = function (ms) {
-            var _this = this;
-            setTimeout(function () {
-                // console.log(this);
-                // this();
-                _this.call(_this, arguments);
-            }, ms);
-        };
-        var f = someFn.delay(500);
-        // В стандартной библиотеке typescript есть интерфейс Function, в котором объявляются
-        // члены объектов Function. Вам нужно будет глобально, на верхнем уровне, объявить 'delay'
-        // как член этого интерфейса с вашим собственным дополнением, как показано ниже:
-        // declare global {
-        //   interface Function {
-        //     delay(ms: number): any;
-        //   }
-        // }
-    }
+        // Без рекурсии с использованием стэка.
+        var stack = [];
+        var sum = 0;
+        tree.forEach(function (node) {
+            // Каждый узел (node) добавляем в стэк:
+            stack.push(node);
+            // По окончании этой функции, в стэке будут только вершины дерева.
+        });
+        // Делаем бесконечный цикл, которой будет крутиться, пока стэк не пустой:
+        while (stack.length) {
+            // На каждой итерации цикла достаём один из узлов и суммируем его значение:
+            var node = stack.pop();
+            sum += node.v;
+            // Если у узла, который мы вытащили на этой итерации, есть дети (проверим это)
+            if (node.c) {
+                // то пробегаемся уже по детям узла:
+                node.c.forEach(function (n) {
+                    // Каждого ребенка этого узла мы опять добавляем в стэк:
+                    stack.push(n);
+                });
+            }
+        }
+        // По итогу возвращаем сумму:
+        return sum;
+    };
+    console.log(iteration(arrayTree)); // 85
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
