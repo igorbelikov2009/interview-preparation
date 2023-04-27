@@ -4,6 +4,10 @@
   "profile": { "name": " HTTP - заголовки. " },
   "linksCSS": [
     {
+      "href": "https://frontend-stuff.com/blog/styled-components/",
+      "title": "Что такое Styled components и как его использовать."
+    },
+    {
       "href": "https://www.npmjs.com/package/node-sass",
       "title": "npm i node-sass"
     },
@@ -1815,6 +1819,10 @@
     {
       "href": "https://github.com/utimur/online-store-full-course",
       "title": "utimur/online-store-full-coursePublic. Онлайн-магазин, который я делал"
+    },
+    {
+      "href": "https://frontend-stuff.com/blog/tags/git/",
+      "title": "Frontend Stuff. 12 статей с категорией “Git”  "
     },
     {
       "href": " ",

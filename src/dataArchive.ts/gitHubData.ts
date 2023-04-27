@@ -26,6 +26,10 @@ export const linksGitHub: ILinkInfo[] = [
     title: "utimur/online-store-full-coursePublic. Онлайн-магазин, который я делал",
   },
   {
+    href: "https://frontend-stuff.com/blog/tags/git/",
+    title: "Frontend Stuff. 12 статей с категорией “Git”  ",
+  },
+  {
     href: " ",
     title: " ",
   },

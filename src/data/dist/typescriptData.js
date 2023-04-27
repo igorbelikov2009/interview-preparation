@@ -3,6 +3,59 @@ exports.__esModule = true;
 exports.arrayTypescript = exports.linksTypescript = void 0;
 exports.linksTypescript = [
     {
+        href: "https://frontend-stuff.com/blog/tags/typescript/",
+        title: "Frontend Stuff. 14 статей с категорией “TypeScript "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/typescript-introduction/ ",
+        title: "Frontend Stuff. Что такое TypeScript и для чего он нужен.  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/typescript-compiler/ ",
+        title: "Frontend Stuff. Что такое TypeScript компилятор, как он работает и как его настроить.  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/configure-typeScript-for-react/",
+        title: "Frontend Stuff. Настройка TypeScript для React и JSX  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/generic-in-typescript/",
+        title: "Frontend Stuff. Универсальные шаблоны или Generics в TypeScript  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/improve-readability-with-typescript/",
+        title: "Frontend Stuff. Числовые разделители TypeScript  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/type-definitions-with-types/",
+        title: "Frontend Stuff. Используй определения типов для популярных проектов на npm с @types.  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/typescript-strict-property-initialization/",
+        title: "Frontend Stuff. Строгая инициализация свойств в TypeScript  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/typescript-strict-mapped-type-modifiers/",
+        title: "Frontend Stuff. Создание явных и читаемых типов объявлений с помощью модификатора перебора типов TypeScript.  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/type-guard-in-redux/ ",
+        title: "Frontend Stuff. Что такое условия типов или type guards и как их использовать в Redux.   "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/types-vs-interfaces/",
+        title: "Frontend Stuff. Различия между Types и Interfaces.  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/conditional-types/",
+        title: "Frontend Stuff. Как динамически распределять типы функций с условными типами в TypeScript.  "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/typescript-deep-type-modifiers/",
+        title: "Frontend Stuff. Как изменить свойства типа, сделав их required, optional или readonly.  "
+    },
+    // Frontend Stuff
+    {
         href: "https://habr.com/ru/company/macloud/blog/559902/",
         title: "Карманная книга по TypeScript. Часть 1. Основы"
     },
@@ -235,10 +288,6 @@ exports.linksTypescript = [
         title: "Кортежи в тайпскрипте. Всё о кортежах."
     },
     {
-        href: "https://frontend-stuff.com/blog/conditional-types/",
-        title: "Условные типы в TypeScript"
-    },
-    {
         href: "https://www.youtube.com/watch?v=SpQDK74vLKo&list=PLdTPrJkdrLGGgSnXMsO-Rix3MTuySb_mF&index=51&t=123s",
         title: "Условные Типы TypeScript / Infer / Conditional Types"
     },
@@ -251,6 +300,8 @@ exports.arrayTypescript = [
     {
         heading: "Что такое TypeScript?",
         answer: [
+            "TypeScript - это средство проверки статического типа для JavaScript. Средство проверки статического типа добавляет в JavaScript синтаксис, позволяющий указать тип данных переменной. Он может следить за этой переменной через код, чтобы убедиться, что она используется правильно. ",
+            " ",
             "По сути это расширение для JavaScript, предназначенное для выявления ошибок на этапе компиляции. ",
             "Программа на TypeScript компилируется в простой код JavaScript, который выполняется в любом браузере. TypeScript помогает писать более читаемый код, обеспечивает масштабируемость и безопасность приложений, дает разработчикам статическую типизацию и приведение типов.",
             "Главная задача тайпскрипта, это внести типы в нетипизированный язык javascript. Благодаря типам, мы сможем быстро рефакторить проекты, поддерживать огромные проекты, а так же писать более качественный код, который будет основан уже на поведении типов.",

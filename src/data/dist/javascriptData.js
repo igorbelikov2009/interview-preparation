@@ -3,6 +3,10 @@ exports.__esModule = true;
 exports.arrayJavascript = exports.linksJavascript = void 0;
 exports.linksJavascript = [
     {
+        href: "https://frontend-stuff.com/blog/tags/javascript/",
+        title: "Frontend Stuff. 42 статей с категорией “JavaScript” "
+    },
+    {
         href: "https://wm-school.ru/js/index.php",
         title: "Шикарный учебник JavaScript на русском языке"
     },

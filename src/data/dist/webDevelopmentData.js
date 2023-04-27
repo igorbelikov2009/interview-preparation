@@ -151,20 +151,24 @@ exports.linksWebDevelopment = [
         title: "что такое и зачем нужны алгоритмы"
     },
     {
-        href: " ",
-        title: " "
+        href: "https://frontend-stuff.com/blog/graphql/",
+        title: "GraphQL."
     },
     {
-        href: " ",
-        title: " "
+        href: "https://frontend-stuff.com/blog/npm-scripts/",
+        title: "Frontend Stuff. Что такое NPM скрипты и как их можно использовать для автоматизации задач. "
     },
     {
-        href: " ",
-        title: " "
+        href: "https://frontend-stuff.com/blog/npm-tricks/ ",
+        title: "Frontend Stuff. 7 простых трюков для более быстрой разработки."
     },
     {
-        href: " ",
-        title: " "
+        href: "https://frontend-stuff.com/blog/simple-tools/",
+        title: "Frontend Stuff. Инструменты статического анализа кода: ESLint, Prettier, TypeScript "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/tags/tools/",
+        title: "Frontend Stuff. 7  статей с категорией “Tools” "
     },
     {
         href: " ",

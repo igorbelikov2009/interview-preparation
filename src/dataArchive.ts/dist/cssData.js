@@ -3,6 +3,10 @@ exports.__esModule = true;
 exports.arrayCSS = exports.linksFrameworksCSS = exports.linksCSSFishki = exports.linksCSS = void 0;
 exports.linksCSS = [
     {
+        href: "https://frontend-stuff.com/blog/styled-components/",
+        title: "Что такое Styled components и как его использовать."
+    },
+    {
         href: "https://www.npmjs.com/package/node-sass",
         title: "npm i node-sass"
     },

@@ -3,6 +3,14 @@ exports.__esModule = true;
 exports.arrayReact = exports.linksReactPage = void 0;
 exports.linksReactPage = [
     {
+        href: "https://frontend-stuff.com/blog/tags/react/",
+        title: "Frontend Stuff. 24 статей с категорией “React "
+    },
+    {
+        href: "https://frontend-stuff.com/blog/common-mistakes-with-react-testing-library/",
+        title: "Frontend Stuff. React Testing Library "
+    },
+    {
         href: "https://ru.reactjs.org/docs/getting-started.html",
         title: "Официальный справочник React на русском языке."
     },
