@@ -1561,9 +1561,15 @@ exports.arrayTasks = [
         ]
     },
     {
-        heading: " ",
-        href: "",
-        taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+        heading: "Привести все буквы в верхний регистр (сделать заглавными) .toUpperCase()",
+        href: "https://www.youtube.com/watch?v=G199yFaBhHI",
+        taskCode: [
+            "      function makeUpperCase(str: string) { ",
+            "            return str.toUpperCase(); ",
+            "      }",
+            " ",
+            "      console.log(makeUpperCase('hello, my friend!')); // HELLO, MY FRIEND! ",
+        ]
     },
     {
         heading: " ",

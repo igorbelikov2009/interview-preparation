@@ -14,49 +14,8 @@ var ClearString = function () {
         setVisible(function (prev) { return !prev; });
     };
     var title = react_1.useState("title")[0];
-    // // task
-    var arrayTree = [
-        {
-            v: 5,
-            c: [
-                { v: 18, c: [{ v: 11 }] },
-                { v: 7, c: [{ v: 5, c: [{ v: 1 }] }] },
-                { v: 5, c: [{ v: 18 }, { v: 15 }] },
-            ]
-        },
-    ];
-    // 2 с итерацией
-    var iteration = function (tree) {
-        // Если дерево пустое, тогда возвращаем ноль
-        if (!tree.length) {
-            return 0;
-        }
-        // Без рекурсии с использованием стэка.
-        var stack = [];
-        var sum = 0;
-        tree.forEach(function (node) {
-            // Каждый узел (node) добавляем в стэк:
-            stack.push(node);
-            // По окончании этой функции, в стэке будут только вершины дерева.
-        });
-        // Делаем бесконечный цикл, которой будет крутиться, пока стэк не пустой:
-        while (stack.length) {
-            // На каждой итерации цикла достаём один из узлов и суммируем его значение:
-            var node = stack.pop();
-            sum += node.v;
-            // Если у узла, который мы вытащили на этой итерации, есть дети (проверим это)
-            if (node.c) {
-                // то пробегаемся уже по детям узла:
-                node.c.forEach(function (n) {
-                    // Каждого ребенка этого узла мы опять добавляем в стэк:
-                    stack.push(n);
-                });
-            }
-        }
-        // По итогу возвращаем сумму:
-        return sum;
-    };
-    console.log(iteration(arrayTree)); // 85
+    // =====================================================================
+    // Рассмотрим другой пример 6,51 мин.
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
