@@ -17,24 +17,27 @@ const ClearString = () => {
 
   // // task
 
-  // Давайте опишем type, который принимает Т объект и укажем (T extends infer R ),
-  // вернём R (? R ) или never.
-  type TryInfer<T extends object = object> = T extends infer R ? R : never;
+  // type GetStatus<T> = T extends object ? (T extends { status: string } ? T["status"] : null) : null;
 
-  // Используем тип TryInfer на каком нибудь объекте, например:
-  type R = TryInfer<{ a: 1; b: 2 }>; // type R = {
-  //                                         a: 1;
-  //                                         b: 2;
-  //                                    }
+  // И теперь используем infer с нашим кодом GetStatus. Вместо того, чтобы проверять наш код
+  // на статус { status: string }, мы сразу же распознаем переданный нами код и сохраним
+  // в переменную U. Проверим, что если (U extends { status: any } ?, то мы вернём этот U["status"].
 
-  // Infer распознаёт наш объект и возвращает его тип. То есть здесь мы увидим то,
-  // что и передали. Но, если нам нужны будут значения наших полей, то мы можем взять
-  // R[keyof R], и таким образом получим значения: // type R1 = 2 | 1
-  type TryInfer2<T extends object = object> = T extends infer R ? R[keyof R] : never;
-  type R1 = TryInfer2<{ a: 1; b: 2 }>; // type R1 = 2 | 1
+  type GetStatus<T> = T extends infer U ? (U extends { status: any } ? U["status"] : null) : null;
 
-  // =====================================================================
-  // Рассмотрим другой пример 6,51 мин.
+  // Таким образом, если мы передадим сюда статус число 125, то мы должны получить число 125.
+  type Status1 = GetStatus<{ status: 125 }>; // type Status1 = 125
+
+  // Если передаём строку "LOL", то мы и получаем строку "LOL".
+  type Status2 = GetStatus<{ status: "LOL" }>; // type Status2 = "LOL"
+
+  // Если передаём массив, то мы его и получим.
+  type Status3 = GetStatus<{ status: ["a", "s", "s", "a"] }>; // type Status3 = ["a", "s", "s", "a"]
+
+  type Status4 = GetStatus<{ status: [1, 2, 3, 4, 5] }>; // type Status4 = [1, 2, 3, 4, 5]
+
+  // Если передаём объект, то и получаем объект
+  type Status5 = GetStatus<{ status: { name: "max"; age: 25 } }>; // type Status5 = { name: "max"; age: 25 }
 
   // // task
   return (

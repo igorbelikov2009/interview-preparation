@@ -14,8 +14,6 @@ var ClearString = function () {
         setVisible(function (prev) { return !prev; });
     };
     var title = react_1.useState("title")[0];
-    // =====================================================================
-    // Рассмотрим другой пример 6,51 мин.
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
