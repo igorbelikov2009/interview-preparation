@@ -16,29 +16,42 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // // task
+  {
+    // 1-ый вариант решения.
+    // source - исходная строка.
+    // test - стока, которая даётся для сравнения с исходной.
 
-  // type GetStatus<T> = T extends object ? (T extends { status: string } ? T["status"] : null) : null;
+    function isStringRotated(source: string, test: string) {
+      if (source.length !== test.length) return false;
 
-  // И теперь используем infer с нашим кодом GetStatus. Вместо того, чтобы проверять наш код
-  // на статус { status: string }, мы сразу же распознаем переданный нами код и сохраним
-  // в переменную U. Проверим, что если (U extends { status: any } ?, то мы вернём этот U["status"].
+      for (let i = 0; i < source.length; i++) {
+        // rotate - временный вариант для тестирования
+        const rotate = source.slice(i, source.length) + source.slice(0, i);
 
-  type GetStatus<T> = T extends infer U ? (U extends { status: any } ? U["status"] : null) : null;
+        if (rotate === test) {
+          return true;
+        }
+      }
+      return false;
+    }
 
-  // Таким образом, если мы передадим сюда статус число 125, то мы должны получить число 125.
-  type Status1 = GetStatus<{ status: 125 }>; // type Status1 = 125
+    // console.log(isStringRotated("javascript", "scriptjava")); // -> true
+    // console.log(isStringRotated("javascript", "iptjavascr")); // -> true
+    // console.log(isStringRotated("javascript", "java")); // -> false
+  }
+  {
+    // 2-ой вариант решения.
+    // source - исходная строка.
+    // test - стока, которая даётся для сравнения с исходной.
 
-  // Если передаём строку "LOL", то мы и получаем строку "LOL".
-  type Status2 = GetStatus<{ status: "LOL" }>; // type Status2 = "LOL"
+    function isStringRotated(source: string, test: string) {
+      return (source + source).includes(test) && source.length === test.length;
+    }
 
-  // Если передаём массив, то мы его и получим.
-  type Status3 = GetStatus<{ status: ["a", "s", "s", "a"] }>; // type Status3 = ["a", "s", "s", "a"]
-
-  type Status4 = GetStatus<{ status: [1, 2, 3, 4, 5] }>; // type Status4 = [1, 2, 3, 4, 5]
-
-  // Если передаём объект, то и получаем объект
-  type Status5 = GetStatus<{ status: { name: "max"; age: 25 } }>; // type Status5 = { name: "max"; age: 25 }
-
+    console.log(isStringRotated("javascript", "scriptjava")); // -> true
+    console.log(isStringRotated("javascript", "iptjavascr")); // -> true
+    console.log(isStringRotated("javascript", "java")); // -> false
+  }
   // // task
   return (
     <div className="expanding">

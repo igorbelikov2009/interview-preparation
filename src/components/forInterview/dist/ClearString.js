@@ -15,6 +15,38 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // // task
+    {
+        // 1-ый вариант решения.
+        // source - исходная строка.
+        // test - стока, которая даётся для сравнения с исходной.
+        function isStringRotated(source, test) {
+            if (source.length !== test.length)
+                return false;
+            for (var i = 0; i < source.length; i++) {
+                // rotate - временный вариант для тестирования
+                var rotate = source.slice(i, source.length) + source.slice(0, i);
+                if (rotate === test) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        // console.log(isStringRotated("javascript", "scriptjava")); // -> true
+        // console.log(isStringRotated("javascript", "iptjavascr")); // -> true
+        // console.log(isStringRotated("javascript", "java")); // -> false
+    }
+    {
+        // 2-ой вариант решения.
+        // source - исходная строка.
+        // test - стока, которая даётся для сравнения с исходной.
+        function isStringRotated(source, test) {
+            return (source + source).includes(test) && source.length === test.length;
+        }
+        console.log(isStringRotated("javascript", "scriptjava")); // -> true
+        console.log(isStringRotated("javascript", "iptjavascr")); // -> true
+        console.log(isStringRotated("javascript", "java")); // -> false
+    }
+    // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
         react_1["default"].createElement(framer_motion_1.AnimatePresence, null, isVisible && (react_1["default"].createElement(framer_motion_1.motion.div, { initial: { height: 0, opacity: 0 }, animate: { height: "auto", opacity: 1 }, exit: { height: 0, opacity: 0 }, style: { overflow: "hidden" } },
