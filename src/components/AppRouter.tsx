@@ -44,6 +44,7 @@ import YouTubeTasksJavascript from "../pages/YouTubeTasksJavascript";
 import RegularExpression from "../pages/RegularExpression";
 import TasksFromInterviews from "../pages/TasksFromInterviews";
 import TasksFromMinin from "../pages/TasksFromMinin";
+import LinksTypescript from "../pages/LinksTypescript";
 
 const AppRouter: FC = () => {
   return (
@@ -91,6 +92,7 @@ const AppRouter: FC = () => {
         <Route path="regularExpression" element={<RegularExpression />} />
         <Route path="tasksFromInterviews" element={<TasksFromInterviews />} />
         <Route path="tasksFromMinin" element={<TasksFromMinin />} />
+        <Route path="linksTypescript" element={<LinksTypescript />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} />

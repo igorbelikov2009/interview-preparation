@@ -27,6 +27,7 @@ const Footer = () => {
     { to: "/react", children: "React" },
     { to: "/reactRouter", children: "React Router" },
     { to: "/typescript", children: "Typescript" },
+    { to: "/linksTypescript", children: "Ссылки на Typescript" },
     { to: "/vue", children: "Vue" },
     { to: "/dom", children: "DOM" },
   ];

@@ -21,8 +21,8 @@ var reactData_1 = require("./reactData");
 var reactRouterData_1 = require("./reactRouterData");
 var referenceBooksData_1 = require("./referenceBooksData");
 var stringMethodsData_1 = require("./stringMethodsData");
-var typescriptData_1 = require("./typescriptData");
 var webDevelopmentData_1 = require("./webDevelopmentData");
+var typescriptLinksData_1 = require("./typescriptLinksData");
 var generalLinks = javascriptData_1.linksJavascript
     .concat(javascriptFishkiData_1.linksJavascriptFishki)
     .concat(jsonData_1.linksJSON)
@@ -34,7 +34,7 @@ var generalLinks = javascriptData_1.linksJavascript
     .concat(reactData_1.linksReactPage)
     .concat(reactRouterData_1.linksReactRouter)
     .concat(objectMethodsData_1.linksObjectMethods)
-    .concat(typescriptData_1.linksTypescript)
+    .concat(typescriptLinksData_1.linksTypescript)
     .concat(webDevelopmentData_1.linksWebDevelopment)
     .concat(arrayMethodsData_1.linksArrayMethods)
     .concat(cssData_1.linksCSS)

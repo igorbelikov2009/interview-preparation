@@ -19,8 +19,8 @@ import { linksReactPage } from "./reactData";
 import { linksReactRouter } from "./reactRouterData";
 import { linksReferenceBooks } from "./referenceBooksData";
 import { linksStringMethods } from "./stringMethodsData";
-import { linksTypescript } from "./typescriptData";
 import { linksWebDevelopment } from "./webDevelopmentData";
+import { linksTypescript } from "./typescriptLinksData";
 
 const generalLinks: ILinkInfo[] = linksJavascript
   .concat(linksJavascriptFishki)
