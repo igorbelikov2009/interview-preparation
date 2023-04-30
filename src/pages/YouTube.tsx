@@ -54,16 +54,16 @@ const YouTube = () => {
       title: "Бесплатный VPN без лишних программ за минуту",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=qK1ENlEucpc",
+      title: "Интернет магазин с нуля до деплоя на: Nest.js + MariaDB/MySQL + Next.js + Effector.js + ЮKassa",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=NErrGZ64OdE&t=17s",
+      title: "Алгоритмы и структуры данных ПОЛНЫЙ КУРС на JAVASCRIPT",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/watch?v=egoMqpY2myQ",
+      title: "Node.js - Курс по Node.js для Начинающих, Bogdan Stashchuk",
     },
     {
       href: "",

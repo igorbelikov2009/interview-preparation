@@ -42,8 +42,8 @@ const YouTubeTypescript = () => {
       title: "Уроки TypeScript Веб Программирование",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/playlist?list=PLGS5TF12xmz81204LuIeraH9YFUEfFSgd",
+      title: "Typescript с нуля, 10 видео. Лабіринт Знання",
     },
     {
       href: "",

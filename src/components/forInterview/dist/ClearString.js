@@ -14,38 +14,12 @@ var ClearString = function () {
         setVisible(function (prev) { return !prev; });
     };
     var title = react_1.useState("title")[0];
-    // // task
-    {
-        // 1-ый вариант решения.
-        // source - исходная строка.
-        // test - стока, которая даётся для сравнения с исходной.
-        function isStringRotated(source, test) {
-            if (source.length !== test.length)
-                return false;
-            for (var i = 0; i < source.length; i++) {
-                // rotate - временный вариант для тестирования
-                var rotate = source.slice(i, source.length) + source.slice(0, i);
-                if (rotate === test) {
-                    return true;
-                }
-            }
-            return false;
-        }
-        // console.log(isStringRotated("javascript", "scriptjava")); // -> true
-        // console.log(isStringRotated("javascript", "iptjavascr")); // -> true
-        // console.log(isStringRotated("javascript", "java")); // -> false
-    }
-    {
-        // 2-ой вариант решения.
-        // source - исходная строка.
-        // test - стока, которая даётся для сравнения с исходной.
-        function isStringRotated(source, test) {
-            return (source + source).includes(test) && source.length === test.length;
-        }
-        console.log(isStringRotated("javascript", "scriptjava")); // -> true
-        console.log(isStringRotated("javascript", "iptjavascr")); // -> true
-        console.log(isStringRotated("javascript", "java")); // -> false
-    }
+    /*
+  type PickUser = {
+      name: string;
+      address: string;
+  }
+    */
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),

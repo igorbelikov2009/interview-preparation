@@ -102,8 +102,8 @@ const YouTubeAuthor = () => {
       title: "wise.js. Mobx, Typescript.",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/@skillblog-web",
+      title: "Skill Blog: Веб-разработка",
     },
     {
       href: "",

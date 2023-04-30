@@ -16,42 +16,28 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // // task
-  {
-    // 1-ый вариант решения.
-    // source - исходная строка.
-    // test - стока, которая даётся для сравнения с исходной.
 
-    function isStringRotated(source: string, test: string) {
-      if (source.length !== test.length) return false;
+  type User = {
+    name: string;
 
-      for (let i = 0; i < source.length; i++) {
-        // rotate - временный вариант для тестирования
-        const rotate = source.slice(i, source.length) + source.slice(0, i);
+    password: string;
 
-        if (rotate === test) {
-          return true;
-        }
-      }
-      return false;
-    }
+    address: string;
 
-    // console.log(isStringRotated("javascript", "scriptjava")); // -> true
-    // console.log(isStringRotated("javascript", "iptjavascr")); // -> true
-    // console.log(isStringRotated("javascript", "java")); // -> false
-  }
-  {
-    // 2-ой вариант решения.
-    // source - исходная строка.
-    // test - стока, которая даётся для сравнения с исходной.
+    phone: string;
+  };
 
-    function isStringRotated(source: string, test: string) {
-      return (source + source).includes(test) && source.length === test.length;
-    }
+  // Используем утилиту Pick<Type, Keys>:
 
-    console.log(isStringRotated("javascript", "scriptjava")); // -> true
-    console.log(isStringRotated("javascript", "iptjavascr")); // -> true
-    console.log(isStringRotated("javascript", "java")); // -> false
-  }
+  type PickUser = Pick<User, "name" | "address">;
+
+  /*
+type PickUser = {
+    name: string;
+    address: string;
+}
+  */
+
   // // task
   return (
     <div className="expanding">
