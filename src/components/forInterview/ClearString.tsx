@@ -17,26 +17,9 @@ const ClearString = () => {
 
   // // task
 
-  type User = {
-    name: string;
+  type Method = "GET" | "POST" | "PUT" | "DELETE";
 
-    password: string;
-
-    address: string;
-
-    phone: string;
-  };
-
-  // Используем утилиту Pick<Type, Keys>:
-
-  type PickUser = Pick<User, "name" | "address">;
-
-  /*
-type PickUser = {
-    name: string;
-    address: string;
-}
-  */
+  type LowercaseMethod = Lowercase<Method>;
 
   // // task
   return (
