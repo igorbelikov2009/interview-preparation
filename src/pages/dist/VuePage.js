@@ -15,8 +15,8 @@ var VuePage = function () {
             title: "Vue 3 + Firebase + TypeScript - строим приложение музыкальной коллекции"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/watch?v=6wYu4_6hcDY",
+            title: "Vue.js. Полный курс. webDev от 02.05.2023г"
         },
         {
             href: "",

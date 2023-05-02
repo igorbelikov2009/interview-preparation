@@ -17,9 +17,15 @@ const ClearString = () => {
 
   // // task
 
-  type Method = "GET" | "POST" | "PUT" | "DELETE";
+  const numbers = [1, 2, 3, 4];
+  const num = 12;
+  const strings = ["a", "b", "c"];
+  const str = "12";
 
-  type LowercaseMethod = Lowercase<Method>;
+  console.log(Array.isArray(numbers)); // true
+  console.log(Array.isArray(num)); // false
+  console.log(Array.isArray(strings)); // true
+  console.log(Array.isArray(str)); // false
 
   // // task
   return (

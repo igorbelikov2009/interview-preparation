@@ -3244,6 +3244,29 @@ exports.arrayTypescript = [
         isParagraphBefore: true
     },
     {
+        heading: "Как в Typescript проверить, является ли значение числом? Функция isNaN() не работает в Typescript. ",
+        answer: [
+            "В Typescript функция isNaN() показывает ошибку, говорящую о том, что isNaN принимает только числовые значения:",
+            " ",
+            "      console.log(isNaN('123'));",
+            "      // Аргумент типа 'string' нельзя назначить параметру типа 'number'.ts(2345) ",
+            " ",
+            "      console.log(isNaN('Привет, я настоящая строка'));",
+            "      // Аргумент типа 'string' нельзя назначить параметру типа 'number'.ts(2345) ",
+            " ",
+            "Напишем функцию, которая определяет, является ли исходное значение числом? ",
+            " ",
+            "      function isNumber(value?: string | number): boolean {",
+            "            return value != null && value !== '' && !isNaN(Number(value.toString()));",
+            "      }",
+            " ",
+            "      console.log(isNumber(48)); // true",
+            "      console.log(isNumber('123')); // true",
+            "      console.log(isNumber('Привет, я настоящая строка')); // false",
+        ],
+        isParagraphBefore: true
+    },
+    {
         heading: "",
         answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
         isParagraphBefore: true

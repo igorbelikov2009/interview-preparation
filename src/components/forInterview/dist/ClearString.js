@@ -15,6 +15,15 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // // task
+    var numbers = [1, 2, 3, 4];
+    var num = 12;
+    var strings = ["a", "b", "c"];
+    var str = "12";
+    console.log(Array.isArray(numbers)); // true
+    console.log(Array.isArray(num)); // false
+    console.log(Array.isArray(strings)); // true
+    console.log(Array.isArray(str)); // false
+    // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
         react_1["default"].createElement(framer_motion_1.AnimatePresence, null, isVisible && (react_1["default"].createElement(framer_motion_1.motion.div, { initial: { height: 0, opacity: 0 }, animate: { height: "auto", opacity: 1 }, exit: { height: 0, opacity: 0 }, style: { overflow: "hidden" } },
