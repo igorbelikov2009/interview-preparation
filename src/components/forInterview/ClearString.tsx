@@ -1,6 +1,7 @@
 /* eslint-disable no-extend-native */
 /* eslint-disable no-lone-blocks */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion"; // анимация
 import { type } from "os";
 import React, { useState, useEffect } from "react";
@@ -16,16 +17,6 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // // task
-
-  const numbers = [1, 2, 3, 4];
-  const num = 12;
-  const strings = ["a", "b", "c"];
-  const str = "12";
-
-  console.log(Array.isArray(numbers)); // true
-  console.log(Array.isArray(num)); // false
-  console.log(Array.isArray(strings)); // true
-  console.log(Array.isArray(str)); // false
 
   // // task
   return (

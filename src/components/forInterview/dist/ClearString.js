@@ -1,8 +1,5 @@
 "use strict";
 exports.__esModule = true;
-/* eslint-disable no-extend-native */
-/* eslint-disable no-lone-blocks */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 var framer_motion_1 = require("framer-motion"); // анимация
 var react_1 = require("react");
 var ExpandingHeading_1 = require("../general/expanding/ExpandingPanel/ExpandingHeading");
@@ -15,14 +12,6 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // // task
-    var numbers = [1, 2, 3, 4];
-    var num = 12;
-    var strings = ["a", "b", "c"];
-    var str = "12";
-    console.log(Array.isArray(numbers)); // true
-    console.log(Array.isArray(num)); // false
-    console.log(Array.isArray(strings)); // true
-    console.log(Array.isArray(str)); // false
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
