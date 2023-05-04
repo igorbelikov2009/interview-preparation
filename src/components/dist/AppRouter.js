@@ -40,13 +40,13 @@ var YouTubeAuthor_1 = require("../pages/YouTubeAuthor");
 var YouTube_1 = require("../pages/YouTube");
 var YouTubeCSS_1 = require("../pages/YouTubeCSS");
 var YouTubeJavascript_1 = require("../pages/YouTubeJavascript");
-var CSSFishki_1 = require("../pages/CSSFishki");
 var GeneralLinks_1 = require("../pages/GeneralLinks");
 var YouTubeTasksJavascript_1 = require("../pages/YouTubeTasksJavascript");
 var RegularExpression_1 = require("../pages/RegularExpression");
 var TasksFromInterviews_1 = require("../pages/TasksFromInterviews");
 var TasksFromMinin_1 = require("../pages/TasksFromMinin");
 var LinksTypescript_1 = require("../pages/LinksTypescript");
+var HTML_1 = require("../pages/HTML");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -80,7 +80,6 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "frameworksCSS", element: react_1["default"].createElement(FrameworksCSS_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "linksNPM", element: react_1["default"].createElement(LinksNPM_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "iconsLoaders", element: react_1["default"].createElement(IconsLoaders_1["default"], null) }),
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "cssFishki", element: react_1["default"].createElement(CSSFishki_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeTypescript", element: react_1["default"].createElement(YouTubeTypescript_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeReact", element: react_1["default"].createElement(YouTubeReact_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "youTubeInterview", element: react_1["default"].createElement(YouTubeInterview_1["default"], null) }),
@@ -93,6 +92,7 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "tasksFromInterviews", element: react_1["default"].createElement(TasksFromInterviews_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "tasksFromMinin", element: react_1["default"].createElement(TasksFromMinin_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "linksTypescript", element: react_1["default"].createElement(LinksTypescript_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "html", element: react_1["default"].createElement(HTML_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;

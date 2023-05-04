@@ -20,7 +20,7 @@ const Footer = () => {
 
   const SecondBlock: IFooterLinks[] = [
     { to: "/css", children: "CSS" },
-    { to: "/cssFishki", children: "CSS фишки" },
+    { to: "/html", children: "HTML" },
     { to: "/frameworksCSS", children: "Фреймворки CSS" },
     { to: "/javascript", children: "JavaScript" },
     { to: "/javascriptFishki", children: "JavaScript фишки" },

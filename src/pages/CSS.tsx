@@ -7,6 +7,7 @@ import ServerError from "../components/general/serverError/ServerError";
 // import { arrayCSS, linksCSS } from "../data/cssData";
 import { cssAPI } from "../services/cssAPI";
 import { arrayCSSAPI } from "../services/arrayCSSAPI";
+import { linksCSSFishki } from "../dataArchive.ts/cssData";
 
 const CSS: FC = () => {
   const { data: linksCSS, isLoading, isError } = cssAPI.useGetLinksCSSQuery();
@@ -21,6 +22,7 @@ const CSS: FC = () => {
       {isLoading && <ServerIsLoading />}
       {isError && <ServerError />}
 
+      <PageLink links={linksCSSFishki} title="CSS - фишки ссылки" />
       {linksCSS && <PageLink links={linksCSS} title="CSS ссылки" />}
       {arrayCSS && <Page title="Вопросы по CSS" ArrayHeadingAnswers={arrayCSS} />}
     </motion.div>

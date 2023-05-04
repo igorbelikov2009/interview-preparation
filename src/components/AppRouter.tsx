@@ -38,13 +38,13 @@ import YouTubeAuthor from "../pages/YouTubeAuthor";
 import YouTube from "../pages/YouTube";
 import YouTubeCSS from "../pages/YouTubeCSS";
 import YouTubeJavascript from "../pages/YouTubeJavascript";
-import CSSFishki from "../pages/CSSFishki";
 import GeneralLinks from "../pages/GeneralLinks";
 import YouTubeTasksJavascript from "../pages/YouTubeTasksJavascript";
 import RegularExpression from "../pages/RegularExpression";
 import TasksFromInterviews from "../pages/TasksFromInterviews";
 import TasksFromMinin from "../pages/TasksFromMinin";
 import LinksTypescript from "../pages/LinksTypescript";
+import HTML from "../pages/HTML";
 
 const AppRouter: FC = () => {
   return (
@@ -80,7 +80,6 @@ const AppRouter: FC = () => {
         <Route path="frameworksCSS" element={<FrameworksCSS />} />
         <Route path="linksNPM" element={<LinksNPM />} />
         <Route path="iconsLoaders" element={<IconsLoaders />} />
-        <Route path="cssFishki" element={<CSSFishki />} />
         <Route path="youTubeTypescript" element={<YouTubeTypescript />} />
         <Route path="youTubeReact" element={<YouTubeReact />} />
         <Route path="youTubeInterview" element={<YouTubeInterview />} />
@@ -93,6 +92,7 @@ const AppRouter: FC = () => {
         <Route path="tasksFromInterviews" element={<TasksFromInterviews />} />
         <Route path="tasksFromMinin" element={<TasksFromMinin />} />
         <Route path="linksTypescript" element={<LinksTypescript />} />
+        <Route path="html" element={<HTML />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} />
