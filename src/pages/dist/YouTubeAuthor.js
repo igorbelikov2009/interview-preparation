@@ -14,6 +14,10 @@ var YouTubeAuthor = function () {
             title: "Ulbi TV. Ульби Тимур fullstack разработчик."
         },
         {
+            href: "https://www.youtube.com/@Bogdan_Stashchuk",
+            title: "Bogdan Stashchuk"
+        },
+        {
             href: "https://www.youtube.com/@annblok_webdev/videos",
             title: "Анна Блок"
         },
@@ -104,10 +108,6 @@ var YouTubeAuthor = function () {
         {
             href: "https://www.youtube.com/@skillblog-web",
             title: "Skill Blog: Веб-разработка"
-        },
-        {
-            href: "",
-            title: ""
         },
         {
             href: "",

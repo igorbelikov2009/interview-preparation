@@ -171,6 +171,10 @@ export const linksWebDevelopment: ILinkInfo[] = [
     title: "Frontend Stuff. 7  статей с категорией “Tools” ",
   },
   {
+    href: "https://necolas.github.io/normalize.css/",
+    title: "Normalize.css ",
+  },
+  {
     href: " ",
     title: " ",
   },

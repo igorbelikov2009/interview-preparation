@@ -12,54 +12,21 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // // task
-    {
-        // 1-ый вариант:
-        function search(array, target) {
-            for (var i = 0; i < array.length; i++) {
-                if (array[i] === target) {
-                    return i;
-                }
-            }
-            return -1;
-        }
-        // console.log(search([1, 3, 6, 13, 17], 13)); // -> 3
-        // console.log(search([1, 3, 6, 13, 17], 12)); // -> -1
+    function log(value) {
+        console.log(value);
     }
-    {
-        // 2-ой оптимизированный вариант:
-        function search(array, target) {
-            var start = 0;
-            var end = array.length - 1;
-            if (target < array[start] || target > array[end]) {
-                return -1;
-            }
-            while (true) {
-                if (target === array[start]) {
-                    return start;
-                }
-                if (target === array[end]) {
-                    return end;
-                }
-                if (end - start <= 1) {
-                    return -1;
-                }
-                var middle = Math.floor((start + end) / 2);
-                if (target > array[middle]) {
-                    start = middle + 1;
-                }
-                else if (target < array[middle]) {
-                    end = middle - 1;
-                }
-                else if (target === array[middle]) {
-                    return middle;
-                }
-            }
-        }
-        console.log(search([1, 3, 6, 13, 17], 6)); // -> 2
-        console.log(search([1, 3, 6, 13, 17], 13)); // -> 3
-        console.log(search([1, 3, 6, 13, 17], 17)); // -> 4
-        console.log(search([1, 3, 6, 13, 17], 12)); // -> -1
-    }
+    log("1");
+    setTimeout(function () {
+        log("2");
+    }, 0);
+    Promise.resolve().then(function () {
+        log("3");
+    });
+    log("4");
+    // 1
+    // 4
+    // 3
+    // 2
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
@@ -86,3 +53,6 @@ var ClearString = function () {
                         react_1["default"].createElement("p", { className: "expanding__paragraph-code" }, "console.log( elemClear ); // This looks greate ")))))))));
 };
 exports["default"] = ClearString;
+function getPasswords() {
+    throw new Error("Function not implemented.");
+}

@@ -1,9 +1,12 @@
+/* eslint-disable no-unreachable */
 /* eslint-disable no-extend-native */
 /* eslint-disable no-lone-blocks */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { match, rejects } from "assert";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion"; // анимация
 import { type } from "os";
+import { resolve } from "path";
 import React, { useState, useEffect } from "react";
 import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeading";
 import LinkInfo from "../general/LinkInfo/LinkInfo";
@@ -17,61 +20,27 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // // task
-  {
-    // 1-ый вариант:
-    function search(array: Array<number>, target: number) {
-      for (let i = 0; i < array.length; i++) {
-        if (array[i] === target) {
-          return i;
-        }
-      }
-      return -1;
-    }
 
-    // console.log(search([1, 3, 6, 13, 17], 13)); // -> 3
-    // console.log(search([1, 3, 6, 13, 17], 12)); // -> -1
+  function log(value: string) {
+    console.log(value);
   }
 
-  {
-    // 2-ой оптимизированный вариант:
-    function search(array: Array<number>, target: number) {
-      let start = 0;
-      let end = array.length - 1;
+  log("1");
 
-      if (target < array[start] || target > array[end]) {
-        return -1;
-      }
+  setTimeout(() => {
+    log("2");
+  }, 0);
 
-      while (true) {
-        if (target === array[start]) {
-          return start;
-        }
+  Promise.resolve().then(() => {
+    log("3");
+  });
 
-        if (target === array[end]) {
-          return end;
-        }
+  log("4");
 
-        if (end - start <= 1) {
-          return -1;
-        }
-
-        const middle = Math.floor((start + end) / 2);
-
-        if (target > array[middle]) {
-          start = middle + 1;
-        } else if (target < array[middle]) {
-          end = middle - 1;
-        } else if (target === array[middle]) {
-          return middle;
-        }
-      }
-    }
-
-    console.log(search([1, 3, 6, 13, 17], 6)); // -> 2
-    console.log(search([1, 3, 6, 13, 17], 13)); // -> 3
-    console.log(search([1, 3, 6, 13, 17], 17)); // -> 4
-    console.log(search([1, 3, 6, 13, 17], 12)); // -> -1
-  }
+  // 1
+  // 4
+  // 3
+  // 2
 
   // // task
   return (
@@ -124,3 +93,6 @@ const ClearString = () => {
 };
 
 export default ClearString;
+function getPasswords() {
+  throw new Error("Function not implemented.");
+}

@@ -16,6 +16,7 @@ import { arrayReactRouter } from "./reactRouterData";
 import { arrayStringMethods } from "./stringMethodsData";
 import { arrayTypescript } from "./typescriptData";
 import { arrayWebDevelopment } from "./webDevelopmentData";
+import { arrayInterviews } from "./interviewsData";
 
 const generalIssues: IObjectHeadingAnswers[] = arrayJavascript
   .concat(arrayJavascriptFishki)
@@ -34,6 +35,7 @@ const generalIssues: IObjectHeadingAnswers[] = arrayJavascript
   .concat(arrayDestructuringObjects)
   .concat(arrayHTTP)
   .concat(arrayGitHub)
-  .concat(arrayErrorProcessing);
+  .concat(arrayErrorProcessing)
+  .concat(arrayInterviews);
 
 export { generalIssues };
