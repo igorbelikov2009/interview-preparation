@@ -175,6 +175,30 @@ export const linksWebDevelopment: ILinkInfo[] = [
     title: "Normalize.css ",
   },
   {
+    href: "https://temofeev.ru/info/articles/arkhitektura-frontenda-i-kakoy-ona-dolzhna-byt/",
+    title: "Архитектура фронтенда и какой она должна быть. FCD - Feature Sliced Design. ",
+  },
+  {
+    href: "https://www.youtube.com/watch?v=c3JGBdxfYcU",
+    title: "Архитектура современных FRONTEND приложений. FCD - Feature Sliced Design. Ulbi TV",
+  },
+  {
+    href: "https://feature-sliced.design/docs/get-started/tutorial",
+    title: "Feature Sliced Design. FSD official.",
+  },
+  {
+    href: "https://habr.com/ru/companies/inDrive/articles/693768/",
+    title: "Feature Sliced Design: эволюция фронтенда для быстрых экспериментов. Хабр.",
+  },
+  {
+    href: "https://www.pluralsight.com/guides/how-to-organize-your-react-+-redux-codebase#module-theflatstructure",
+    title: "Как организовать кодовую базу React + Redux",
+  },
+  {
+    href: "https://proglib.io/p/modulnaya-arhitektura-chto-kak-i-pochemu-2023-04-04",
+    title: "Модульная архитектура: что, как и почему?",
+  },
+  {
     href: " ",
     title: " ",
   },

@@ -20,28 +20,19 @@ const ClearString = () => {
   const [title] = useState("title");
 
   // // task
+  // ===================================================================================
 
-  function log(value: string) {
-    console.log(value);
-  }
+  // function asyncFunction(): Promise<number | string> {
+  //   return Promise.resolve("^_^");
+  // }
 
-  log("1");
+  // asyncFunction().then((value) => {
+  //   console.log(value); // ^_^
+  // });
 
-  setTimeout(() => {
-    log("2");
-  }, 0);
+  // ===================================================================================
 
-  Promise.resolve().then(() => {
-    log("3");
-  });
-
-  log("4");
-
-  // 1
-  // 4
-  // 3
-  // 2
-
+  // ===================================================================================
   // // task
   return (
     <div className="expanding">

@@ -12,21 +12,15 @@ var ClearString = function () {
     };
     var title = react_1.useState("title")[0];
     // // task
-    function log(value) {
-        console.log(value);
-    }
-    log("1");
-    setTimeout(function () {
-        log("2");
-    }, 0);
-    Promise.resolve().then(function () {
-        log("3");
-    });
-    log("4");
-    // 1
-    // 4
-    // 3
-    // 2
+    // ===================================================================================
+    // function asyncFunction(): Promise<number | string> {
+    //   return Promise.resolve("^_^");
+    // }
+    // asyncFunction().then((value) => {
+    //   console.log(value); // ^_^
+    // });
+    // ===================================================================================
+    // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),
