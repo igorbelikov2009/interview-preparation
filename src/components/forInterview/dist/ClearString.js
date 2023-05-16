@@ -12,34 +12,14 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    function isBalanced(string) {
-        var start = "{[(";
-        var end = "}])";
-        var map = {
-            "}": "{",
-            "]": "[",
-            ")": "("
-        };
-        var queue = []; // очередь
-        for (var i = 0; i < string.length; i++) {
-            var char = string[i];
-            if (start.includes(char)) {
-                queue.push(char);
-            }
-            else if (end.includes(char)) {
-                var last = queue.pop();
-                if (map[char] !== last) {
-                    return false;
-                }
-            }
-        }
-        return !queue.length;
+    function removeChar(str) {
+        return str.slice(1, str.length - 1);
     }
-    console.log(isBalanced("(x + y) - (4)")); // -> true
-    console.log(isBalanced("(((10 ) ()) ((?)(:)))")); // -> true
-    console.log(isBalanced("[{()}]")); // -> true
-    console.log(isBalanced("(50)(")); // -> false
-    console.log(isBalanced("[{]}")); // -> false
+    function removeChar2(str) {
+        return str.substring(1, str.length - 1);
+    }
+    console.log(removeChar("evolution")); // volutio
+    console.log(removeChar2("evolution")); // volutio
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },

@@ -25,39 +25,16 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-
-  function isBalanced(string: string) {
-    const start = "{[(";
-    const end = "}])";
-
-    const map: IMapIndex = {
-      "}": "{",
-      "]": "[",
-      ")": "(",
-    };
-
-    const queue: Array<string> = []; // очередь
-
-    for (let i = 0; i < string.length; i++) {
-      const char = string[i];
-
-      if (start.includes(char)) {
-        queue.push(char);
-      } else if (end.includes(char)) {
-        const last = queue.pop();
-        if (map[char] !== last) {
-          return false;
-        }
-      }
-    }
-    return !queue.length;
+  function removeChar(str: string) {
+    return str.slice(1, str.length - 1);
   }
 
-  console.log(isBalanced("(x + y) - (4)")); // -> true
-  console.log(isBalanced("(((10 ) ()) ((?)(:)))")); // -> true
-  console.log(isBalanced("[{()}]")); // -> true
-  console.log(isBalanced("(50)(")); // -> false
-  console.log(isBalanced("[{]}")); // -> false
+  function removeChar2(str: string) {
+    return str.substring(1, str.length - 1);
+  }
+
+  console.log(removeChar("evolution")); // volutio
+  console.log(removeChar2("evolution")); // volutio
 
   // ===================================================================================
   // // task
