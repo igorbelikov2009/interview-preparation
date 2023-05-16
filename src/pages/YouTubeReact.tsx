@@ -86,6 +86,10 @@ const YouTubeReact = () => {
       title: "React - с Нуля до Профессионала",
     },
     {
+      href: "https://www.youtube.com/playlist?list=PLMlifxDLpB1CAtLxKmIE5FfGZkNx5K5XX",
+      title: "React JS 18 - Самый актуальный полный курс. Евгений Паромов | Front-end.",
+    },
+    {
       href: "https://www.youtube.com/playlist?list=PLCp7YGqt4kFqd3BzBmpl4QnnmieKAZ6Us",
       title: "Асинхронный JavaScript",
     },

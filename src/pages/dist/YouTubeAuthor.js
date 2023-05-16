@@ -110,8 +110,8 @@ var YouTubeAuthor = function () {
             title: "Skill Blog: Веб-разработка"
         },
         {
-            href: "",
-            title: ""
+            href: "https://www.youtube.com/@paromovevg/featured",
+            title: "Евгений Паромов | Front-end. React - 18"
         },
         {
             href: "",

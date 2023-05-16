@@ -2,6 +2,10 @@
 import { ILinkInfo } from "../models/types";
 export const linksTypescript: ILinkInfo[] = [
   {
+    href: "https://spec-zone.ru/typescript/",
+    title: "Документация TypeScript на SPEC-ZONE.RU",
+  },
+  {
     href: "https://frontend-stuff.com/blog/tags/typescript/",
     title: "Frontend Stuff. 14 статей с категорией “TypeScript ",
   },
@@ -258,7 +262,7 @@ export const linksTypescript: ILinkInfo[] = [
   },
   {
     href: "https://spec-zone.ru/typescript/utility-types",
-    title: "Служебные типы - утилиты",
+    title: "Служебные типы - утилиты. spec-zone.ru",
   },
   {
     href: "https://habr.com/ru/companies/timeweb/articles/690726/",

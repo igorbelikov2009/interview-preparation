@@ -46,8 +46,8 @@ const YouTubeTypescript = () => {
       title: "Typescript с нуля, 10 видео. Лабіринт Знання",
     },
     {
-      href: "",
-      title: "",
+      href: "https://www.youtube.com/playlist?list=PL_trBE0sVQmcmKtM0vcp17S6e9tZCTL7T",
+      title: "TYPESCRIPT SIBERIA CAN CODE 🧊 - Frontend",
     },
     {
       href: "",
