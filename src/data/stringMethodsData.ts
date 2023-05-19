@@ -268,8 +268,26 @@ export const arrayStringMethods: IObjectHeadingAnswers[] = [
     isParagraph: true,
   },
   {
+    heading: "String() ",
+    answer: [
+      "String - это встроенный в JS глобальный объект (доступ к которому можно получить везде), который принимает параметр и преобразует его в строку. ",
+      "Поскольку String является независимым объектом, а не методом, унаследованным от прототипа, то его можно использовать с объектами, у которых нет метода toString(). ",
+      "Одна особенность String(x) заключается в том, что он сначала вызывает toString(), а затем пытается использовать возвращаемое значение. ",
+      " ",
+      "      console.log(String(null)); // 'null'",
+      "      console.log(String(undefined)); // 'undefined'",
+    ],
+    isParagraph: true,
+  },
+  {
     heading: "toString()",
-    answer: ["toString(): Возвращает значение строкового объекта."],
+    answer: [
+      "toString() - это метод класса. Он будет работать только в том случае, если его реализует класс объекта, над которым вы работаете. Значение должно существовать, undefined или null приведет к ошибке.",
+      " ",
+      "      console.log(null.toString()); // Здесь нельзя использовать значение 'null'.ts(18050)",
+      "",
+      "      console.log(undefined.toString()); // Здесь нельзя использовать значение 'undefined'.ts(18050)",
+    ],
     isParagraph: true,
   },
   {

@@ -12,15 +12,14 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    function removeChar(str) {
-        return str.slice(1, str.length - 1);
+    function defineСentury(age) {
+        return Math.ceil(age / 100);
     }
-    function removeChar2(str) {
-        return str.substring(1, str.length - 1);
-    }
-    console.log(removeChar("evolution")); // volutio
-    console.log(removeChar2("evolution")); // volutio
-    // ===================================================================================
+    console.log(defineСentury(55)); // 1
+    console.log(defineСentury(155)); // 2
+    console.log(defineСentury(555)); // 6
+    console.log(defineСentury(1555)); // 16
+    // // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
         react_1["default"].createElement(ExpandingHeading_1["default"], { isContentVisible: isVisible, panelName: title, onClickExpanding: expanderHandler }),

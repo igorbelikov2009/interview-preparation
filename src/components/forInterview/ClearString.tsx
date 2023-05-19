@@ -25,18 +25,16 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-  function removeChar(str: string) {
-    return str.slice(1, str.length - 1);
+
+  function defineСentury(age: number): number {
+    return Math.ceil(age / 100);
   }
 
-  function removeChar2(str: string) {
-    return str.substring(1, str.length - 1);
-  }
-
-  console.log(removeChar("evolution")); // volutio
-  console.log(removeChar2("evolution")); // volutio
-
-  // ===================================================================================
+  console.log(defineСentury(55)); // 1
+  console.log(defineСentury(155)); // 2
+  console.log(defineСentury(555)); // 6
+  console.log(defineСentury(1555)); // 16
+  // // ===================================================================================
   // // task
   return (
     <div className="expanding">
