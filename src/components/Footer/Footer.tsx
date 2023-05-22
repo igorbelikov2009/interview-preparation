@@ -38,15 +38,16 @@ const Footer = () => {
     { to: "/objectmethods", children: "Методы объектов" },
     { to: "/numberMethods", children: "Методы чисел" },
     { to: "/stringMethods", children: "Методы строк" },
-    { to: "/error", children: "Обработка ошибок" },
     { to: "/json", children: "Методы JSON" },
     { to: "/regularExpression", children: "Регулярное выражение" },
     { to: "/interviews", children: "Собеседования" },
     { to: "/tasksFromInterviews", children: "Задачи из собеседований" },
     { to: "/tasksFromMinin", children: "Задачи от Минина" },
+    { to: "/tasksForTypescript", children: "Задачи по Typescript" },
   ];
 
   const FourthBlock: IFooterLinks[] = [
+    { to: "/error", children: "Обработка ошибок" },
     { to: "/youTube", children: "На YouTube" },
     { to: "/youTubeAuthor", children: "На YouTube авторы" },
     { to: "/youTubeReact", children: "На YouTube React" },

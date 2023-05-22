@@ -45,6 +45,7 @@ import TasksFromInterviews from "../pages/TasksFromInterviews";
 import TasksFromMinin from "../pages/TasksFromMinin";
 import LinksTypescript from "../pages/LinksTypescript";
 import HTML from "../pages/HTML";
+import TasksForTypescript from "../pages/TasksForTypescript";
 
 const AppRouter: FC = () => {
   return (
@@ -93,6 +94,7 @@ const AppRouter: FC = () => {
         <Route path="tasksFromMinin" element={<TasksFromMinin />} />
         <Route path="linksTypescript" element={<LinksTypescript />} />
         <Route path="html" element={<HTML />} />
+        <Route path="tasksForTypescript" element={<TasksForTypescript />} />
 
         {/* <Route path="" element={<NotfoundPage />} />
         <Route path="" element={<NotfoundPage />} />

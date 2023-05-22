@@ -12,13 +12,26 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    function defineСentury(age) {
-        return Math.ceil(age / 100);
+    var str1 = ["BTS", "CLEVERCAT", "YEE", "PUGACHEVA", "ACDC"];
+    var str2 = ["ACDC", "YEE", "CLEVERCAT", "PUGACHEVA", "BTS"];
+    var str3 = ["BTS", "YEE", "PUGACHEVA", "CLEVERCAT", "ACDC"];
+    var str4 = ["ACDC", "YEE", "CLEVERCAT", "BTS", "PUGACHEVA"];
+    // Сортировка масссива строк по возрастанию
+    function sortData(arr) {
+        return arr.sort();
     }
-    console.log(defineСentury(55)); // 1
-    console.log(defineСentury(155)); // 2
-    console.log(defineСentury(555)); // 6
-    console.log(defineСentury(1555)); // 16
+    // console.log(sortData(str1)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
+    // console.log(sortData(str2)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
+    // console.log(sortData(str3)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
+    // console.log(sortData(str4)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
+    // Сортировка масссива строк случайным образом
+    function mixData(arr) {
+        return arr.sort(function () { return 0.5 - Math.random(); });
+    }
+    // console.log(mixData(str1)); // ['PUGACHEVA', 'YEE', 'CLEVERCAT', 'ACDC', 'BTS']
+    // console.log(mixData(str2)); // ['PUGACHEVA', 'CLEVERCAT', 'YEE', 'BTS', 'ACDC']
+    // console.log(mixData(str3)); // ['CLEVERCAT', 'BTS', 'YEE', 'ACDC', 'PUGACHEVA']
+    // console.log(mixData(str4)); // ['BTS', 'CLEVERCAT', 'YEE', 'ACDC', 'PUGACHEVA']
     // // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },

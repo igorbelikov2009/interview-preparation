@@ -47,6 +47,7 @@ var TasksFromInterviews_1 = require("../pages/TasksFromInterviews");
 var TasksFromMinin_1 = require("../pages/TasksFromMinin");
 var LinksTypescript_1 = require("../pages/LinksTypescript");
 var HTML_1 = require("../pages/HTML");
+var TasksForTypescript_1 = require("../pages/TasksForTypescript");
 var AppRouter = function () {
     return (react_1["default"].createElement(react_router_dom_1.Routes, null,
         react_1["default"].createElement(react_router_dom_1.Route, { path: "/", element: react_1["default"].createElement(Layout_1["default"], null) },
@@ -93,6 +94,7 @@ var AppRouter = function () {
             react_1["default"].createElement(react_router_dom_1.Route, { path: "tasksFromMinin", element: react_1["default"].createElement(TasksFromMinin_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "linksTypescript", element: react_1["default"].createElement(LinksTypescript_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "html", element: react_1["default"].createElement(HTML_1["default"], null) }),
+            react_1["default"].createElement(react_router_dom_1.Route, { path: "tasksForTypescript", element: react_1["default"].createElement(TasksForTypescript_1["default"], null) }),
             react_1["default"].createElement(react_router_dom_1.Route, { path: "*", element: react_1["default"].createElement(NotfoundPage_1["default"], null) }))));
 };
 exports["default"] = AppRouter;
