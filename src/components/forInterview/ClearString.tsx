@@ -16,6 +16,31 @@ interface IMapIndex {
   [key: string]: any;
 }
 
+interface User {
+  name: string;
+  password: string;
+  address: string;
+  phone: number;
+  admin: boolean;
+}
+
+type U1 = User["name"]; // type U1 = string
+type U2 = User["password"]; // type U2 = string
+type U3 = User["address"]; // type U3 = string
+type U4 = User["phone"]; // type U4 = number
+type U5 = User["admin"]; // type U5 = boolean
+type U6 = User[keyof User]; // type U6 = string | number | boolean
+// ===================================================================================
+
+type Task = {
+  id: number;
+  text: string;
+  isCompleted?: boolean;
+  completedDate?: Date | undefined;
+};
+
+type OptionalTask = Partial<Task>;
+// ===================================================================================
 const ClearString: FC = () => {
   const [isVisible, setVisible] = useState(false);
   const expanderHandler = () => {
@@ -25,32 +50,35 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
+  // : Readonly<User>
 
-  const str1: string[] = ["BTS", "CLEVERCAT", "YEE", "PUGACHEVA", "ACDC"];
-  const str2: string[] = ["ACDC", "YEE", "CLEVERCAT", "PUGACHEVA", "BTS"];
-  const str3: string[] = ["BTS", "YEE", "PUGACHEVA", "CLEVERCAT", "ACDC"];
-  const str4: string[] = ["ACDC", "YEE", "CLEVERCAT", "BTS", "PUGACHEVA"];
+  // const user: Partial<User> = {
+  //   name: "Dima",
+  //   password: "iv89375445418",
+  //   address: "Kamsk",
+  //   phone: 89269582820,
+  //   admin: true,
+  // };
 
-  // Сортировка масссива строк по возрастанию
-  function sortData(arr: string[]) {
-    return arr.sort();
-  }
-
-  // console.log(sortData(str1)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
-  // console.log(sortData(str2)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
-  // console.log(sortData(str3)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
-  // console.log(sortData(str4)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
-
-  // Сортировка масссива строк случайным образом
-  function mixData(arr: string[]) {
-    return arr.sort(() => 0.5 - Math.random());
-  }
-
-  // console.log(mixData(str1)); // ['PUGACHEVA', 'YEE', 'CLEVERCAT', 'ACDC', 'BTS']
-  // console.log(mixData(str2)); // ['PUGACHEVA', 'CLEVERCAT', 'YEE', 'BTS', 'ACDC']
-  // console.log(mixData(str3)); // ['CLEVERCAT', 'BTS', 'YEE', 'ACDC', 'PUGACHEVA']
-  // console.log(mixData(str4)); // ['BTS', 'CLEVERCAT', 'YEE', 'ACDC', 'PUGACHEVA']
+  // console.log(user);
   // // ===================================================================================
+
+  const task: Task = {
+    id: 0,
+    text: "Text",
+  };
+
+  function update(task: Task, patch: Partial<Task>): Task {
+    return {
+      ...task,
+      ...patch,
+    };
+  }
+
+  console.log(update(task, { id: 2, isCompleted: false }));
+  console.log(task);
+  // // ===================================================================================
+
   // // task
   return (
     <div className="expanding">

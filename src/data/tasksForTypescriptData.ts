@@ -5,10 +5,11 @@ import { IObjectTasks } from "../models/types";
 
 export const arrayTasksForTypescript: IObjectTasks[] = [
   {
-    heading: "Задачи по Typescript",
-    href: "",
-    taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+    heading: "Задачи по Typescript type<Challenges>.",
+    href: "https://github.com/type-challenges/type-challenges",
+    taskCode: [" "],
   },
+
   {
     heading: " ",
     href: "",
@@ -55,12 +56,7 @@ export const arrayTasksForTypescript: IObjectTasks[] = [
     taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
   },
   {
-    heading: " ",
-    href: "",
-    taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
-  },
-  {
-    heading: "Задачи по Typescript",
+    heading: "",
     href: "",
     taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
   },

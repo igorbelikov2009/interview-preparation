@@ -5,9 +5,9 @@ exports.__esModule = true;
 exports.arrayTasksForTypescript = void 0;
 exports.arrayTasksForTypescript = [
     {
-        heading: "Задачи по Typescript",
-        href: "",
-        taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+        heading: "Задачи по Typescript type<Challenges>.",
+        href: "https://github.com/type-challenges/type-challenges",
+        taskCode: [" "]
     },
     {
         heading: " ",
@@ -55,12 +55,7 @@ exports.arrayTasksForTypescript = [
         taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
     },
     {
-        heading: " ",
-        href: "",
-        taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
-    },
-    {
-        heading: "Задачи по Typescript",
+        heading: "",
         href: "",
         taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
     },

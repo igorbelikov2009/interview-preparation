@@ -6,6 +6,10 @@ export const linksTypescript: ILinkInfo[] = [
     title: "Документация TypeScript на SPEC-ZONE.RU",
   },
   {
+    href: "https://tokmakov.msk.ru/blog/item/726",
+    title: "TypeScript. Начало работы, часть 1 из 7",
+  },
+  {
     href: "https://frontend-stuff.com/blog/tags/typescript/",
     title: "Frontend Stuff. 14 статей с категорией “TypeScript ",
   },

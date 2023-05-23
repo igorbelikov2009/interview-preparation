@@ -1,9 +1,21 @@
 "use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 exports.__esModule = true;
 var framer_motion_1 = require("framer-motion"); // анимация
 var react_1 = require("react");
 var ExpandingHeading_1 = require("../general/expanding/ExpandingPanel/ExpandingHeading");
 require("./taskModel.scss");
+// ===================================================================================
 var ClearString = function () {
     var _a = react_1.useState(false), isVisible = _a[0], setVisible = _a[1];
     var expanderHandler = function () {
@@ -12,26 +24,25 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    var str1 = ["BTS", "CLEVERCAT", "YEE", "PUGACHEVA", "ACDC"];
-    var str2 = ["ACDC", "YEE", "CLEVERCAT", "PUGACHEVA", "BTS"];
-    var str3 = ["BTS", "YEE", "PUGACHEVA", "CLEVERCAT", "ACDC"];
-    var str4 = ["ACDC", "YEE", "CLEVERCAT", "BTS", "PUGACHEVA"];
-    // Сортировка масссива строк по возрастанию
-    function sortData(arr) {
-        return arr.sort();
+    // : Readonly<User>
+    // const user: Partial<User> = {
+    //   name: "Dima",
+    //   password: "iv89375445418",
+    //   address: "Kamsk",
+    //   phone: 89269582820,
+    //   admin: true,
+    // };
+    // console.log(user);
+    // // ===================================================================================
+    var task = {
+        id: 0,
+        text: "Text"
+    };
+    function update(task, patch) {
+        return __assign(__assign({}, task), patch);
     }
-    // console.log(sortData(str1)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
-    // console.log(sortData(str2)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
-    // console.log(sortData(str3)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
-    // console.log(sortData(str4)); //  ['ACDC', 'BTS', 'CLEVERCAT', 'PUGACHEVA', 'YEE']
-    // Сортировка масссива строк случайным образом
-    function mixData(arr) {
-        return arr.sort(function () { return 0.5 - Math.random(); });
-    }
-    // console.log(mixData(str1)); // ['PUGACHEVA', 'YEE', 'CLEVERCAT', 'ACDC', 'BTS']
-    // console.log(mixData(str2)); // ['PUGACHEVA', 'CLEVERCAT', 'YEE', 'BTS', 'ACDC']
-    // console.log(mixData(str3)); // ['CLEVERCAT', 'BTS', 'YEE', 'ACDC', 'PUGACHEVA']
-    // console.log(mixData(str4)); // ['BTS', 'CLEVERCAT', 'YEE', 'ACDC', 'PUGACHEVA']
+    console.log(update(task, { id: 2, isCompleted: false }));
+    console.log(task);
     // // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },

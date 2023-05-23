@@ -199,6 +199,27 @@ export const linksWebDevelopment: ILinkInfo[] = [
     title: "Модульная архитектура: что, как и почему?",
   },
   {
+    href: "https://habr.com/ru/companies/yandex/articles/718084/",
+    title: "Полное понимание асинхронности в браузере. Цикл событий.",
+  },
+  {
+    href: "https://habr.com/ru/companies/otus/articles/686670/ ",
+    title: "10 задач с JavaScript Promise для подготовки к собеседованиям ",
+  },
+  {
+    href: "https://habr.com/ru/articles/681882/",
+    title: "Задачи на собеседованиях. Event loop. JS ",
+  },
+  {
+    href: "https://habr.com/ru/articles/726292/",
+    title:
+      "Как работает веб-браузер. Что происходит после того как пользователь ввел URL в адресную строку браузера и нажал Enter?",
+  },
+  {
+    href: "https://habr.com/ru/companies/oleg-bunin/articles/660687/",
+    title: "Как достичь производительного рендеринга в браузере",
+  },
+  {
     href: " ",
     title: " ",
   },
