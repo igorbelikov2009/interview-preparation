@@ -16,30 +16,6 @@ interface IMapIndex {
   [key: string]: any;
 }
 
-interface User {
-  name: string;
-  password: string;
-  address: string;
-  phone: number;
-  admin: boolean;
-}
-
-type U1 = User["name"]; // type U1 = string
-type U2 = User["password"]; // type U2 = string
-type U3 = User["address"]; // type U3 = string
-type U4 = User["phone"]; // type U4 = number
-type U5 = User["admin"]; // type U5 = boolean
-type U6 = User[keyof User]; // type U6 = string | number | boolean
-// ===================================================================================
-
-type Task = {
-  id: number;
-  text: string;
-  isCompleted?: boolean;
-  completedDate?: Date | undefined;
-};
-
-type OptionalTask = Partial<Task>;
 // ===================================================================================
 const ClearString: FC = () => {
   const [isVisible, setVisible] = useState(false);
@@ -50,34 +26,13 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-  // : Readonly<User>
-
-  // const user: Partial<User> = {
-  //   name: "Dima",
-  //   password: "iv89375445418",
-  //   address: "Kamsk",
-  //   phone: 89269582820,
-  //   admin: true,
-  // };
-
-  // console.log(user);
-  // // ===================================================================================
-
-  const task: Task = {
-    id: 0,
-    text: "Text",
-  };
-
-  function update(task: Task, patch: Partial<Task>): Task {
-    return {
-      ...task,
-      ...patch,
-    };
+  function printerError(s: string) {
+    return `${s.replace(/a-m/gi, "").length}/${s.length}`;
   }
 
-  console.log(update(task, { id: 2, isCompleted: false }));
-  console.log(task);
-  // // ===================================================================================
+  console.log(printerError("aaabbbbbhaijjjjm")); // 16/16
+  console.log(printerError("adm")); // 3/3
+  // ===================================================================================
 
   // // task
   return (
