@@ -26,12 +26,42 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-  function printerError(s: string) {
-    return `${s.replace(/a-m/gi, "").length}/${s.length}`;
-  }
+  // remainder  --> остаток
+  // entered    --> вошло пассажиров
+  // released   --> вышло пассажиров
 
-  console.log(printerError("aaabbbbbhaijjjjm")); // 16/16
-  console.log(printerError("adm")); // 3/3
+  const arrArr1 = [
+    [10, 0], // [вошло, вышло]
+    [3, 5], // [entered, released],
+    [5, 8],
+  ];
+
+  const arrArr2 = [
+    [3, 0],
+    [9, 1],
+    [4, 10],
+    [12, 2],
+    [6, 1],
+    [7, 10],
+  ];
+
+  const arrArr3 = [
+    [3, 0],
+    [9, 1],
+    [4, 8],
+    [12, 2],
+    [6, 1],
+    [7, 8],
+  ];
+
+  const number = function (busStop: number[][]) {
+    // [entered, released]  делаем деструктуризацию подмассива
+    return busStop.reduce((remainder, [entered, released]) => remainder + entered - released, 0);
+  };
+
+  console.log(number(arrArr1)); // 5
+  console.log(number(arrArr2)); // 17
+  console.log(number(arrArr3)); // 21
   // ===================================================================================
 
   // // task

@@ -13,11 +13,40 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    function printerError(s) {
-        return s.replace(/a-m/gi, "").length + "/" + s.length;
-    }
-    console.log(printerError("aaabbbbbhaijjjjm")); // 16/16
-    console.log(printerError("adm")); // 3/3
+    // remainder  --> остаток
+    // entered    --> вошло пассажиров
+    // released   --> вышло пассажиров
+    var arrArr1 = [
+        [10, 0],
+        [3, 5],
+        [5, 8],
+    ];
+    var arrArr2 = [
+        [3, 0],
+        [9, 1],
+        [4, 10],
+        [12, 2],
+        [6, 1],
+        [7, 10],
+    ];
+    var arrArr3 = [
+        [3, 0],
+        [9, 1],
+        [4, 8],
+        [12, 2],
+        [6, 1],
+        [7, 8],
+    ];
+    var number = function (busStop) {
+        // [entered, released]  делаем деструктуризацию подмассива
+        return busStop.reduce(function (remainder, _a) {
+            var entered = _a[0], released = _a[1];
+            return remainder + entered - released;
+        }, 0);
+    };
+    console.log(number(arrArr1)); // 5
+    console.log(number(arrArr2)); // 17
+    console.log(number(arrArr3)); // 21
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
