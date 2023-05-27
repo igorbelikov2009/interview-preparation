@@ -1,3 +1,5 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable no-useless-rename */
 /* eslint-disable no-unreachable */
 /* eslint-disable no-extend-native */
 /* eslint-disable no-lone-blocks */
@@ -16,7 +18,6 @@ interface IMapIndex {
   [key: string]: any;
 }
 
-// ===================================================================================
 const ClearString: FC = () => {
   const [isVisible, setVisible] = useState(false);
   const expanderHandler = () => {
@@ -26,42 +27,19 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-  // remainder  --> остаток
-  // entered    --> вошло пассажиров
-  // released   --> вышло пассажиров
+  // const str1 = "foefet";
+  // const str2 = "toffee";
+  // const str3 = "buckethead";
+  // const str4 = "deathCubec";
 
-  const arrArr1 = [
-    [10, 0], // [вошло, вышло]
-    [3, 5], // [entered, released],
-    [5, 8],
-  ];
+  function isAnagram(test: string, original: string) {
+    // сортируем стандартно, стандартная сортировка работает со строками
+    const sortString = (test: string) => test.split("").sort().join("");
+    return sortString(test) === sortString(original);
+  }
 
-  const arrArr2 = [
-    [3, 0],
-    [9, 1],
-    [4, 10],
-    [12, 2],
-    [6, 1],
-    [7, 10],
-  ];
-
-  const arrArr3 = [
-    [3, 0],
-    [9, 1],
-    [4, 8],
-    [12, 2],
-    [6, 1],
-    [7, 8],
-  ];
-
-  const number = function (busStop: number[][]) {
-    // [entered, released]  делаем деструктуризацию подмассива
-    return busStop.reduce((remainder, [entered, released]) => remainder + entered - released, 0);
-  };
-
-  console.log(number(arrArr1)); // 5
-  console.log(number(arrArr2)); // 17
-  console.log(number(arrArr3)); // 21
+  console.log(isAnagram("foefet", "toffee")); // true
+  console.log(isAnagram("buckethead", "deathCubec")); // false
   // ===================================================================================
 
   // // task

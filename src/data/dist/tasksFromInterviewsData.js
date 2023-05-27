@@ -2705,24 +2705,69 @@ exports.arrayTasks = [
         ]
     },
     {
-        heading: " ",
-        href: "",
-        taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+        heading: "Чётная или нечётная сумма чисел в массиве",
+        href: "https://www.youtube.com/watch?v=5f-6MqSnk-I&list=PLPiq_hi6UrQoIZVVTsHsadUmdMCve5Qdx&index=25",
+        taskCode: [
+            "Как посчитать числа в массиве и узнать, является эта сумма чётным или нечётным числом.  ",
+            " ",
+            "      function summation(arr: number[]) { ",
+            "            return arr.reduce((sum, el, _) => sum + el, 0) % 2 === 0 ? 'even' : 'odd';",
+            "      } ",
+            " ",
+            "      console.log(summation([0]));              //  even ",
+            "      console.log(summation([0, 1, 4]));       //  odd ",
+            "      console.log(summation([0, -1, -5]));    //  even ",
+            "      console.log(summation([0, 3, 5]));       //  even ",
+        ]
     },
     {
-        heading: " ",
-        href: "",
-        taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+        heading: "Все элементы массива подходят под условие? ",
+        href: "https://www.youtube.com/watch?v=84uzDcf2OIo&list=PLPiq_hi6UrQoIZVVTsHsadUmdMCve5Qdx&index=26",
+        taskCode: [
+            "Дан массив чисел и лимит, нужно убедиться, что все значения в массиве ниже или равны этому предельному значению и вернуть true или false соответственно.  ",
+            " ",
+            "      function smallEnough(arr: Array<number>, limit: number) { ",
+            "            for (let i = 0; i < arr.length; i++) {",
+            "                  if (arr[i] > limit) return false;",
+            "            }",
+            "            return true;",
+            "      } ",
+            " ",
+            "      console.log(smallEnough([1, 5, 8, 9, 12], 15));     // true ",
+            "      console.log(smallEnough([1, 5, 8, 9, 12], 12));     // true ",
+            "      console.log(smallEnough([1, 5, 8, 9, 12], 7));       // false ",
+        ]
     },
     {
-        heading: " ",
-        href: "",
-        taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+        heading: "Возвратить индекс среднего числа в массиве из трёх элементов",
+        href: "https://www.youtube.com/watch?v=ZZXjyTcSnkA&list=PLPiq_hi6UrQoIZVVTsHsadUmdMCve5Qdx&index=27",
+        taskCode: [
+            "      function gimme(triplet: number[]) { ",
+            "            // Деструктуризацию [...triplet] применяем для того, чтобы не мутировать исходник",
+            "            return triplet.indexOf([...triplet].sort((a, b) => a - b)[1]);",
+            "      } ",
+            " ",
+            "      console.log(gimme([2, 3, 1])); // 0",
+            "      console.log(gimme([5, 10, 14])); // 1 ",
+            "      console.log(gimme([14, 13, 1])); // 1 ",
+        ]
     },
     {
-        heading: " ",
-        href: "",
-        taskCode: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+        heading: "Анаграмма",
+        href: "https://www.youtube.com/watch?v=Y1WzcRO9fNg&list=PLPiq_hi6UrQoIZVVTsHsadUmdMCve5Qdx&index=28",
+        taskCode: [
+            "Анаграмма-это слово или фраза, образованные путем перестановки букв другого слова или фразы, обычно используя все исходные буквы ровно один раз. ",
+            "Нужно вернуть true, если два слова являются анаграммой, false - если не являются.",
+            " ",
+            "      function isAnagram(test: string, original: string) { ",
+            "            // сортируем стандартно, стандартная сортировка работает со строками",
+            "            const sortString = (test: string) => test.split('').sort().join('');",
+            "            return sortString(test) === sortString(original);",
+            "      } ",
+            " ",
+            "      console.log(isAnagram('foefet', 'toffee')); // true ",
+            "      console.log(isAnagram('buckethead', 'deathCubec')); // false ",
+        ]
     },
     {
         heading: " ",

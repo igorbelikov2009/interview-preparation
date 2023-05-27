@@ -4,7 +4,6 @@ var framer_motion_1 = require("framer-motion"); // анимация
 var react_1 = require("react");
 var ExpandingHeading_1 = require("../general/expanding/ExpandingPanel/ExpandingHeading");
 require("./taskModel.scss");
-// ===================================================================================
 var ClearString = function () {
     var _a = react_1.useState(false), isVisible = _a[0], setVisible = _a[1];
     var expanderHandler = function () {
@@ -13,40 +12,17 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    // remainder  --> остаток
-    // entered    --> вошло пассажиров
-    // released   --> вышло пассажиров
-    var arrArr1 = [
-        [10, 0],
-        [3, 5],
-        [5, 8],
-    ];
-    var arrArr2 = [
-        [3, 0],
-        [9, 1],
-        [4, 10],
-        [12, 2],
-        [6, 1],
-        [7, 10],
-    ];
-    var arrArr3 = [
-        [3, 0],
-        [9, 1],
-        [4, 8],
-        [12, 2],
-        [6, 1],
-        [7, 8],
-    ];
-    var number = function (busStop) {
-        // [entered, released]  делаем деструктуризацию подмассива
-        return busStop.reduce(function (remainder, _a) {
-            var entered = _a[0], released = _a[1];
-            return remainder + entered - released;
-        }, 0);
-    };
-    console.log(number(arrArr1)); // 5
-    console.log(number(arrArr2)); // 17
-    console.log(number(arrArr3)); // 21
+    // const str1 = "foefet";
+    // const str2 = "toffee";
+    // const str3 = "buckethead";
+    // const str4 = "deathCubec";
+    function isAnagram(test, original) {
+        // сортируем стандартно, стандартная сортировка работает со строками
+        var sortString = function (test) { return test.split("").sort().join(""); };
+        return sortString(test) === sortString(original);
+    }
+    console.log(isAnagram("foefet", "toffee")); // true
+    console.log(isAnagram("buckethead", "deathCubec")); // false
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
