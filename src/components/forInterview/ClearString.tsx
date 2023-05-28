@@ -7,7 +7,7 @@
 import { match, rejects } from "assert";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion"; // анимация
-import { type } from "os";
+import { arch, type } from "os";
 import { resolve } from "path";
 import React, { useState, useEffect, useMemo, useCallback, FC } from "react";
 import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeading";
@@ -15,7 +15,7 @@ import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
 
 interface IMapIndex {
-  [key: string]: any;
+  [key: string]: number;
 }
 
 const ClearString: FC = () => {
@@ -27,19 +27,49 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-  // const str1 = "foefet";
-  // const str2 = "toffee";
-  // const str3 = "buckethead";
-  // const str4 = "deathCubec";
 
-  function isAnagram(test: string, original: string) {
-    // сортируем стандартно, стандартная сортировка работает со строками
-    const sortString = (test: string) => test.split("").sort().join("");
-    return sortString(test) === sortString(original);
-  }
+  // const sumOfTwo = (arr: Array<number>, target: number) => {
+  //   const result: number[] = [];
+  //   for (let i = 0; i < arr.length; i++) {
+  //     for (let j = i + 1; j < arr.length; j++) {
+  //       if (arr[i] + arr[j] === target) {
+  //         result.push(i);
+  //         result.push(j);
+  //       }
+  //     }
+  //   }
 
-  console.log(isAnagram("foefet", "toffee")); // true
-  console.log(isAnagram("buckethead", "deathCubec")); // false
+  //   return result;
+  // };
+
+  // console.log(sumOfTwo([2, 7, 11, 15], 22)); // [1, 3]
+
+  const obj = { 2: 0, 7: 1, 11: 2, 15: 3 };
+
+  const sumOfTwo = (arr: Array<number>, target: number) => {
+    const numObject: IMapIndex = {};
+
+    for (let i = 0; i < arr.length; i++) {
+      numObject[arr[i]] = i;
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+      const diff = target - arr[i];
+
+      if (numObject[diff] && numObject[diff] !== i) {
+        return [i, numObject[diff]];
+      }
+    }
+    return [];
+  };
+
+  console.log(sumOfTwo([2, 7, 11, 15], 9)); //  [0, 1]
+
+  // Если в массиве нет чисел дающих нужную сумму, то возвращаем пустой массив
+  console.log(sumOfTwo([2, 7, 11, 15], 90)); //  []
+
+  console.log(sumOfTwo([2, 7, 11, 15], 14)); //  []
+
   // ===================================================================================
 
   // // task

@@ -31,6 +31,7 @@ import ServerError from "../components/general/serverError/ServerError";
 // import { linksArrayMethods } from "../data/arrayMethodsData";
 import { arrayMethodsAPI } from "../services/arrayMethodsAPI";
 import "../styles/arrayMethods.scss";
+import Flat from "../components/forArrayMethods/Flat";
 
 const ArrayMethodsPage = () => {
   const { data: linksArrayMethods, isLoading, isError } = arrayMethodsAPI.useGetLinksArrayMethodsQuery();
@@ -49,6 +50,8 @@ const ArrayMethodsPage = () => {
         {linksArrayMethods && <PageLink links={linksArrayMethods} title="Методы массивов, ссылки" />}
 
         <h1 className="array-methods__heading"> Методы массивов </h1>
+        <h2 className="array-methods__subheading">Распаковка подмассивов в один массив</h2>
+        <Flat />
         <h2 className="array-methods__subheading"> Добавление/удаление элементов</h2>
         <Push />
         <Unshift />
