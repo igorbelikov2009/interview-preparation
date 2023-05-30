@@ -15,7 +15,7 @@ import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
 
 interface IMapIndex {
-  [key: string]: number;
+  [key: string]: string | number;
 }
 
 const ClearString: FC = () => {
@@ -28,47 +28,50 @@ const ClearString: FC = () => {
   // // task
   // ===================================================================================
 
-  // const sumOfTwo = (arr: Array<number>, target: number) => {
-  //   const result: number[] = [];
-  //   for (let i = 0; i < arr.length; i++) {
-  //     for (let j = i + 1; j < arr.length; j++) {
-  //       if (arr[i] + arr[j] === target) {
-  //         result.push(i);
-  //         result.push(j);
-  //       }
-  //     }
-  //   }
+  function isEquals(str1: string, str2: string) {
+    // Проверяем равенство первого с последним элементом
+    return str1.toLowerCase() === str2.toLowerCase();
+  }
 
-  //   return result;
-  // };
+  function isLetter(char: string) {
+    // Проверяем, являются ли наши символы буквами. Смысл в том, что буквы разных
+    // регистров отличаются друг от друга, а символы и пробелы не отличаются.
+    return char.toLowerCase() !== char.toUpperCase();
+  }
 
-  // console.log(sumOfTwo([2, 7, 11, 15], 22)); // [1, 3]
+  function isPalindrome(str: string) {
+    let start = 0; // указатель на первый элемент в строке
+    let end = str.length - 1; // указатель на последний элемент в строке
 
-  const obj = { 2: 0, 7: 1, 11: 2, 15: 3 };
+    while (start < end) {
+      const firstChar = str[start];
+      const endChar = str[end];
 
-  const sumOfTwo = (arr: Array<number>, target: number) => {
-    const numObject: IMapIndex = {};
-
-    for (let i = 0; i < arr.length; i++) {
-      numObject[arr[i]] = i;
-    }
-
-    for (let i = 0; i < arr.length; i++) {
-      const diff = target - arr[i];
-
-      if (numObject[diff] && numObject[diff] !== i) {
-        return [i, numObject[diff]];
+      if (!isLetter(firstChar)) {
+        start += 1;
+        continue;
       }
+
+      if (!isLetter(endChar)) {
+        end -= 1;
+        continue;
+      }
+
+      if (!isEquals(firstChar, endChar)) {
+        // Проверяем равенство первого с последним элементом
+        return false;
+      }
+
+      start += 1; // сдвигаем  указатели
+      end -= 1; // сдвигаем  указатели
     }
-    return [];
-  };
+    return true;
+  }
 
-  console.log(sumOfTwo([2, 7, 11, 15], 9)); //  [0, 1]
-
-  // Если в массиве нет чисел дающих нужную сумму, то возвращаем пустой массив
-  console.log(sumOfTwo([2, 7, 11, 15], 90)); //  []
-
-  console.log(sumOfTwo([2, 7, 11, 15], 14)); //  []
+  console.log(isPalindrome("Казак")); // true
+  console.log(isPalindrome("А роза упала на лапу Азора")); // true
+  console.log(isPalindrome("Do geese see God")); // true
+  console.log(isPalindrome("Madam, I'm Adam")); // true
 
   // ===================================================================================
 

@@ -12,37 +12,42 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    // const sumOfTwo = (arr: Array<number>, target: number) => {
-    //   const result: number[] = [];
-    //   for (let i = 0; i < arr.length; i++) {
-    //     for (let j = i + 1; j < arr.length; j++) {
-    //       if (arr[i] + arr[j] === target) {
-    //         result.push(i);
-    //         result.push(j);
-    //       }
-    //     }
-    //   }
-    //   return result;
-    // };
-    // console.log(sumOfTwo([2, 7, 11, 15], 22)); // [1, 3]
-    var obj = { 2: 0, 7: 1, 11: 2, 15: 3 };
-    var sumOfTwo = function (arr, target) {
-        var numObject = {};
-        for (var i = 0; i < arr.length; i++) {
-            numObject[arr[i]] = i;
-        }
-        for (var i = 0; i < arr.length; i++) {
-            var diff = target - arr[i];
-            if (numObject[diff] && numObject[diff] !== i) {
-                return [i, numObject[diff]];
+    function isEquals(str1, str2) {
+        // Проверяем равенство первого с последним элементом
+        return str1.toLowerCase() === str2.toLowerCase();
+    }
+    function isLetter(char) {
+        // Проверяем, являются ли наши символы буквами. Смысл в том, что буквы разных
+        // регистров отличаются друг от друга, а символы и пробелы не отличаются.
+        return char.toLowerCase() !== char.toUpperCase();
+    }
+    function isPalindrome(str) {
+        var start = 0; // указатель на первый элемент в строке
+        var end = str.length - 1; // указатель на последний элемент в строке
+        while (start < end) {
+            var firstChar = str[start];
+            var endChar = str[end];
+            if (!isLetter(firstChar)) {
+                start += 1;
+                continue;
             }
+            if (!isLetter(endChar)) {
+                end -= 1;
+                continue;
+            }
+            if (!isEquals(firstChar, endChar)) {
+                // Проверяем равенство первого с последним элементом
+                return false;
+            }
+            start += 1; // сдвигаем  указатели
+            end -= 1; // сдвигаем  указатели
         }
-        return [];
-    };
-    console.log(sumOfTwo([2, 7, 11, 15], 9)); //  [0, 1]
-    // Если в массиве нет чисел дающих нужную сумму, то возвращаем пустой массив
-    console.log(sumOfTwo([2, 7, 11, 15], 90)); //  []
-    console.log(sumOfTwo([2, 7, 11, 15], 14)); //  []
+        return true;
+    }
+    console.log(isPalindrome("Казак")); // true
+    console.log(isPalindrome("А роза упала на лапу Азора")); // true
+    console.log(isPalindrome("Do geese see God")); // true
+    console.log(isPalindrome("Madam, I'm Adam")); // true
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
