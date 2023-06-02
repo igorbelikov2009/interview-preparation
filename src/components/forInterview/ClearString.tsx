@@ -28,50 +28,34 @@ const ClearString: FC = () => {
   // // task
   // ===================================================================================
 
-  function isEquals(str1: string, str2: string) {
-    // Проверяем равенство первого с последним элементом
-    return str1.toLowerCase() === str2.toLowerCase();
-  }
+  console.log("start");
 
-  function isLetter(char: string) {
-    // Проверяем, являются ли наши символы буквами. Смысл в том, что буквы разных
-    // регистров отличаются друг от друга, а символы и пробелы не отличаются.
-    return char.toLowerCase() !== char.toUpperCase();
-  }
+  const promise1 = Promise.resolve().then(() => {
+    console.log("promise1");
 
-  function isPalindrome(str: string) {
-    let start = 0; // указатель на первый элемент в строке
-    let end = str.length - 1; // указатель на последний элемент в строке
+    const timer2 = setTimeout(() => {
+      console.log("timer2");
+    }, 0);
+  });
 
-    while (start < end) {
-      const firstChar = str[start];
-      const endChar = str[end];
+  const timer1 = setTimeout(() => {
+    console.log("timer1");
 
-      if (!isLetter(firstChar)) {
-        start += 1;
-        continue;
-      }
+    const promise2 = Promise.resolve().then(() => {
+      console.log("promise2");
+    });
+  }, 0);
 
-      if (!isLetter(endChar)) {
-        end -= 1;
-        continue;
-      }
+  console.log("end");
 
-      if (!isEquals(firstChar, endChar)) {
-        // Проверяем равенство первого с последним элементом
-        return false;
-      }
+  // start
+  // end
 
-      start += 1; // сдвигаем  указатели
-      end -= 1; // сдвигаем  указатели
-    }
-    return true;
-  }
+  // promise1
+  // timer1
 
-  console.log(isPalindrome("Казак")); // true
-  console.log(isPalindrome("А роза упала на лапу Азора")); // true
-  console.log(isPalindrome("Do geese see God")); // true
-  console.log(isPalindrome("Madam, I'm Adam")); // true
+  // promise2
+  // timer2
 
   // ===================================================================================
 

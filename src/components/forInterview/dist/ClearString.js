@@ -12,42 +12,26 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    function isEquals(str1, str2) {
-        // Проверяем равенство первого с последним элементом
-        return str1.toLowerCase() === str2.toLowerCase();
-    }
-    function isLetter(char) {
-        // Проверяем, являются ли наши символы буквами. Смысл в том, что буквы разных
-        // регистров отличаются друг от друга, а символы и пробелы не отличаются.
-        return char.toLowerCase() !== char.toUpperCase();
-    }
-    function isPalindrome(str) {
-        var start = 0; // указатель на первый элемент в строке
-        var end = str.length - 1; // указатель на последний элемент в строке
-        while (start < end) {
-            var firstChar = str[start];
-            var endChar = str[end];
-            if (!isLetter(firstChar)) {
-                start += 1;
-                continue;
-            }
-            if (!isLetter(endChar)) {
-                end -= 1;
-                continue;
-            }
-            if (!isEquals(firstChar, endChar)) {
-                // Проверяем равенство первого с последним элементом
-                return false;
-            }
-            start += 1; // сдвигаем  указатели
-            end -= 1; // сдвигаем  указатели
-        }
-        return true;
-    }
-    console.log(isPalindrome("Казак")); // true
-    console.log(isPalindrome("А роза упала на лапу Азора")); // true
-    console.log(isPalindrome("Do geese see God")); // true
-    console.log(isPalindrome("Madam, I'm Adam")); // true
+    console.log("start");
+    var promise1 = Promise.resolve().then(function () {
+        console.log("promise1");
+        var timer2 = setTimeout(function () {
+            console.log("timer2");
+        }, 0);
+    });
+    var timer1 = setTimeout(function () {
+        console.log("timer1");
+        var promise2 = Promise.resolve().then(function () {
+            console.log("promise2");
+        });
+    }, 0);
+    console.log("end");
+    // start
+    // end
+    // promise1
+    // timer1
+    // promise2
+    // timer2
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
