@@ -27,36 +27,30 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
+  //  Покупаем за 1 во второй день, продаём за 6 в пятый день. Макс прибыль: 6 - 1 = 5 у.е.
+  let arr1 = [7, 1, 5, 3, 6, 4];
 
-  console.log("start");
+  // В нижнем случае мы не можем сделать никакой выгодной операции. Возвращаем ноль.
+  let arr2 = [7, 6, 4, 3, 1];
 
-  const promise1 = Promise.resolve().then(() => {
-    console.log("promise1");
+  function getMaxProfit(prices: number[]) {
+    let minPrice = prices[0];
+    let maxProfit = 0;
 
-    const timer2 = setTimeout(() => {
-      console.log("timer2");
-    }, 0);
-  });
+    for (let i = 0; i < prices.length; i++) {
+      const current = prices[i];
+      if (current < minPrice) {
+        minPrice = current;
+      }
+      if (current - minPrice > maxProfit) {
+        maxProfit = current - minPrice;
+      }
+    }
+    return maxProfit;
+  }
 
-  const timer1 = setTimeout(() => {
-    console.log("timer1");
-
-    const promise2 = Promise.resolve().then(() => {
-      console.log("promise2");
-    });
-  }, 0);
-
-  console.log("end");
-
-  // start
-  // end
-
-  // promise1
-  // timer1
-
-  // promise2
-  // timer2
-
+  console.log(getMaxProfit(arr1)); // 5
+  console.log(getMaxProfit(arr2)); // 0
   // ===================================================================================
 
   // // task
