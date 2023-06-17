@@ -14,8 +14,8 @@ import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeadi
 import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
 
-interface IMapIndex {
-  [key: string]: string | number;
+interface IAdmin {
+  [key: string]: string | number | boolean;
 }
 
 const ClearString: FC = () => {
@@ -27,30 +27,16 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-  //  Покупаем за 1 во второй день, продаём за 6 в пятый день. Макс прибыль: 6 - 1 = 5 у.е.
-  let arr1 = [7, 1, 5, 3, 6, 4];
 
-  // В нижнем случае мы не можем сделать никакой выгодной операции. Возвращаем ноль.
-  let arr2 = [7, 6, 4, 3, 1];
+  localStorage.setItem("favoriteColor", "gray");
 
-  function getMaxProfit(prices: number[]) {
-    let minPrice = prices[0];
-    let maxProfit = 0;
+  let data = localStorage.getItem("favoriteColor");
+  console.log(data); // gray
 
-    for (let i = 0; i < prices.length; i++) {
-      const current = prices[i];
-      if (current < minPrice) {
-        minPrice = current;
-      }
-      if (current - minPrice > maxProfit) {
-        maxProfit = current - minPrice;
-      }
-    }
-    return maxProfit;
-  }
+  localStorage.removeItem("favoriteColor");
+  console.log(data);
+  localStorage.clear();
 
-  console.log(getMaxProfit(arr1)); // 5
-  console.log(getMaxProfit(arr2)); // 0
   // ===================================================================================
 
   // // task

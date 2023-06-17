@@ -12,26 +12,12 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    //  Покупаем за 1 во второй день, продаём за 6 в пятый день. Макс прибыль: 6 - 1 = 5 у.е.
-    var arr1 = [7, 1, 5, 3, 6, 4];
-    // В нижнем случае мы не можем сделать никакой выгодной операции. Возвращаем ноль.
-    var arr2 = [7, 6, 4, 3, 1];
-    function getMaxProfit(prices) {
-        var minPrice = prices[0];
-        var maxProfit = 0;
-        for (var i = 0; i < prices.length; i++) {
-            var current = prices[i];
-            if (current < minPrice) {
-                minPrice = current;
-            }
-            if (current - minPrice > maxProfit) {
-                maxProfit = current - minPrice;
-            }
-        }
-        return maxProfit;
-    }
-    console.log(getMaxProfit(arr1)); // 5
-    console.log(getMaxProfit(arr2)); // 0
+    localStorage.setItem("favoriteColor", "gray");
+    var data = localStorage.getItem("favoriteColor");
+    console.log(data); // gray
+    localStorage.removeItem("favoriteColor");
+    console.log(data);
+    localStorage.clear();
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
