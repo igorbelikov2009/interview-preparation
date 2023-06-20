@@ -300,7 +300,18 @@ export const linksTypescript: ILinkInfo[] = [
     href: "https://www.youtube.com/watch?v=SpQDK74vLKo&list=PLdTPrJkdrLGGgSnXMsO-Rix3MTuySb_mF&index=51&t=123s",
     title: "Условные Типы TypeScript / Infer / Conditional Types",
   },
-
+  {
+    href: "https://typescript-definitive-guide.ru/pdf/tdg.pdf",
+    title: "TypeScript Подробное Руководство ",
+  },
+  {
+    href: "https://typescript-definitive-guide.ru/book/chapters/",
+    title: "TypeScript учебник TDG",
+  },
+  {
+    href: "",
+    title: "",
+  },
   {
     href: "",
     title: "",

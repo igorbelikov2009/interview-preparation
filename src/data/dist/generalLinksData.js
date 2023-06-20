@@ -23,6 +23,7 @@ var referenceBooksData_1 = require("./referenceBooksData");
 var stringMethodsData_1 = require("./stringMethodsData");
 var webDevelopmentData_1 = require("./webDevelopmentData");
 var typescriptLinksData_1 = require("./typescriptLinksData");
+var youTubeData_1 = require("./youTubeData");
 var generalLinks = javascriptData_1.linksJavascript
     .concat(javascriptFishkiData_1.linksJavascriptFishki)
     .concat(jsonData_1.linksJSON)
@@ -46,5 +47,6 @@ var generalLinks = javascriptData_1.linksJavascript
     .concat(fireBaseData_1.linksFireBase)
     .concat(gitHubData_1.linksGitHub)
     .concat(httpData_1.linksHTTP)
-    .concat(iconsLoadersData_1.linksIconsLoaders);
+    .concat(iconsLoadersData_1.linksIconsLoaders)
+    .concat(youTubeData_1.linksYouTube);
 exports.generalLinks = generalLinks;

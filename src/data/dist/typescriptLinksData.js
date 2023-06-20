@@ -300,6 +300,18 @@ exports.linksTypescript = [
         title: "Условные Типы TypeScript / Infer / Conditional Types"
     },
     {
+        href: "https://typescript-definitive-guide.ru/pdf/tdg.pdf",
+        title: "TypeScript Подробное Руководство "
+    },
+    {
+        href: "https://typescript-definitive-guide.ru/book/chapters/",
+        title: "TypeScript учебник TDG"
+    },
+    {
+        href: "",
+        title: ""
+    },
+    {
         href: "",
         title: ""
     },

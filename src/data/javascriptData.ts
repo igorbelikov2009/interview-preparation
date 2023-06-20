@@ -4,6 +4,22 @@ import { ILinkInfo, IObjectHeadingAnswers } from "../models/types";
 
 export const linksJavascript: ILinkInfo[] = [
   {
+    href: " ",
+    title: " ",
+  },
+  {
+    href: "https://wm-school.ru/js/index.php",
+    title: "Введение в JavaScript. WM-school ",
+  },
+  {
+    href: "https://frontend-stuff.com/blog/javascript-cheatsheet/",
+    title: "Шпаргалка по JavaScript в 2021",
+  },
+  {
+    href: "https://doka.guide/js/",
+    title: "JavaScript",
+  },
+  {
     href: "https://frontend-stuff.com/blog/tags/javascript/",
     title: "Frontend Stuff. 42 статей с категорией “JavaScript” ",
   },

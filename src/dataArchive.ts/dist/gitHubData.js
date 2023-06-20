@@ -31,6 +31,14 @@ exports.linksGitHub = [
         title: "Frontend Stuff. 12 статей с категорией “Git”  "
     },
     {
+        href: "https://htmlacademy.ru/blog/html_old",
+        title: "Бесплатный учебник по Git и GitHub от HTML- академии."
+    },
+    {
+        href: " ",
+        title: " "
+    },
+    {
         href: " ",
         title: " "
     },

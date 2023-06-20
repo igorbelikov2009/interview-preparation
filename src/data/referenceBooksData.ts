@@ -2,6 +2,11 @@ import { ILinkInfo } from "../models/types";
 
 export const linksReferenceBooks: ILinkInfo[] = [
   {
+    href: "https://frontend-stuff.com/blog/tags/typescript/",
+    title: "frontend-stuff: TypeScript, Git, GraphQl, JavaScript, React, Tools, Testing Library",
+  },
+
+  {
     href: "https://jsonplaceholder.typicode.com/",
     title: "JSONPlaceholder",
   },
@@ -87,25 +92,41 @@ export const linksReferenceBooks: ILinkInfo[] = [
     href: "https://redux-toolkit.js.org/introduction/getting-started",
     title: "Redux Toolkit",
   },
-  {
-    href: "",
-    title: "",
-  },
 
-  {
-    href: "",
-    title: "==================",
-  },
   {
     href: "https://thecode.media/spa/",
     title: "Single Page Application: как работает сайт-приложение",
   },
   {
-    href: "https://doka.guide/js/",
-    title: "JavaScript",
-  },
-  {
     href: "https://www.webune.com/forums/ionic-react-error-eslint.html",
     title: "Чтобы игнорировать, добавьте // Eslint-disable-next-line в строку перед",
+  },
+  {
+    href: "https://feature-sliced.design/docs/get-started/tutorial",
+    title: "Feature-Sliced Design",
+  },
+  {
+    href: "https://habr.com/ru/companies/inDrive/articles/693768/",
+    title: "Feature-Sliced Design: эволюция фронтенда для быстрых экспериментов",
+  },
+  {
+    href: "https://metanit.com/nosql/mongodb/",
+    title: "Онлайн-руководство по MongoDB",
+  },
+  {
+    href: "",
+    title: " ",
+  },
+  {
+    href: "",
+    title: " ",
+  },
+  {
+    href: "",
+    title: "",
+  },
+  {
+    href: "",
+    title: " ",
   },
 ];

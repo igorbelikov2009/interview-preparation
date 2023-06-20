@@ -21,6 +21,7 @@ import { linksReferenceBooks } from "./referenceBooksData";
 import { linksStringMethods } from "./stringMethodsData";
 import { linksWebDevelopment } from "./webDevelopmentData";
 import { linksTypescript } from "./typescriptLinksData";
+import { linksYouTube } from "./youTubeData";
 
 const generalLinks: ILinkInfo[] = linksJavascript
   .concat(linksJavascriptFishki)
@@ -45,5 +46,6 @@ const generalLinks: ILinkInfo[] = linksJavascript
   .concat(linksFireBase)
   .concat(linksGitHub)
   .concat(linksHTTP)
-  .concat(linksIconsLoaders);
+  .concat(linksIconsLoaders)
+  .concat(linksYouTube);
 export { generalLinks };
