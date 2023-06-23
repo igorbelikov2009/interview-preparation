@@ -22,6 +22,7 @@ import { linksStringMethods } from "./stringMethodsData";
 import { linksWebDevelopment } from "./webDevelopmentData";
 import { linksTypescript } from "./typescriptLinksData";
 import { linksYouTube } from "./youTubeData";
+import { linksHTML } from "./htmlData";
 
 const generalLinks: ILinkInfo[] = linksJavascript
   .concat(linksJavascriptFishki)
@@ -47,5 +48,6 @@ const generalLinks: ILinkInfo[] = linksJavascript
   .concat(linksGitHub)
   .concat(linksHTTP)
   .concat(linksIconsLoaders)
-  .concat(linksYouTube);
+  .concat(linksYouTube)
+  .concat(linksHTML);
 export { generalLinks };

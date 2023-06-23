@@ -17,6 +17,14 @@ export const linksWebStorage: ILinkInfo[] = [
     href: "https://translated.turbopages.org/proxy_u/en-ru.ru.408757d6-648d5bf6-2637689d-74722d776562/https/stackoverflow.com/questions/48712923/where-to-store-a-jwt-token-properly-and-safely-in-a-web-based-application",
     title: "Где правильно и безопасно хранить токен JWT в веб-приложении?",
   },
+  {
+    href: "https://snipp.ru/jquery/cookie-js",
+    title: "Работа с cookie в JavaScript",
+  },
+  {
+    href: "https://snipp.ru/jquery/localstorage-sessionstorage",
+    title: "Работа с Local Storage и Session Storage в JavaScript",
+  },
 ];
 
 export const arrayWebStorage: IObjectHeadingAnswers[] = [
@@ -101,6 +109,25 @@ export const arrayWebStorage: IObjectHeadingAnswers[] = [
       " ",
     ],
     isParagraph: true,
+  },
+  {
+    heading: "Работа с cookie в JavaScript",
+    answer: [
+      "1. Проверка включены ли cookies в браузере. ",
+      "Чтобы узнать, включены ли cookies в браузере пользователя до их использования, можно проверить свойство navigator.cookieEnabled (содержит true или false):",
+      "            if (navigator.cookieEnabled === false) { ",
+      "                  alert('Cookies отключены!');",
+      "            } else if (navigator.cookieEnabled === true) { ",
+      "                  alert('Cookies включены!');",
+      "            }",
+      " ",
+      "2. Запись cookies.",
+      "Запись в document.cookie происходит особым образом, например следующий пример обновит только данные с ключом «name», но при этом не затронет все остальные. ",
+      "      document.cookie = 'name=user'; ",
+      " ",
+      "Такая установка будет хранится до закрытия браузера. Чтобы продлить время жизни cookies есть два типа параметров: ",
+    ],
+    isParagraphBefore: true,
   },
   {
     heading: "Что такое токен? Что такое токен авторизации?",

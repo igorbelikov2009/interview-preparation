@@ -17,6 +17,7 @@ import { arrayStringMethods } from "./stringMethodsData";
 import { arrayTypescript } from "./typescriptData";
 import { arrayWebDevelopment } from "./webDevelopmentData";
 import { arrayInterviews } from "./interviewsData";
+import { arrayHTML } from "./htmlData";
 
 const generalIssues: IObjectHeadingAnswers[] = arrayJavascript
   .concat(arrayJavascriptFishki)
@@ -36,6 +37,7 @@ const generalIssues: IObjectHeadingAnswers[] = arrayJavascript
   .concat(arrayHTTP)
   .concat(arrayGitHub)
   .concat(arrayErrorProcessing)
-  .concat(arrayInterviews);
+  .concat(arrayInterviews)
+  .concat(arrayHTML);
 
 export { generalIssues };

@@ -12,12 +12,10 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    localStorage.setItem("favoriteColor", "gray");
-    var data = localStorage.getItem("favoriteColor");
-    console.log(data); // gray
-    localStorage.removeItem("favoriteColor");
-    console.log(data);
-    localStorage.clear();
+    var arrArr = [[3, 2, 1], [4, 6, 5], [[[10, 11]]], [[[[[[[[[12]]]]]]]]], [9, 7, 8]];
+    // Используем бесконечный уровень вложенности - Infinity:
+    var clonedArray = arrArr.flat(Infinity);
+    console.log(clonedArray); // [3, 2, 1, 4, 6, 5, 10, 11, 12, 9, 7, 8]
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },

@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion"; // анимация
 import { arch, type } from "os";
 import { resolve } from "path";
 import React, { useState, useEffect, useMemo, useCallback, FC } from "react";
+import { forEachChild } from "typescript";
 import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeading";
 import LinkInfo from "../general/LinkInfo/LinkInfo";
 import "./taskModel.scss";
@@ -27,16 +28,12 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
+  const arrArr = [[3, 2, 1], [4, 6, 5], [[[10, 11]]], [[[[[[[[[12]]]]]]]]], [9, 7, 8]];
 
-  localStorage.setItem("favoriteColor", "gray");
+  // Используем бесконечный уровень вложенности - Infinity:
+  const clonedArray = arrArr.flat(Infinity);
 
-  let data = localStorage.getItem("favoriteColor");
-  console.log(data); // gray
-
-  localStorage.removeItem("favoriteColor");
-  console.log(data);
-  localStorage.clear();
-
+  console.log(clonedArray); // [3, 2, 1, 4, 6, 5, 10, 11, 12, 9, 7, 8]
   // ===================================================================================
 
   // // task

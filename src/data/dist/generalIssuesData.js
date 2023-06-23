@@ -19,6 +19,7 @@ var stringMethodsData_1 = require("./stringMethodsData");
 var typescriptData_1 = require("./typescriptData");
 var webDevelopmentData_1 = require("./webDevelopmentData");
 var interviewsData_1 = require("./interviewsData");
+var htmlData_1 = require("./htmlData");
 var generalIssues = javascriptData_1.arrayJavascript
     .concat(javascriptFishkiData_1.arrayJavascriptFishki)
     .concat(jsonData_1.arrayJSON)
@@ -37,5 +38,6 @@ var generalIssues = javascriptData_1.arrayJavascript
     .concat(httpData_1.arrayHTTP)
     .concat(gitHubData_1.arrayGitHub)
     .concat(errorProcessingData_1.arrayErrorProcessing)
-    .concat(interviewsData_1.arrayInterviews);
+    .concat(interviewsData_1.arrayInterviews)
+    .concat(htmlData_1.arrayHTML);
 exports.generalIssues = generalIssues;

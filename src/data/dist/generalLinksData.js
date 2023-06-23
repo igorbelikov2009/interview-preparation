@@ -24,6 +24,7 @@ var stringMethodsData_1 = require("./stringMethodsData");
 var webDevelopmentData_1 = require("./webDevelopmentData");
 var typescriptLinksData_1 = require("./typescriptLinksData");
 var youTubeData_1 = require("./youTubeData");
+var htmlData_1 = require("./htmlData");
 var generalLinks = javascriptData_1.linksJavascript
     .concat(javascriptFishkiData_1.linksJavascriptFishki)
     .concat(jsonData_1.linksJSON)
@@ -48,5 +49,6 @@ var generalLinks = javascriptData_1.linksJavascript
     .concat(gitHubData_1.linksGitHub)
     .concat(httpData_1.linksHTTP)
     .concat(iconsLoadersData_1.linksIconsLoaders)
-    .concat(youTubeData_1.linksYouTube);
+    .concat(youTubeData_1.linksYouTube)
+    .concat(htmlData_1.linksHTML);
 exports.generalLinks = generalLinks;
