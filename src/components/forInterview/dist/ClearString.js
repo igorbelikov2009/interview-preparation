@@ -12,10 +12,8 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    var arrArr = [[3, 2, 1], [4, 6, 5], [[[10, 11]]], [[[[[[[[[12]]]]]]]]], [9, 7, 8]];
-    // Используем бесконечный уровень вложенности - Infinity:
-    var clonedArray = arrArr.flat(Infinity);
-    console.log(clonedArray); // [3, 2, 1, 4, 6, 5, 10, 11, 12, 9, 7, 8]
+    var promise = Promise.resolve(Promise.resolve(Promise.resolve("result")));
+    promise.then(console.log); // result
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },

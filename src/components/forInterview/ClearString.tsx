@@ -28,12 +28,11 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-  const arrArr = [[3, 2, 1], [4, 6, 5], [[[10, 11]]], [[[[[[[[[12]]]]]]]]], [9, 7, 8]];
 
-  // Используем бесконечный уровень вложенности - Infinity:
-  const clonedArray = arrArr.flat(Infinity);
+  const promise = Promise.resolve(Promise.resolve(Promise.resolve("result")));
 
-  console.log(clonedArray); // [3, 2, 1, 4, 6, 5, 10, 11, 12, 9, 7, 8]
+  promise.then(console.log); // result
+
   // ===================================================================================
 
   // // task
