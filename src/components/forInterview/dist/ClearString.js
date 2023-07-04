@@ -12,8 +12,34 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    var promise = Promise.resolve(Promise.resolve(Promise.resolve("result")));
-    promise.then(console.log); // result
+    // const admin: any = {
+    //   name: "Anna",
+    //   age: 21,
+    //   isAdmin: true,
+    //   sizes: {
+    //     height: 165,
+    //     weight: 55,
+    //   },
+    // };
+    // // let copyAdmin = Object.assign({}, admin);
+    // // let copyAdmin = { ...admin };
+    // // let copyAdmin = Object.create(admin);
+    // // let copyAdmin: any = {};
+    // // for (let key in admin) {
+    // //   copyAdmin[key] = admin[key];
+    // // }
+    // // let copyAdmin = structuredClone(admin);
+    // let copyAdmin = JSON.parse(JSON.stringify(admin));
+    // admin.name = "Vasy";
+    // admin.sizes.height = 180;
+    // copyAdmin.name = "Shura";
+    // copyAdmin.sizes.height = 150;
+    // console.log(admin.name, admin.sizes.height); // Vasy 180
+    // console.log(copyAdmin.name, copyAdmin.sizes.height); // Shura 150
+    // -----------------------------------------------------------------------
+    var stringJSON = '{"name" : "Matt", "age" : 21}';
+    var student = JSON.parse(stringJSON);
+    console.log(student); // '{'name':'Matt','age': 21}'
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },
