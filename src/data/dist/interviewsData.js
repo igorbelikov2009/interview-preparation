@@ -23,7 +23,7 @@ exports.arrayInterviews = [
         isParagraph: true
     },
     {
-        heading: "Преобразовать промис в asynk / await ",
+        heading: "Преобразовать промис в async / await ",
         answer: [
             "1. Создаём функцию с промисом:",
             "      const getSomeData = () => { ",

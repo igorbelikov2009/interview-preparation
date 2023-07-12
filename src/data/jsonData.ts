@@ -21,6 +21,10 @@ export const linksJSON: ILinkInfo[] = [
     href: "https://habr.com/ru/articles/554274/",
     title: "Что такое JSON",
   },
+  {
+    href: "https://my-js.org/docs/cheatsheet/json-server/ ",
+    title: "Шпаргалка по JSON Server ",
+  },
 ];
 
 export const arrayJSON: IObjectHeadingAnswers[] = [

@@ -6,7 +6,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { match, rejects } from "assert";
 import axios from "axios";
-import { motion, AnimatePresence } from "framer-motion"; // анимация
+import { motion, AnimatePresence, m } from "framer-motion"; // анимация
 import { arch, type } from "os";
 import { resolve } from "path";
 import React, { useState, useEffect, useMemo, useCallback, FC } from "react";
@@ -18,6 +18,9 @@ import "./taskModel.scss";
 interface IAdmin {
   [key: string]: string | number | boolean;
 }
+interface IValue {
+  x: number;
+}
 
 const ClearString: FC = () => {
   const [isVisible, setVisible] = useState(false);
@@ -28,44 +31,48 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-  // const admin: any = {
-  //   name: "Anna",
-  //   age: 21,
-  //   isAdmin: true,
+  const getSomeData = () => {
+    const promise = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve("some data");
+      }, 4000);
+    });
+    return promise;
+  };
 
-  //   sizes: {
-  //     height: 165,
-  //     weight: 55,
-  //   },
-  // };
+  const getAnotherData = () => {
+    const promise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("another data");
+      }, 3000);
+    });
+    return promise;
+  };
 
-  // // let copyAdmin = Object.assign({}, admin);
-  // // let copyAdmin = { ...admin };
-  // // let copyAdmin = Object.create(admin);
+  const getThirdData = () => {
+    const promise = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve("third data");
+      }, 2000);
+    });
+    return promise;
+  };
 
-  // // let copyAdmin: any = {};
-  // // for (let key in admin) {
-  // //   copyAdmin[key] = admin[key];
-  // // }
+  const getFourthData = () => {
+    const promise = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve("fourth data");
+      }, 1000);
+    });
+    return promise;
+  };
 
-  // // let copyAdmin = structuredClone(admin);
-  // let copyAdmin = JSON.parse(JSON.stringify(admin));
+  const foo = async () => {
+    const result = await Promise.any([getSomeData(), getAnotherData(), getThirdData(), getFourthData()]);
+    console.log(result);
+  };
 
-  // admin.name = "Vasy";
-  // admin.sizes.height = 180;
-
-  // copyAdmin.name = "Shura";
-  // copyAdmin.sizes.height = 150;
-
-  // console.log(admin.name, admin.sizes.height); // Vasy 180
-  // console.log(copyAdmin.name, copyAdmin.sizes.height); // Shura 150
-  // -----------------------------------------------------------------------
-
-  let stringJSON = '{"name" : "Matt", "age" : 21}';
-
-  let student = JSON.parse(stringJSON);
-
-  console.log(student); // '{'name':'Matt','age': 21}'
+  foo();
   // ===================================================================================
 
   // // task
@@ -94,6 +101,3 @@ const ClearString: FC = () => {
 };
 
 export default ClearString;
-function getPasswords() {
-  throw new Error("Function not implemented.");
-}
