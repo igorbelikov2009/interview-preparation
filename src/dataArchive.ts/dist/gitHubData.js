@@ -35,8 +35,8 @@ exports.linksGitHub = [
         title: "Бесплатный учебник по Git и GitHub от HTML- академии."
     },
     {
-        href: " ",
-        title: " "
+        href: "https://www.youtube.com/watch?v=kSb6N4-kZtY ",
+        title: "Как удалить проект из GitHub #github #deleterepository "
     },
     {
         href: " ",

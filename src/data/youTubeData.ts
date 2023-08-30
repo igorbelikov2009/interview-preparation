@@ -95,16 +95,16 @@ export const linksYouTube: ILinkInfo[] = [
     title: "Новые методы массивов в JavaScript",
   },
   {
-    href: "",
-    title: "",
+    href: "https://www.youtube.com/watch?v=cNUTCKq-_-Y",
+    title: "Styled Components & React ПОЛНЫЙ КУРС. Ulbi TV",
   },
   {
-    href: "",
-    title: "",
+    href: "https://www.youtube.com/watch?v=I_tgMaGA5CU&t=296s",
+    title: "UI Library with Styled-Components, Storybook, Typescript, Rollup",
   },
   {
-    href: "",
-    title: "",
+    href: "https://www.youtube.com/watch?v=kSb6N4-kZtY ",
+    title: "Как удалить проект из GitHub #github #deleterepository ",
   },
   {
     href: "",

@@ -155,6 +155,14 @@ export const linksWebDevelopment: ILinkInfo[] = [
     title: "GraphQL.",
   },
   {
+    href: "https://ru.hexlet.io/blog/posts/chto-takoe-graphql-s-osnov-do-pervyh-zaprosov",
+    title: "Что такое GraphQL: с основ до первых запросов",
+  },
+  {
+    href: "https://habr.com/ru/companies/ruvds/articles/445268/",
+    title: "Подробности о GraphQL: что, как и почему",
+  },
+  {
     href: "https://frontend-stuff.com/blog/npm-scripts/",
     title: "Frontend Stuff. Что такое NPM скрипты и как их можно использовать для автоматизации задач. ",
   },
@@ -230,6 +238,62 @@ export const linksWebDevelopment: ILinkInfo[] = [
   {
     href: "https://github.com/jamiebuilds/babel-handbook/blob/master/translations/ru/user-handbook.md",
     title: "Babel. Руководство Пользователя ",
+  },
+  {
+    href: "https://habr.com/ru/articles/591381/",
+    title: "Styled Components — идеальная стилизация React-приложения. TypeScript ",
+  },
+  {
+    href: "https://webformyself.com/kak-ispolzovat-stilizovannye-komponenty-v-react/",
+    title: "Как использовать стилизованные компоненты в React. Styled Components ",
+  },
+  {
+    href: "https://github.dev/YaroslavWeb/plankton-client",
+    title: "Приложение - пособие по styled components + TypeScript на github",
+  },
+  {
+    href: "https://www.youtube.com/watch?v=I_tgMaGA5CU&t=71s",
+    title: "UI Library with Styled-Components, Storybook, Typescript,",
+  },
+  {
+    href: "https://github.com/styled-components/styled-components ",
+    title: "styled components github ",
+  },
+  {
+    href: "https://styled-components.com/docs ",
+    title: "Документация styled components",
+  },
+  {
+    href: "https://hello-js.com/articles/themes-in-react-with-typescript-context-hooks/",
+    title: "Темы в React с Typescript, Context API, хуки React, переменные CSS",
+  },
+  {
+    href: "https://www.joshwcomeau.com/css/css-variables-for-react-devs/ ",
+    title: "Переменные CSS для разработчиков React",
+  },
+  {
+    href: "https://emotion.sh/docs/introduction",
+    title: "Пакет @emotion/react",
+  },
+  {
+    href: "https://emotion.sh/docs/typescript ",
+    title: "Пакет @emotion/react TypeScript",
+  },
+  {
+    href: "https://www.youtube.com/watch?v=BBRVmHgB2BY",
+    title: "CSS переменные. Как использовать при верстке сайта?",
+  },
+  {
+    href: "https://stackoverflow.com/questions/52005083/how-to-define-css-variables-in-style-attribute-in-react-and-typescript",
+    title: "Как определить переменные css в атрибуте стиля в React и TypeScript",
+  },
+  {
+    href: "https://doka.guide/tools/rollup/ ",
+    title: "Rollup Сборщик проектов JavaScript - замена для webpack. ",
+  },
+  {
+    href: "https://www.youtube.com/watch?v=I_tgMaGA5CU&t=71s ",
+    title: "Rollup Сборщик проектов JavaScript - замена для webpack. Youtube ",
   },
   {
     href: " ",

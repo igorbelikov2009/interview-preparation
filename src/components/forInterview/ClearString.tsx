@@ -31,48 +31,11 @@ const ClearString: FC = () => {
 
   // // task
   // ===================================================================================
-  const getSomeData = () => {
-    const promise = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve("some data");
-      }, 4000);
-    });
-    return promise;
-  };
 
-  const getAnotherData = () => {
-    const promise = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve("another data");
-      }, 3000);
-    });
-    return promise;
-  };
+  const arr = [1, 2, 3];
+  let copyArr = Object.assign({}, arr);
+  console.log(copyArr);
 
-  const getThirdData = () => {
-    const promise = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve("third data");
-      }, 2000);
-    });
-    return promise;
-  };
-
-  const getFourthData = () => {
-    const promise = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve("fourth data");
-      }, 1000);
-    });
-    return promise;
-  };
-
-  const foo = async () => {
-    const result = await Promise.any([getSomeData(), getAnotherData(), getThirdData(), getFourthData()]);
-    console.log(result);
-  };
-
-  foo();
   // ===================================================================================
 
   // // task
@@ -101,3 +64,4 @@ const ClearString: FC = () => {
 };
 
 export default ClearString;
+
