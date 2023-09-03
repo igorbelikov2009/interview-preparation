@@ -25,10 +25,7 @@ export const linksCSS: ILinkInfo[] = [
     href: "https://skillbox.ru/media/code/uchimsya-verstat-v-setke-bolshoy-gayd-po-css-grid/",
     title: "Учимся верстать в сетке: большой гайд по CSS Grid",
   },
-  {
-    href: " ",
-    title: " ",
-  },
+
   {
     href: "https://meyerweb.com/eric/tools/css/reset/",
     title: "Сброс - reset CSS.",
@@ -150,10 +147,6 @@ export const linksCSS: ILinkInfo[] = [
     href: "https://css-live.ru/articles-css/display-and-formatting-contexts.html",
     title: "CSS-свойство display и контексты форматирования",
   },
-  {
-    href: " ",
-    title: " ",
-  },
 ];
 
 export const linksCSSFishki: ILinkInfo[] = [
@@ -253,14 +246,6 @@ export const linksFrameworksCSS: ILinkInfo[] = [
   {
     href: "https://www.youtube.com/watch?v=OZ_FUaV_xbg&t=6s",
     title: "Библиотека компонентов Material UI. Быстрый старт. Михаил Непомнящий.",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
   },
 ];
 
@@ -1120,21 +1105,6 @@ export const arrayCSS: IObjectHeadingAnswers[] = [
       "   *  Если все отступы отрицательные, размер схлопнутого отступа равен наименьшему (наибольшему по модулю) отступу. Это относится как к вложенным элементам, так и к соседним.",
       "   *  Внешние отступы плавающих и абсолютно позиционируемых элементов никогда не схлопываются.",
     ],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " "],
     isParagraph: true,
   },
 ];

@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion"; // анимация
 import React, { useState } from "react";
 import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeading";
 import LinkInfo from "../general/LinkInfo/LinkInfo";
-import "../../styles/dist/expanding.css";
+import "../../styles/expanding.scss";
 
 const Method = () => {
   const [isVisible, setVisible] = useState(false);

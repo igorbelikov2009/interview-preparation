@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion"; // анимация
 import React, { useState } from "react";
 import ExpandingHeading from "../general/expanding/ExpandingPanel/ExpandingHeading";
-import "../../styles/dist/expanding.css";
+import "../../styles/expanding.scss";
 
 const ForOf = () => {
   const [isVisible, setVisible] = useState(false);
