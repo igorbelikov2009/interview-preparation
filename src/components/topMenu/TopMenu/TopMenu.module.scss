@@ -1,108 +1,46 @@
 .top-menu {
   width: 100%;
   max-width: 1920px;
-  margin: 0 auto;
   height: 72px;
+  margin: 0 auto;
   position: absolute;
   top: 0;
-
   border-bottom: none;
 
-  display: none;
-
-  @media (min-width: 1160px) {
-    display: block;
+  @media (min-width: 360px) {
+    width: 100%;
   }
 
   &__with-border {
     width: 100%;
     max-width: 1920px;
-    margin: 0 auto;
     height: 72px;
+    margin: 0 auto;
     position: absolute;
     top: 0;
 
     border-bottom: 1px solid #e4e4e4;
-  }
 
-  &__container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 24px 18px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    @media (min-width: 576px) {
-      padding-left: 28px;
-      padding-right: 28px;
+    @media (min-width: 360px) {
+      width: 100%;
     }
   }
 
   &__nav {
-    display: none;
-
-    @media (min-width: 768px) {
-      display: flex;
-      justify-content: space-between;
-      margin-left: 12px;
-    }
-  }
-
-  &__right-block {
-    display: none;
-
-    @media (min-width: 1160px) {
-      display: flex;
-      justify-content: space-between;
-      margin-left: 12px;
-    }
-  }
-
-  &__private-office {
-    cursor: pointer;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 12px;
     display: flex;
-    align-items: center;
-    position: relative;
+    justify-content: space-between;
+    padding: 24px 12px;
 
-    &:hover .top-menu_title {
-      color: #b5bdc8;
-    }
-  }
-
-  &__title {
-    margin-left: 12px;
-    font-size: 16px;
-    line-height: 24px;
-    cursor: pointer;
-    display: none;
-
-    color: #b5bdc8;
-    &:hover {
-      color: white;
+    @media screen and (min-width: 576px) {
+      padding: 24px;
     }
 
-    @media (min-width: 768px) {
-      display: block;
-    }
-  }
-
-  &__title_news {
-    margin-left: 12px;
-    font-size: 16px;
-    line-height: 24px;
-    cursor: pointer;
-    display: none;
-
-    color: #78828c;
-
-    &:hover {
-      color: #000;
-    }
-
-    @media (min-width: 768px) {
-      display: block;
+    @media screen and (min-width: 1160px) {
+      padding: 24px 28px;
     }
   }
 }

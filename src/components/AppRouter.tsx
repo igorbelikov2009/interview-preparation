@@ -9,20 +9,16 @@ import HTTPPage from "../pages/HTTP";
 import JavascriptPage from "../pages/Javascript";
 import ReactPage from "../pages/ReactPage";
 import ArrayMethodsPage from "../pages/ArrayMethods";
-import ArrayTasksPage from "../pages/ArrayTasks";
-import LinksPage from "../pages/Links";
 import DestructuringPage from "../pages/Destructuring";
 import ErrorProcessingPage from "../pages/ErrorProcessing";
 import JSONPage from "../pages/JSONPage";
 import NotfoundPage from "../pages/NotfoundPage";
-import ObjectMethodsPage from "../pages/ObjectMethods";
 import VuePage from "../pages/VuePage";
 import Layout from "./Layout/Layout";
 import JavascriptFishkiPage from "../pages/JavascriptFishki";
 import ReactRouter from "../pages/ReactRouter";
 import TypescriptPage from "../pages/TypescriptPage";
 import WebDevelopment from "../pages/WebDevelopment";
-import BarMenuPage from "../pages/BarMenu";
 import WebStorage from "../pages/WebStorage";
 import NumberMethods from "../pages/NumberMethods";
 import StringMethods from "../pages/StringMethods";
@@ -33,10 +29,8 @@ import LinksNPM from "../pages/LinksNPM";
 import IconsLoaders from "../pages/IconsLoaders";
 import YouTubeTypescript from "../pages/YouTubeTypescript";
 import YouTubeReact from "../pages/YouTubeReact";
-import YouTubeInterview from "../pages/YouTubeInterview";
 import YouTubeAuthor from "../pages/YouTubeAuthor";
 import YouTube from "../pages/YouTube";
-import YouTubeCSS from "../pages/YouTubeCSS";
 import YouTubeJavascript from "../pages/YouTubeJavascript";
 import GeneralLinks from "../pages/GeneralLinks";
 import YouTubeTasksJavascript from "../pages/YouTubeTasksJavascript";
@@ -63,16 +57,12 @@ const AppRouter: FC = () => {
         <Route path="reactRouter" element={<ReactRouter />} />
         <Route path="interviews" element={<Interviews />} />
         <Route path="arrayMethods" element={<ArrayMethodsPage />} />
-        <Route path="arraytasks" element={<ArrayTasksPage />} />
-        <Route path="links" element={<LinksPage />} />
         <Route path="destructuring" element={<DestructuringPage />} />
         <Route path="error" element={<ErrorProcessingPage />} />
         <Route path="json" element={<JSONPage />} />
-        <Route path="objectMethods" element={<ObjectMethodsPage />} />
         <Route path="vue" element={<VuePage />} />
         <Route path="typescript" element={<TypescriptPage />} />
         <Route path="webDevelopment" element={<WebDevelopment />} />
-        <Route path="barMenu" element={<BarMenuPage />} />
         <Route path="webStorage" element={<WebStorage />} />
         <Route path="numberMethods" element={<NumberMethods />} />
         <Route path="stringMethods" element={<StringMethods />} />
@@ -83,10 +73,8 @@ const AppRouter: FC = () => {
         <Route path="iconsLoaders" element={<IconsLoaders />} />
         <Route path="youTubeTypescript" element={<YouTubeTypescript />} />
         <Route path="youTubeReact" element={<YouTubeReact />} />
-        <Route path="youTubeInterview" element={<YouTubeInterview />} />
         <Route path="youTubeAuthor" element={<YouTubeAuthor />} />
         <Route path="youTube" element={<YouTube />} />
-        <Route path="youTubeCSS" element={<YouTubeCSS />} />
         <Route path="youTubeJavascript" element={<YouTubeJavascript />} />
         <Route path="youTubeTasksJavascript" element={<YouTubeTasksJavascript />} />
         <Route path="regularExpression" element={<RegularExpression />} />
@@ -95,11 +83,6 @@ const AppRouter: FC = () => {
         <Route path="linksTypescript" element={<LinksTypescript />} />
         <Route path="html" element={<HTML />} />
         <Route path="tasksForTypescript" element={<TasksForTypescript />} />
-
-        {/* <Route path="" element={<NotfoundPage />} />
-        <Route path="" element={<NotfoundPage />} />
-        <Route path="" element={<NotfoundPage />} /> */}
-
         <Route path="*" element={<NotfoundPage />} />
       </Route>
     </Routes>

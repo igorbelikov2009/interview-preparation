@@ -26,29 +26,23 @@ import Splice from "../components/forArrayMethods/Splice";
 import Split from "../components/forArrayMethods/Split";
 import Unshift from "../components/forArrayMethods/Unshift";
 import PageLink from "../components/general/PageLink/PageLink";
-import ServerIsLoading from "../components/general/serverIsLoading/ServerIsLoading";
-import ServerError from "../components/general/serverError/ServerError";
-import { arrayMethodsAPI } from "../services/arrayMethodsAPI";
 import "../styles/arrayMethods.scss";
 import Flat from "../components/forArrayMethods/Flat";
-// import { linksArrayMethods } from "../dataArchive.ts/arrayMethodsData";
+import { linksArrayMethods } from "../dataArchive.ts/arrayMethodsData";
 
 const ArrayMethodsPage = () => {
-  const { data: linksArrayMethods, isLoading, isError } = arrayMethodsAPI.useGetLinksArrayMethodsQuery();
+  // const { data: linksArrayMethods, isLoading, isError } = arrayMethodsAPI.useGetLinksArrayMethodsQuery();
 
   return (
-    <div className="array-methods">
-      <motion.div
-        initial={{ width: 0, opacity: 0 }}
-        animate={{ width: "100%", opacity: 1 }}
-        exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
-      >
-        <div className="array-methods__container">
-          {isLoading && <ServerIsLoading />}
-          {isError && <ServerError />}
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
+    >
+      <div className="array-methods__container">
+        {linksArrayMethods && <PageLink links={linksArrayMethods} title="Методы массивов, ссылки" />}
 
-          {linksArrayMethods && <PageLink links={linksArrayMethods} title="Методы массивов, ссылки" />}
-
+        <div className="array-methods">
           <h1 className="array-methods__heading"> Методы массивов </h1>
           <h2 className="array-methods__subheading">Распаковка подмассивов в один массив</h2>
           <Flat />
@@ -92,8 +86,8 @@ const ArrayMethodsPage = () => {
           <CopyWithin />
           <Entries />
         </div>
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
 };
 

@@ -113,14 +113,6 @@ const YouTubeAuthor = () => {
       href: "https://www.youtube.com/@paromovevg/featured",
       title: "Евгений Паромов | Front-end. React - 18",
     },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
   ];
 
   return (

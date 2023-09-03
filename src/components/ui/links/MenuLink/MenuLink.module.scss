@@ -2,9 +2,14 @@
   text-decoration: none;
   outline: none;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  margin-left: 20px;
+  font-size: 12px;
+  line-height: 18px;
+  // margin-left: 20px;
+
+  @media (min-width: 400px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   color: #b5bdc8;
   &:hover {
@@ -22,10 +27,15 @@
   text-decoration: none;
   outline: none;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 500;
-  margin-left: 20px;
+  // margin-left: 20px;
+
+  @media (min-width: 400px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   color: white;
 
@@ -40,9 +50,14 @@
   text-decoration: none;
   outline: none;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  margin-left: 20px;
+  font-size: 12px;
+  line-height: 18px;
+  // margin-left: 20px;
+
+  @media (min-width: 400px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   color: #78828c;
   &:hover {
@@ -60,10 +75,15 @@
   text-decoration: none;
   outline: none;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 500;
-  margin-left: 20px;
+  // margin-left: 20px;
+
+  @media (min-width: 400px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   color: #28323c;
 

@@ -1,12 +1,8 @@
-/* eslint-disable no-script-url */
 /* eslint-disable no-template-curly-in-string */
+/* eslint-disable no-script-url */
 import { ILinkInfo, IObjectHeadingAnswers } from "../models/types";
 
 export const linksJavascript: ILinkInfo[] = [
-  {
-    href: " ",
-    title: " ",
-  },
   {
     href: "https://wm-school.ru/js/index.php",
     title: "Введение в JavaScript. WM-school ",

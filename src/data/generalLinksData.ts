@@ -14,7 +14,7 @@ import { linksJSON } from "./jsonData";
 import { linksWebStorage } from "./webStorageData";
 import { linkNPM } from "./npmData";
 import { linksNumberMethods } from "./numberMethodsData";
-import { linksObjectMethods } from "./objectMethodsData";
+
 import { linksReactPage } from "./reactData";
 import { linksReactRouter } from "./reactRouterData";
 import { linksReferenceBooks } from "./referenceBooksData";
@@ -34,7 +34,6 @@ const generalLinks: ILinkInfo[] = linksJavascript
   .concat(linksReferenceBooks)
   .concat(linksReactPage)
   .concat(linksReactRouter)
-  .concat(linksObjectMethods)
   .concat(linksTypescript)
   .concat(linksWebDevelopment)
   .concat(linksArrayMethods)

@@ -10,7 +10,6 @@ import { arrayJavascriptFishki } from "./javascriptFishkiData";
 import { arrayJSON } from "./jsonData";
 import { arrayWebStorage } from "./webStorageData";
 import { arrayNumberMethods } from "./numberMethodsData";
-import { arrayObjectMethods } from "./objectMethodsData";
 import { arrayReact } from "./reactData";
 import { arrayReactRouter } from "./reactRouterData";
 import { arrayStringMethods } from "./stringMethodsData";
@@ -27,7 +26,6 @@ const generalIssues: IObjectHeadingAnswers[] = arrayJavascript
   .concat(arrayStringMethods)
   .concat(arrayReact)
   .concat(arrayReactRouter)
-  .concat(arrayObjectMethods)
   .concat(arrayTypescript)
   .concat(arrayWebDevelopment)
   .concat(arrayCSS)

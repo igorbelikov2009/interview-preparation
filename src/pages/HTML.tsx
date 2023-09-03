@@ -1,7 +1,6 @@
 import { motion } from "framer-motion"; // анимация
 import Page from "../components/general/Page/Page";
-import PageLink from "../components/general/PageLink/PageLink";
-import { arrayHTML, linksHTML } from "../data/htmlData";
+import { arrayHTML } from "../data/htmlData";
 
 const HTML = () => {
   return (
@@ -10,7 +9,6 @@ const HTML = () => {
       animate={{ width: "100%", opacity: 1 }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
     >
-      <PageLink links={linksHTML} title="HTML ссылки" />
       <Page title="Вопросы по HTML" ArrayHeadingAnswers={arrayHTML} />
     </motion.div>
   );

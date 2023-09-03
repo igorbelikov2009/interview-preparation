@@ -34,8 +34,6 @@ const Footer = () => {
 
   const ThirdBlock: IFooterLinks[] = [
     { to: "/arraymethods", children: "Методы массивов" },
-    { to: "/arraytasks", children: "Задачи методов массивов" },
-    { to: "/objectmethods", children: "Методы объектов" },
     { to: "/numberMethods", children: "Методы чисел" },
     { to: "/stringMethods", children: "Методы строк" },
     { to: "/json", children: "Методы JSON" },
@@ -54,10 +52,6 @@ const Footer = () => {
     { to: "/youTubeJavascript", children: "На YouTube Javascript " },
     { to: "/youTubeTasksJavascript", children: "На YouTube задачи по Javascript " },
     { to: "/youTubeTypescript", children: "На YouTube Typescript" },
-    { to: "/youTubeCSS", children: "На YouTube CSS" },
-    { to: "/youTubeInterview", children: "На YouTube собеседования" },
-    { to: "/links", children: "Ссылки" },
-    { to: "/barMenu", children: "Бар меню" },
   ];
 
   return (

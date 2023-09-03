@@ -18,73 +18,9 @@ const VuePage = () => {
       href: "https://www.youtube.com/watch?v=6wYu4_6hcDY",
       title: "Vue.js. Полный курс. webDev от 02.05.2023г",
     },
-    {
-      href: "",
-      title: "",
-    },
   ];
 
   const ArrayHeadingAnswers: IObjectHeadingAnswers[] = [
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
-    {
-      heading: " ",
-      answer: [" ", " ", " ", " ", " ", " ", " "],
-      isParagraph: true,
-    },
     {
       heading: " ",
       answer: [" ", " ", " ", " ", " ", " ", " "],

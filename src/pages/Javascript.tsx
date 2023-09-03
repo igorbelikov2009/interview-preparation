@@ -11,8 +11,8 @@ const JavascriptPage = () => {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
-      <PageLink links={linksJavascript} title="Javascript ссылки" />
       <Page title="Вопросы по Javascript" ArrayHeadingAnswers={arrayJavascript} />
+      <PageLink links={linksJavascript} title="Javascript ссылки" />
     </motion.div>
   );
 };

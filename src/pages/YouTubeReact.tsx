@@ -61,10 +61,6 @@ const YouTubeReact = () => {
       title: "Хук useFormik в FORMIK - Валидация форм в React",
     },
     {
-      href: "",
-      title: "===============",
-    },
-    {
       href: "https://www.youtube.com/watch?v=-Xjwe4IwTMM",
       title: "Scroll to component in React",
     },
@@ -92,18 +88,6 @@ const YouTubeReact = () => {
     {
       href: "https://www.youtube.com/playlist?list=PLCp7YGqt4kFqd3BzBmpl4QnnmieKAZ6Us",
       title: "Асинхронный JavaScript",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
     },
   ];
 

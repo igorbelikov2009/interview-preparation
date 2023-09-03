@@ -21,66 +21,6 @@ const YouTubeJavascript = () => {
       href: "https://www.youtube.com/playlist?list=PLC27DxYnUFKLY-25V-tX8FtRtpAwPHGmB",
       title: "JavaScript задачи. Квест по основам, 44 видео.",
     },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
-    {
-      href: "",
-      title: "",
-    },
   ];
 
   return (
