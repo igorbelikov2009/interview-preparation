@@ -32,10 +32,20 @@ const ClearString: FC = () => {
   // // task
   // ===================================================================================
 
-  const arr = [1, 2, 3];
-  let copyArr = Object.assign({}, arr);
-  console.log(copyArr);
+  const numeric = [12, 5, 8, 130, 44];
 
+  let result: number[] = [];
+
+  function makeArray(arr: number[]) {
+    for (let value of arr) {
+      value += 1;
+      result.push(value);
+    }
+
+    return result;
+  }
+
+  console.log(makeArray(numeric));
   // ===================================================================================
 
   // // task
@@ -64,4 +74,3 @@ const ClearString: FC = () => {
 };
 
 export default ClearString;
-

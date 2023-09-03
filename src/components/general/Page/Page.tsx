@@ -19,21 +19,19 @@ const Page: FC<IPageProps> = ({ title, ArrayHeadingAnswers }) => {
   return (
     <section className={styles["page"]}>
       <div className={styles["page__container"]}>
-        <div>
-          <h1 className={styles["page__heading"]}>{title} </h1>
+        <h1 className={styles["page__heading"]}>{title} </h1>
 
-          <div className={styles["page__container-search-query"]}>
-            <InputSearch
-              placeholder="Поиск по названию вопросов."
-              searchQuery={searchQuery}
-              setSearchQuery={setSearchQuery}
-            />
-          </div>
-
-          {filteredArray.map((item, index) => (
-            <ExpandingAnswer key={index} heading={item.heading} answer={item.answer} isParagraph={true} />
-          ))}
+        <div className={styles["page__container-search-query"]}>
+          <InputSearch
+            placeholder="Поиск по названию вопросов."
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+          />
         </div>
+
+        {filteredArray.map((item, index) => (
+          <ExpandingAnswer key={index} heading={item.heading} answer={item.answer} isParagraph={true} />
+        ))}
       </div>
     </section>
   );

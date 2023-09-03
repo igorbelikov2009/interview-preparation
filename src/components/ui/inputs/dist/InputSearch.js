@@ -7,7 +7,6 @@ var InputSearch = function (_a) {
     var handleChange = function (e) {
         setSearchQuery(e.target.value);
     };
-    return (react_1["default"].createElement(react_1["default"].Fragment, null,
-        react_1["default"].createElement(Form_1["default"].Control, { value: searchQuery, placeholder: placeholder, onChange: handleChange, "aria-label": "Default", "aria-describedby": "inputGroup-sizing-default" })));
+    return (react_1["default"].createElement(Form_1["default"].Control, { value: searchQuery, placeholder: placeholder, onChange: handleChange, "aria-label": "Default", "aria-describedby": "inputGroup-sizing-default" }));
 };
 exports["default"] = InputSearch;

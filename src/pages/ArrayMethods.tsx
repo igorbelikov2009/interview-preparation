@@ -28,69 +28,72 @@ import Unshift from "../components/forArrayMethods/Unshift";
 import PageLink from "../components/general/PageLink/PageLink";
 import ServerIsLoading from "../components/general/serverIsLoading/ServerIsLoading";
 import ServerError from "../components/general/serverError/ServerError";
-// import { linksArrayMethods } from "../data/arrayMethodsData";
 import { arrayMethodsAPI } from "../services/arrayMethodsAPI";
 import "../styles/arrayMethods.scss";
 import Flat from "../components/forArrayMethods/Flat";
+// import { linksArrayMethods } from "../dataArchive.ts/arrayMethodsData";
 
 const ArrayMethodsPage = () => {
   const { data: linksArrayMethods, isLoading, isError } = arrayMethodsAPI.useGetLinksArrayMethodsQuery();
 
   return (
-    <motion.div
-      initial={{ width: 0, opacity: 0 }}
-      animate={{ width: "100%", opacity: 1 }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
-      className="array-methods"
-    >
-      <div className="array-methods__container">
-        {isLoading && <ServerIsLoading />}
-        {isError && <ServerError />}
+    <div className="array-methods">
+      <motion.div
+        initial={{ width: 0, opacity: 0 }}
+        animate={{ width: "100%", opacity: 1 }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
+      >
+        <div className="array-methods__container">
+          {isLoading && <ServerIsLoading />}
+          {isError && <ServerError />}
 
-        {linksArrayMethods && <PageLink links={linksArrayMethods} title="Методы массивов, ссылки" />}
+          {linksArrayMethods && <PageLink links={linksArrayMethods} title="Методы массивов, ссылки" />}
 
-        <h1 className="array-methods__heading"> Методы массивов </h1>
-        <h2 className="array-methods__subheading">Распаковка подмассивов в один массив</h2>
-        <Flat />
-        <h2 className="array-methods__subheading"> Добавление/удаление элементов</h2>
-        <Push />
-        <Unshift />
-        <Pop />
-        <Shift />
-        <h2 className="array-methods__subheading">Функции для работы с массивами (методы объекта Array)</h2>
-        <Slice />
-        <Splice />
-        <Concat />
-        <h2 className="array-methods__subheading">Перебор массива.</h2>
-        <For />
-        <ForOf />
-        <ForEach />
-        <h2 className="array-methods__subheading">Поиск элемента в массиве.</h2>
-        <IndexOf />
-        <LastIndexOf />
-        <Includes />
-        <h2 className="array-methods__subheading">Поиск первого элемента в массиве по заданному условию.</h2>
-        <Find />
-        <h2 className="array-methods__subheading">Поиск всех элементов в массиве, удовлетворящих заданному условию.</h2>
-        <Filter />
-        <h2 className="array-methods__subheading">Преобразование массива.</h2>
-        <Map />
-        <Sort />
-        <h2 className="array-methods__subheading">
-          Преобразование массива в строку и обратно: методы join() и split().
-        </h2>
-        <Join />
-        <Split />
-        <h2 className="array-methods__subheading">Вычисление единого значения на основе всего массива.</h2>
-        <Reduce />
-        <h2 className="array-methods__subheading">Проверка массива.</h2>
-        <ArrayIsArray />
-        <MethodList />
-        <Some />
-        <CopyWithin />
-        <Entries />
-      </div>
-    </motion.div>
+          <h1 className="array-methods__heading"> Методы массивов </h1>
+          <h2 className="array-methods__subheading">Распаковка подмассивов в один массив</h2>
+          <Flat />
+          <h2 className="array-methods__subheading"> Добавление/удаление элементов</h2>
+          <Push />
+          <Unshift />
+          <Pop />
+          <Shift />
+          <h2 className="array-methods__subheading">Функции для работы с массивами (методы объекта Array)</h2>
+          <Slice />
+          <Splice />
+          <Concat />
+          <h2 className="array-methods__subheading">Перебор массива.</h2>
+          <For />
+          <ForOf />
+          <ForEach />
+          <h2 className="array-methods__subheading">Поиск элемента в массиве.</h2>
+          <IndexOf />
+          <LastIndexOf />
+          <Includes />
+          <h2 className="array-methods__subheading">Поиск первого элемента в массиве по заданному условию.</h2>
+          <Find />
+          <h2 className="array-methods__subheading">
+            Поиск всех элементов в массиве, удовлетворящих заданному условию.
+          </h2>
+          <Filter />
+          <h2 className="array-methods__subheading">Преобразование массива.</h2>
+          <Map />
+          <Sort />
+          <h2 className="array-methods__subheading">
+            Преобразование массива в строку и обратно: методы join() и split().
+          </h2>
+          <Join />
+          <Split />
+          <h2 className="array-methods__subheading">Вычисление единого значения на основе всего массива.</h2>
+          <Reduce />
+          <h2 className="array-methods__subheading">Проверка массива.</h2>
+          <ArrayIsArray />
+          <MethodList />
+          <Some />
+          <CopyWithin />
+          <Entries />
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

@@ -12,9 +12,17 @@ var ClearString = function () {
     var title = react_1.useState("title")[0];
     // // task
     // ===================================================================================
-    var arr = [1, 2, 3];
-    var copyArr = Object.assign({}, arr);
-    console.log(copyArr);
+    var numeric = [12, 5, 8, 130, 44];
+    var result = [];
+    function makeArray(arr) {
+        for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
+            var value = arr_1[_i];
+            value += 1;
+            result.push(value);
+        }
+        return result;
+    }
+    console.log(makeArray(numeric));
     // ===================================================================================
     // // task
     return (react_1["default"].createElement("div", { className: "expanding" },

@@ -6,6 +6,12 @@
   position: absolute;
   top: 0;
   border-bottom: none;
+  display: none;
+}
+@media (min-width: 1160px) {
+  .top-menu {
+    display: block;
+  }
 }
 .top-menu__with-border {
   width: 100%;

@@ -12,15 +12,13 @@ const InputSearch: FC<InputSearchProps> = ({ searchQuery, placeholder, setSearch
     setSearchQuery(e.target.value);
   };
   return (
-    <>
-      <Form.Control
-        value={searchQuery}
-        placeholder={placeholder}
-        onChange={handleChange}
-        aria-label="Default"
-        aria-describedby="inputGroup-sizing-default"
-      />
-    </>
+    <Form.Control
+      value={searchQuery}
+      placeholder={placeholder}
+      onChange={handleChange}
+      aria-label="Default"
+      aria-describedby="inputGroup-sizing-default"
+    />
   );
 };
 
