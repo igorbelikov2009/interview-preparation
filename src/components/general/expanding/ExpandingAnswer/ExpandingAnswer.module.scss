@@ -3,8 +3,20 @@
   border-bottom: 1px solid #e6f0fa;
   position: relative;
 
-  &__content {
+  &__container {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+  }
+
+  &__content {
+    width: calc(100% - 18px);
     padding: 0 0 48px;
+  }
+
+  &__button {
+    width: 18px;
+    height: auto;
+    background-color: blueviolet;
   }
 }

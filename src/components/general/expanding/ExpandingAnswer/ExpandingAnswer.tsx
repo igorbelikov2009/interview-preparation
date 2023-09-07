@@ -25,7 +25,7 @@ const ExpandingAnswer: FC<IObjectHeadingAnswers> = ({ heading, answer, isParagra
             exit={{ height: 0, opacity: 0 }}
             style={{ overflow: "hidden" }}
           >
-            <div>
+            <div className={styles["expanding__container"]}>
               {isParagraph && (
                 <div className={styles["expanding__content"]}>
                   <Paragraph paragraphs={answer} />
@@ -36,6 +36,8 @@ const ExpandingAnswer: FC<IObjectHeadingAnswers> = ({ heading, answer, isParagra
                   <ParagraphBefore paragraphs={answer} />
                 </div>
               )}
+
+              <div onClick={expanderHandler} className={styles["expanding__button"]}></div>
             </div>
           </motion.div>
         )}
