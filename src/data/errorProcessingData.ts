@@ -189,9 +189,4 @@ export const arrayErrorProcessing: IObjectHeadingAnswers[] = [
     ],
     isParagraph: true,
   },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
 ];

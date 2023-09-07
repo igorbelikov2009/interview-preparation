@@ -28,7 +28,7 @@ import Unshift from "../components/forArrayMethods/Unshift";
 import PageLink from "../components/general/PageLink/PageLink";
 import "../styles/arrayMethods.scss";
 import Flat from "../components/forArrayMethods/Flat";
-import { linksArrayMethods } from "../dataArchive.ts/arrayMethodsData";
+import { linksArrayMethods } from "../data/arrayMethodsData";
 
 const ArrayMethodsPage = () => {
   // const { data: linksArrayMethods, isLoading, isError } = arrayMethodsAPI.useGetLinksArrayMethodsQuery();

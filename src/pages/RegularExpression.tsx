@@ -10,8 +10,8 @@ const RegularExpression = () => {
       animate={{ width: "100%", opacity: 1 }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
     >
-      <PageLink links={linksRegularExpression} title="Регулярное выражение, ссылки" />
       <Page title="Регулярное выражение, шпаргалка Elena Litvinova." ArrayHeadingAnswers={arrayRegularExpression} />
+      <PageLink links={linksRegularExpression} title="Регулярное выражение, ссылки" />
     </motion.div>
   );
 };

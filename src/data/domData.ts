@@ -9,10 +9,6 @@ export const linksDOM: ILinkInfo[] = [
     href: "https://tokmakov.msk.ru/blog/item/620",
     title: "DOM, часть 1 из 3. Навигация по элементам",
   },
-  {
-    href: " ",
-    title: " ",
-  },
 ];
 
 export const arrayDOM: IObjectHeadingAnswers[] = [
@@ -211,16 +207,6 @@ export const arrayDOM: IObjectHeadingAnswers[] = [
       "Например, чтобы скрыть элемент, мы можем задать elem.style.display = ''none''",
       "Затем мы можем удалить свойство style.display, чтобы вернуться к первоначальному состоянию. Вместо delete elem.style.display мы должны присвоить ему пустую строку: elem.style.display = '''' ",
     ],
-    isParagraphBefore: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " "],
-    isParagraphBefore: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " "],
     isParagraphBefore: true,
   },
 ];

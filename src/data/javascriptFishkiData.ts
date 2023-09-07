@@ -133,10 +133,6 @@ export const linksJavascriptFishki: ILinkInfo[] = [
     href: "https://tokmakov.msk.ru/blog/item/687",
     title: "Магазин на JavaScript, часть 19 из 19. Редактирование характеристик и рефакторинг приложения",
   },
-  {
-    href: " ",
-    title: " ",
-  },
 ];
 
 export const arrayJavascriptFishki: IObjectHeadingAnswers[] = [

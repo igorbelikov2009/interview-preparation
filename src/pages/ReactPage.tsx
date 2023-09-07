@@ -11,8 +11,8 @@ const ReactPage = () => {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
-      <PageLink links={linksReactPage} title="React ссылки" />
       <Page title="Вопросы по React" ArrayHeadingAnswers={arrayReact} />
+      <PageLink links={linksReactPage} title="React ссылки" />
     </motion.div>
   );
 };

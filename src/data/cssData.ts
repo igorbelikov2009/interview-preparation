@@ -158,10 +158,6 @@ export const linksCSSFishki: ILinkInfo[] = [
     href: "https://active-vision.ru/icon/gradient/",
     title: "GRADIENT ГЕНЕРАТОР",
   },
-  {
-    href: "",
-    title: "",
-  },
 ];
 
 export const linksFrameworksCSS: ILinkInfo[] = [

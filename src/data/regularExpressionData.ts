@@ -31,10 +31,6 @@ export const linksRegularExpression: ILinkInfo[] = [
     href: "https://regex.sorokin.engineer/ru/latest/regular_expressions.html#regular-expressions-regex",
     title: "Регулярные выражения (RegEx)",
   },
-  {
-    href: "",
-    title: "",
-  },
 ];
 
 export const arrayRegularExpression: IObjectHeadingAnswers[] = [
@@ -168,11 +164,6 @@ export const arrayRegularExpression: IObjectHeadingAnswers[] = [
   {
     heading: "Оператор ИЛИ ",
     answer: ["html | php | java  "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " ", " "],
     isParagraph: true,
   },
 ];

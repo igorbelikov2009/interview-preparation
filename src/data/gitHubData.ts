@@ -1,4 +1,4 @@
-import { ILinkInfo, IObjectHeadingAnswers } from "../models/types";
+import { ILinkInfo } from "../models/types";
 
 export const linksGitHub: ILinkInfo[] = [
   {
@@ -36,42 +36,5 @@ export const linksGitHub: ILinkInfo[] = [
   {
     href: "https://www.youtube.com/watch?v=kSb6N4-kZtY ",
     title: "Как удалить проект из GitHub #github #deleterepository ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
-];
-
-export const arrayGitHub: IObjectHeadingAnswers[] = [
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " "],
-    isParagraphBefore: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " "],
-    isParagraphBefore: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " "],
-    isParagraphBefore: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " "],
-    isParagraphBefore: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " "],
-    isParagraphBefore: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " "],
-    isParagraphBefore: true,
   },
 ];

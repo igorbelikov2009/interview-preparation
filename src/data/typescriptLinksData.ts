@@ -308,12 +308,4 @@ export const linksTypescript: ILinkInfo[] = [
     href: "https://typescript-definitive-guide.ru/book/chapters/",
     title: "TypeScript учебник TDG",
   },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
 ];

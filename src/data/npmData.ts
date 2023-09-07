@@ -36,8 +36,4 @@ export const linkNPM: ILinkInfo[] = [
     title:
       "npm i jwt-decode . jwt-decode — это небольшая библиотека браузера, которая помогает декодировать токен JWT, закодированный Base64Url.",
   },
-  {
-    href: "",
-    title: "",
-  },
 ];

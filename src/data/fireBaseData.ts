@@ -54,8 +54,4 @@ export const linksFireBase: ILinkInfo[] = [
     href: "https://github.com/firebase/firebaseui-web-react",
     title: "firebase/firebaseui-web-react",
   },
-  {
-    href: "",
-    title: "",
-  },
 ];

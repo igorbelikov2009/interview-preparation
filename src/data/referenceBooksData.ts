@@ -5,7 +5,6 @@ export const linksReferenceBooks: ILinkInfo[] = [
     href: "https://frontend-stuff.com/blog/tags/typescript/",
     title: "frontend-stuff: TypeScript, Git, GraphQl, JavaScript, React, Tools, Testing Library",
   },
-
   {
     href: "https://jsonplaceholder.typicode.com/",
     title: "JSONPlaceholder",
@@ -112,21 +111,5 @@ export const linksReferenceBooks: ILinkInfo[] = [
   {
     href: "https://metanit.com/nosql/mongodb/",
     title: "Онлайн-руководство по MongoDB",
-  },
-  {
-    href: "",
-    title: " ",
-  },
-  {
-    href: "",
-    title: " ",
-  },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: " ",
   },
 ];

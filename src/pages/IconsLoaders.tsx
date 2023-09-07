@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"; // анимация
 import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
-import { linksIconsLoaders } from "../dataArchive.ts/iconsLoadersData";
+import { linksIconsLoaders } from "../data/iconsLoadersData";
 
 const LinksToIconsLoaders = () => {
   return (

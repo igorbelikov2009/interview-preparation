@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"; // анимация
 import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
-import { linksFireBase } from "../dataArchive.ts/fireBaseData";
+import { linksFireBase } from "../data/fireBaseData";
 
 const FireBase = () => {
   return (

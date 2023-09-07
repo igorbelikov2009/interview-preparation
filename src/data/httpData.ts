@@ -42,10 +42,6 @@ export const linksHTTP: ILinkInfo[] = [
     href: "https://skillbox.ru/media/marketing/s-chem-edyat-cookies-tekhnicheskiy-i-yuridicheskiy-likbez-dlya-marketologov/",
     title: "Что такое cookies и какие они бывают",
   },
-  {
-    href: " ",
-    title: " ",
-  },
 ];
 
 export const arrayHTTP: IObjectHeadingAnswers[] = [

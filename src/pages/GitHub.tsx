@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"; // анимация
 import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
-import { linksGitHub } from "../dataArchive.ts/gitHubData";
+import { linksGitHub } from "../data/gitHubData";
 
 const GitHubPage = () => {
   return (

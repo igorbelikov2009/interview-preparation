@@ -34,12 +34,4 @@ export const linksIconsLoaders: ILinkInfo[] = [
     href: "https://developers.google.com/fonts/docs/material_icons",
     title: "Material Icons Guide. Обзор иконок материалов — где их взять и как интегрировать в свои проекты",
   },
-  {
-    href: "",
-    title: "",
-  },
-  {
-    href: "",
-    title: "",
-  },
 ];

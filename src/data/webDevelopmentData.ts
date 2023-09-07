@@ -295,10 +295,6 @@ export const linksWebDevelopment: ILinkInfo[] = [
     href: "https://www.youtube.com/watch?v=I_tgMaGA5CU&t=71s ",
     title: "Rollup Сборщик проектов JavaScript - замена для webpack. Youtube ",
   },
-  {
-    href: " ",
-    title: " ",
-  },
 ];
 
 export const arrayWebDevelopment: IObjectHeadingAnswers[] = [
@@ -819,16 +815,6 @@ export const arrayWebDevelopment: IObjectHeadingAnswers[] = [
       "* Сериализация-это механизм преобразования состояния объекта в поток байтов. ",
       "* Десериализация-это обратный процесс, при котором поток байтов используется для воссоздания фактического объекта Java в памяти.",
     ],
-    isParagraphBefore: true,
-  },
-  {
-    heading: "",
-    answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
-    isParagraphBefore: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " "],
     isParagraphBefore: true,
   },
 ];

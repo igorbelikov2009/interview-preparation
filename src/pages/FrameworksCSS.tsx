@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"; // анимация
 import React from "react";
 import PageLink from "../components/general/PageLink/PageLink";
-import { linksFrameworksCSS } from "../dataArchive.ts/cssData";
+import { linksFrameworksCSS } from "../data/cssData";
 
 const FrameworksCSS = () => {
   return (

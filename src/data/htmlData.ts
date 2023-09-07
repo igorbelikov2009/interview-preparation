@@ -1,15 +1,4 @@
-import { ILinkInfo, IObjectHeadingAnswers } from "../models/types";
-
-export const linksHTML: ILinkInfo[] = [
-  {
-    href: " ",
-    title: " ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
-];
+import { IObjectHeadingAnswers } from "../models/types";
 
 export const arrayHTML: IObjectHeadingAnswers[] = [
   {
@@ -103,11 +92,6 @@ export const arrayHTML: IObjectHeadingAnswers[] = [
       "    -  min ",
       "    -  name ",
     ],
-    isParagraph: true,
-  },
-  {
-    heading: "  ",
-    answer: [" ", " ", " ", " ", " ", " "],
     isParagraph: true,
   },
 ];

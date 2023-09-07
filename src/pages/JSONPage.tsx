@@ -11,8 +11,8 @@ const JSONPage = () => {
       animate={{ width: "100%", opacity: 1 }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
     >
-      <PageLink links={linksJSON} title="JSON, ссылки" />
       <Page title="Вопросы по JSON" ArrayHeadingAnswers={arrayJSON} />
+      <PageLink links={linksJSON} title="JSON, ссылки" />
     </motion.div>
   );
 };

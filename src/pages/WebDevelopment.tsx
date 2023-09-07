@@ -11,8 +11,8 @@ const WebDevelopment = () => {
       animate={{ width: "100%", opacity: 1 }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
     >
-      <PageLink links={linksWebDevelopment} title="Веб-разработка, ссылки" />
       <Page title="Вопросы по веб-разработке." ArrayHeadingAnswers={arrayWebDevelopment} />
+      <PageLink links={linksWebDevelopment} title="Веб-разработка, ссылки" />
     </motion.div>
   );
 };

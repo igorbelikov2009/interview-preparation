@@ -3410,9 +3410,4 @@ export const arrayTypescript: IObjectHeadingAnswers[] = [
     answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
     isParagraphBefore: true,
   },
-  {
-    heading: "",
-    answer: ["", "", "", "", "", "", "", "", "", "", "", ""],
-    isParagraphBefore: true,
-  },
 ];

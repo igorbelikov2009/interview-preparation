@@ -254,14 +254,6 @@ export const linksReactPage: ILinkInfo[] = [
     href: "https://react-spring.dev/docs/components/use-transition ",
     title: "react-spring  useTransition",
   },
-  {
-    href: " ",
-    title: " ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
 ];
 
 export const arrayReact: IObjectHeadingAnswers[] = [
@@ -1927,16 +1919,6 @@ export const arrayReact: IObjectHeadingAnswers[] = [
       "Библиотека React.js предназначена для разделения приложения на несколько компонентов. Каждый компонент имеет свой жизненный цикл. React предоставляет нам несколько встроенных методов, которые мы можем переопределить на определенных этапах жизненного цикла компонента. ",
       "В компонентах на основе классов метод render() является единственным обязательным и наиболее важным методом из всех встроенных хуков/методов жизненного цикла. В методе render() мы можем прочитать свойства и состояние и вернуть наш код JSX в корневой компонент нашего приложения. В методе render() мы не можем изменить состояние и не можем вызвать побочные эффекты (например, выполнение HTTP-запроса к веб-серверу). ",
     ],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
     isParagraph: true,
   },
 ];

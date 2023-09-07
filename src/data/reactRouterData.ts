@@ -55,14 +55,6 @@ export const linksReactRouter: ILinkInfo[] = [
     href: "https://reactrouter.com/en/main/components/nav-link",
     title: "Активные ссылки, NavLink ",
   },
-  {
-    href: " ",
-    title: " ",
-  },
-  {
-    href: " ",
-    title: " ",
-  },
 ];
 
 export const arrayReactRouter: IObjectHeadingAnswers[] = [
@@ -297,11 +289,7 @@ export const arrayReactRouter: IObjectHeadingAnswers[] = [
     ],
     isParagraph: true,
   },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
-    isParagraph: true,
-  },
+
   {
     heading: "Зачем нам нужен маршрутизатор в React? ",
     answer: [
@@ -705,11 +693,6 @@ export const arrayReactRouter: IObjectHeadingAnswers[] = [
       "Каждый дочерний компонент <Routes> должен быть <Route>, что может нарушить некоторые предыдущие методы организации и составления маршрутов. ",
       " ",
     ],
-    isParagraph: true,
-  },
-  {
-    heading: " ",
-    answer: [" ", " ", " ", " ", " ", " "],
     isParagraph: true,
   },
 ];

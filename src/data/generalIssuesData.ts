@@ -1,9 +1,8 @@
-import { arrayCSS } from "../dataArchive.ts/cssData";
-import { arrayDestructuringArrays, arrayDestructuringObjects } from "../dataArchive.ts/destructuringData";
-import { arrayDOM } from "../dataArchive.ts/domData";
-import { arrayErrorProcessing } from "../dataArchive.ts/errorProcessingData";
-import { arrayGitHub } from "../dataArchive.ts/gitHubData";
-import { arrayHTTP } from "../dataArchive.ts/httpData";
+import { arrayCSS } from "./cssData";
+import { arrayDestructuringArrays, arrayDestructuringObjects } from "./destructuringData";
+import { arrayDOM } from "./domData";
+import { arrayErrorProcessing } from "./errorProcessingData";
+import { arrayHTTP } from "./httpData";
 import { IObjectHeadingAnswers } from "../models/types";
 import { arrayJavascript } from "./javascriptData";
 import { arrayJavascriptFishki } from "./javascriptFishkiData";
@@ -33,7 +32,6 @@ const generalIssues: IObjectHeadingAnswers[] = arrayJavascript
   .concat(arrayDestructuringArrays)
   .concat(arrayDestructuringObjects)
   .concat(arrayHTTP)
-  .concat(arrayGitHub)
   .concat(arrayErrorProcessing)
   .concat(arrayInterviews)
   .concat(arrayHTML);
