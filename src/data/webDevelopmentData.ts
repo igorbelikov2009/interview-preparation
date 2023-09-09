@@ -295,6 +295,38 @@ export const linksWebDevelopment: ILinkInfo[] = [
     href: "https://www.youtube.com/watch?v=I_tgMaGA5CU&t=71s ",
     title: "Rollup Сборщик проектов JavaScript - замена для webpack. Youtube ",
   },
+  {
+    href: "https://zdrons.ru/veb-frejmvorki/react/razrabotka-prilozheniya-na-react-s-pomoshhju-google-books-api-shag-za-shagom/",
+    title: "Google Books API: шаг за шагом",
+  },
+  {
+    href: "https://books.google.com/?hl=ru",
+    title: "Google книги",
+  },
+  {
+    href: "https://github.com/SimpleCoderr/book-search-service/tree/main",
+    title: "Готовый проект на GitHub book-search-service",
+  },
+  {
+    href: "https://github.com/fugr-ru/frontend-javascript-test-2",
+    title: "Тестовое задание: Необходимо разработать React-приложение поиска книг с помощью Google Books API",
+  },
+  {
+    href: "https://www.apollographql.com/docs/react/",
+    title: "Введение в клиент Apollo. Introduction to Apollo Client",
+  },
+  {
+    href: "https://zdrons.ru/category/veb-frejmvorki/",
+    title: "Веб-фреймворки: Angular, Laravel, React, Vue, Bootstrap",
+  },
+  {
+    href: "https://zdrons.ru/veb-frejmvorki/react/internet-magazin-na-react-js-kak-ispolzovat-frejmvork-dlya-sozdaniya-vysokoeffektivnyh-onlajn-prodazh/",
+    title: "Разработка интернет магазина на React JS",
+  },
+  {
+    href: " ",
+    title: "Руководство по Next.js, TypeScript, GraphQL, React, Redux, React Router, React Transition Group, Docker ",
+  },
 ];
 
 export const arrayWebDevelopment: IObjectHeadingAnswers[] = [

@@ -147,6 +147,14 @@ export const linksCSS: ILinkInfo[] = [
     href: "https://css-live.ru/articles-css/display-and-formatting-contexts.html",
     title: "CSS-свойство display и контексты форматирования",
   },
+  {
+    href: "https://get-color.ru/code/2b2b2b ",
+    title: "Информация о цвете",
+  },
+  {
+    href: "https://nikitahl.com/style-range-input-css",
+    title: "Стилизация range input. Ползунок ",
+  },
 ];
 
 export const linksCSSFishki: ILinkInfo[] = [

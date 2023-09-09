@@ -1,270 +1,15 @@
 import { ILinkInfo, IObjectHeadingAnswers } from "../models/types";
 
-export const linksReactPage: ILinkInfo[] = [
-  {
-    href: "https://react.dev/blog/2023/03/16/introducing-react-dev ",
-    title: "Учебник по реакту, адаптированный на русский язык.",
-  },
-  {
-    href: "https://frontend-stuff.com/blog/tags/react/",
-    title: "Frontend Stuff. 24 статей с категорией “React ",
-  },
-  {
-    href: "https://frontend-stuff.com/blog/common-mistakes-with-react-testing-library/",
-    title: "Frontend Stuff. React Testing Library ",
-  },
-  {
-    href: "https://ru.reactjs.org/docs/getting-started.html",
-    title: "Официальный справочник React на русском языке.",
-  },
-  {
-    href: "https://reactdev.ru/ ",
-    title: "Справочник React на русском языке.",
-  },
-  {
-    href: "https://reactdev.ru/handbook/tutorial/ ",
-    title:
-      "Документация по React (на русском языке). React – это декларативная, эффективная и гибкая JavaScript библиотека для создания пользовательских интерфейсов. Она позволяет вам собирать сложный UI из маленьких изолированных кусочков кода, называемых «компонентами».",
-  },
-  {
-    href: "https://reactdev.ru/types/ ",
-    title:
-      "React и Typescript (на русском языке). Типизация библиотеки React с помощью Typescript: Типизированный React, Функциональные компоненты, Классовые компоненты, Универсальные компоненты, Типизированные хуки, Контекст (Context), HOC (Higher-Order Components).",
-  },
-  {
-    href: "https://reactdev.ru/libs/cra/",
-    title:
-      "Create React App (CRA на русском языке) - это интерфейс командной строки (command line interface, CLI), позволяющий создавать предварительно настроенные React-проекты. Предварительная настройка включает в себя, но не исчерпывается, настройкой Webpack и Babel.",
-  },
-  {
-    href: "https://reactdev.ru/graphql/ ",
-    title:
-      "GraphQL (на русском языке) — это язык запросов к API и среда выполнения этих запросов с имеющимися данными. GraphQL обеспечивает полное и понятное описание данных в вашем API, дает клиентам возможность запрашивать именно то, что им нужно, упрощает обновление API-интерфейсов и предоставляет мощные инструменты для разработчиков ",
-  },
-  {
-    href: "https://reactdev.ru/questions/#shouldcomponentupdate",
-    title: "Вопросы про React на собеседовании. Частые вопросы и ответы про React, задаваемые на собеседованиях ",
-  },
-  {
-    href: "https://reactdev.ru/libs/react-router/",
-    title: "Справочник React на русском языке. React Router DOM. React Router. Маршрутизатор",
-  },
-  {
-    href: "https://reactdev.ru/libs/redux/ ",
-    title: "Redux. Библиотека управления состоянием. Документация redux (на русском языке).",
-  },
-  {
-    href: "https://reactdev.ru/libs/redux-toolkit/",
-    title: "Redux Toolkit. Пакет (на русском языке), облегчающий работу с Redux ",
-  },
-  {
-    href: "https://habr.com/ru/post/498860/",
-    title: "Введение в Redux & React-redux ",
-  },
-  {
-    href: "https://reactdev.ru/libs/recoil/",
-    title: "Recoil - это новый инструмент (на русском языке) для управления состоянием в React-приложениях ",
-  },
-  {
-    href: "https://reactdev.ru/libs/react-query/",
-    title:
-      "React Query. Библиотека (на русском языке) для получения, кэширования, синхронизации и обновления 'серверного' состояния в React-приложениях ",
-  },
-  {
-    href: "https://reactdev.ru/libs/react-spring/",
-    title: "React Spring. Библиотека для анимации интерфейсов (на русском языке)",
-  },
-  {
-    href: "https://reactdev.ru/libs/styled-components/#_1",
-    title: "Styled Components. Шпаргалка по библиотеке стилизации (на русском языке)",
-  },
-  {
-    href: "https://reactdev.ru/libs/xstate/",
-    title:
-      "XState. Библиотека для управления конечными автоматами (на русском языке):  Базовая библиотека конечных автоматов и диаграмм состояний + интерпретатор, Минимальная библиотека конечных автоматов, Утилиты обхода графа для XState, React xуки и утилиты для использования XState в приложениях React, Функции композиции и утилиты Vue для использования XState в приложениях Vue, Утилиты Svelte для использования XState в приложениях Svelte, Утилиты Model-Based-Testing (с использованием XState) для тестирования любого программного обеспечения, Утилиты разработчика (проверки) для XState.",
-  },
-  {
-    href: "https://react-hook-form.com/",
-    title: "React Hook Form. Валидация форм.",
-  },
-  {
-    href: "https://www.youtube.com/watch?v=Jxfun6Jnt5Q",
-    title: "Валидация форм с react-hook-form в React-приложениях. Михаил Непомнящий. ",
-  },
-  {
-    href: "https://www.youtube.com/watch?v=Nicadhseqos&t=82s",
-    title: "Zod для валидации API и форм. Михаил Непомнящий.",
-  },
-  {
-    href: "https://mobx.js.org/react-integration.html",
-    title: "MobX and React",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/674",
-    title: "MobX — управление состоянием приложения",
-  },
-  {
-    href: "https://www.npmjs.com/package/mobx-react-lite",
-    title: "npm i mobx-react-lite",
-  },
-  {
-    href: "https://www.digitalocean.com/community/tutorials/react-axios-react-ru",
-    title: "Использование Axios с React",
-  },
-  {
-    href: "https://ru.reactjs.org/docs/hooks-reference.html",
-    title: "Справочник API хуков React",
-  },
-  {
-    href: "https://fettblog.eu/typescript-react/hooks/",
-    title: "TypeScript и React: хуки",
-  },
-  {
-    href: "https://create-react-app.dev/docs/adding-typescript/",
-    title: "npx create-react-app my-app --template typescript",
-  },
-  {
-    href: "https://reactcommunity.org/react-transition-group/transition-group",
-    title: "React Transition Group",
-  },
-  {
-    href: "https://www.npmjs.com/package/react-transition-group?activeTab=versions",
-    title: "npm i react-transition-group",
-  },
-  {
-    href: "https://www.npmjs.com/package/react-router-dom",
-    title: "npm i react-router-dom (6.9.0)",
-  },
-  {
-    href: "https://www.npmjs.com/package/react-router-dom/v/5.3.3",
-    title: "npm i react-router-dom@5.3.3",
-  },
-  {
-    href: "https://habr.com/ru/company/kts/blog/598835/",
-    title: "Что нового в react-router v6",
-  },
-  {
-    href: "https://www.youtube.com/playlist?list=PLiZoB8JBsdznY1XwBcBhHL9L7S_shPGVE",
-    title: "React Router v6. Михаил Непомнящий. 10 видео ",
-  },
-  {
-    href: "https://www.npmjs.com/package/@types/react-router-dom",
-    title: "npm i @types/react-router-dom  npm install --save @types/react-router-dom (types)",
-  },
-  {
-    href: "https://betterprogramming.pub/12-react-hooks-every-react-developer-should-know-9c6352b81329",
-    title: "12 хуков React, которые должен знать каждый разработчик React",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/717",
-    title: "React и Redux вместе. Часть 1 из 7 ",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/718",
-    title: "React и Redux вместе. Часть 2 из 7 ",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/719",
-    title: "React и Redux вместе. Часть 3 из 7 ",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/720",
-    title: "React и Redux вместе. Часть 4 из 7 ",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/721",
-    title: "React и Redux вместе. Часть 5 из 7 ",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/722",
-    title: "React и Redux вместе. Часть 6 из 7 ",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/723",
-    title: "React и Redux вместе. Часть 7 из 7 ",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/640",
-    title: "Использование хуков. Часть 1 из 3. useState(), useEffect(), useRef(), ",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/643",
-    title:
-      "Использование хуков. Часть 2 из 3. useContext(), useLayoutEffect(), useCallback(),  useMemo(), useImperativeHandle(), useReducer().",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/658",
-    title: "Хук useCallback() и массив зависимости.",
-  },
-  {
-    href: "https://tokmakov.msk.ru/blog/item/644",
-    title:
-      "Использование хуков. Часть 3 из 3. Правила хуков, пользовательские хуки: usePrevious(), useLocalStorage(), usePageBottom(), useCounter(), useMergedState(), useEventListener(), useWhatCausedRender(), useDebounce(), useThrottle(), useAsync(), useIsMountedRef(), useWindowSize(), useHistory(), useElementSize(), useHovered(), useInterval(), useTimeout(), useUpdateEffect(), ",
-  },
-  {
-    href: "https://www.digitalocean.com/community/tutorials/react-axios-react-ru",
-    title: "Использование Axios с React",
-  },
-  {
-    href: "https://react-spring-io.vercel.app/hooks/use-transition",
-    title:
-      "Анимация перехода между страницами в React SPA с react-spring Transitioning. В hooks use-transition выбираем: Transitioning between routes",
-  },
-  {
-    href: "https://react-spring.dev/docs/getting-started",
-    title: "React Spring — это библиотека ",
-  },
-  {
-    href: "https://www.npmjs.com/package/react-spring",
-    title: "Установка анимации react-spring npm i react-spring ",
-  },
-  {
-    href: "https://www.youtube.com/watch?v=BSmXK6z0h3s&t=942s",
-    title: "Анимация перехода между страницами в React SPA с react-spring",
-  },
-  {
-    href: "https://stasonmars.ru/javascript/pogruzhaemsya-v-raboty-s-children-na-react/",
-    title: "Погружаемся в работу с children на React",
-  },
-  {
-    href: "https://habr.com/ru/post/319270/",
-    title: "JSX — подробности",
-  },
-  {
-    href: "https://www.youtube.com/watch?v=DLFzz2Wldxg",
-    title: "React. Props Children",
-  },
-  {
-    href: "https://www.8host.com/blog/kak-ispolzovat-axios-v-react/",
-    title: "КАК ИСПОЛЬЗОВАТЬ AXIOS В REACT",
-  },
-  {
-    href: "https://translated.turbopages.org/proxy_u/en-ru.ru.cb273f24-642bd6b1-73b932d8-74722d776562/https/www.freecodecamp.org/news/react-useeffect-absolute-beginners/  ",
-    title: "React useEffect Hook для абсолютных новичков.",
-  },
-  {
-    href: "https://www.trio.dev/blog/7-top-react-state-management-libraries",
-    title: "7 лучших библиотек управления состоянием React",
-  },
-  {
-    href: "https://react-spring-io.vercel.app/hooks/use-transition",
-    title: "react-spring",
-  },
-  {
-    href: "https://react-spring.dev/docs/components/use-transition ",
-    title: "react-spring  useTransition",
-  },
-];
-
 export const arrayReact: IObjectHeadingAnswers[] = [
   {
     heading: "Что такое React? ",
     answer: [
-      "React — это библиотека JavaScript для разработки интерфейсов, то есть внешней части сайтов и приложений, с которой взаимодействует пользователь. ",
-      "Главная фишка React — компоненты и состояния. ",
-      "Компонент — это кусочек кода, который отвечает за внешний вид одного из элементов сайта или приложения. Причём такие кусочки-компоненты могут быть вложенными. ",
-      "Состояние — это вся информация об элементе, в том числе о его отображении. Например, состояние объекта «термометр» может описываться свойствами current_temperature, min и max. ",
-      " ",
+      "    React — это библиотека JavaScript для разработки интерфейсов, то есть внешней части сайтов и приложений, с которой взаимодействует пользователь.  Ее основное преимущество — это возможность обновлять отдельные компоненты, а не всю страницу целиком, что оптимизирует производительность и ускоряет работу приложения.",
+      "    Главная фишка React — компоненты и состояния. ",
+      "    Компонент — это независимая единица интерфейса, кусочек кода, который отвечает за внешний вид одного из элементов сайта или приложения. Причём такие кусочки-компоненты могут быть вложенными. Компоненты можно комбинировать и строить из них более крупные объекты интерфейса. Каждый компонент имеет свое состояние и свойства, которые могут использоваться для управления его поведением и отображения.",
+      "    Состояние — это вся информация об элементе, в том числе о его отображении. Например, состояние объекта «термометр» может описываться свойствами current_temperature, min и max. ",
+      "    Для создания компонентов в React используется JSX — расширение языка JavaScript, позволяющее описывать структуру интерфейса с помощью синтаксиса похожего на HTML. JSX транспилируется в обычный JavaScript, что делает его совместимым со всеми браузерами. ",
+      "    Использование React для разработки приложений позволяет создавать мощные и производительные интерфейсы, которые отвечают всем современным требованиям к пользованию веб-приложениями.",
     ],
     isParagraph: true,
   },
@@ -323,6 +68,7 @@ export const arrayReact: IObjectHeadingAnswers[] = [
   {
     heading: "Какие основные преимущества есть в React?",
     answer: [
+      " Основное преимущество React — это возможность обновлять отдельные компоненты, а не всю страницу целиком, что оптимизирует производительность и ускоряет работу приложения.",
       "    *  Использует виртуальный DOM, что улучшает производительность приложений.",
       "    *  Может использоваться как на стороне клиента, так и на стороне сервера.",
       "    *  JSX гораздо проще читать и понимать, чем JavaScript. ",
@@ -1920,5 +1666,261 @@ export const arrayReact: IObjectHeadingAnswers[] = [
       "В компонентах на основе классов метод render() является единственным обязательным и наиболее важным методом из всех встроенных хуков/методов жизненного цикла. В методе render() мы можем прочитать свойства и состояние и вернуть наш код JSX в корневой компонент нашего приложения. В методе render() мы не можем изменить состояние и не можем вызвать побочные эффекты (например, выполнение HTTP-запроса к веб-серверу). ",
     ],
     isParagraph: true,
+  },
+];
+
+export const linksReactPage: ILinkInfo[] = [
+  {
+    href: "https://react.dev/blog/2023/03/16/introducing-react-dev ",
+    title: "Учебник по реакту, адаптированный на русский язык.",
+  },
+  {
+    href: "https://frontend-stuff.com/blog/tags/react/",
+    title: "Frontend Stuff. 24 статей с категорией “React ",
+  },
+  {
+    href: "https://frontend-stuff.com/blog/common-mistakes-with-react-testing-library/",
+    title: "Frontend Stuff. React Testing Library ",
+  },
+  {
+    href: "https://ru.reactjs.org/docs/getting-started.html",
+    title: "Официальный справочник React на русском языке.",
+  },
+  {
+    href: "https://reactdev.ru/ ",
+    title: "Справочник React на русском языке.",
+  },
+  {
+    href: "https://reactdev.ru/handbook/tutorial/ ",
+    title:
+      "Документация по React (на русском языке). React – это декларативная, эффективная и гибкая JavaScript библиотека для создания пользовательских интерфейсов. Она позволяет вам собирать сложный UI из маленьких изолированных кусочков кода, называемых «компонентами».",
+  },
+  {
+    href: "https://reactdev.ru/types/ ",
+    title:
+      "React и Typescript (на русском языке). Типизация библиотеки React с помощью Typescript: Типизированный React, Функциональные компоненты, Классовые компоненты, Универсальные компоненты, Типизированные хуки, Контекст (Context), HOC (Higher-Order Components).",
+  },
+  {
+    href: "https://reactdev.ru/libs/cra/",
+    title:
+      "Create React App (CRA на русском языке) - это интерфейс командной строки (command line interface, CLI), позволяющий создавать предварительно настроенные React-проекты. Предварительная настройка включает в себя, но не исчерпывается, настройкой Webpack и Babel.",
+  },
+  {
+    href: "https://reactdev.ru/graphql/ ",
+    title:
+      "GraphQL (на русском языке) — это язык запросов к API и среда выполнения этих запросов с имеющимися данными. GraphQL обеспечивает полное и понятное описание данных в вашем API, дает клиентам возможность запрашивать именно то, что им нужно, упрощает обновление API-интерфейсов и предоставляет мощные инструменты для разработчиков ",
+  },
+  {
+    href: "https://reactdev.ru/questions/#shouldcomponentupdate",
+    title: "Вопросы про React на собеседовании. Частые вопросы и ответы про React, задаваемые на собеседованиях ",
+  },
+  {
+    href: "https://reactdev.ru/libs/react-router/",
+    title: "Справочник React на русском языке. React Router DOM. React Router. Маршрутизатор",
+  },
+  {
+    href: "https://reactdev.ru/libs/redux/ ",
+    title: "Redux. Библиотека управления состоянием. Документация redux (на русском языке).",
+  },
+  {
+    href: "https://reactdev.ru/libs/redux-toolkit/",
+    title: "Redux Toolkit. Пакет (на русском языке), облегчающий работу с Redux ",
+  },
+  {
+    href: "https://habr.com/ru/post/498860/",
+    title: "Введение в Redux & React-redux ",
+  },
+  {
+    href: "https://reactdev.ru/libs/recoil/",
+    title: "Recoil - это новый инструмент (на русском языке) для управления состоянием в React-приложениях ",
+  },
+  {
+    href: "https://reactdev.ru/libs/react-query/",
+    title:
+      "React Query. Библиотека (на русском языке) для получения, кэширования, синхронизации и обновления 'серверного' состояния в React-приложениях ",
+  },
+  {
+    href: "https://reactdev.ru/libs/react-spring/",
+    title: "React Spring. Библиотека для анимации интерфейсов (на русском языке)",
+  },
+  {
+    href: "https://reactdev.ru/libs/styled-components/#_1",
+    title: "Styled Components. Шпаргалка по библиотеке стилизации (на русском языке)",
+  },
+  {
+    href: "https://reactdev.ru/libs/xstate/",
+    title:
+      "XState. Библиотека для управления конечными автоматами (на русском языке):  Базовая библиотека конечных автоматов и диаграмм состояний + интерпретатор, Минимальная библиотека конечных автоматов, Утилиты обхода графа для XState, React xуки и утилиты для использования XState в приложениях React, Функции композиции и утилиты Vue для использования XState в приложениях Vue, Утилиты Svelte для использования XState в приложениях Svelte, Утилиты Model-Based-Testing (с использованием XState) для тестирования любого программного обеспечения, Утилиты разработчика (проверки) для XState.",
+  },
+  {
+    href: "https://react-hook-form.com/",
+    title: "React Hook Form. Валидация форм.",
+  },
+  {
+    href: "https://www.youtube.com/watch?v=Jxfun6Jnt5Q",
+    title: "Валидация форм с react-hook-form в React-приложениях. Михаил Непомнящий. ",
+  },
+  {
+    href: "https://www.youtube.com/watch?v=Nicadhseqos&t=82s",
+    title: "Zod для валидации API и форм. Михаил Непомнящий.",
+  },
+  {
+    href: "https://mobx.js.org/react-integration.html",
+    title: "MobX and React",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/674",
+    title: "MobX — управление состоянием приложения",
+  },
+  {
+    href: "https://www.npmjs.com/package/mobx-react-lite",
+    title: "npm i mobx-react-lite",
+  },
+  {
+    href: "https://www.digitalocean.com/community/tutorials/react-axios-react-ru",
+    title: "Использование Axios с React",
+  },
+  {
+    href: "https://ru.reactjs.org/docs/hooks-reference.html",
+    title: "Справочник API хуков React",
+  },
+  {
+    href: "https://fettblog.eu/typescript-react/hooks/",
+    title: "TypeScript и React: хуки",
+  },
+  {
+    href: "https://create-react-app.dev/docs/adding-typescript/",
+    title: "npx create-react-app my-app --template typescript",
+  },
+  {
+    href: "https://reactcommunity.org/react-transition-group/transition-group",
+    title: "React Transition Group",
+  },
+  {
+    href: "https://www.npmjs.com/package/react-transition-group?activeTab=versions",
+    title: "npm i react-transition-group",
+  },
+  {
+    href: "https://www.npmjs.com/package/react-router-dom",
+    title: "npm i react-router-dom (6.9.0)",
+  },
+  {
+    href: "https://www.npmjs.com/package/react-router-dom/v/5.3.3",
+    title: "npm i react-router-dom@5.3.3",
+  },
+  {
+    href: "https://habr.com/ru/company/kts/blog/598835/",
+    title: "Что нового в react-router v6",
+  },
+  {
+    href: "https://www.youtube.com/playlist?list=PLiZoB8JBsdznY1XwBcBhHL9L7S_shPGVE",
+    title: "React Router v6. Михаил Непомнящий. 10 видео ",
+  },
+  {
+    href: "https://www.npmjs.com/package/@types/react-router-dom",
+    title: "npm i @types/react-router-dom  npm install --save @types/react-router-dom (types)",
+  },
+  {
+    href: "https://betterprogramming.pub/12-react-hooks-every-react-developer-should-know-9c6352b81329",
+    title: "12 хуков React, которые должен знать каждый разработчик React",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/717",
+    title: "React и Redux вместе. Часть 1 из 7 ",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/718",
+    title: "React и Redux вместе. Часть 2 из 7 ",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/719",
+    title: "React и Redux вместе. Часть 3 из 7 ",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/720",
+    title: "React и Redux вместе. Часть 4 из 7 ",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/721",
+    title: "React и Redux вместе. Часть 5 из 7 ",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/722",
+    title: "React и Redux вместе. Часть 6 из 7 ",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/723",
+    title: "React и Redux вместе. Часть 7 из 7 ",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/640",
+    title: "Использование хуков. Часть 1 из 3. useState(), useEffect(), useRef(), ",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/643",
+    title:
+      "Использование хуков. Часть 2 из 3. useContext(), useLayoutEffect(), useCallback(),  useMemo(), useImperativeHandle(), useReducer().",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/658",
+    title: "Хук useCallback() и массив зависимости.",
+  },
+  {
+    href: "https://tokmakov.msk.ru/blog/item/644",
+    title:
+      "Использование хуков. Часть 3 из 3. Правила хуков, пользовательские хуки: usePrevious(), useLocalStorage(), usePageBottom(), useCounter(), useMergedState(), useEventListener(), useWhatCausedRender(), useDebounce(), useThrottle(), useAsync(), useIsMountedRef(), useWindowSize(), useHistory(), useElementSize(), useHovered(), useInterval(), useTimeout(), useUpdateEffect(), ",
+  },
+  {
+    href: "https://www.digitalocean.com/community/tutorials/react-axios-react-ru",
+    title: "Использование Axios с React",
+  },
+  {
+    href: "https://react-spring-io.vercel.app/hooks/use-transition",
+    title:
+      "Анимация перехода между страницами в React SPA с react-spring Transitioning. В hooks use-transition выбираем: Transitioning between routes",
+  },
+  {
+    href: "https://react-spring.dev/docs/getting-started",
+    title: "React Spring — это библиотека ",
+  },
+  {
+    href: "https://www.npmjs.com/package/react-spring",
+    title: "Установка анимации react-spring npm i react-spring ",
+  },
+  {
+    href: "https://www.youtube.com/watch?v=BSmXK6z0h3s&t=942s",
+    title: "Анимация перехода между страницами в React SPA с react-spring",
+  },
+  {
+    href: "https://stasonmars.ru/javascript/pogruzhaemsya-v-raboty-s-children-na-react/",
+    title: "Погружаемся в работу с children на React",
+  },
+  {
+    href: "https://habr.com/ru/post/319270/",
+    title: "JSX — подробности",
+  },
+  {
+    href: "https://www.youtube.com/watch?v=DLFzz2Wldxg",
+    title: "React. Props Children",
+  },
+  {
+    href: "https://www.8host.com/blog/kak-ispolzovat-axios-v-react/",
+    title: "КАК ИСПОЛЬЗОВАТЬ AXIOS В REACT",
+  },
+  {
+    href: "https://translated.turbopages.org/proxy_u/en-ru.ru.cb273f24-642bd6b1-73b932d8-74722d776562/https/www.freecodecamp.org/news/react-useeffect-absolute-beginners/  ",
+    title: "React useEffect Hook для абсолютных новичков.",
+  },
+  {
+    href: "https://www.trio.dev/blog/7-top-react-state-management-libraries",
+    title: "7 лучших библиотек управления состоянием React",
+  },
+  {
+    href: "https://react-spring-io.vercel.app/hooks/use-transition",
+    title: "react-spring",
+  },
+  {
+    href: "https://react-spring.dev/docs/components/use-transition ",
+    title: "react-spring  useTransition",
   },
 ];
