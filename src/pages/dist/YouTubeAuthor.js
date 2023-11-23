@@ -1,10 +1,9 @@
-import { motion } from "framer-motion"; // анимация
-import React from "react";
-import PageLink from "../components/general/PageLink/PageLink";
-import { ILinkInfo } from "../models/types";
-
-const YouTubeAuthor = () => {
-  const links: ILinkInfo[] = [
+exports.__esModule = true;
+var framer_motion_1 = require("framer-motion"); // анимация
+var react_1 = require("react");
+var PageLink_1 = require("../components/general/PageLink/PageLink");
+var YouTubeAuthor = function () {
+  var links = [
     {
       href: "https://www.youtube.com/@mishanep/videos",
       title: "Михаил Непомнящий",
@@ -118,16 +117,17 @@ const YouTubeAuthor = () => {
       title: "Анастасия | Vue - 3, вопросы на собеседовании на фронтенд. ",
     },
   ];
-
-  return (
-    <motion.div
-      initial={{ width: 0, opacity: 0 }}
-      animate={{ width: "100%", opacity: 1 }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 }}
-    >
-      <PageLink links={links} title="Гуру фронтенда на YouTube." />
-    </motion.div>
+  return react_1["default"].createElement(
+    framer_motion_1.motion.div,
+    {
+      initial: { width: 0, opacity: 0 },
+      animate: { width: "100%", opacity: 1 },
+      exit: { x: window.innerWidth, transition: { duration: 0.1 }, opacity: 0 },
+    },
+    react_1["default"].createElement(PageLink_1["default"], {
+      links: links,
+      title: "\u0413\u0443\u0440\u0443 \u0444\u0440\u043E\u043D\u0442\u0435\u043D\u0434\u0430 \u043D\u0430 YouTube.",
+    })
   );
 };
-
-export default YouTubeAuthor;
+exports["default"] = YouTubeAuthor;
